@@ -1,0 +1,104 @@
+.navbar {
+  background-color: #f3f3f3;
+  min-height: 70px;
+}
+
+.navbar-brand a {
+  text-decoration: none;
+  color: var(--futurest-green);
+}
+
+.navbar-brand h2 {
+  font-family: MaldenSansBoldItalic;
+}
+
+.navbar-links a {
+  position: relative;
+  text-decoration: none;
+  color: var(--futurest-black); /* change when mobile */
+  font-size: 20px;
+  padding-bottom: 4px;
+}
+
+.navbar-links a.active {
+  color: var(--futurest-teal);
+}
+
+.navbar-links a:hover {
+  color: var(--futurest-green);
+}
+
+.navbar-links a.active:hover {
+  color: var(--futurest-teal);
+}
+
+.navbar-links a::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: 50% 50%;
+  width: 100%;
+  height: 2.5px;
+  background: var(--futurest-green);
+  transition: transform 400ms;
+}
+
+.navbar-links a.active::before {
+  background: var(--futurest-teal);
+}
+
+.navbar-links a:hover::before {
+  transform: translateX(-50%) scaleX(1);
+}
+
+.navbar-links .btn-sm {
+  background-color: var(--futurest-teal);
+  color: var(--futurest-white);
+  font-size: 16px;
+}
+
+.navbar-links .btn-sm:hover {
+  background-color: #1c6e7a;
+}
+
+/* Mobile Navbar Configuration */
+
+.btn-nav-mobile {
+  font-size: 44px;
+  background: transparent;
+  border: 0;
+}
+
+.btn-nav-mobile:focus {
+  outline: 0;
+}
+
+.navbar-brand-mobile h2 {
+  font-size: 30px;
+}
+
+.navbar-links-mobile {
+  background-color: var(--futurest-black);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  transform: translateX(-100%); /* Handle with js */
+  transition: transform 0.5s ease;
+}
+
+.navbar-links-mobile a {
+  color: var(--futurest-white);
+}
+
+.back-btn-navbar-mobile {
+  color: var(--futurest-white);
+  font-size: 50px;
+  background-color: transparent;
+  border: 0;
+}
+
+.back-btn-navbar-mobile:focus {
+  outline: 0;
+}

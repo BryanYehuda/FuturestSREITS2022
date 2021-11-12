@@ -23,7 +23,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = '';
+
+// Ganti ya pasti
+$config['base_url'] = 'http://localhost:8080/FuturestSREITS2022/src/';
 
 /*
 |--------------------------------------------------------------------------
