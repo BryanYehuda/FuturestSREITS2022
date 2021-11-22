@@ -1,0 +1,108 @@
+/* Jumbotron */
+#jumbotron {
+	height: 730px;
+}
+
+#jumbotron::before {
+	content: "";
+	background-image: url("../../img/contact-parallax-test.jpg");
+	position: absolute;
+	background-size: cover;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+	opacity: 0.6;
+}
+
+#jumbotron h1 {
+	font-size: 50px;
+	font-family: MulishBold;
+}
+
+#jumbotron p {
+	font-size: 20px;
+	font-family: MulishRegular;
+}
+
+/* Sosmed */
+#sosmed {
+	height: 730px;
+}
+
+#sosmed h2 {
+	color: var(--futurest-teal);
+	font-size: 40px;
+	font-family: MulishSemiBold;
+}
+
+#sosmed .card-sosmed {
+	background: linear-gradient(to right, #096272, #1b8a9d);
+	border-radius: 20px;
+	cursor: pointer;
+	text-decoration: none;
+	transition: all 0.3s ease;
+	color: var(--futurest-white);
+}
+
+#sosmed .card-sosmed .bi {
+	font-size: 50px;
+}
+
+#sosmed .card-sosmed h4 {
+	font-family: MulishLight;
+}
+
+#sosmed .card-sosmed:hover {
+	transform: scale(1.04);
+	background: linear-gradient(to right, #084c58, #157b8d);
+	color: var(--futurest-green);
+}
+
+/* Contact Us */
+#contact-us {
+	background: linear-gradient(to bottom, #086172, #1b8a9d);
+	height: 730px;
+}
+
+#contact-us h2 {
+	font-family: MulishSemiBold;
+}
+
+#contact-us label {
+	font-family: MulishLight;
+	font-size: 23px;
+}
+
+#contact-us .input,
+#contact-us .text-area {
+	font-family: MulishRegular;
+	font-size: 23px;
+}
+
+#contact-us button {
+	background: var(--futurest-green);
+	transition: all 0.3s ease;
+	border-radius: 14px;
+	color: var(--futurest-black);
+	font-family: MulishRegular;
+}
+
+#contact-us button:hover {
+	transform: scale(0.93);
+}
+
+@media screen and (max-width: 576px) {
+	#jumbotron h1 {
+		font-size: 40px;
+	}
+
+	#sosmed h2 {
+		font-size: 30px;
+	}
+
+	#sosmed .card-sosmed .bi {
+		font-size: 35px;
+	}
+}
