@@ -75,10 +75,15 @@
 	font-size: 23px;
 }
 
-#contact-us .input,
-#contact-us .text-area {
+#contact-us form input,
+#contact-us form textarea {
 	font-family: MulishRegular;
-	font-size: 23px;
+	font-size: 18px;
+}
+
+#contact-us form input:focus,
+#contact-us form textarea:focus {
+	outline: 4.3px solid var(--futurest-green);
 }
 
 #contact-us button {
