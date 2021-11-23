@@ -25,7 +25,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 
 // Ganti ya pasti
-$config['base_url'] = 'http://localhost:8080/FuturestSREITS2022/src/';
+$config['base_url'] = 'http://localhost/TesSreAwaw/FuturestSREITS2022/src/';
 
 /*
 |--------------------------------------------------------------------------

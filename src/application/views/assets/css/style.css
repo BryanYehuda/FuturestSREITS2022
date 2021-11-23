@@ -1,0 +1,230 @@
+/* =======================================================================
+Template Name: Youtubers
+Author:  SmartEye Technologies
+Author URI: www.smarteyeapps.com
+Version: 1.0
+coder name:Prabin Raja
+Description: This Template is created for Youtubers
+======================================================================= */
+/* ===================================== Import Variables ================================== */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Arimo:300,400,400italic,700,700italic);
+/* ===================================== Basic CSS ==================================== */
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none; 
+}
+
+body{
+  font-family: "Open Sans";
+  
+}
+
+img {
+  max-width: 100%; 
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: #444; 
+}
+
+a:hover {
+  color: #444; 
+}
+
+ul {
+  margin-bottom: 0;
+  padding-left: 0; 
+}
+
+ol,ul{
+  margin:0px;
+  padding:0px;
+}
+
+a:hover,
+a:focus,
+input,
+textarea {
+  text-decoration: none;
+  outline: none; 
+}
+
+
+
+._form_05{
+  
+  
+
+  display:flex;
+  align-items:center;
+  height:100vh;
+  z-index:2;
+  overflow:hidden;
+
+}
+
+._form_05::before {
+    position: absolute;
+    content: "";
+    background:rgba(0,0,0,0.9);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    z-index:1;
+    top: 0px;
+}
+
+._form-05-box{
+  width:700px;
+  max-width:100%;
+  position:relative;
+  display:block;
+  margin:20px auto;
+  background:rgba(255,255,255,1);
+  border-radius:6px;
+  z-index:3;
+}
+
+.form-05-box-a{
+  padding:40px 30px;
+  background-color:rgba(38, 43, 72, 1);
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+._mn_df{
+  padding:40px 20px;
+  background:#fff;
+  border-top-right-radius:6px;
+  border-bottom-right-radius:6px;
+  padding-right: 45px;
+}
+
+._form_05_logo,._form_05_socialmedia,.main-head{
+  margin:20px 0px;
+  display:inline-block;
+  width:100%;
+  text-align:center;
+  text-align: center;
+}
+
+._form_05_logo h2{
+  font-size:20px;
+  font-weight:400;
+  letter-spacing:0.5px;
+  color:#fff;
+  text-transform:uppercase;
+}
+
+._form_05_logo p{
+    color: #fff;
+    line-height: 22px;
+    text-align: left;
+    margin: 30px 0 0 0;
+    text-align: center;
+    font-size: .9rem;
+}
+
+._lk_nb{
+  display:flex;
+}
+
+._form_05_socialmedia ol li{
+  display:block;
+  width:100%;
+  cursor:pointer;
+  padding:10px 5px 10px 35px;
+  background:#3b5998;
+  color:#fff;
+  font-family: "Open Sans";
+  font-size:13px;
+  text-align:left;
+  position:relative;
+  border-radius:2px;
+  margin:10px 0 0 0;
+}
+
+._form_05_socialmedia ol li:nth-child(2){
+  background:#00aced;
+}
+
+._form_05_socialmedia ol li:nth-child(3){
+  background:#c32f10;
+}
+
+._form_05_socialmedia ol li i{
+    position: absolute;
+    color:#fff;
+    font-size:15px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    top: 0;
+}
+
+.main-head h2{
+  font-size:18px;
+  color:#000;
+
+}
+
+.form-group{
+  padding:20px 0px;
+  display:inline-block;
+  width:100%;
+  position:relative;
+}
+
+.form-check-label,.form-group a{
+  font-size:15px;
+}
+
+.form-group p{
+  margin:0px;
+  font-size: .9rem;
+}
+
+.form-control{
+  min-height:45px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 10px 15px;
+}
+
+.checkbox{
+  display:flex;
+  justify-content:space-around;
+}
+
+._btn_04 {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 0px;
+    background: #01cc66;
+    border-radius:5px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+
+._btn_04 a{
+  font-size:15px;
+  color:#fff;
+}
+
+
+
+ @media screen and (max-width: 767px){
+    ._form_05{
+      height: auto;
+    }
+    ._mn_df{
+      padding-right: 20px;
+    }
+ }
