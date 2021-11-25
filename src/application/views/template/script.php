@@ -11,4 +11,4 @@
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
 <!-- Navbar JS -->
-<script src="<?php echo base_url() ?>/public/js/components/navbar.js"></script>
+<script src="<?php echo base_url() ?>public/js/components/navbar.js"></script>

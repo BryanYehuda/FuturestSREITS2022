@@ -1,0 +1,26 @@
+/* Jumbotron */
+
+#jumbotron {
+    height: 730px;
+}
+
+#jumbotron::before {
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#jumbotron h1 {
+    font-size: 50px;
+    font-family: MulishBold;
+}
+
+#jumbotron p {
+    font-size: 20px;
+    font-family: MulishRegular;
+}
