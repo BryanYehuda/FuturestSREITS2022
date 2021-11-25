@@ -1,51 +1,24 @@
-<!-- Navbar Component -->
-
-<!-- Navbar Links mobile -->
-<div class="navbar-links navbar-links-mobile d-flex flex-column align-items-center d-md-none position-absolute">
-  <button class="back-btn-navbar-mobile h-25 mt-3 mb-3 ">
-    <i class="bi bi-x text-white"></i>
-  </button>
-  <div class="h-50 d-flex flex-column align-items-center justify-content-between">
-    <a class="my-3 active" href="">Home</a>
-    <a class="my-3" href="">Details</a>
-    <a class="my-3" href="">Events</a>
-    <a class="my-3" href="">Contact</a>
-  </div>
-</div>
-
-<nav class="navbar">
-  <div class="container">
-    <!-- Navbar Button Mobile -->
-    <button class="btn-nav-mobile d-md-none">
-      <i class="bi bi-list"></i>
-    </button>
-
-    <!-- Navbar Brand Desktop-->
-    <div class="navbar-brand d-none d-md-block">
-      <a href="" class="d-flex">
-        <img src="<?php echo base_url() ?>/public/img/logo-utama.png" width="50" alt="FUTUREST">
-        <h2 class="mt-2">FUTUREST</h2>
-      </a>
-    </div>
-
-    <!-- Navbar Links Desktop -->
-    <div class="navbar-links d-none d-md-flex">
-      <!-- Pages Links Desktop -->
-      <div class="me-3">
-        <a class="mx-lg-3 mx-2 active" href="">Home</a>
-        <a class="mx-lg-3 mx-2" href="">Details</a>
-        <a class="mx-lg-3 mx-2" href="">Events</a>
-        <a class="mx-lg-3 mx-2" href="">Contact</a>
+<nav class="navbar fixed-top">
+  <div class="container d-flex align-items-center me-auto">
+      <!-- Navbar Brand -->
+      <div class="navbar-brand">
+         <a href="" class="d-flex">
+         <img src="<?php echo base_url() ?>/public/img/logo-utama.png" width="50" alt="FUTUREST">
+         <h2 class="mt-2">FUTUREST</h2>
+         </a>
       </div>
-      <!-- Login Button Desktop -->
-      <button class="btn btn-sm">Login</button>
-    </div>
 
-    <!-- Navbar Brand Mobile -->
-    <div class="navbar-brand navbar-brand-mobile d-md-none mt-2">
-      <a href="">
-        <h2>FUTUREST</h2>
-      </a>
-    </div>
+      <!-- Navbar Button Mobile -->
+      <input class="input-btn-mobile d-block d-md-none float-end" type="checkbox" onchange="handlerNav(this)">
+      <i class="bi bi-list icon-btn-mobile d-block d-md-none float-end"></i>
+
+      <!-- Navbar Links -->
+      <div class="navbar-links d-flex flex-column flex-md-row align-items-center">
+         <a class="me-lg-4 me-md-3 active" href="">Home</a>
+         <a class="me-lg-4 me-md-3" href="">Details</a>
+         <a class="me-lg-4 me-md-3" href="">Events</a>
+         <a class="me-lg-5 me-md-4" href="">Contact</a>
+         <a class="btn btn-sm" href="">Login</a>
+      </div>
   </div>
 </nav>

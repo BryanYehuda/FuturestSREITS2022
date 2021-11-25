@@ -14,11 +14,9 @@
 </head>
 
 <body>
-  <header>
-    <?php
+   <?php
       $this->load->view('components/navbar');
-    ?>
-  </header>
+   ?>
 
   <main id="section">
     <div class="container">

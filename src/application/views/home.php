@@ -14,11 +14,9 @@
   <link rel="stylesheet" href="<?php echo base_url() ?>public/css/pages/home.css">
 
 <body>
-  <header>
-    <?php
+   <?php
       $this->load->view('components/navbar');
-    ?>
-  </header>
+   ?>
 
   <section id="jumbotron" class="d-flex align-items-center position-relative">
       <div class="container text-center">
