@@ -1,205 +1,214 @@
 /* Jumbotron */
+
 #jumbotron {
-	min-height: 730px;
+    min-height: 730px;
 }
 
 #jumbotron::before {
-	content: "";
-	background-image: url("../../img/event-parallax-test.jpg");
-	position: absolute;
-	background-size: cover;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	z-index: -1;
-	opacity: 0.4;
+    content: "";
+    background-image: url("../../img/event-parallax-test.jpg");
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.4;
 }
 
 #jumbotron h1 {
-	font-size: 50px;
-	font-family: MulishBold;
+    font-size: 50px;
+    font-family: MulishBold;
 }
 
 #jumbotron p {
-	font-size: 20px;
-	font-family: MulishRegular;
+    font-size: 20px;
+    font-family: MulishRegular;
 }
 
 #jumbotron i {
-	font-size: 100px;
+    font-size: 100px;
 }
 
+
 /* Apa Saja */
+
 #apa-saja {
-	min-height: 600px;
+    min-height: 600px;
 }
 
 #apa-saja span,
 #apa-saja .span {
-	background: linear-gradient(to bottom, #b1d430, #30958d);
-	border-radius: 18px;
+    background: linear-gradient(to bottom, #b1d430, #30958d);
+    border-radius: 18px;
 }
 
 #apa-saja .row {
-	margin-top: 80px;
+    margin-top: 80px;
 }
 
 @media screen and (max-width: 776px) {
-	#apa-saja .row {
-		margin-top: 50px;
-	}
+    #apa-saja .row {
+        margin-top: 50px;
+    }
 }
 
 #apa-saja .col {
-	background: linear-gradient(to bottom, #b1d430, #30958d);
-	border-radius: 18px;
-	box-shadow: 2px 2px 10px grey;
+    background: linear-gradient(to bottom, #b1d430, #30958d);
+    border-radius: 18px;
+    box-shadow: 2px 2px 10px grey;
 }
 
 #apa-saja .col i {
-	font-size: 90px;
+    font-size: 90px;
 }
 
 #apa-saja .col h4 {
-	font-family: MulishSemiBold;
+    font-family: MulishSemiBold;
 }
 
 #apa-saja .col p {
-	font-family: MulishLight;
+    font-family: MulishLight;
 }
 
+
 /* Fakta Unik */
+
 #fakta-unik {
-	min-height: 500px;
+    min-height: 500px;
 }
 
 #fakta-unik .container-desc-fakta-unik {
-	background: linear-gradient(to right, #b1d430, #30958d);
-	border-radius: 0 20px 20px 0;
+    background: linear-gradient(to right, #b1d430, #30958d);
+    border-radius: 0 20px 20px 0;
 }
 
 @media screen and (max-width: 992px) {
-	#fakta-unik {
-		min-height: 400px;
-	}
-
-	#fakta-unik .container-desc-fakta-unik {
-		border-radius: 20px;
-	}
-
-	#fakta-unik p {
-		margin-top: 30px !important;
-	}
+    #fakta-unik {
+        min-height: 400px;
+    }
+    #fakta-unik .container-desc-fakta-unik {
+        border-radius: 20px;
+    }
+    #fakta-unik p {
+        margin-top: 30px !important;
+    }
 }
 
 #fakta-unik .title-fakta-unik {
-	top: -18px;
-	left: 50%;
-	transform: translate(-50%);
-	background-color: red;
-	background: linear-gradient(to bottom, #b1d430, #30958d);
-	border-radius: 18px;
-	font-family: MulishSemiBold;
+    top: -18px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: red;
+    background: linear-gradient(to bottom, #b1d430, #30958d);
+    border-radius: 18px;
+    font-family: MulishSemiBold;
 }
 
 #fakta-unik p {
-	font-size: 20px;
-	font-family: MulishLight;
+    font-size: 20px;
+    font-family: MulishLight;
 }
 
+
 /* Timeline */
+
 #timeline {
-	min-height: 730px;
-	background-color: #f3f3f3;
+    min-height: 730px;
+    background-color: #f3f3f3;
 }
 
 #timeline h2 {
-	font-family: MulishBold;
+    font-family: MulishBold;
 }
 
 #timeline .row {
-	border-radius: 18px;
-	background: linear-gradient(to right, #b1d430, #30958d);
+    border-radius: 18px;
+    background: linear-gradient(to right, #b1d430, #30958d);
 }
 
 #timeline .row .rounded-timeline {
-	width: 20px;
-	height: 20px;
-	background: #30958d;
-	left: -25px;
-	top: 50%;
-	transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background: #30958d;
+    left: -25px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 #timeline .row h3 {
-	font-family: MulishSemiBold;
+    font-family: MulishSemiBold;
 }
 
 #timeline .row p {
-	font-family: MulishLight;
+    font-family: MulishLight;
 }
 
+
 /* Cara Daftar */
+
 #cara-daftar {
-	min-height: 730px;
+    min-height: 730px;
 }
 
 #cara-daftar::before {
-	content: "";
-	background-image: url("../../img/cara-daftar.jpg");
-	position: absolute;
-	background-size: cover;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	z-index: -1;
-	opacity: 0.3;
+    content: "";
+    background-image: url("../../img/cara-daftar.jpg");
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.3;
 }
 
 #cara-daftar h2 {
-	font-family: MulishSemiBold;
+    font-family: MulishSemiBold;
 }
 
 #cara-daftar .col {
-	background: linear-gradient(225deg, #b1d430, #30958d);
-	border-radius: 18px;
-	box-shadow: 2px 2px 10px grey;
+    background: linear-gradient(225deg, #b1d430, #30958d);
+    border-radius: 18px;
+    box-shadow: 2px 2px 10px grey;
 }
 
 #cara-daftar .angka-cara-daftar {
-	font-size: 28px;
+    font-size: 28px;
 }
 
 #cara-daftar .col p {
-	font-family: MulishRegular;
+    font-family: MulishRegular;
 }
 
+
 /* Pertanyaan */
+
 #pertanyaan {
-	min-height: 730px;
+    min-height: 730px;
 }
 
 #pertanyaan h2 {
-	font-family: MulishSemiBold;
+    font-family: MulishSemiBold;
 }
 
 #pertanyaan button {
-	background: linear-gradient(to right, #b1d430, #30958d);
-	color: var(--futurest-white);
-	font-size: 22px;
-	font-family: MulishRegular;
+    background: linear-gradient(to right, #b1d430, #30958d);
+    color: var(--futurest-white);
+    font-size: 22px;
+    font-family: MulishRegular;
 }
 
 #pertanyaan .accordion-body {
-	font-size: 18px;
-	border: 1px solid var(--futurest-black) !important;
-	font-family: MulishLight;
+    font-size: 18px;
+    border: 1px solid var(--futurest-black) !important;
+    font-family: MulishLight;
 }
 
 @media screen and (max-width: 776px) {
-	#pertanyaan {
-		min-height: 560px;
-	}
+    #pertanyaan {
+        min-height: 560px;
+    }
 }

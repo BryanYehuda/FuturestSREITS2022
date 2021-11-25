@@ -1,15 +1,15 @@
 .footer {
-  background: var(--futurest-black);
-  color: var(--futurest-white);
-  font-family: MulishBold;
+    background: var(--futurest-black);
+    color: var(--futurest-white);
+    font-family: MulishBold;
 }
 
 .footer a {
-  text-decoration: none;
-  color: grey;
-  font-family: MulishLight;
+    text-decoration: none;
+    color: grey;
+    font-family: MulishLight;
 }
 
 .footer a:hover {
-  color: var(--futurest-green);
+    color: var(--futurest-green);
 }

@@ -1,0 +1,28 @@
+/* Jumbotron */
+
+#jumbotron {
+    height: 730px;
+}
+
+#jumbotron::before {
+    content: "";
+    background: linear-gradient(101.04deg, #A1FFAB 0%, #D6FFD0 35.78%, rgba(250, 255, 209, 0.816875) 99.98%, rgba(180, 222, 185, 0.448958) 99.99%, rgba(196, 196, 196, 0) 100%, rgba(196, 196, 196, 0) 100%, rgba(250, 255, 209, 0.527537) 100%);
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#jumbotron h1 {
+    font-size: 50px;
+    font-family: MulishBold;
+}
+
+#jumbotron p {
+    font-size: 20px;
+    font-family: MulishRegular;
+}
