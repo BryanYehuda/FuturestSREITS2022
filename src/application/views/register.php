@@ -20,12 +20,10 @@
 
 
 <body>
+   <?php
+      $this->load->view('components/navbar');
+   ?>
 
-  <header>
-    <?php
-    $this->load->view('components/navbar');
-    ?>
-  </header>
   <br><br><br><br><br>
   <main id="section">
     <div class="container">

@@ -1,11 +1,19 @@
-const btnNavMobile = document.querySelector(".btn-nav-mobile");
-const btnBackNavMobile = document.querySelector(".back-btn-navbar-mobile");
-const navLinksMobile = document.querySelector(".navbar-links-mobile");
+const iconBtnMobile = document.querySelector(".icon-btn-mobile");
 
-btnNavMobile.addEventListener("click", () => {
-  navLinksMobile.style.transform = "translateX(0)";
-});
+function changeIcon() {
+	if (iconBtnMobile.classList.contains("bi-list")) {
+		iconBtnMobile.classList.add("bi-chevron-left");
+		iconBtnMobile.classList.remove("bi-list");
+	} else {
+		iconBtnMobile.classList.remove("bi-chevron-left");
+		iconBtnMobile.classList.add("bi-list");
+	}
+}
 
-btnBackNavMobile.addEventListener("click", () => {
-  navLinksMobile.style.transform = "translateX(-100%)"
-});
+function handlerNav(element) {
+	if (element.checked) {
+		changeIcon();
+	} else {
+		changeIcon();
+	}
+}
