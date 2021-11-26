@@ -1,0 +1,89 @@
+body {
+	overflow-x: hidden;
+}
+
+.side-bar {
+	background: #f3f3f3;
+}
+
+.side-bar a {
+    font-family: MulishRegular;
+}
+
+.side-bar a:not(:last-child) {
+	color: grey;
+}
+
+.side-bar a:not(:last-child):hover {
+	color: black;
+}
+
+.side-bar a.active {
+	color: var(--futurest-teal);
+}
+
+.side-bar a.active:hover {
+	color: var(--futurest-teal);
+}
+
+.btn-nav-mobile {
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.main-content {
+	background: #e4e4e4;
+}
+
+.main-content {
+    font-family: MulishSemiBold;
+}
+
+.main-content p {
+    font-family: MulishLight;
+}
+
+.card-content {
+	border-radius: 18px;
+	background: #fff;
+	box-shadow: 1px 0 10px grey;
+}
+
+@media screen and (max-width: 768px) {
+	.side-bar {
+		position: fixed;
+		box-shadow: 0 1px 10px grey;
+		width: 70%;
+		height: 100vh;
+		left: -100%;
+        z-index: 1;
+		transition: all 0.3s ease-out;
+	}
+
+	input.btn-nav-mobile {
+		z-index: 4;
+		width: 40px;
+		height: 35px;
+        opacity: 0;
+	}
+
+	i.btn-nav-mobile {
+		z-index: 3;
+		font-size: 23px;
+        color: #fff;
+	}
+
+    div.btn-nav-mobile {
+        width: 40px;
+        height: 35px;
+        z-index: 2;
+        background: var(--futurest-teal);
+        border-radius: 0 50% 50% 0;
+    }
+
+	input.btn-nav-mobile:checked ~ .side-bar {
+		left: 0;
+	}
+}
