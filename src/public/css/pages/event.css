@@ -14,7 +14,7 @@
     bottom: 0;
     right: 0;
     z-index: -1;
-    opacity: 0.4;
+    opacity: 0.2;
 }
 
 #jumbotron h1 {
@@ -40,8 +40,9 @@
 
 #apa-saja span,
 #apa-saja .span {
-    background: linear-gradient(to bottom, #b1d430, #30958d);
     border-radius: 18px;
+    background: var(--futurest-green);
+    color: white;
 }
 
 #apa-saja .row {
@@ -55,7 +56,7 @@
 }
 
 #apa-saja .col {
-    background: linear-gradient(to bottom, #b1d430, #30958d);
+    background: #f3f3f3;
     border-radius: 18px;
     box-shadow: 2px 2px 10px grey;
 }
@@ -80,7 +81,7 @@
 }
 
 #fakta-unik .container-desc-fakta-unik {
-    background: linear-gradient(to right, #b1d430, #30958d);
+    background: #f3f3f3;
     border-radius: 0 20px 20px 0;
 }
 
@@ -101,7 +102,7 @@
     left: 50%;
     transform: translate(-50%);
     background-color: red;
-    background: linear-gradient(to bottom, #b1d430, #30958d);
+    background: var(--futurest-green);
     border-radius: 18px;
     font-family: MulishSemiBold;
 }
@@ -121,11 +122,13 @@
 
 #timeline h2 {
     font-family: MulishBold;
+    color: var(--futurest-green);
 }
 
 #timeline .row {
     border-radius: 18px;
-    background: linear-gradient(to right, #b1d430, #30958d);
+    background: #fff;
+    box-shadow: 1px 0 10px grey;
 }
 
 #timeline .row .rounded-timeline {
@@ -162,17 +165,19 @@
     bottom: 0;
     right: 0;
     z-index: -1;
-    opacity: 0.3;
+    opacity: 0.1;
 }
 
 #cara-daftar h2 {
     font-family: MulishSemiBold;
+    color: var(--futurest-green);
 }
 
 #cara-daftar .col {
-    background: linear-gradient(225deg, #b1d430, #30958d);
+    background: #fff;
     border-radius: 18px;
     box-shadow: 2px 2px 10px grey;
+    color: var(--futurest-black);
 }
 
 #cara-daftar .angka-cara-daftar {
@@ -192,11 +197,12 @@
 
 #pertanyaan h2 {
     font-family: MulishSemiBold;
+    color: var(--futurest-green);
 }
 
 #pertanyaan button {
-    background: linear-gradient(to right, #b1d430, #30958d);
-    color: var(--futurest-white);
+    background: #f3f3f3;
+    color: var(--futurest-black);
     font-size: 22px;
     font-family: MulishRegular;
 }

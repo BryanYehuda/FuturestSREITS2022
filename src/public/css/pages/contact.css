@@ -14,7 +14,7 @@
     bottom: 0;
     right: 0;
     z-index: -1;
-    opacity: 0.6;
+    opacity: 0.2;
 }
 
 #jumbotron h1 {
@@ -35,18 +35,19 @@
 }
 
 #sosmed h2 {
-    color: var(--futurest-teal);
+    color: var(--futurest-black);
     font-size: 40px;
     font-family: MulishSemiBold;
 }
 
 #sosmed .card-sosmed {
-    background: linear-gradient(to right, #096272, #1b8a9d);
+    background: #f4f4f4;
     border-radius: 20px;
     cursor: pointer;
     text-decoration: none;
     transition: all 0.3s ease;
-    color: var(--futurest-white);
+    color: var(--futurest-black);
+    box-shadow: 1px 0 10px #c4c4c4;
 }
 
 #sosmed .card-sosmed .bi {
@@ -59,15 +60,15 @@
 
 #sosmed .card-sosmed:hover {
     transform: scale(1.04);
-    background: linear-gradient(to right, #084c58, #157b8d);
-    color: var(--futurest-green);
+    background: #cecece;
+    color: var(--futurest-teal);
 }
 
 
 /* Contact Us */
 
 #contact-us {
-    background: linear-gradient(to bottom, #086172, #1b8a9d);
+    background: #e3e3e3;
     height: 730px;
 }
 
@@ -88,14 +89,14 @@
 
 #contact-us form input:focus,
 #contact-us form textarea:focus {
-    outline: 4.3px solid var(--futurest-green);
+    outline: 4.3px solid var(--futurest-teal);
 }
 
 #contact-us button {
-    background: var(--futurest-green);
+    background: var(--futurest-teal);
     transition: all 0.3s ease;
     border-radius: 14px;
-    color: var(--futurest-black);
+    color: var(--futurest-white);
     font-family: MulishRegular;
 }
 

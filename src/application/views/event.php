@@ -40,15 +40,15 @@
       <section id="apa-saja" class="py-5">
          <div class="container py-5">
             <h2 class="text-center d-none d-sm-block">
-               <span class="px-sm-4 py-2 border border-3 border-dark text-white">
+               <span class="px-sm-4 py-2 border border-3 border-dark">
                   Ada apa saja di FUTUREST 2022?
                </span>
             </h2>
-            <h2 class="span text-center border border-3 border-dark text-white d-block d-sm-none py-2">
+            <h2 class="span text-center border border-3 border-dark d-block d-sm-none py-2">
                Ada apa saja di FUTUREST 2022?
             </h2>
             <div class="row text-center">
-               <div class="col d-flex flex-column align-items-center justify-content-center text-white mx-2 mx-md-3 p-3 mb-3" v-for="item in apaSaja">
+               <div class="col d-flex flex-column align-items-center justify-content-center mx-2 mx-md-3 p-3 mb-3" v-for="item in apaSaja">
                   <i :class="item.icon"></i>
                   <h4 class="text-bold">{{ item.title }}</h4>
                   <p>
@@ -65,8 +65,8 @@
                <div class="d-none d-lg-block col-lg-6">
                   <img src="<?php echo base_url() ?>/public/img/fakta-unik.jpg" alt="Fakta Unik Futurest 2022" class="img-fluid">
                </div>
-               <div class="container-desc-fakta-unik col bg-success d-flex align-items-center justify-content-center text-center px-5 position-relative text-white">
-                  <span class="title-fakta-unik position-absolute px-3 py-2 h2 border border-dark border-3">Fakta Unik</span>
+               <div class="container-desc-fakta-unik col d-flex align-items-center justify-content-center text-center px-5 position-relative">
+                  <span class="title-fakta-unik position-absolute px-3 py-2 h2 border border-dark border-3 text-white">Fakta Unik</span>
                   <p class="pt-4">
                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis neque culpa magni sequi? Accusamus repudiandae ea enim distinctio nisi laboriosam facilis beatae voluptatum voluptatem, ratione atque, assumenda fugit quisquam maxime?
                   </p>
@@ -76,8 +76,8 @@
       </section>
 
       <section id="timeline" class="py-5">
-         <div class="container d-flex flex-column align-items-center text-white">
-            <h2 class="mb-5 text-dark">Timeline Event</h2>
+         <div class="container d-flex flex-column align-items-center">
+            <h2 class="mb-5">Timeline Event</h2>
             <div class="row mb-3 p-3 w-75" v-for="item in timeline">
                <div class="col position-relative">
                   <div class="position-absolute rounded-timeline rounded-pill"></div>
@@ -89,8 +89,8 @@
       </section>
 
       <section id="cara-daftar" class="py-5 position-relative d-flex align-items-center">
-         <div class="container text-white">
-            <h2 class="mb-5 text-center text-dark">How to regist?</h2>
+         <div class="container">
+            <h2 class="mb-5 text-center">How to regist?</h2>
             <div class="row">
                <div class="col m-2 p-4" v-for="item in caraDaftar1">
                   <p><span class="angka-cara-daftar">{{ item.number }}</span>{{ item.description }}</p>
