@@ -1,0 +1,138 @@
+/* Dashboard Payment CSS */
+tr.invoice-row {
+    height:80px;
+    background: white;
+    font-size: 14px;
+    color: var(--futurest-black);
+}
+
+tr.invoice-head{
+    height:50px;
+    background: white;
+    font-size: 16px;
+    color: var(--futurest-black);
+}
+
+.invoice-row>td>div.failed {
+    color: #DC3545;
+}
+
+.invoice-row>td>div.on-progress {
+    color: var(--disabled-color);
+}
+
+.invoice-row>td>div.paid {
+    color: var(--futurest-green);
+}
+
+table.row-gap {
+    border-collapse: separate;
+    border-spacing: 0px 35px;
+}
+/* Dashboard Payment CSS */
+
+
+/* From Home Dashboard */
+:root {
+    --futurest-black: #262626;
+    --futurest-white: #f3f3f3;
+    --futurest-green: #b2d430;
+    --futurest-teal: #1a8b9d;
+    --futurest-orange: #f7d32a;
+    --disabled-color: #bbbec5;
+}
+
+.announcement {
+    margin-top: 100px;
+}
+
+.announcement-card {
+    border-radius: 12px;
+}
+
+.info-card {
+    border-radius: 12px;
+}
+
+.primary-text {
+    font-family: MulishBold;
+}
+
+.regular-text{
+    font-family: MulishRegular;
+}
+
+.second-text {
+    color: var(--disabled-color);
+}
+
+.info-color {
+    color: var(--futurest-teal);
+}
+
+.status-color {
+    color: var(--futurest-green);
+}
+
+#wrapper {
+    overflow-x: hidden;
+    background-color: #f3f3f3;
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin 0.25s ease-out;
+    -moz-transition: margin 0.25s ease-out;
+    -o-transition: margin 0.25s ease-out;
+    transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+#menu-toggle {
+    cursor: pointer;
+}
+
+.list-group-item {
+    border: none;
+    padding: 20px 30px;
+}
+
+.list-group-item.active {
+    background-color: transparent;
+    color: var(--futurest-green);
+    font-weight: bold;
+    border: none;
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+}
+/* From Home Dashboard */

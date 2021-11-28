@@ -39,7 +39,7 @@
             <div class="list-group list-group-flush my-3">
 
                 <a href="#" class="list-group-item list-group-item-action bg-transparent primary-text active"><i class="fas fa-home-alt me-2"></i>Home</a>
-                <a href="#" class="list-group-item lissecond-text fwt-group-item-action bg-transparent primary-text"><i class="fas fa-users-cog me-2"></i>Team Identity</a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text primary-text"><i class="fas fa-users-cog me-2"></i>Team Identity</a>
                 <a href="#" class="list-group-item list-group-item-action bg-transparent second-text primary-text"><i class="fas fa-money-check-alt me-2"></i>Payment</a>
                 <hr class="info-color">
                 <a href="#" class="list-group-item list-group-item-action bg-transparent text-danger primary-text"><i class="fas fa-power-off me-2"></i>Logout</a>
@@ -52,7 +52,7 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 px-4">
                 <div class="d-flex align-items-center">
                     <i class="fs-4 me-3" id="menu-toggle"></i>
-                    <h2 class="primary-text">Hello</h2>
+                    <h2 class="primary-text">Welcome to FUTUREST dashboard</h2>
                 </div>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
