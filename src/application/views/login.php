@@ -26,7 +26,7 @@
       <div class="container">
         <div class="row-login g-0 row">
           <div class="col-lg-5">
-            <img src="<?php echo base_url() ?>public/img/400x600.png" alt="" class="img-fluid">
+            <img src="<?php echo base_url() ?>public/img/400x600.png" alt="" class="img-fluid bg-img d-none d-lg-block">
           </div>
           <div class="col-lg-7 px-5 pt-5">
             <img src="<?php echo base_url() ?>public/img/Logo.png" alt="" class="img-fluid py-3">
