@@ -81,7 +81,7 @@
                 <div class="row g-3 my-2">
                     <h4 class="mb-3 primary-text">Info</h4>
 
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-6 ">
                         <div class="p-3 bg-white shadow d-flex justify-content-around align-items-center info-card">
                             <i class="fas fa-users fs-1 info-color p-3"></i>
                             <div>
@@ -93,7 +93,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-6 ">
                         <div class="p-3 bg-white shadow d-flex justify-content-around align-items-center info-card">
                             <i class="fas fa-university fs-1 info-color p-3"></i>
                             <div>
@@ -105,11 +105,11 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-6 ">
                         <div class="p-3 bg-white shadow d-flex justify-content-around align-items-center info-card">
                             <i class="fas fa-id-card fs-1 status-color p-3"></i>
                             <div>
-                                <p class="fs-6 text-black-50 regular-text">Team Identity Status</p>
+                                <p class="fs-6 text-black-50 regular-text">Team ID Status</p>
                                 <h5 class="status-color primary-text">Verified</h5>
 
                             </div>
@@ -117,7 +117,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-6 ">
                         <div class="p-3 bg-white shadow d-flex justify-content-around align-items-center info-card">
                             <i class="fas fa-money-check-alt fs-1 status-color p-3"></i>
                             <div>

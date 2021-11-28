@@ -20,6 +20,6 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('dashboard_admin_team_confirmation');
+		$this->load->view('login');
 	}
 }
