@@ -86,6 +86,7 @@
 
 .input-btn-mobile:checked ~ .navbar-links {
 	right: 0;
+    box-shadow: 0 -1px 15px #000;
 }
 
 @media screen and (max-width: 650px) {
@@ -114,6 +115,5 @@
 		height: 100vh;
 		justify-content: space-evenly;
 		transition: 0.5s ease;
-		box-shadow: 0 -1px 15px #000;
 	}
 }

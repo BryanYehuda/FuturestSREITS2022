@@ -22,13 +22,13 @@
   <br>
   <br>
   <main id="section" style="min-height:600px;">
-    <section class="Form my-4 mx-5">
+    <section class="Form my-4 mx-3 mx-md-5">
       <div class="container">
         <div class="row-login g-0 row">
           <div class="col-lg-5">
             <img src="<?php echo base_url() ?>public/img/400x600.png" alt="" class="img-fluid bg-img d-none d-lg-block">
           </div>
-          <div class="col-lg-7 px-5 pt-5">
+          <div class="col-lg-7 px-3 px-md-5 pt-5">
             <img src="<?php echo base_url() ?>public/img/Logo.png" alt="" class="img-fluid py-3">
             <h4 class="primary-text">Login with your Futurest account</h4>
             <form>

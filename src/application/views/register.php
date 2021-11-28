@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-
 <html lang="en" dir="ltr">
 
 <head>
   <?php
-  $this->load->view('template/meta');
+    $this->load->view('template/meta');
   ?>
   <title>Register</title>
   <?php
-  $this->load->view('template/css');
+    $this->load->view('template/css');
   ?>
   <link rel="stylesheet" href="<?php echo base_url() ?>public/css/pages/register.css">
   <!-- Import css if need -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 
@@ -45,7 +43,7 @@
 
                   <div class="col-md-13  container">
                     <div class="col-md-7  container">
-                      <form action="#" class="p-5 ">
+                      <form action="#" class=" ">
                         <div class="form-group text-dark ">
 
                           <label for="name" class="text-dark "><i class="text-dark float"> </i> Name</label>
@@ -89,7 +87,7 @@
 
               <h2 class="text-center ">INSERT YOUR DATA <br> </h2>
 
-              <div class="register-form mt-6 mb-6">
+              <div class="register-form mt-5 mb-5">
 
                 <div class="container">
 
@@ -102,7 +100,7 @@
 
                     <div class="col-md-13  container">
                       <div class="col-md-7  container">
-                        <form action="#" class="p-5 ">
+                        <form action="#" class="">
                           <div class="form-group text-dark ">
 
                             <label for="name" class="text-dark "><i class="text-dark float"> </i> Institution</label>
@@ -155,12 +153,11 @@
   </main>
 
   <br><br><br><br><br><br>
+  
   <footer>
     <?php
-    $this->load->view('components/footerblue');
+        $this->load->view('components/footerblue');
     ?>
-
-
   </footer>
 
   <?php

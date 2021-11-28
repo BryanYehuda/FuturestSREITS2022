@@ -1,7 +1,12 @@
+html {
+    width: 100vw !important;
+}
+
 body {
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
+    width: 100vw I !important;
 	font-family: MulishRegular;
 	src: url("../fonts/Mulish-Regular.ttf");
 	background: radial-gradient(ellipse at bottom, #a1ffab 0%, #faffd1 100%);
@@ -33,6 +38,3 @@ body {
 	font-family: MulishRegular;
 	src: url("../fonts/Mulish-Regular.ttf");
 }
-
-
-
