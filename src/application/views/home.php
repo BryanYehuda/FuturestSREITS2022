@@ -97,7 +97,7 @@
           </div><br>
           <div class="row">
             <div class="col-6 offset-3 col-lg-6 offset-lg-0">
-              <button type="button" class="btn btn-outline-primary">Know More About Futurest 2022</button>
+              <button type="button" class="btn btn-outline-primary" style="margin-bottom: 40px;">Know More About Futurest 2022</button>
             </div>
           </div>
         </div>
@@ -129,7 +129,7 @@
         </div>
       </div>
     </div>   
-  </section><br><br><br>
+  </section><br><br><br><br><br><br>
 
   <section id="carousel-container-3" class="d-flex align-items-center position-relative">
     <div class="container text-center">
