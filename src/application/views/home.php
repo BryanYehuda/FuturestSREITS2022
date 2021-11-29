@@ -25,7 +25,7 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem odit assumenda amet totam vitae, vero aspernatur deleniti quae voluptatibus, ut quod soluta omnis recusandae vel quasi aliquam libero ratione dolores doloribus quia praesentium. Ipsum, voluptas!
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem odit assumenda amet totam vitae, vero aspernatur deleniti quae voluptatibus, ut quod soluta omnis recusandae vel quasi aliquam libero ratione dolores doloribus quia praesentium. Ipsum, voluptas!
         </p><br><br>
-        <button type="button" class="btn btn-outline-primary">Register Now</button>
+        <a href="<?php echo base_url('register')?>" type="button" class="btn btn-outline-primary">Register Now</a>
     </div>   
   </section><br><br><br>
 
