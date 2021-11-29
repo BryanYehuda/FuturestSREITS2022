@@ -31,17 +31,17 @@
             
             <!-- Side Bar -->
             <div class="side-bar col-md-3 p-5 d-flex flex-column">
-                <a href="" class="mb-3 text-decoration-none">
+                <a href="<?php echo base_url('admin')?>" class="mb-3 text-decoration-none">
                     <i class="bi bi-house-door"></i>
                     Home
                 </a>
 
-                <a href="" class="mb-3 text-decoration-none">
+                <a href="<?php echo base_url('admin/list')?>" class="mb-3 text-decoration-none">
                     <i class="bi bi-people"></i>
                     Team List
                 </a>
 
-                <a href="" class="mb-3 text-decoration-none active">
+                <a href="<?php echo base_url('admin/confirmation')?>" class="mb-3 text-decoration-none active">
                     <i class="bi bi-cash-coin"></i>
                     Team Confirmation
                 </a>

@@ -47,7 +47,7 @@
                   <button type="button" class="btn1 mt-3 mb-5 primary-text">Login</button>
                 </div>
               </div>
-              <p class="regular-text">Don't have an account? <a href="#" class="italic-text"> Register Here</a></p>
+              <p class="regular-text">Don't have an account? <a href="<?php echo base_url('register')?>" class="italic-text"> Register Here</a></p>
             </form>
           </div>
         </div>

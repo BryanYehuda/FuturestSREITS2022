@@ -14,11 +14,11 @@
 
       <!-- Navbar Links -->
       <div class="navbar-links d-flex flex-column flex-md-row align-items-center">
-         <a class="me-lg-4 me-md-3 active" href="">Home</a>
-         <a class="me-lg-4 me-md-3" href="">Details</a>
-         <a class="me-lg-4 me-md-3" href="">Events</a>
-         <a class="me-lg-5 me-md-4" href="">Contact</a>
-         <a class="btn btn-sm" href="">Login</a>
+         <a class="me-lg-4 me-md-3 active" href="<?php echo base_url('home')?>">Home</a>
+         <a class="me-lg-4 me-md-3" href="<?php echo base_url('details')?>">Details</a>
+         <a class="me-lg-4 me-md-3" href="<?php echo base_url('events')?>">Events</a>
+         <a class="me-lg-5 me-md-4" href="<?php echo base_url('contact')?>">Contact</a>
+         <a class="btn btn-sm" href="<?php echo base_url('auth')?>">Login</a>
       </div>
   </div>
 </nav>
