@@ -25,7 +25,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 
 // Ganti ya sesuai server e
-$config['base_url'] = 'http://localhost:8080/FuturestSREITS2022/src/';
+$config['base_url'] = 'http://localhost/FuturestSREITS2022/src/';
 
 /*
 |--------------------------------------------------------------------------
@@ -37,7 +37,7 @@ $config['base_url'] = 'http://localhost:8080/FuturestSREITS2022/src/';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
