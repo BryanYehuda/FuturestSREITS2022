@@ -48,7 +48,7 @@
 
                 <hr />
 
-                <a href="" class="btn btn-danger">
+                <a href="<?php echo base_url('logout')?>" class="btn btn-danger">
                     <i class="bi bi-box-arrow-left"></i>
                     Logout
                 </a>

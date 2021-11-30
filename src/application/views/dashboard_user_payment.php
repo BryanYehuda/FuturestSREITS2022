@@ -43,7 +43,7 @@
                 <a href="<?php echo base_url('user/team')?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text"><i class="fas fa-users-cog me-2"></i>Team Identity</a>
                 <a href="<?php echo base_url('user/payment')?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text active"><i class="fas fa-money-check-alt me-2"></i>Payment</a>
                 <hr class="info-color">
-                <a href="#" class="list-group-item list-group-item-action bg-transparent text-danger primary-text"><i class="fas fa-power-off me-2"></i>Logout</a>
+                <a href="<?php echo base_url('logout')?>" class="list-group-item list-group-item-action bg-transparent text-danger primary-text"><i class="fas fa-power-off me-2"></i>Logout</a>
             </div>
         </div>
         <!-- /#sidebar-wrapper -->
@@ -67,10 +67,10 @@
                                 <i class="fas fa-user me-2 info-color"></i>@username
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Home</a></li>
-                                <li><a class="dropdown-item" href="#">Team Identity</a></li>
-                                <li><a class="dropdown-item" href="#">Payment</a></li>
-                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url('user')?>">Home</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url('user/team')?>">Team Identity</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url('user/payment')?>">Payment</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url('logout')?>">Logout</a></li>
                             </ul>
                         </li>
                     </ul>

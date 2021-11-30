@@ -55,4 +55,6 @@ $route['translate_uri_dashes'] = FALSE;
 $route['details'] = 'home/details';
 $route['events'] = 'home/events';
 $route['contact'] = 'home/details';
-$route['register'] = 'auth/register';
+$route['register'] = 'home/register';
+$route['login'] = 'home/login';
+$route['logout'] = 'auth/logout';

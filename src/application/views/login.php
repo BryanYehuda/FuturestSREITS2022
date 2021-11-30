@@ -6,7 +6,7 @@
   <?php
   $this->load->view('template/meta');
   ?>
-  <title>Register</title>
+  <title>Login</title>
   <?php
   $this->load->view('template/css');
   ?>
@@ -42,18 +42,17 @@
                   <div class="col-md-13  container">
                     <div class="col-md-7  container">
                       <!-- Form -->
-                      <form action="#" class="">
+                      <form action="auth/logging_in" method="POST" class="">
                         <div class="form-group text-dark ">
-                          <label for="name" class="text-dark"><i class="text-dark"> </i> Username</label>
-                          <input type="text" class="form-control text-dark">
+                          <label for="username" class="text-dark"><i class="text-dark"> </i> Username</label>
+                          <input name="username" id="username" type="text" class="form-control text-dark">
                         </div><br>
                         <div class="form-group text-dark">
-                          <label for="pwd"><i class="float"></i> Password</label>
-                          <input type="password" class="form-control text-dark" id="pwd">
+                          <label for="password"><i class="float"></i> Password</label>
+                          <input type="password" name="password" id="password" class="form-control text-dark">
                         </div><br>
                         <button type="submit" class="btn btn1 mb-4 mt-1 float-center ">Login</button>
-                        
-                        <p>Don't have an account? <a href="#">Register Here</a></p>
+                        <p>Don't have an account? <a href="<?php echo base_url('register')?>">Register Here</a></p>
                       </form>
                       <!-- End Form -->
                     </div>

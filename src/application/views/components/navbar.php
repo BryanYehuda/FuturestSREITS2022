@@ -18,7 +18,7 @@
          <a class="me-lg-4 me-md-3" href="<?php echo base_url('details')?>">Details</a>
          <a class="me-lg-4 me-md-3" href="<?php echo base_url('events')?>">Events</a>
          <a class="me-lg-5 me-md-4" href="<?php echo base_url('contact')?>">Contact</a>
-         <a class="btn btn-sm" href="<?php echo base_url('auth')?>">Login</a>
+         <a class="btn btn-sm" href="<?php echo base_url('login')?>">Login</a>
       </div>
   </div>
 </nav>
