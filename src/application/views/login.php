@@ -6,58 +6,75 @@
   <?php
   $this->load->view('template/meta');
   ?>
-  <title>Login</title>
+  <title>Register</title>
   <?php
   $this->load->view('template/css');
   ?>
-  <!-- Import css if need -->
   <link rel="stylesheet" href="<?php echo base_url() ?>public/css/pages/login.css">
+  <!-- Import css if need -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
+
 <body>
-  <?php
-  $this->load->view('components/navbar');
-  ?>
-  <br>
-  <br>
-  <br>
-  <main id="section" style="min-height:600px;">
-    <section class="Form my-4 mx-3 mx-md-5">
-      <div class="container">
-        <div class="row-login g-0 row">
-          <div class="col-lg-5">
-            <img src="<?php echo base_url() ?>public/img/400x600.png" alt="" class="img-fluid bg-img d-none d-lg-block">
-          </div>
-          <div class="col-lg-7 px-3 px-md-5 pt-5">
-            <img src="<?php echo base_url() ?>public/img/Logo.png" alt="" class="img-fluid py-3">
-            <h4 class="primary-text">Login with your Futurest account</h4>
-            <form>
-              <div class="form-row">
-                <div class="col-lg-7">
-                  <input type="email" placeholder="Enter email" class="form-control my-3 p-2 regular-text">
+
+  <header>
+    <?php
+    $this->load->view('components/navbar');
+    ?>
+  </header>
+
+  <br><br><br><br><br>
+  <main id="section">
+    <div class="container">
+
+      <div class="container register center">
+
+        <!-- Main Data -->
+        <div class="row">
+          <div class=".col-6 .col-md-10 register-right ">
+            <br>
+            <h1 class="register text-center">LOGIN HERE</h1>
+            <div class="register-form mt-3 mb-3">
+              <div class="">
+                <div class="row">
+                  <div class="col-md-13  container">
+                    <div class="col-md-7  container">
+                      <!-- Form -->
+                      <form action="#" class="">
+                        <div class="form-group text-dark ">
+                          <label for="name" class="text-dark"><i class="text-dark"> </i> Username</label>
+                          <input type="text" class="form-control text-dark">
+                        </div><br>
+                        <div class="form-group text-dark">
+                          <label for="pwd"><i class="float"></i> Password</label>
+                          <input type="password" class="form-control text-dark" id="pwd">
+                        </div><br>
+                        <button type="submit" class="btn btn1 mb-4 mt-1 float-center ">Login</button>
+                        
+                        <p>Don't have an account? <a href="#">Register Here</a></p>
+                      </form>
+                      <!-- End Form -->
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="form-row">
-                <div class="col-lg-7">
-                  <input type="password" placeholder="Enter password" class="form-control my-3 p-2 regular-text">
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="col-lg-7">
-                  <button type="button" class="btn1 mt-3 mb-5 primary-text">Login</button>
-                </div>
-              </div>
-              <p class="regular-text">Don't have an account? <a href="<?php echo base_url('register')?>" class="italic-text"> Register Here</a></p>
-            </form>
+            </div>
           </div>
         </div>
+        <!-- End Main Data -->
+        </form>
       </div>
-    </section>
+    </div>
+    <!-- End Event Data -->
   </main>
+
+  <br><br><br><br><br>
 
   <footer>
     <?php
-    $this->load->view('components/footer');
+    $this->load->view('components/footerblue');
     ?>
   </footer>
 

@@ -1,46 +1,56 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-.regular-text{
-    font-family: MulishRegular;
-}
-
-.italic-text{
-    font-family: MulishItalic;
+html {
+    width: 100vw !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 body {
-    background: #DDE0E5;
-    font-family: 'Mulish', sans-serif;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: MulishRegular;
+	src: url("../fonts/Mulish-Regular.ttf");
+	background: radial-gradient(ellipse at bottom, #a1ffab 0%, #faffd1 100%);
 }
 
-.row-login {
-    background: #fff;
-    border-radius: 30px;
-    box-shadow: 12px 12px 22px grey;
+.register-right {
+	background: #ffffff;
 }
 
-img {
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
+.register-form h1 {
+	font-size: 52px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin: 150px 0px;
+	line-height: 60px;
+	font-family: MulishRegular;
+	src: url("../fonts/Mulish-Regular.ttf");
+}
+
+.register-form .form-control {
+	border-radius: 0px !important;
+	color: rgb(255, 255, 255);
+}
+
+.form-group {
+	font-family: MulishRegular;
+	src: url("../fonts/Mulish-Regular.ttf");
+}
+
+.register {
+	font-family: MulishRegular;
+	src: url("../fonts/Mulish-Regular.ttf");
 }
 
 .btn1 {
     border: none;
     outline: none;
-    height: 40px;
-    width: 100px;
-    background:var(--futurest-teal);
-    color:var(--futurest-white);
-    border-radius: 10px;
-    font-weight: bold;
+    background:#1A8B9D;
+    color:#f3f3f3;
 }
 
 .btn1:hover {
-    background:var(--futurest-white);
+    background:#f3f3f3;
     border: 1px solid;
-    color: var(--futurest-teal);
+    color: #1A8B9D;
 }
