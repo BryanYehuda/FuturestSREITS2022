@@ -1,6 +1,5 @@
 .navbar {
 	background-color: #f3f3f3;
-	min-height: 70px;
 	box-shadow: 2px 0 10px grey;
 }
 
@@ -19,6 +18,7 @@
 
 .navbar-links {
 	position: relative;
+	font-family: MulishRegular;
 }
 
 .navbar-links a:not(:last-child) {
@@ -28,6 +28,55 @@
 	font-size: 20px;
 	padding-bottom: 4px;
 }
+
+/* Dropdown Style */
+
+.navbar-links .dropdown-navbar-futurest button {
+	color: var(--futurest-black);
+	font-size: 20px;
+}
+
+.navbar-links .dropdown-navbar-futurest .list-dropdown-navbar-futurest a {
+	font-size: 16px;
+	position: relative;
+	background: transparent;
+}
+
+.navbar-links .dropdown-navbar-futurest .list-dropdown-navbar-futurest a.now {
+	color: var(--futurest-teal);
+}
+
+.navbar-links
+	.dropdown-navbar-futurest
+	.list-dropdown-navbar-futurest
+	a::before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%) scaleX(0);
+	transform-origin: 50% 50%;
+	width: 100%;
+	height: 2.5px;
+	background: var(--futurest-black);
+	transition: transform 0.4s;
+}
+
+.navbar-links
+	.dropdown-navbar-futurest
+	.list-dropdown-navbar-futurest
+	a.now::before {
+	background: var(--futurest-teal);
+}
+
+.navbar-links
+	.dropdown-navbar-futurest
+	.list-dropdown-navbar-futurest
+	a:hover::before {
+	transform: translateX(-50%) scaleX(1);
+}
+
+/* End Dropdown Style */
 
 .navbar-links a.active {
 	color: var(--futurest-teal);
@@ -86,7 +135,7 @@
 
 .input-btn-mobile:checked ~ .navbar-links {
 	right: 0;
-    box-shadow: 0 -1px 15px #000;
+	box-shadow: 0 -1px 15px #000;
 }
 
 @media screen and (max-width: 650px) {
