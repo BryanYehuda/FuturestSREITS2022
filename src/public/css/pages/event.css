@@ -1,220 +1,195 @@
 /* Jumbotron */
 
 #jumbotron {
-    min-height: 730px;
+	min-height: 730px;
 }
 
 #jumbotron::before {
-    content: "";
-    background-image: url("../../img/event-parallax-test.jpg");
-    position: absolute;
-    background-size: cover;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-    opacity: 0.2;
+	content: "";
+	background-image: url("../../img/event-parallax-test.jpg");
+	position: absolute;
+	background-size: cover;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+	opacity: 0.2;
 }
 
 #jumbotron h1 {
-    font-size: 50px;
-    font-family: MulishBold;
+	font-size: 50px;
+	font-family: MulishBold;
 }
 
 #jumbotron p {
-    font-size: 20px;
-    font-family: MulishRegular;
+	font-size: 20px;
+	font-family: MulishRegular;
 }
 
 #jumbotron i {
-    font-size: 100px;
+	font-size: 120px;
 }
-
 
 /* Apa Saja */
 
 #apa-saja {
-    min-height: 600px;
+	min-height: 730px;
+	background-color: var(--futurest-green);
 }
 
-#apa-saja span,
-#apa-saja .span {
-    border-radius: 18px;
-    background: var(--futurest-green);
-    color: white;
+#apa-saja h2 {
+	font-size: 35px;
+	font-family: MulishSemiBold;
+	color: var(--futurest-black);
 }
 
-#apa-saja .row {
-    margin-top: 80px;
+#apa-saja .card-apa-saja {
+	background: #f3f3f3;
+	border-radius: 30px;
+	box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
 }
 
-@media screen and (max-width: 776px) {
-    #apa-saja .row {
-        margin-top: 50px;
-    }
+#apa-saja .card-apa-saja i {
+	font-size: 100px;
 }
 
-#apa-saja .col {
-    background: #f3f3f3;
-    border-radius: 18px;
-    box-shadow: 2px 2px 10px grey;
+#apa-saja .card-apa-saja h3 {
+	font-family: MulishSemiBold;
+	font-size: 25px;
 }
 
-#apa-saja .col i {
-    font-size: 90px;
+#apa-saja .card-apa-saja p {
+	font-family: MulishLight;
+	font-size: 18px;
 }
-
-#apa-saja .col h4 {
-    font-family: MulishSemiBold;
-}
-
-#apa-saja .col p {
-    font-family: MulishLight;
-}
-
 
 /* Fakta Unik */
 
 #fakta-unik {
-    min-height: 500px;
+	min-height: 730px;
+	background-color: #f3f3f3;
+}
+
+#fakta-unik h2 {
+	font-size: 35px;
+	font-family: MulishSemiBold;
 }
 
 #fakta-unik .container-desc-fakta-unik {
-    background: #f3f3f3;
-    border-radius: 0 20px 20px 0;
+	background: #e3e3e3;
+	border-radius: 0 30px 30px 0;
 }
 
 @media screen and (max-width: 992px) {
-    #fakta-unik {
-        min-height: 400px;
-    }
-    #fakta-unik .container-desc-fakta-unik {
-        border-radius: 20px;
-    }
-    #fakta-unik p {
-        margin-top: 30px !important;
-    }
-}
-
-#fakta-unik .title-fakta-unik {
-    top: -18px;
-    left: 50%;
-    transform: translate(-50%);
-    background-color: red;
-    background: var(--futurest-green);
-    border-radius: 18px;
-    font-family: MulishSemiBold;
+	#fakta-unik .container-desc-fakta-unik {
+		border-radius: 30px;
+		box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
+	}
 }
 
 #fakta-unik p {
-    font-size: 20px;
-    font-family: MulishLight;
+	font-size: 18px;
+	font-family: MulishLight;
 }
-
 
 /* Timeline */
 
 #timeline {
-    min-height: 730px;
-    background-color: #f3f3f3;
+	min-height: 730px;
+	background-color: var(--futurest-green);
 }
 
 #timeline h2 {
-    font-family: MulishBold;
-    color: var(--futurest-green);
+	font-family: MulishSemiBold;
+	font-size: 35px;
 }
 
 #timeline .row {
-    border-radius: 18px;
-    background: #fff;
-    box-shadow: 1px 0 10px grey;
+	border-radius: 30px;
+	background: #f3f3f3;
+	box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
 }
 
-#timeline .row .rounded-timeline {
-    width: 20px;
-    height: 20px;
-    background: #30958d;
-    left: -25px;
-    top: 50%;
-    transform: translateY(-50%);
+#timeline .row .col .rounded-timeline {
+	width: 20px;
+	height: 20px;
+	background: #30958d;
+	left: -35px;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 #timeline .row h3 {
-    font-family: MulishSemiBold;
+	font-family: MulishSemiBold;
+	font-size: 25px;
 }
 
 #timeline .row p {
-    font-family: MulishLight;
+	font-family: MulishLight;
+	font-size: 18px;
 }
-
 
 /* Cara Daftar */
 
-#cara-daftar {
-    min-height: 730px;
+/* #cara-daftar {
+	min-height: 730px;
+	background-color: #f3f3f3;
 }
 
 #cara-daftar::before {
-    content: "";
-    background-image: url("../../img/cara-daftar.jpg");
-    position: absolute;
-    background-size: cover;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-    opacity: 0.1;
+	content: "";
+	background-image: url("../../img/cara-daftar.jpg");
+	position: absolute;
+	background-size: cover;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+	opacity: 0.1;
 }
 
 #cara-daftar h2 {
-    font-family: MulishSemiBold;
-    color: var(--futurest-green);
+	font-family: MulishSemiBold;
+	font-size: 35px;
 }
 
 #cara-daftar .col {
-    background: #fff;
-    border-radius: 18px;
-    box-shadow: 2px 2px 10px grey;
-    color: var(--futurest-black);
+	background: #fff;
+	border-radius: 18px;
+	box-shadow: 2px 2px 10px grey;
+	color: var(--futurest-black);
 }
 
 #cara-daftar .angka-cara-daftar {
-    font-size: 28px;
+	font-size: 28px;
 }
 
 #cara-daftar .col p {
-    font-family: MulishRegular;
-}
-
+	font-family: MulishRegular;
+} */
 
 /* Pertanyaan */
 
 #pertanyaan {
-    min-height: 730px;
+	min-height: 730px;
+	background-color: #f3f3f3;
 }
 
 #pertanyaan h2 {
-    font-family: MulishSemiBold;
-    color: var(--futurest-green);
+	font-family: MulishSemiBold;
+	font-size: 35px;
 }
 
 #pertanyaan button {
-    background: #f3f3f3;
-    color: var(--futurest-black);
-    font-size: 22px;
-    font-family: MulishRegular;
+	background: #e3e3e3;
+	color: var(--futurest-black);
+	font-size: 25px;
+	font-family: MulishSemiBold;
 }
 
 #pertanyaan .accordion-body {
-    font-size: 18px;
-    border: 1px solid var(--futurest-black) !important;
-    font-family: MulishLight;
-}
-
-@media screen and (max-width: 776px) {
-    #pertanyaan {
-        min-height: 560px;
-    }
+	font-size: 18px;
+	font-family: MulishLight;
 }

@@ -23,11 +23,11 @@
 		<!-- Navbar Links -->
 		<div class="navbar-links d-flex flex-column flex-md-row align-items-center">
       <!-- Home -->
-			<a class="me-lg-4 me-md-3 active" href="<?php echo base_url('home')?>"
+			<a class="me-lg-4 me-md-3" href="<?php echo base_url('home')?>"
 				>Home</a
 			>
       <!-- Event -->
-			<a class="me-lg-3 me-md-1" href="<?php echo base_url('events')?>"
+			<a class="me-md-2 active" href="<?php echo base_url('events')?>"
 				>Events</a
 			>
       <!-- 2 Details -->
@@ -44,8 +44,8 @@
 				</button>
         <!-- List -->
 				<ul class="dropdown-menu list-dropdown-navbar-futurest" aria-labelledby="dropdownMenuButton1">
-					<li><a class="dropdown-item now" href="#">First Event</a></li>
-					<li><a class="dropdown-item" href="#">Second Event</a></li>
+					<li><a class="dropdown-item now" href="#">National Essay</a></li>
+					<li><a class="dropdown-item" href="#">RE Innovation Brainstorm</a></li>
 				</ul>
 			</div>
       <!-- Contact -->
