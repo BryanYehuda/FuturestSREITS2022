@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="en">
+
+<html lang="en" dir="ltr">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <?php
+        $this->load->view('template/meta');
+    ?>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -24,19 +25,14 @@
     <!-- CSS Template Style Global -->
     <link rel="stylesheet" href="<?php echo base_url() ?>/public/css/app.css">
 
-    <title>User Dashboard</title>
-
-    <?php
-    $this->load->view('template/meta');
-    ?>
-    <title>Details</title>
+    <title>User Dashboard - Payment</title>
 </head>
 
 <body>
     <div class="d-flex" id="wrapper">
         <!-- Sidebar -->
         <div class="bg-white" id="sidebar-wrapper">
-            <div class="sidebar-heading text-center py-4 img-fluid"><img src="<?php echo base_url() ?>/public/img/Logo.png" alt=""></div>
+            <div class="sidebar-heading text-center py-4 img-fluid"><img src="<?php echo base_url() ?>/public/img/Logo.png" alt="Futurest 2022"></div>
             <div class="list-group list-group-flush my-3">
 
                 <a href="<?php echo base_url('user')?>" class="list-group-item list-group-item-action bg-transparent primary-text second-text"><i class="fas fa-home-alt me-2"></i>Home</a>
@@ -90,7 +86,6 @@
                                             Date and Time
                                         </td>
                                         <td>ID</td>
-                                        <td>Team Name</td>
                                         <td>
                                             Status
                                         </td>
@@ -98,25 +93,11 @@
 
                                     <tr class="invoice-row shadow regular-text" valign="middle">
                                         <td>
-                                            30-11-2001
-                                            <br>
-                                            11:00:00
-                                        </td>
-                                        <td>0000</td>
-                                        <td>Terpaksa Garpit</td>
-                                        <td>
-                                            <div class="failed primary-text">FAILED</div>
-                                        </td>
-                                    </tr>
-
-                                    <tr class="invoice-row shadow regular-text" valign="middle">
-                                        <td>
-                                            29-11-2001
+                                            03-02-2022
                                             <br>
                                             12:00:00
                                         </td>
                                         <td>0001</td>
-                                        <td>nantikalahnanges</td>
                                         <td>
                                             <div class="on-progress primary-text">On Progress</div>
                                         </td>
@@ -124,12 +105,11 @@
 
                                     <tr class="invoice-row shadow regular-text" valign="middle">
                                         <td>
-                                            28-111-2001
+                                            04-02-2022
                                             <br>
                                             13:00:00
                                         </td>
                                         <td>0002</td>
-                                        <td>Suka Tidur</td>
                                         <td>
                                             <div class="paid primary-text">PAID</div>
                                         </td>

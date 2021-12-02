@@ -13,6 +13,9 @@
     <!-- Fontawesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="<?php echo base_url() ?>public/css/pages/dashboard_user_team.css">
+
     <!-- CSS Fonts Global -->
     <link rel="stylesheet" href="<?php echo base_url() ?>/public/css/fonts.css">
 
@@ -22,17 +25,14 @@
     <!-- CSS Template Style Global -->
     <link rel="stylesheet" href="<?php echo base_url() ?>/public/css/app.css">
 
-    <!-- Single Page CSS -->
-    <link rel="stylesheet" href="<?php echo base_url() ?>public/css/pages/dashboard_user_team.css">
-
-    <title>Team User Dashboard</title>
+    <title>User Dashboard - Team</title>
 </head>
 
 <body>
     <div class="d-flex" id="wrapper">
         <!-- Sidebar -->
         <div class="bg-white" id="sidebar-wrapper">
-            <div class="sidebar-heading text-center py-4 img-fluid"><img src="<?php echo base_url() ?>/public/img/Logo.png" alt=""></div>
+            <div class="sidebar-heading text-center py-4 img-fluid"><img src="<?php echo base_url() ?>/public/img/Logo.png" alt="Futurest 2022"></div>
             <div class="list-group list-group-flush my-3">
 
                 <a href="<?php echo base_url('user')?>" class="list-group-item list-group-item-action bg-transparent primary-text second-text"><i class="fas fa-home-alt me-2"></i>Home</a>
@@ -73,29 +73,37 @@
                 </div>
             </nav>
 
-            <!-- Content Dashboard -->
-            <div class="container-fluid p-4">
+            <!-- Info Card -->
+            <div class="container-fluid px-4 pb-5">
+                <div class="row g-3 my-2">
+                    <h4 class="mb-3 primary-text">Team Identity</h4>
 
-                <div class="bg-white p-3 content-user-team">
-                    <!-- Info -->
-                    <h2 class="title-content-user-team p-2">Team Identity</h2>
-                    <div class="row ps-2">
-                        <h4>Team Name</h4>
-                        <h5 class="disabled-text">Ayam Goreng Pedas</h5>
-                        <h4>Member Name</h4>
-                        <ul class="disabled-text">
-                            <li>Hafizh Abid Wibowo</li>
-                            <li>Achmad Aushaf Amrega</li>
-                            <li>M Firdho Kustiawan</li>
-                        </ul>
-                        <h4>Event Entered</h4>
-                        <h5 class="disabled-text">Essay Competition</h5>
+                    <div class="col-12">
+                        <div class="p-3 bg-white shadow info-card">
+                            <i class="fas fa-users fs-1 info-color"></i>
+                            <hr>
+                            <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 1px;">Team Name</p>
+                            <h5 class="primary-text mb-3">HMIT</h5>
+
+                            <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 1px;">Institution</p>
+                            <h5 class="primary-text mb-3">Institut Teknologi Sepuluh Nopember</h5>
+
+                            <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 1px;">Member Team</p>
+                            <h5 class="primary-text mb-3 fs-6">
+                                <ul>
+                                    <li>Hafizh Abid Wibowo</li>
+                                    <li>Achmad Aushaf Amerga</li>
+                                    <li>M Firdho Kustiawan</li>
+                                </ul>
+                            </h5>
+
+                            <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 1px;">Event Entered</p>
+                            <h5 class="primary-text mb-3">Essay Competition</h5>
+                        </div>
                     </div>
-                    <!-- /info -->
                 </div>
-
+                <!-- /info card -->
             </div>
-            <!-- /content-dashboard -->
         </div>
     </div>
     <!-- /#page-content-wrapper -->

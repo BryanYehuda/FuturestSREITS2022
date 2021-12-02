@@ -1,22 +1,17 @@
 :root {
-    --futurest-black: #262626;
-    --futurest-white: #f3f3f3;
-    --futurest-green: #b2d430;
-    --futurest-teal: #1a8b9d;
-    --futurest-orange: #f7d32a;
     --disabled-color: #bbbec5;
 }
 
 .announcement {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .announcement-card {
-    border-radius: 12px;
+    border-radius: 30px;
 }
 
 .info-card {
-    border-radius: 12px;
+    border-radius: 30px;
 }
 
 .primary-text {

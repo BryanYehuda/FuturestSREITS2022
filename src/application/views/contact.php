@@ -21,14 +21,22 @@
 
   <main id="section">
 
-   <section id="jumbotron" class="d-flex align-items-center position-relative">
-      <div class="container text-center">
-         <h1 class="mb-5">LOREM IPSUM</h1>
-         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem odit assumenda amet totam vitae, vero aspernatur deleniti quae voluptatibus, ut quod soluta omnis recusandae vel quasi aliquam libero ratione dolores doloribus quia praesentium. Ipsum, voluptas!
-         </p>
-      </div>   
-   </section>
+  <section id="jumbotron" class="d-flex align-items-center position-relative">
+         <div class="container">
+            <div class="row">
+               <div class="col-12 text-center text-xl-start col-xl-8">
+                  <h1 class="mb-5">CONTACT</h1>
+                  <p class="mb-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem odit assumenda amet totam vitae, vero aspernatur deleniti quae voluptatibus, ut quod soluta omnis recusandae vel quasi aliquam libero ratione dolores doloribus quia praesentium. Ipsum, voluptas!
+                  </p>
+                  <a href="#sosmed" class="btn btn-outline-success btn-lg">Read More</a>
+               </div>
+               <div class="d-none d-xl-flex col-xl-4 d-flex align-items-center justify-content-center">
+                <i class="bi bi-person-lines-fill"></i>
+               </div>
+            </div>
+         </div>   
+    </section>
 
    <section id="sosmed" class="d-flex align-items-center">
       <div class="container h-100 d-flex flex-column justify-content-center">

@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="en">
+
+<html lang="en" dir="ltr">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <?php
+        $this->load->view('template/meta');
+    ?>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -23,19 +24,15 @@
 
     <!-- CSS Template Style Global -->
     <link rel="stylesheet" href="<?php echo base_url() ?>/public/css/app.css">
-    <title>User Dashboard</title>
 
-    <?php
-    $this->load->view('template/meta');
-    ?>
-    <title>Details</title>
+    <title>User Dashboard - Home</title>
 </head>
 
 <body>
     <div class="d-flex" id="wrapper">
         <!-- Sidebar -->
         <div class="bg-white" id="sidebar-wrapper">
-            <div class="sidebar-heading text-center py-4 img-fluid"><img src="<?php echo base_url() ?>/public/img/Logo.png" alt=""></div>
+            <div class="sidebar-heading text-center py-4 img-fluid"><img src="<?php echo base_url() ?>/public/img/Logo.png" alt="Futurest 2022"></div>
             <div class="list-group list-group-flush my-3">
 
                 <a href="<?php echo base_url('user')?>" class="list-group-item list-group-item-action bg-transparent primary-text active"><i class="fas fa-home-alt me-2"></i>Home</a>
@@ -131,31 +128,57 @@
                 <!-- /info card -->
 
                 <!-- Announcement card -->
-                <div class="row announcement">
+                <div class="row announcement pb-5">
                     <h4 class="mb-4 primary-text">Announcement</h4>
                     <div class="col-md-6 p-2">
                         <div class="card announcement-card shadow">
                             <div class="card-body">
-                                <h5 class="card-title primary-text">Lorem ipsum dolor.</h5>
+                                <h5 class="card-title primary-text">Upload Abstract</h5>
                                 <p class="card-text regular-text">
                                     Nulla auctor sollicitudin sem, sed sagittis ex porta ac. Cras accumsan elit quis
                                     metus fringilla, vitae pretium felis aliquam. Mauris ultrices sapien quis felis
                                     tincidunt vehicula. Nullam ac elementum ex. Praesent fermentum tincidunt quam nec
-                                    iaculis. Nam dignissim lacus nec porttitor vestibulum. Etiam at gravida neque.
-                                    Vivamus ac ligula sed erat consectetur accumsan id sed mauris.</p>
+                                    iaculis.</p>
+                                <a href="" class="btn btn-outline-success">Upload</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 p-2">
                         <div class="card announcement-card shadow">
                             <div class="card-body">
-                                <h5 class="card-title primary-text">Lorem ipsum dolor.</h5>
+                                <h5 class="card-title primary-text">Workshop</h5>
                                 <p class="card-text regular-text">
                                     Nulla auctor sollicitudin sem, sed sagittis ex porta ac. Cras accumsan elit quis
                                     metus fringilla, vitae pretium felis aliquam. Mauris ultrices sapien quis felis
                                     tincidunt vehicula. Nullam ac elementum ex. Praesent fermentum tincidunt quam nec
-                                    iaculis. Nam dignissim lacus nec porttitor vestibulum. Etiam at gravida neque.
-                                    Vivamus ac ligula sed erat consectetur accumsan id sed mauris.</p>
+                                    iaculis.</p>
+                                <a href="" class="btn btn-outline-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 p-2">
+                        <div class="card announcement-card shadow">
+                            <div class="card-body">
+                                <h5 class="card-title primary-text">Upload Full Paper</h5>
+                                <p class="card-text regular-text">
+                                    Nulla auctor sollicitudin sem, sed sagittis ex porta ac. Cras accumsan elit quis
+                                    metus fringilla, vitae pretium felis aliquam. Mauris ultrices sapien quis felis
+                                    tincidunt vehicula. Nullam ac elementum ex. Praesent fermentum tincidunt quam nec
+                                    iaculis.</p>
+                                <a href="" class="btn btn-outline-success">Upload</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 p-2">
+                        <div class="card announcement-card shadow">
+                            <div class="card-body">
+                                <h5 class="card-title primary-text">Essay Submission</h5>
+                                <p class="card-text regular-text">
+                                    Nulla auctor sollicitudin sem, sed sagittis ex porta ac. Cras accumsan elit quis
+                                    metus fringilla, vitae pretium felis aliquam. Mauris ultrices sapien quis felis
+                                    tincidunt vehicula. Nullam ac elementum ex. Praesent fermentum tincidunt quam nec
+                                    iaculis.</p>
+                                <a href="" class="btn btn-outline-success">Upload</a>
                             </div>
                         </div>
                     </div>
