@@ -182,6 +182,11 @@
 	font-size: 35px;
 }
 
+#pertanyaan h3 button {
+	font-family: MulishSemiBold;
+	font-size: 20px;
+}
+
 #pertanyaan button {
 	background: #e3e3e3;
 	color: var(--futurest-black);

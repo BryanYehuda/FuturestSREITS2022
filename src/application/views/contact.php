@@ -21,6 +21,7 @@
 
   <main id="section">
 
+  <!-- Jumbotron -->
   <section id="jumbotron" class="d-flex align-items-center position-relative">
          <div class="container">
             <div class="row">
@@ -29,7 +30,7 @@
                   <p class="mb-5">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem odit assumenda amet totam vitae, vero aspernatur deleniti quae voluptatibus, ut quod soluta omnis recusandae vel quasi aliquam libero ratione dolores doloribus quia praesentium. Ipsum, voluptas!
                   </p>
-                  <a href="#sosmed" class="btn btn-outline-success btn-lg">Read More</a>
+                  <a href="#futurest-sosmed" class="btn btn-outline-success btn-lg">Read More</a>
                </div>
                <div class="d-none d-xl-flex col-xl-4 d-flex align-items-center justify-content-center">
                 <i class="bi bi-person-lines-fill"></i>
@@ -38,28 +39,73 @@
          </div>   
     </section>
 
-   <section id="sosmed" class="d-flex align-items-center">
-      <div class="container h-100 d-flex flex-column justify-content-center">
-         <h2 class="text-center mb-2 mb-md-5">Search us on social media!</h2>
-         <div class="row" style="height: 40%;">
-            <a href="" class="card-sosmed col m-2 mx-md-3 mx-lg-5 d-flex flex-column align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Go to our LinkedIn!">
-               <i class="bi bi-linkedin"></i>
-               <h3>350+</h3>
-               <h4 class="text-center">LinkedIn Connection</h4>
-            </a>
-            <a href="" class="card-sosmed col m-2 mx-md-3 mx-lg-5 d-flex flex-column align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Go to our Instagram!">
-               <i class="bi bi-instagram"></i>
-               <h3>2500+</h3>
-               <h4 class="text-center">Instagram Followers</h4>
-            </a>
-            <a href="" class="card-sosmed col m-2 mx-md-3 mx-lg-5 d-flex flex-column align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Email Us!">
-               <i class="bi bi-envelope"></i>
-               <h4 class="text-center">Email</h4>
-            </a>
-         </div>
+    <!-- Futurest Sosmed -->
+   <section id="futurest-sosmed" class="pt-5">
+      <div class="container pt-5">
+        <h2 class="text-center mb-5">Futurest Social Media</h2>
+        <div class="row mt-5 px-3 d-flex justify-content-center">
+            <div class="card-sosmed-futurest m-3 col-md-3 p-0" style="background-color: #e3e3e3;">
+                <img src="<?php echo base_url() ?>public/img/cara-daftar.jpg" alt="" class="img-fluid" />
+                <div class="p-3">
+                    <h3>Instagram</h3>
+                    <p>250+ Followers</p>
+                    <button class="btn btn-outline-success">View</button>
+                </div>
+            </div>
+            <div class="card-sosmed-futurest m-3 col-md-3 p-0" style="background-color: #e3e3e3;">
+                <img src="<?php echo base_url() ?>public/img/contact-parallax-test.jpg" alt="" class="img-fluid" />
+                <div class="p-3">
+                    <h3>LinkedIn</h3>
+                    <p>250+ Connection</p>
+                    <button class="btn btn-outline-success">View</button>
+                </div>
+            </div>
+            <div class="card-sosmed-futurest m-3 col-md-3 p-0" style="background-color: #e3e3e3;">
+                <img src="<?php echo base_url() ?>public/img/event-parallax-test.jpg" alt="" class="img-fluid" />
+                <div class="p-3">
+                    <h3>Google Mail</h3>
+                    <p>Powerfull Message</p>
+                    <button class="btn btn-outline-success">View</button>
+                </div>
+            </div>
+        </div>
       </div>
    </section>
 
+   <!-- Admin Social Media -->
+   <section id="admin-sosmed" class="pt-5">
+      <div class="container pt-5">
+        <h2 class="text-center mb-5">Admin Social Media</h2>
+        <div class="row mt-5 px-3 d-flex justify-content-center">
+            <div class="card-admin-futurest m-3 col-md-3 p-0" style="background-color: #e3e3e3;">
+                <img src="<?php echo base_url() ?>public/img/cara-daftar.jpg" alt="" class="img-fluid" />
+                <div class="p-3">
+                    <h3>Hafizh Abid W</h3>
+                    <p>Valorant Admin</p>
+                    <button class="btn btn-outline-success">View Valorant Account</button>
+                </div>
+            </div>
+            <div class="card-admin-futurest m-3 col-md-3 p-0" style="background-color: #e3e3e3;">
+                <img src="<?php echo base_url() ?>public/img/contact-parallax-test.jpg" alt="" class="img-fluid" />
+                <div class="p-3">
+                    <h3>Danish Putra Dandi</h3>
+                    <p>Valorant Admin</p>
+                    <button class="btn btn-outline-success">View Valorant Account</button>
+                </div>
+            </div>
+            <div class="card-admin-futurest m-3 col-md-3 p-0" style="background-color: #e3e3e3;">
+                <img src="<?php echo base_url() ?>public/img/event-parallax-test.jpg" alt="" class="img-fluid" />
+                <div class="p-3">
+                    <h3>Achmad A Amrega</h3>
+                    <p>Dota Admin</p>
+                    <button class="btn btn-outline-success">View Dota Account</button>
+                </div>
+            </div>
+        </div>
+      </div>
+   </section>
+
+   <!-- Contact Us -->
    <section id="contact-us" class="d-flex align-items-center">
       <div class="container h-75">
          <h2 class="text-center mb-5">Message Us!</h2>
@@ -72,7 +118,7 @@
                <label for="exampleFormControlTextarea1" class="form-label">Message Text</label>
                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Enter a message here..."></textarea>
             </div>
-            <button class="btn btn-lg d-block m-auto">Submit</button>
+            <button class="btn btn-lg btn-success d-block m-auto">Submit</button>
          </form>
       </div>
    </section>
