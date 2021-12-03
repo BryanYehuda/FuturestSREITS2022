@@ -44,8 +44,8 @@
 				</button>
         <!-- List -->
 				<ul class="dropdown-menu list-dropdown-navbar-futurest" aria-labelledby="dropdownMenuButton1">
-					<li><a class="dropdown-item now" href="#">National Essay</a></li>
-					<li><a class="dropdown-item" href="#">RE Innovation Brainstorm</a></li>
+					<li><a class="dropdown-item now" href="<?php echo base_url('details')?>">National Essay</a></li>
+					<li><a class="dropdown-item" href="<?php echo base_url('details')?>">RE Innovation Brainstorm</a></li>
 				</ul>
 			</div>
       <!-- Contact -->
