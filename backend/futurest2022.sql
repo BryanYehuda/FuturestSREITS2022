@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 11, 2021 at 05:18 PM
+-- Generation Time: Dec 03, 2021 at 06:35 PM
 -- Server version: 10.4.21-MariaDB
--- PHP Version: 8.0.12
+-- PHP Version: 8.0.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,35 +24,120 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pendaftaran1`
+-- Table structure for table `pendaftaran_climatechangecommunity`
 --
 
-CREATE TABLE `pendaftaran1` (
-  `pendaftaran1_id` bigint(11) NOT NULL,
-  `pendaftaran1_nama` varchar(255) NOT NULL,
-  `pendaftaran1_instansi` varchar(255) NOT NULL,
-  `pendaftaran1_foto` varchar(255) NOT NULL,
-  `pendaftaran1_kartuIdentitas` varchar(255) NOT NULL,
-  `pendaftaran1_buktiPembayaran` varchar(255) NOT NULL,
-  `pendaftaran1_dateCreated` datetime NOT NULL DEFAULT current_timestamp(),
-  `pendaftaran1_dateUpdated` datetime DEFAULT NULL
+CREATE TABLE `pendaftaran_climatechangecommunity` (
+  `pendaftaranclimatechangecommunity_id` bigint(11) NOT NULL,
+  `pendaftaranclimatechangecommunity_nama` varchar(255) NOT NULL,
+  `pendaftaranclimatechangecommunity_instansi` varchar(255) NOT NULL,
+  `pendaftaranclimatechangecommunity_foto` varchar(255) NOT NULL,
+  `pendaftaranclimatechangecommunity_kartuIdentitas` varchar(255) NOT NULL,
+  `pendaftaranclimatechangecommunity_buktiPembayaran` varchar(255) NOT NULL,
+  `pendaftaranclimatechangecommunity_dataCreated` datetime NOT NULL DEFAULT current_timestamp(),
+  `pendaftaranclimatechangecommunity_dataUpdated` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pendaftaran2`
+-- Table structure for table `pendaftaran_essaycompetition`
 --
 
-CREATE TABLE `pendaftaran2` (
-  `pendaftaran2_id` bigint(11) NOT NULL,
-  `pendaftaran2_nama` varchar(255) NOT NULL,
-  `pendaftaran2_instansi` varchar(255) NOT NULL,
-  `pendaftaran2_foto` varchar(255) NOT NULL,
-  `pendaftaran2_kartuIdentitas` varchar(255) NOT NULL,
-  `pendaftaran2_buktiPembayaran` varchar(255) NOT NULL,
-  `pendaftaran2_dateCreated` datetime NOT NULL DEFAULT current_timestamp(),
-  `pendaftaran2_dateUpdated` datetime DEFAULT NULL
+CREATE TABLE `pendaftaran_essaycompetition` (
+  `pendaftaranessaycompetition_id` bigint(11) NOT NULL,
+  `pendaftaranessaycompetition_nama` varchar(255) NOT NULL,
+  `pendaftaranessaycompetition_instansi` varchar(255) NOT NULL,
+  `pendaftaranessaycompetition_foto` varchar(255) NOT NULL,
+  `pendaftaranessaycompetition_kartuIdentitas` varchar(255) NOT NULL,
+  `pendaftaranessaycompetition_buktiPembayaran` varchar(255) NOT NULL,
+  `pendaftaranessaycompetition_dataCreated` datetime NOT NULL DEFAULT current_timestamp(),
+  `pendaftaranessaycompetition_dataUpdated` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pendaftaran_finaltalkshow`
+--
+
+CREATE TABLE `pendaftaran_finaltalkshow` (
+  `pendaftaranfinaltalkshow_id` bigint(11) NOT NULL,
+  `pendaftaranfinaltalkshow_nama` varchar(255) NOT NULL,
+  `pendaftaranfinaltalkshow_instansi` varchar(255) NOT NULL,
+  `pendaftaranfinaltalkshow_foto` varchar(255) NOT NULL,
+  `pendaftaranfinaltalkshow_kartuIdentitas` varchar(255) NOT NULL,
+  `pendaftaranfinaltalkshow_buktiPembayaran` varchar(255) NOT NULL,
+  `pendaftaranfinaltalkshow_dataCreated` datetime NOT NULL DEFAULT current_timestamp(),
+  `pendaftaranfinaltalkshow_dataUpdated` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pendaftaran_grandtalkshow`
+--
+
+CREATE TABLE `pendaftaran_grandtalkshow` (
+  `pendaftarangrandtalkshow_id` bigint(11) NOT NULL,
+  `pendaftarangrandtalkshow_nama` varchar(255) NOT NULL,
+  `pendaftarangrandtalkshow_instansi` varchar(255) NOT NULL,
+  `pendaftarangrandtalkshow_foto` varchar(255) NOT NULL,
+  `pendaftarangrandtalkshow_kartuIdentitas` varchar(255) NOT NULL,
+  `pendaftarangrandtalkshow_buktiPembayaran` varchar(255) NOT NULL,
+  `pendaftarangrandtalkshow_dataCreated` datetime NOT NULL DEFAULT current_timestamp(),
+  `pendaftarangrandtalkshow_dataUpdated` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pendaftaran_re101`
+--
+
+CREATE TABLE `pendaftaran_re101` (
+  `pendaftaranre101_id` bigint(11) NOT NULL,
+  `pendaftaranre101_nama` varchar(255) NOT NULL,
+  `pendaftaranre101_instansi` varchar(255) NOT NULL,
+  `pendaftaranre101_foto` varchar(255) NOT NULL,
+  `pendaftaranre101_kartuIdentitas` varchar(255) NOT NULL,
+  `pendaftaranre101_buktiPembayaran` varchar(255) NOT NULL,
+  `pendaftaranre101_dataCreated` datetime NOT NULL DEFAULT current_timestamp(),
+  `pendaftaranre101_dataUpdated` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pendaftaran_reinnovation`
+--
+
+CREATE TABLE `pendaftaran_reinnovation` (
+  `pendaftaranreinnovation_id` bigint(11) NOT NULL,
+  `pendaftaranreinnovation_nama` varchar(255) NOT NULL,
+  `pendaftaranreinnovation_instansi` varchar(255) NOT NULL,
+  `pendaftaranreinnovation_foto` varchar(255) NOT NULL,
+  `pendaftaranreinnovation_kartuIdentitas` varchar(255) NOT NULL,
+  `pendaftaranreinnovation_buktiPembayaran` varchar(255) NOT NULL,
+  `pendaftaranreinnovation_dataCreated` datetime NOT NULL DEFAULT current_timestamp(),
+  `pendaftaranreinnovation_dataUpdated` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pendaftaran_webinar`
+--
+
+CREATE TABLE `pendaftaran_webinar` (
+  `pendaftaranwebinar_id` bigint(11) NOT NULL,
+  `pendaftaranwebinar_nama` varchar(255) NOT NULL,
+  `pendaftaranwebinar_instansi` varchar(255) NOT NULL,
+  `pendaftaranwebinar_foto` varchar(255) NOT NULL,
+  `pendaftaranwebinar_kartuIdentitas` varchar(255) NOT NULL,
+  `pendaftaranwebinar_buktiPembayaran` varchar(255) NOT NULL,
+  `pendaftaranwebinar_dataCreated` datetime NOT NULL DEFAULT current_timestamp(),
+  `pendaftaranwebinar_dataUpdated` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -60,32 +145,46 @@ CREATE TABLE `pendaftaran2` (
 --
 
 --
--- Indexes for table `pendaftaran1`
+-- Indexes for table `pendaftaran_climatechangecommunity`
 --
-ALTER TABLE `pendaftaran1`
-  ADD PRIMARY KEY (`pendaftaran1_id`);
+ALTER TABLE `pendaftaran_climatechangecommunity`
+  ADD PRIMARY KEY (`pendaftaranclimatechangecommunity_id`);
 
 --
--- Indexes for table `pendaftaran2`
+-- Indexes for table `pendaftaran_essaycompetition`
 --
-ALTER TABLE `pendaftaran2`
-  ADD PRIMARY KEY (`pendaftaran2_id`);
+ALTER TABLE `pendaftaran_essaycompetition`
+  ADD PRIMARY KEY (`pendaftaranessaycompetition_id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- Indexes for table `pendaftaran_finaltalkshow`
 --
+ALTER TABLE `pendaftaran_finaltalkshow`
+  ADD PRIMARY KEY (`pendaftaranfinaltalkshow_id`);
 
 --
--- AUTO_INCREMENT for table `pendaftaran1`
+-- Indexes for table `pendaftaran_grandtalkshow`
 --
-ALTER TABLE `pendaftaran1`
-  MODIFY `pendaftaran1_id` bigint(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `pendaftaran_grandtalkshow`
+  ADD PRIMARY KEY (`pendaftarangrandtalkshow_id`);
 
 --
--- AUTO_INCREMENT for table `pendaftaran2`
+-- Indexes for table `pendaftaran_re101`
 --
-ALTER TABLE `pendaftaran2`
-  MODIFY `pendaftaran2_id` bigint(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `pendaftaran_re101`
+  ADD PRIMARY KEY (`pendaftaranre101_id`);
+
+--
+-- Indexes for table `pendaftaran_reinnovation`
+--
+ALTER TABLE `pendaftaran_reinnovation`
+  ADD PRIMARY KEY (`pendaftaranreinnovation_id`);
+
+--
+-- Indexes for table `pendaftaran_webinar`
+--
+ALTER TABLE `pendaftaran_webinar`
+  ADD PRIMARY KEY (`pendaftaranwebinar_id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
