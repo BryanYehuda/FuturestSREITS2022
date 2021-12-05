@@ -33,7 +33,7 @@
 /* Dropdown Style */
 
 .navbar-links .dropdown-navbar-futurest {
-	margin-top: -1px;
+	margin-top: -2px;
 }
 
 .navbar-links .dropdown-navbar-futurest button {
@@ -45,10 +45,6 @@
 	font-size: 14px;
 	position: relative;
 	background: transparent;
-}
-
-.navbar-links .dropdown-navbar-futurest .list-dropdown-navbar-futurest a.now {
-	color: var(--futurest-green);
 }
 
 .navbar-links
@@ -70,22 +66,11 @@
 .navbar-links
 	.dropdown-navbar-futurest
 	.list-dropdown-navbar-futurest
-	a.now::before {
-	background: var(--futurest-green);
-}
-
-.navbar-links
-	.dropdown-navbar-futurest
-	.list-dropdown-navbar-futurest
 	a:hover::before {
 	transform: translateX(-50%) scaleX(1);
 }
 
 /* End Dropdown Style */
-
-.navbar-links a.active {
-	color: var(--futurest-green);
-}
 
 .navbar-links a:not(:last-child)::before {
 	content: "";
@@ -98,10 +83,6 @@
 	height: 2.5px;
 	background: var(--futurest-black);
 	transition: transform 0.4s;
-}
-
-.navbar-links a.active::before {
-	background: var(--futurest-green);
 }
 
 .navbar-links a:not(:last-child):hover::before {
@@ -169,5 +150,11 @@
 		height: 100vh;
 		justify-content: space-evenly;
 		transition: 0.5s ease;
+		padding-top: 30px;
+	}
+
+	.navbar-links > a,
+	.navbar-links > div {
+		margin-bottom: 20px;
 	}
 }
