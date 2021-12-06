@@ -4,11 +4,11 @@
 
 <head>
   <?php
-    $this->load->view('template/meta');
+  $this->load->view('template/meta');
   ?>
   <title>Register</title>
   <?php
-    $this->load->view('template/css');
+  $this->load->view('template/css');
   ?>
   <link rel="stylesheet" href="<?php echo base_url() ?>public/css/pages/register.css">
   <!-- Import css if need -->
@@ -35,7 +35,7 @@
         <div class="row">
           <div class=".col-6 .col-md-10 register-right ">
             <br>
-            <h1 class="register text-center">REGISTER HERE</h1>
+            <h1 class="register text-center">Essay Competition</h1>
             <div class="register-form mt-3 mb-3">
               <div class="">
                 <div class="row">
@@ -45,19 +45,19 @@
                       <form action="#" class="">
                         <div class="form-group text-dark ">
                           <label for="name" class="text-dark"><i class="text-dark"> </i> Name</label>
-                          <input type="text" class="form-control text-dark">
+                          <input type="text" class="form-control text-dark" name="name">
                         </div><br>
                         <div class="form-group text-dark">
                           <label for="email"><i class="text-dark float"></i> Email</label>
-                          <input type="email" class="form-control text-dark">
+                          <input type="email" class="form-control text-dark" name="email">
                         </div><br>
                         <div class="form-group text-dark">
                           <label for="pwd"><i class="float"></i> New Password</label>
-                          <input type="password" class="form-control text-dark" id="pwd">
+                          <input type="password" class="form-control text-dark" id="pwd" name="password">
                         </div><br>
                         <div class="form-group text-dark">
                           <label for="pwd"><i class="float"></i> Confirm Password</label>
-                          <input type="password" class="form-control text-dark" id="pwd">
+                          <input type="password" class="form-control text-dark" id="pwd" name="confirmpassword">
                         </div><br>
                         <!-- Example single danger button -->
                       </form>
@@ -98,36 +98,25 @@
                           <div class="form-group text-dark">
 
                             <label for="name" class="text-dark "><i class="text-dark float"> </i> Institution</label>
-                            <input type="text" class="form-control text-dark">
+                            <input type="text" class="form-control text-dark" name="campus">
                           </div><br>
 
                           <div class="form-group">
                             <label for="exampleFormControlFile1">Image</label><br>
-                            <input type="file" class="form-control-file w-100" id="exampleFormControlFile1">
+                            <input type="file" class="form-control-file w-100" id="exampleFormControlFile1" name="img">
                           </div>
                           <hr><br>
 
                           <div class="form-group">
                             <label for="exampleFormControlFile1">Identity Card</label><br>
-                            <input type="file" class="form-control-file w-100" id="exampleFormControlFile1">
-                          </div>
-                          <hr><br>
-
-
-                          <div class="btn-group">
-                            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                              Choose Competition
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">RE Innovations Brainstorming - Rp. Lorem Ipsum</a></li>
-                              <li><a class="dropdown-item" href="#">Essay Competition - Rp. Lorem Ipsum</a></li>
-                            </ul>
+                            <input type="file" class="form-control-file w-100" id="exampleFormControlFile1" name="imgidentity">
                           </div>
                           <hr>
+
                           <div class="form-group">
                             <br>
                             <label for="exampleFormControlFile1">Payment</label><br>
-                            <input type="file" class="form-control-file w-100" id="exampleFormControlFile1">
+                            <input type="file" class="form-control-file w-100" id="exampleFormControlFile1" name="imgpayment">
                           </div>
                           <hr><br>
                           <!-- Example single danger button -->
@@ -151,12 +140,12 @@
 
   <footer>
     <?php
-      $this->load->view('components/footerblue');
+    $this->load->view('components/footerblue');
     ?>
   </footer>
 
   <?php
-    $this->load->view('template/script');
+  $this->load->view('template/script');
   ?>
 
   <!-- Import js if need -->
