@@ -5,4 +5,3 @@
 <meta name="keywords" content="ITS, Institut Teknologi Sepuluh Nopember, SRE, Society of Renewable Energy, FUTUREST 2022, Future Energy Summit 2022">
 <meta name="author" content="IT Dev FUTUREST 2022">
 <meta name="theme-color" content="#B2D430" />
-    

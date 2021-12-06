@@ -1,6 +1,5 @@
 .navbar {
 	background-color: #f3f3f3;
-	min-height: 70px;
 	box-shadow: 2px 0 10px grey;
 }
 
@@ -13,25 +12,65 @@
 
 .navbar-brand h2 {
 	font-family: MaldenSansBoldItalic;
+	font-size: 35px;
 }
 
 /* Navbar Links */
 
 .navbar-links {
 	position: relative;
+	font-family: MulishRegular;
 }
 
 .navbar-links a:not(:last-child) {
 	position: relative;
 	text-decoration: none;
 	color: var(--futurest-black);
-	font-size: 20px;
+	font-size: 18px;
 	padding-bottom: 4px;
 }
 
-.navbar-links a.active {
-	color: var(--futurest-teal);
+/* Dropdown Style */
+
+.navbar-links .dropdown-navbar-futurest {
+	margin-top: -2px;
 }
+
+.navbar-links .dropdown-navbar-futurest button {
+	color: var(--futurest-black);
+	font-size: 18px;
+}
+
+.navbar-links .dropdown-navbar-futurest .list-dropdown-navbar-futurest a {
+	font-size: 14px;
+	position: relative;
+	background: transparent;
+}
+
+.navbar-links
+	.dropdown-navbar-futurest
+	.list-dropdown-navbar-futurest
+	a::before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%) scaleX(0);
+	transform-origin: 50% 50%;
+	width: 100%;
+	height: 2.5px;
+	background: var(--futurest-black);
+	transition: transform 0.4s ease-out;
+}
+
+.navbar-links
+	.dropdown-navbar-futurest
+	.list-dropdown-navbar-futurest
+	a:hover::before {
+	transform: translateX(-50%) scaleX(1);
+}
+
+/* End Dropdown Style */
 
 .navbar-links a:not(:last-child)::before {
 	content: "";
@@ -46,22 +85,18 @@
 	transition: transform 0.4s;
 }
 
-.navbar-links a.active::before {
-	background: var(--futurest-teal);
-}
-
 .navbar-links a:not(:last-child):hover::before {
 	transform: translateX(-50%) scaleX(1);
 }
 
 .navbar-links .btn-sm {
-	background-color: var(--futurest-teal);
+	background-color: var(--futurest-green);
 	color: var(--futurest-white);
-	font-size: 20px;
+	font-size: 18px;
 }
 
 .navbar-links .btn-sm:hover {
-	background-color: #1c6e7a;
+	background-color: #88a124;
 }
 
 .input-btn-mobile {
@@ -74,7 +109,7 @@
 
 .icon-btn-mobile {
 	font-size: 45px;
-	color: var(--futurest-black);
+	color: var(--futurest-green);
 	z-index: 1;
 }
 
@@ -86,7 +121,7 @@
 
 .input-btn-mobile:checked ~ .navbar-links {
 	right: 0;
-    box-shadow: 0 -1px 15px #000;
+	box-shadow: 0 -1px 15px #000;
 }
 
 @media screen and (max-width: 650px) {
@@ -108,12 +143,18 @@
 @media screen and (max-width: 768px) {
 	.navbar-links {
 		position: absolute;
-		background-color: #c4c4c4;
+		background-color: #f3f3f3;
 		top: 0;
 		right: -100vw;
 		width: 100vw;
 		height: 100vh;
 		justify-content: space-evenly;
 		transition: 0.5s ease;
+		padding-top: 30px;
+	}
+
+	.navbar-links > a,
+	.navbar-links > div {
+		margin-bottom: 20px;
 	}
 }

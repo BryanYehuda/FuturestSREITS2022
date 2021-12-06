@@ -1,24 +1,87 @@
 <nav class="navbar fixed-top">
-  <div class="container d-flex align-items-center me-auto">
-      <!-- Navbar Brand -->
-      <div class="navbar-brand">
-         <a href="" class="d-flex">
-         <img src="<?php echo base_url() ?>/public/img/logo-utama.png" width="50" alt="FUTUREST">
-         <h2 class="mt-2">FUTUREST</h2>
-         </a>
-      </div>
+	<div class="container d-flex align-items-center me-auto">
+		<!-- Navbar Brand -->
+		<div class="navbar-brand">
+			<a href="<?php echo base_url('home')?>" class="d-flex">
+				<img src="<?php echo base_url() ?>/public/img/logo-utama.png" width="50" alt="FUTUREST" />
+				<h2 class="mt-2">FUTUREST</h2>
+			</a>
+		</div>
 
-      <!-- Navbar Button Mobile -->
-      <input class="input-btn-mobile d-block d-md-none float-end" type="checkbox" onchange="handlerNav(this)">
-      <i class="bi bi-list icon-btn-mobile d-block d-md-none float-end"></i>
+		<!-- Navbar Button Mobile -->
+		<input class="input-btn-mobile d-block d-md-none float-end" type="checkbox" onchange="handlerNav(this)"/>
+		<i class="bi bi-list icon-btn-mobile d-block d-md-none float-end"></i>
 
-      <!-- Navbar Links -->
-      <div class="navbar-links d-flex flex-column flex-md-row align-items-center">
-         <a class="me-lg-4 me-md-3 active" href="<?php echo base_url('home')?>">Home</a>
-         <a class="me-lg-4 me-md-3" href="<?php echo base_url('details')?>">Details</a>
-         <a class="me-lg-4 me-md-3" href="<?php echo base_url('events')?>">Events</a>
-         <a class="me-lg-5 me-md-4" href="<?php echo base_url('contact')?>">Contact</a>
-         <a class="btn btn-sm" href="<?php echo base_url('login')?>">Login</a>
-      </div>
-  </div>
+		<!-- Navbar Links -->
+		<div class="navbar-links d-flex flex-column flex-md-row align-items-center justify-content-start">
+      <!-- Home -->
+			<a class="me-lg-4 me-md-3" href="<?php echo base_url('home')?>">
+        Home
+      </a>
+      <!-- Event -->
+			<a class="me-md-2" href="<?php echo base_url('events')?>">
+        Events
+      </a>
+      <!-- Dropdown 2 menu -->
+			<div class="dropdown dropdown-navbar-futurest me-lg-2">
+        <!-- Button -->
+				<button class="btn dropdown-toggle shadow-none" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+					Futurest 
+				</button>
+        <!-- List -->
+				<ul class="dropdown-menu list-dropdown-navbar-futurest" aria-labelledby="dropdownMenuButton1">
+          <li class="ps-3">
+            <b>Competitions</b>
+          </li>
+					<li>
+            <a class="dropdown-item" href="<?php echo base_url('details')?>">
+              National Essay
+            </a>
+          </li>
+					<li>
+            <a class="dropdown-item" href="<?php echo base_url('details')?>">
+              RE Innovation
+            </a>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li class="ps-3">
+            <b>Events</b>
+          </li>
+          <li>
+            <a class="dropdown-item" href="<?php echo base_url('details')?>">
+              Grand Talkshow
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="<?php echo base_url('details')?>">
+              RE 101
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="<?php echo base_url('details')?>">
+              Final Talkshow
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="<?php echo base_url('details')?>">
+              Climate Change Community
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="<?php echo base_url('details')?>">
+              Awarding Night
+            </a>
+          </li>
+				</ul>
+			</div>
+      <!-- Contact -->
+			<a class="me-lg-4 me-md-3" href="<?php echo base_url('contact')?>">
+        Contact
+      </a>
+      <!-- Login -->
+			<a class="btn btn-sm" href="<?php echo base_url('login')?>">Login</a>
+		</div>
+	</div>
 </nav>

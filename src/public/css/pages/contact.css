@@ -1,117 +1,120 @@
 /* Jumbotron */
 
 #jumbotron {
-    height: 730px;
+	min-height: 730px;
 }
 
 #jumbotron::before {
-    content: "";
-    background-image: url("../../img/contact-parallax-test.jpg");
-    position: absolute;
-    background-size: cover;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-    opacity: 0.2;
+	content: "";
+	background-image: url("../../img/contact-parallax-test.jpg");
+	position: absolute;
+	background-size: cover;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+	opacity: 0.2;
 }
 
 #jumbotron h1 {
-    font-size: 50px;
-    font-family: MulishBold;
+	font-size: 50px;
+	font-family: MulishBold;
 }
 
 #jumbotron p {
-    font-size: 20px;
-    font-family: MulishRegular;
+	font-size: 20px;
+	font-family: MulishRegular;
 }
 
-
-/* Sosmed */
-
-#sosmed {
-    height: 730px;
+#jumbotron i {
+	font-size: 120px;
 }
 
-#sosmed h2 {
-    color: var(--futurest-black);
-    font-size: 40px;
-    font-family: MulishSemiBold;
+/* Futurest Sosmed */
+
+#futurest-sosmed {
+	min-height: 730px;
+	background: var(--futurest-green);
 }
 
-#sosmed .card-sosmed {
-    background: #f4f4f4;
-    border-radius: 20px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    color: var(--futurest-black);
-    box-shadow: 1px 0 10px #c4c4c4;
+#futurest-sosmed h2 {
+	font-size: 35px;
+	font-family: MulishSemiBold;
 }
 
-#sosmed .card-sosmed .bi {
-    font-size: 50px;
+#futurest-sosmed h3 {
+	font-size: 25px;
+	font-family: MulishSemiBold;
 }
 
-#sosmed .card-sosmed h4 {
-    font-family: MulishLight;
+#futurest-sosmed p {
+	font-size: 18px;
+	font-family: MulishRegular;
 }
 
-#sosmed .card-sosmed:hover {
-    transform: scale(1.04);
-    background: #cecece;
-    color: var(--futurest-teal);
+#futurest-sosmed .card-sosmed-futurest {
+	border-radius: 30px;
 }
 
+#futurest-sosmed .card-sosmed-futurest img {
+	border-radius: 30px 30px 0 0;
+}
+
+/* Admin Sosmed */
+
+#admin-sosmed {
+	min-height: 730px;
+	background: #f3f3f3;
+}
+
+#admin-sosmed h2 {
+	font-size: 35px;
+	font-family: MulishSemiBold;
+}
+
+#admin-sosmed h3 {
+	font-size: 25px;
+	font-family: MulishSemiBold;
+}
+
+#admin-sosmed p {
+	font-size: 18px;
+	font-family: MulishRegular;
+}
+
+#admin-sosmed .card-admin-futurest {
+	border-radius: 30px;
+}
+
+#admin-sosmed .card-admin-futurest img {
+	border-radius: 30px 30px 0 0;
+}
 
 /* Contact Us */
 
 #contact-us {
-    background: #e3e3e3;
-    height: 730px;
+	background: var(--futurest-green);
+	min-height: 730px;
 }
 
 #contact-us h2 {
-    font-family: MulishSemiBold;
+	font-family: MulishSemiBold;
+	font-size: 35px;
 }
 
 #contact-us label {
-    font-family: MulishLight;
-    font-size: 23px;
+	font-family: MulishSemiBold;
+	font-size: 25px;
 }
 
 #contact-us form input,
 #contact-us form textarea {
-    font-family: MulishRegular;
-    font-size: 18px;
+	font-family: MulishLight;
+	font-size: 18px;
 }
 
 #contact-us form input:focus,
 #contact-us form textarea:focus {
-    outline: 4.3px solid var(--futurest-teal);
-}
-
-#contact-us button {
-    background: var(--futurest-teal);
-    transition: all 0.3s ease;
-    border-radius: 14px;
-    color: var(--futurest-white);
-    font-family: MulishRegular;
-}
-
-#contact-us button:hover {
-    transform: scale(0.93);
-}
-
-@media screen and (max-width: 576px) {
-    #jumbotron h1 {
-        font-size: 40px;
-    }
-    #sosmed h2 {
-        font-size: 30px;
-    }
-    #sosmed .card-sosmed .bi {
-        font-size: 35px;
-    }
+	outline: 4.3px solid var(--futurest-teal);
 }
