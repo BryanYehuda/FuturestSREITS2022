@@ -48,12 +48,12 @@ class Admin extends CI_Controller {
 			$mail->SMTPAuth = "true";
 			$mail->SMTPSecure = "tls";
 			$mail->Port = "465";
-			$mail->Username = "email";
-			$mail->Password = "pwemail";
+			$mail->Username = "futurestits2022@gmail.com";
+			$mail->Password = "SREFuturest!";
 			$mail->Subject = "Testing email function using PHPMailer";
-			$mail->setFrom("");
-			$mail->Body = "This is email func";
-			$mail->addAddress("tujuanemail");
+			$mail->setFrom("futurestits2022@gmail.com", "Futurest 2022");
+			$mail->Body = "This is email function";
+			$mail->addAddress("wibowohafizhabid@yahoo.co.id");
 			$mail->Send();
 		} 
 		catch (Exception $e)
