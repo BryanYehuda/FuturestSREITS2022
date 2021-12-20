@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 03, 2021 at 06:35 PM
+-- Generation Time: Dec 20, 2021 at 11:00 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.11
 
@@ -29,11 +29,22 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `pendaftaran_climatechangecommunity` (
   `pendaftaranclimatechangecommunity_id` bigint(11) NOT NULL,
-  `pendaftaranclimatechangecommunity_nama` varchar(255) NOT NULL,
-  `pendaftaranclimatechangecommunity_instansi` varchar(255) NOT NULL,
-  `pendaftaranclimatechangecommunity_foto` varchar(255) NOT NULL,
-  `pendaftaranclimatechangecommunity_kartuIdentitas` varchar(255) NOT NULL,
-  `pendaftaranclimatechangecommunity_buktiPembayaran` varchar(255) NOT NULL,
+  `pendaftaranclimatechangecommunity_name` varchar(255) NOT NULL,
+  `pendaftaranclimatechangecommunity_email` varchar(255) NOT NULL,
+  `pendaftaranclimatechangecommunity_domicile` varchar(255) NOT NULL,
+  `pendaftaranclimatechangecommunity_major` varchar(255) NOT NULL,
+  `pendaftaranclimatechangecommunity_batch` int(4) NOT NULL,
+  `pendaftaranclimatechangecommunity_linkedin` varchar(2083) NOT NULL,
+  `pendaftaranclimatechangecommunity_cv` varchar(255) NOT NULL,
+  `pendaftaranclimatechangecommunity_motivation` text NOT NULL,
+  `pendaftaranclimatechangecommunity_contribution` text NOT NULL,
+  `pendaftaranclimatechangecommunity_prioritze` int(2) NOT NULL,
+  `pendaftaranclimatechangecommunity_willingness` tinyint(1) NOT NULL,
+  `pendaftaranclimatechangecommunity_committed` tinyint(1) NOT NULL,
+  `pendaftaranclimatechangecommunity_followingfuturestig` varchar(255) NOT NULL,
+  `pendaftaranclimatechangecommunity_followingsreig` varchar(255) NOT NULL,
+  `pendaftaranclimatechangecommunity_sharestory` varchar(255) NOT NULL,
+  `pendaftaranclimatechangecommunity_twibbon` varchar(255) NOT NULL,
   `pendaftaranclimatechangecommunity_dataCreated` datetime NOT NULL DEFAULT current_timestamp(),
   `pendaftaranclimatechangecommunity_dataUpdated` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -97,11 +108,15 @@ CREATE TABLE `pendaftaran_grandtalkshow` (
 
 CREATE TABLE `pendaftaran_re101` (
   `pendaftaranre101_id` bigint(11) NOT NULL,
-  `pendaftaranre101_nama` varchar(255) NOT NULL,
-  `pendaftaranre101_instansi` varchar(255) NOT NULL,
-  `pendaftaranre101_foto` varchar(255) NOT NULL,
-  `pendaftaranre101_kartuIdentitas` varchar(255) NOT NULL,
-  `pendaftaranre101_buktiPembayaran` varchar(255) NOT NULL,
+  `pendaftaranre101_name` varchar(255) NOT NULL,
+  `pendaftaranre101_email` varchar(255) NOT NULL,
+  `pendaftaranre101_domicile` varchar(255) NOT NULL,
+  `pendaftaranre101_university` varchar(255) NOT NULL,
+  `pendaftaranre101_major` varchar(255) NOT NULL,
+  `pendaftaranre101_question` text NOT NULL,
+  `pendaftaranre101_followingfuturestig` varchar(255) NOT NULL,
+  `pendaftaranre101_followingsreig` varchar(255) NOT NULL,
+  `pendaftaranre101_sharestory` varchar(255) NOT NULL,
   `pendaftaranre101_dataCreated` datetime NOT NULL DEFAULT current_timestamp(),
   `pendaftaranre101_dataUpdated` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
