@@ -35,7 +35,7 @@
                 <div class="row">
                     <div class=".col-6 .col-md-10 register-right ">
                         <br>
-                        <h1 class="register text-center">RE 101</h1>
+                        <h1 class="register text-center">RE101</h1>
                         <div class="register-form mt-3 mb-3">
                             <div class="">
                                 <div class="row">
@@ -44,21 +44,52 @@
                                             <!-- Form -->
                                             <form action="#" class="">
                                                 <div class="form-group text-dark ">
-                                                    <label for="name" class="text-dark"><i class="text-dark"> </i> Name</label>
-                                                    <input type="text" class="form-control text-dark" name="name">
+                                                    <label for="name" class="text-dark"><i class="text-dark"> </i> Name </label>
+                                                    <input type="text" class="form-control text-dark" name="name" placeholder="Your Name ll Ex: Devitweb development">
                                                 </div><br>
                                                 <div class="form-group text-dark">
-                                                    <label for="email"><i class="text-dark float"></i> Email</label>
-                                                    <input type="email" class="form-control text-dark" name="email">
+                                                    <label for="email"><i class="text-dark float"></i> Email </label>
+                                                    <input type="email" class="form-control text-dark" name="email" placeholder="Email ll Ex: Devitweb@gmail.com">
+                                                </div><br>
+                                                <div class=" form-group text-dark">
+                                                    <label for="name"><i class="float"></i> Domicile </label>
+                                                    <input type="text" class="form-control text-dark" id="dmc" name="domicile" placeholder="Domicile ll Ex: Surabaya, Jawa Timur">
                                                 </div><br>
                                                 <div class="form-group text-dark">
-                                                    <label for="pwd"><i class="float"></i> New Password</label>
-                                                    <input type="password" class="form-control text-dark" id="pwd" name="password">
+                                                    <label for="name"><i class="float"></i> University </label>
+                                                    <input type="text" class="form-control text-dark" id="unv" name="university" placeholder="University ll Ex: Institut Teknologi Sepuluh Nopember">
                                                 </div><br>
                                                 <div class="form-group text-dark">
-                                                    <label for="pwd"><i class="float"></i> Confirm Password</label>
-                                                    <input type="password" class="form-control text-dark" id="pwd" name="confirmpassword">
+                                                    <label for="name"><i class="float"></i> Major </label>
+                                                    <input type="text" class="form-control text-dark" id="mjr" name="major" placeholder="Major ll Ex: Information Technology">
                                                 </div><br>
+
+                                                <label for="pwd"><i class="float"></i> Batch </label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>-</option>
+                                                    <option value="1">2019</option>
+                                                    <option value="2">2020</option>
+                                                    <option value="3">2021</option>
+                                                </select><br>
+
+                                                <div>
+                                                    <label for="name"><i class="float"></i> Questions for speakers </label>
+                                                    <textarea class="form-control text-dark" id="questions" placeholder="Any Questions?" rows="3"></textarea>
+                                                </div><br>
+
+                                                <div class="mb-3">
+                                                    <label for="name"><i class="float"></i> Proof of following Futurest and SRE ITS instagram </label>
+                                                    <input class="form-control text-dark" type="file" id="formFileMultiple" multiple>
+                                                </div><br>
+
+                                                <div class="mb-3">
+                                                    <label for="name"><i class="float"></i> Proof of share story and tag 3 friends
+                                                    </label>
+                                                    <input class="form-control text-dark" type="file" id="formFileMultiple" multiple>
+                                                </div>
+
+
+
                                                 <!-- Example single danger button -->
                                             </form>
                                             <!-- End Form -->
@@ -74,62 +105,7 @@
 
 
                 <!-- Event Data -->
-                <div class="register center">
-                    <div class="row">
 
-                        <div class=".col-6 .col-md-10 register-right">
-
-                            <h2 class="text-center">INSERT YOUR DATA</h2>
-
-                            <div class="register-form mt-5 mb-5">
-
-                                <div class="">
-
-                                    <div class="row">
-
-                                        <div class="col">
-                                        </div>
-
-
-
-                                        <div class="col-md-13  container">
-                                            <div class="col-md-7  container">
-                                                <form action="#" class="">
-                                                    <div class="form-group text-dark">
-
-                                                        <label for="name" class="text-dark "><i class="text-dark float"> </i> Institution</label>
-                                                        <input type="text" class="form-control text-dark" name="campus">
-                                                    </div><br>
-
-                                                    <div class="form-group">
-                                                        <label for="exampleFormControlFile1">Image</label><br>
-                                                        <input type="file" class="form-control-file w-100" id="exampleFormControlFile1" name="img">
-                                                    </div>
-                                                    <hr><br>
-
-                                                    <div class="form-group">
-                                                        <label for="exampleFormControlFile1">Identity Card</label><br>
-                                                        <input type="file" class="form-control-file w-100" id="exampleFormControlFile1" name="imgidentity">
-                                                    </div>
-                                                    <hr>
-
-                                                    <div class="form-group">
-                                                        <br>
-                                                        <label for="exampleFormControlFile1">Payment</label><br>
-                                                        <input type="file" class="form-control-file w-100" id="exampleFormControlFile1" name="imgpayment">
-                                                    </div>
-                                                    <hr><br>
-                                                    <!-- Example single danger button -->
-                                                    <button type="submit" class="btn btn-danger mb-1 mt-1 float-center">Register</button>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <!-- End Event Data -->
 
             </div>
