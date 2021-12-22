@@ -35,7 +35,7 @@
                 <div class="row">
                     <div class=".col-6 .col-md-10 register-right ">
                         <br>
-                        <h1 class="register text-center">RE101</h1>
+                        <h1 class="register text-center">Renewable Energy 101</h1>
                         <div class="register-form mt-3 mb-3">
                             <div class="">
                                 <div class="row">
