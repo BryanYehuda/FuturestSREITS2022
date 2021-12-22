@@ -48,43 +48,29 @@
                                                     <label for="name" class="text-dark"><i class="text-dark"> </i> Team Name </label>
                                                     <input type="text" class="form-control text-dark" name="name" placeholder="Team Name ll Ex: FuturesTeam">
                                                 </div><br>
-                                                <div class="form-group text-dark ">
-                                                    <label for="name" class="text-dark"><i class="text-dark"> </i> College Name </label>
-                                                    <input type="text" class="form-control text-dark" name="name" placeholder="College Name ll Ex: Institut Teknologi Sepuluh Nopember">
-                                                </div><br>
                                                 <div class="d-inline p-2 bg-dark text-white">Member 1 (Team Leader)</div>
 
                                                 <div class="form-group text-dark ">
                                                     <br><label for="name" class="text-dark"><i class="text-dark"> </i> Full Name </label>
                                                     <input type="text" class="form-control text-dark" name="name" placeholder="Your Name ll Ex: Devitweb development">
                                                 </div><br>
-
-
                                                 <div class="form-group text-dark">
-                                                    <label for="name"><i class="float"></i> Major </label>
+                                                    <label for="age"><i class="text-dark float"></i> Age <b>(17-24)</b> </label>
+                                                    <input type="age" class="form-control text-dark" name="age" placeholder="age ll Ex: 24">
+                                                </div><br>
+                                                <div class="form-group text-dark">
+                                                    <label for="name"><i class="float"></i> Institution </label>
+                                                    <input type="text" class="form-control text-dark" id="unv" name="university" placeholder="University ll Ex: Institut Teknologi Sepuluh Nopember">
+                                                </div><br>
+                                                <div class="form-group text-dark">
+                                                    <label for="name"><i class="float"></i> Major (Optional)</label>
                                                     <input type="text" class="form-control text-dark" id="mjr" name="major" placeholder="Major ll Ex: Information Technology">
                                                 </div><br>
-
-                                                <label for="pwd"><i class="float"></i> Batch </label>
-                                                <select class="form-select" aria-label="Default select example">
-                                                    <option selected>-</option>
-                                                    <option value="1">2019</option>
-                                                    <option value="2">2020</option>
-                                                    <option value="3">2021</option>
-                                                </select><br>
-
                                                 <div class="mb-3">
-                                                    <label for="name"><i class="float"></i> Student ID Card Scan<b>(pdf)</b></label>
+                                                    <label for="name"><i class="float"></i> KTP or Student ID Card Scan<b>(pdf)</b></label>
                                                     <input class="form-control text-dark" type="file" id="formFileMultiple" multiple>
                                                 </div>
                                                 <br>
-
-                                                <div class="mb-3">
-                                                    <label for="name"><i class="float"></i> Statement Letter of Active Student Scan<b>(pdf)</b></label>
-                                                    <input class="form-control text-dark" type="file" id="formFileMultiple" multiple>
-                                                </div>
-                                                <br>
-
                                                 <div class="mb-3">
                                                     <label for="name"><i class="float"></i> Half-body picture 4 x 6</label>
                                                     <label for="name"><i class="float"></i> <b>formal, plain background </b>(JPG, JPEG, PNG)</label>
@@ -108,39 +94,29 @@
                                                     <input class="form-control text-dark" type="file" id="formFileMultiple" multiple>
                                                 </div><br>
 
-                                                <div class="d-inline p-2 bg-dark text-white">Member 2</div>
+                                                <div class="d-inline p-2 bg-dark text-white">Member 2 </div>
 
                                                 <div class="form-group text-dark ">
                                                     <br><label for="name" class="text-dark"><i class="text-dark"> </i> Full Name </label>
                                                     <input type="text" class="form-control text-dark" name="name" placeholder="Your Name ll Ex: Devitweb development">
                                                 </div><br>
-
-
                                                 <div class="form-group text-dark">
-                                                    <label for="name"><i class="float"></i> Major </label>
+                                                    <label for="age"><i class="text-dark float"></i> Age <b>(17-24)</b> </label>
+                                                    <input type="age" class="form-control text-dark" name="age" placeholder="age ll Ex: 24">
+                                                </div><br>
+                                                <div class="form-group text-dark">
+                                                    <label for="name"><i class="float"></i> Institution </label>
+                                                    <input type="text" class="form-control text-dark" id="unv" name="university" placeholder="University ll Ex: Institut Teknologi Sepuluh Nopember">
+                                                </div><br>
+                                                <div class="form-group text-dark">
+                                                    <label for="name"><i class="float"></i> Major (Optional)</label>
                                                     <input type="text" class="form-control text-dark" id="mjr" name="major" placeholder="Major ll Ex: Information Technology">
                                                 </div><br>
-
-                                                <label for="pwd"><i class="float"></i> Batch </label>
-                                                <select class="form-select" aria-label="Default select example">
-                                                    <option selected>-</option>
-                                                    <option value="1">2019</option>
-                                                    <option value="2">2020</option>
-                                                    <option value="3">2021</option>
-                                                </select><br>
-
                                                 <div class="mb-3">
-                                                    <label for="name"><i class="float"></i> Student ID Card Scan<b>(pdf)</b></label>
+                                                    <label for="name"><i class="float"></i> KTP or Student ID Card Scan<b>(pdf)</b></label>
                                                     <input class="form-control text-dark" type="file" id="formFileMultiple" multiple>
                                                 </div>
                                                 <br>
-
-                                                <div class="mb-3">
-                                                    <label for="name"><i class="float"></i> Statement Letter of Active Student Scan<b>(pdf)</b></label>
-                                                    <input class="form-control text-dark" type="file" id="formFileMultiple" multiple>
-                                                </div>
-                                                <br>
-
                                                 <div class="mb-3">
                                                     <label for="name"><i class="float"></i> Half-body picture 4 x 6</label>
                                                     <label for="name"><i class="float"></i> <b>formal, plain background </b>(JPG, JPEG, PNG)</label>
@@ -170,33 +146,23 @@
                                                     <br><label for="name" class="text-dark"><i class="text-dark"> </i> Full Name </label>
                                                     <input type="text" class="form-control text-dark" name="name" placeholder="Your Name ll Ex: Devitweb development">
                                                 </div><br>
-
-
                                                 <div class="form-group text-dark">
-                                                    <label for="name"><i class="float"></i> Major </label>
+                                                    <label for="age"><i class="text-dark float"></i> Age <b>(17-24)</b> </label>
+                                                    <input type="age" class="form-control text-dark" name="age" placeholder="age ll Ex: 24">
+                                                </div><br>
+                                                <div class="form-group text-dark">
+                                                    <label for="name"><i class="float"></i> Institution </label>
+                                                    <input type="text" class="form-control text-dark" id="unv" name="university" placeholder="University ll Ex: Institut Teknologi Sepuluh Nopember">
+                                                </div><br>
+                                                <div class="form-group text-dark">
+                                                    <label for="name"><i class="float"></i> Major (Optional)</label>
                                                     <input type="text" class="form-control text-dark" id="mjr" name="major" placeholder="Major ll Ex: Information Technology">
                                                 </div><br>
-
-                                                <label for="pwd"><i class="float"></i> Batch </label>
-                                                <select class="form-select" aria-label="Default select example">
-                                                    <option selected>-</option>
-                                                    <option value="1">2019</option>
-                                                    <option value="2">2020</option>
-                                                    <option value="3">2021</option>
-                                                </select><br>
-
                                                 <div class="mb-3">
-                                                    <label for="name"><i class="float"></i> Student ID Card Scan<b>(pdf)</b></label>
+                                                    <label for="name"><i class="float"></i> KTP or Student ID Card Scan<b>(pdf)</b></label>
                                                     <input class="form-control text-dark" type="file" id="formFileMultiple" multiple>
                                                 </div>
                                                 <br>
-
-                                                <div class="mb-3">
-                                                    <label for="name"><i class="float"></i> Statement Letter of Active Student Scan<b>(pdf)</b></label>
-                                                    <input class="form-control text-dark" type="file" id="formFileMultiple" multiple>
-                                                </div>
-                                                <br>
-
                                                 <div class="mb-3">
                                                     <label for="name"><i class="float"></i> Half-body picture 4 x 6</label>
                                                     <label for="name"><i class="float"></i> <b>formal, plain background </b>(JPG, JPEG, PNG)</label>
@@ -219,7 +185,6 @@
                                                     <a href="https://www.linkedin.com/company/futureenergysummit/" class="link-primary">https://www.linkedin.com/company/futureenergysummit/</a>
                                                     <input class="form-control text-dark" type="file" id="formFileMultiple" multiple>
                                                 </div><br>
-
 
                                                 <button type="button" class="btn btn-danger">Submit</button>
                                                 <!-- Example single danger button -->

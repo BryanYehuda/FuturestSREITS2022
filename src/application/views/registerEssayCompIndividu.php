@@ -35,7 +35,7 @@
         <div class="row">
           <div class=".col-6 .col-md-10 register-right ">
             <br>
-            <h1 class="register text-center">Essay Competition</h1>
+            <h1 class="register text-center">Essay Competition <b>Individual</b></h1>
             <div class="register-form mt-3 mb-3">
               <div class="">
                 <div class="row">
@@ -45,13 +45,14 @@
                       <form action="#" class="">
 
 
+
                         <div class="form-group text-dark ">
                           <label for="name" class="text-dark"><i class="text-dark"> </i> Full Name </label>
                           <input type="text" class="form-control text-dark" name="name" placeholder="Your Name ll Ex: Devitweb development">
                         </div><br>
                         <div class="form-group text-dark">
-                          <label for="age"><i class="text-dark float"></i> Age </label>
-                          <input type="age" class="form-control text-dark" name="age" placeholder="age ll Ex: 18">
+                          <label for="age"><i class="text-dark float"></i> Age <b>(17-24)</b> </label>
+                          <input type="age" class="form-control text-dark" name="age" placeholder="age ll Ex: 24">
                         </div><br>
                         <div class="form-group text-dark">
                           <label for="name"><i class="float"></i> Institution </label>
@@ -62,7 +63,7 @@
                           <input type="text" class="form-control text-dark" id="mjr" name="major" placeholder="Major ll Ex: Information Technology">
                         </div><br>
                         <div class="mb-3">
-                          <label for="name"><i class="float"></i> KTP Scan or Student ID Card Scan<b>(pdf)</b></label>
+                          <label for="name"><i class="float"></i> KTP or Student ID Card Scan<b>(pdf)</b></label>
                           <input class="form-control text-dark" type="file" id="formFileMultiple" multiple>
                         </div>
                         <br>
@@ -89,7 +90,7 @@
                           <input class="form-control text-dark" type="file" id="formFileMultiple" multiple>
                         </div><br>
 
-
+                        <button type="button" class="btn btn-danger">Submit</button>
                         <!-- Example single danger button -->
                       </form>
                       <!-- End Form -->

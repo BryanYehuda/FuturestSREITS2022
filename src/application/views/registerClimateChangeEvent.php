@@ -186,7 +186,7 @@
                                                     <a href="https://drive.google.com/drive/folders/1trXDl2rt7olqcQ77HuUH9PGRzDIsbqdg?usp=sharing" class="link-primary">Twibbon</a>
                                                     <input class="form-control text-dark" type="file" id="formFileMultiple" multiple>
                                                 </div>
-
+                                                <button type="button" class="btn btn-danger">Submit</button>
                                                 <!-- Example single danger button -->
                                             </form>
                                             <!-- End Form -->

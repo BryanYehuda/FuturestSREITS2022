@@ -89,7 +89,7 @@
                                                 </div>
 
 
-
+                                                <button type="button" class="btn btn-danger">Submit</button>
                                                 <!-- Example single danger button -->
                                             </form>
                                             <!-- End Form -->
