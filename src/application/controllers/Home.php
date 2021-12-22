@@ -45,18 +45,15 @@ class Home extends CI_Controller
         $this->load->view('register');
     }
 
-    public function registerEssayComp()
+    public function registerEssayCompIndividu()
     {
-        $this->load->view('registerEssayComp');
+        $this->load->view('registerEssayCompIndividu');
     }
     public function registerReInnovationComp()
     {
         $this->load->view('registerReInnovationComp');
     }
-    public function registerWebinarComp()
-    {
-        $this->load->view('registerWebinarComp');
-    }
+
     public function registerGrandTalkshowEvent()
     {
         $this->load->view('registerGrandTalkshowEvent');
@@ -74,5 +71,15 @@ class Home extends CI_Controller
     public function registerClimateChangeEvent()
     {
         $this->load->view('registerClimateChangeEvent');
+    }
+
+    public function registerEssayCompTeam()
+    {
+        $this->load->view('registerEssayCompTeam');
+    }
+
+    public function chooseteamindividual()
+    {
+        $this->load->view('chooseteamindividual');
     }
 }
