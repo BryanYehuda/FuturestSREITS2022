@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 20, 2021 at 11:00 AM
+-- Generation Time: Dec 22, 2021 at 08:26 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.11
 
@@ -74,11 +74,15 @@ CREATE TABLE `pendaftaran_essaycompetition` (
 
 CREATE TABLE `pendaftaran_finaltalkshow` (
   `pendaftaranfinaltalkshow_id` bigint(11) NOT NULL,
-  `pendaftaranfinaltalkshow_nama` varchar(255) NOT NULL,
-  `pendaftaranfinaltalkshow_instansi` varchar(255) NOT NULL,
-  `pendaftaranfinaltalkshow_foto` varchar(255) NOT NULL,
-  `pendaftaranfinaltalkshow_kartuIdentitas` varchar(255) NOT NULL,
-  `pendaftaranfinaltalkshow_buktiPembayaran` varchar(255) NOT NULL,
+  `pendaftaranfinaltalkshow_name` varchar(255) NOT NULL,
+  `pendaftaranfinaltalkshow_email` varchar(255) NOT NULL,
+  `pendaftaranfinaltalkshow_domicile` varchar(255) NOT NULL,
+  `pendaftaranfinaltalkshow_university` varchar(255) NOT NULL,
+  `pendaftaranfinaltalkshow_major` varchar(255) NOT NULL,
+  `pendaftaranfinaltalkshow_question` text NOT NULL,
+  `pendaftaranfinaltalkshow_followingfuturestig` varchar(255) NOT NULL,
+  `pendaftaranfinaltalkshow_followingsreig` varchar(255) NOT NULL,
+  `pendaftaranfinaltalkshow_sharestory` varchar(255) NOT NULL,
   `pendaftaranfinaltalkshow_dataCreated` datetime NOT NULL DEFAULT current_timestamp(),
   `pendaftaranfinaltalkshow_dataUpdated` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -91,11 +95,15 @@ CREATE TABLE `pendaftaran_finaltalkshow` (
 
 CREATE TABLE `pendaftaran_grandtalkshow` (
   `pendaftarangrandtalkshow_id` bigint(11) NOT NULL,
-  `pendaftarangrandtalkshow_nama` varchar(255) NOT NULL,
-  `pendaftarangrandtalkshow_instansi` varchar(255) NOT NULL,
-  `pendaftarangrandtalkshow_foto` varchar(255) NOT NULL,
-  `pendaftarangrandtalkshow_kartuIdentitas` varchar(255) NOT NULL,
-  `pendaftarangrandtalkshow_buktiPembayaran` varchar(255) NOT NULL,
+  `pendaftarangrandtalkshow_name` varchar(255) NOT NULL,
+  `pendaftarangrandtalkshow_email` varchar(255) NOT NULL,
+  `pendaftarangrandtalkshow_domicile` varchar(255) NOT NULL,
+  `pendaftarangrandtalkshow_university` varchar(255) NOT NULL,
+  `pendaftarangrandtalkshow_major` varchar(255) NOT NULL,
+  `pendaftarangrandtalkshow_question` text NOT NULL,
+  `pendaftarangrandtalkshow_followingfuturestig` varchar(255) NOT NULL,
+  `pendaftarangrandtalkshow_followingsreig` varchar(255) NOT NULL,
+  `pendaftarangrandtalkshow_sharestory` varchar(255) NOT NULL,
   `pendaftarangrandtalkshow_dataCreated` datetime NOT NULL DEFAULT current_timestamp(),
   `pendaftarangrandtalkshow_dataUpdated` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
