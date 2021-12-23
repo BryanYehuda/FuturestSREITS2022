@@ -58,3 +58,7 @@ $route['contact'] = 'home/contact';
 $route['register'] = 'home/register';
 $route['login'] = 'home/login';
 $route['logout'] = 'auth/logout';
+// Comp
+$route['essay'] = 'home/essay';
+$route['innovation'] = 'home/innovation';
+// Essay

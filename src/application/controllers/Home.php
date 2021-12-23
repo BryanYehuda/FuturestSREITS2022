@@ -82,4 +82,16 @@ class Home extends CI_Controller
     {
         $this->load->view('chooseteamindividual');
     }
+
+    // Comp
+
+    public function essay()
+    {
+        $this->load->view('details_essay_competition');
+    }
+
+    public function innovation()
+    {
+        $this->load->view('details_re_innovation');
+    }
 }

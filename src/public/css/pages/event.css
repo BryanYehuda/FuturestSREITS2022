@@ -6,7 +6,7 @@
 
 #jumbotron::before {
 	content: "";
-	background-image: url("../../img/event-parallax-test.jpg");
+	background-image: url("../../img/event-parallax.jpg");
 	position: absolute;
 	background-size: cover;
 	top: 0;
@@ -14,7 +14,7 @@
 	bottom: 0;
 	right: 0;
 	z-index: -1;
-	opacity: 0.2;
+	opacity: 0.5;
 }
 
 #jumbotron h1 {
@@ -31,35 +31,68 @@
 	font-size: 120px;
 }
 
-/* Apa Saja */
+/* Events */
 
-#apa-saja {
+#our-events {
 	min-height: 730px;
 	background-color: var(--futurest-green);
 }
 
-#apa-saja h2 {
+#our-events h2 {
 	font-size: 35px;
 	font-family: MulishSemiBold;
 	color: var(--futurest-black);
 }
 
-#apa-saja .card-apa-saja {
+#our-events .card-apa-saja {
 	background: #f3f3f3;
 	border-radius: 30px;
 	box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
 }
 
-#apa-saja .card-apa-saja i {
+#our-events .card-apa-saja i {
 	font-size: 100px;
 }
 
-#apa-saja .card-apa-saja h3 {
+#our-events .card-apa-saja h3 {
 	font-family: MulishSemiBold;
 	font-size: 25px;
 }
 
-#apa-saja .card-apa-saja p {
+#our-events .card-apa-saja p {
+	font-family: MulishLight;
+	font-size: 18px;
+}
+
+/* Competitions */
+
+#our-competitions {
+	min-height: 730px;
+	background-color: var(--futurest-green);
+}
+
+#our-competitions h2 {
+	font-size: 35px;
+	font-family: MulishSemiBold;
+	color: var(--futurest-black);
+}
+
+#our-competitions .card-apa-saja {
+	background: #e3e3e3;
+	border-radius: 30px;
+	box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#our-competitions .card-apa-saja i {
+	font-size: 100px;
+}
+
+#our-competitions .card-apa-saja h3 {
+	font-family: MulishSemiBold;
+	font-size: 25px;
+}
+
+#our-competitions .card-apa-saja p {
 	font-family: MulishLight;
 	font-size: 18px;
 }

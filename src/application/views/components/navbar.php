@@ -3,8 +3,8 @@
 		<!-- Navbar Brand -->
 		<div class="navbar-brand">
 			<a href="<?php echo base_url('home')?>" class="d-flex">
-				<img src="<?php echo base_url() ?>/public/img/logo-utama.png" width="50" alt="FUTUREST" />
-				<h2 class="mt-2">FUTUREST</h2>
+				<img src="<?php echo base_url() ?>/public/img/logo-utama.png" width="35" height="35" alt="FUTUREST" />
+        <h2 class="pt-1">FUTUREST</h2>
 			</a>
 		</div>
 
@@ -34,12 +34,12 @@
             <b>Competitions</b>
           </li>
 					<li>
-            <a class="dropdown-item" href="<?php echo base_url('details')?>">
+            <a class="dropdown-item" href="<?php echo base_url('essay')?>">
               National Essay
             </a>
           </li>
 					<li>
-            <a class="dropdown-item" href="<?php echo base_url('details')?>">
+            <a class="dropdown-item" href="<?php echo base_url('innovation')?>">
               RE Innovation
             </a>
           </li>

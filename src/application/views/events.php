@@ -21,28 +21,44 @@
 
   <main id="section">
 
-   <section id="jumbotron" class="d-flex align-items-center position-relative">
-         <div class="container">
-            <div class="row">
-               <div class="col-12 text-center text-xl-start col-xl-8">
-                  <h1 class="mb-5">{{ jumbotron.title }}</h1>
-                  <p class="mb-5">
-                     {{ jumbotron.description }}
+  <section id="jumbotron" class="d-flex align-items-center position-relative">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center text-xl-start col-xl-8">
+          <h1 class="mb-5">{{ jumbotron.title }}</h1>
+          <p class="mb-5">
+            {{ jumbotron.description }}
+          </p>
+          <a href="#our-events" class="btn btn-success btn-lg">Read More</a>
+        </div>
+        <div class="d-none d-xl-flex col-xl-4 d-flex align-items-center justify-content-center">
+          <i class="bi bi-calendar4-event"></i>
+        </div>
+      </div>
+    </div>   
+  </section>
+
+    <section id="our-events" class="py-5">
+        <div class="container py-5">
+          <h2 class="text-center mb-5">Our Events</h2>
+          <div class="row text-center d-flex justify-content-center">
+               <div class="card-apa-saja col-11 col-lg-5 d-flex flex-column align-items-center justify-content-center mx-3 p-3 mb-5" v-for="item in events"> 
+                  <i :class="item.icon"></i>
+                  <h3 class="text-bold">{{ item.title }}</h3>
+                  <p>
+                     {{ item.description }}
                   </p>
-                  <a href="#apa-saja" class="btn btn-outline-success btn-lg">Read More</a>
-               </div>
-               <div class="d-none d-xl-flex col-xl-4 d-flex align-items-center justify-content-center">
-                <i class="bi bi-calendar4-event"></i>
+                  <a href="" class="btn btn-lg btn-outline-success">Know More</a>
                </div>
             </div>
-         </div>   
-    </section>
+        </div>
+      </section>
 
-      <section id="apa-saja" class="py-5">
+      <section id="our-competitions" class="py-5">
          <div class="container py-5">
-            <h2 class="text-center mb-5">What's in Futurest 2022?</h2>
+            <h2 class="text-center mb-5">Our Competitions</h2>
             <div class="row text-center d-flex justify-content-center">
-               <div class="card-apa-saja col-11 col-md-5 col-lg-4 d-flex flex-column align-items-center justify-content-center mx-3 p-3 mb-3" v-for="item in apaSaja">
+               <div class="card-apa-saja col-11 col-lg-5 d-flex flex-column align-items-center justify-content-center mx-3 p-3 mb-5" v-for="item in competitions">
                   <i :class="item.icon"></i>
                   <h3 class="text-bold">{{ item.title }}</h3>
                   <p>
@@ -63,7 +79,7 @@
                </div>
                <div class="container-desc-fakta-unik col d-flex align-items-center justify-content-center text-center p-5">
                   <p>
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis neque culpa magni sequi? Accusamus repudiandae ea enim distinctio nisi laboriosam facilis beatae voluptatum voluptatem, ratione atque, assumenda fugit quisquam maxime?
+                    Futurest 2022 is the first competitions held by one of the biggest organization at ITS, SRE.
                   </p>
                </div>
             </div>
@@ -72,7 +88,7 @@
 
       <section id="timeline" class="py-5">
          <div class="container d-flex flex-column align-items-center py-5">
-            <h2 class="mb-5">Timeline Event</h2>
+            <h2 class="mb-5">General Timeline</h2>
             <div class="row mb-3 px-4 py-3 w-75" v-for="item in timeline">
                <div class="col position-relative">
                   <div class="position-absolute rounded-timeline rounded-pill"></div>
@@ -96,7 +112,7 @@
 
       <section id="pertanyaan" class="py-5">
          <div class="container py-5">
-            <h2 class="mb-5 text-center">Question and Answer</h2>
+            <h2 class="mb-5 text-center">General Question and Answer</h2>
             <div class="accordion" id="accordionExample">
                <div class="accordion-item" v-for="item in pertanyaan">
                   <h3 class="accordion-header" :id="item.id">
@@ -113,7 +129,6 @@
             </div>
          </div>
       </section>
-
   </main>
 
   <footer>
