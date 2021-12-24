@@ -12,6 +12,7 @@
   ?>
   <!-- Import css if need -->
   <link rel="stylesheet" href="<?php echo base_url() ?>public/css/pages/re_innovation.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -20,10 +21,68 @@
   ?>
 
   <main id="section">
-    <section id="jumbotron">
-      <h1>Hello world</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa eius dolore reiciendis sint, cupiditate libero harum ex rem, nulla officia possimus voluptate aliquam omnis inventore nostrum velit aut quaerat doloribus? Similique quos maxime assumenda cupiditate. Reprehenderit, non. Eius ipsum ullam quibusdam atque, maxime ipsa blanditiis cum commodi quidem illum molestiae facere odio, impedit ducimus suscipit deserunt dicta. Sequi, pariatur incidunt eligendi, id aperiam eos, dolorum omnis quasi suscipit dolore recusandae. Illum nisi blanditiis sint? Iusto consequatur laboriosam quidem esse necessitatibus quod perferendis reprehenderit, labore, officia quisquam animi velit minima optio voluptatibus impedit fuga cumque pariatur. Alias eos non magnam quos.</p>
+
+    <section id="jumbotron" class="d-flex align-items-center position-relative">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center text-xl-start col-xl-8">
+            <h1 class="mb-5">
+              RE Innovation Brainstorm Competition
+            </h1>
+            <p class="mb-5">
+              Renewable Energy Innovation Brainstorm is a national paper competition that encourages undergraduate and vocational students to conduct scientific approaches to develop existing or create new fascinating innovations in order to reduce greenhouse gases (GHG) emissions and sustainably solve energy issues. With the help of various professionals as mentors to guide top 10 (ten) teams to improve their ideas in an insightful experience.
+            </p>
+            <a href="#timeline" class="btn btn-success btn-lg">Show Timeline</a>
+          </div>
+          <div class="d-none d-xl-flex col-xl-4 d-flex align-items-center justify-content-center">
+            <i class="bi bi-journal-bookmark"></i>
+          </div>
+        </div>
+      </div>   
     </section>
+
+    <section id="timeline" class="py-5">
+         <div class="container d-flex flex-column align-items-center py-5">
+            <h2 class="mb-5">RE Innovation Brainstorm Timeline</h2>
+            <div class="row mb-3 px-4 py-3 w-75" v-for="item in timeline">
+               <div class="col position-relative">
+                  <div class="position-absolute rounded-timeline rounded-pill"></div>
+                  <h3>{{ item.date }}</h3>
+                  <p>{{ item.description }}</p>
+               </div>
+            </div>
+         </div>
+    </section>
+
+    <section id="prize-pool" class="py-5">
+      <div class="container py-5">
+        <h2 class="text-center mb-5">RE Innovation Prize Pool!</h2>
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-center pt-5">
+          <i class="fas fa-trophy mx-5"></i>
+          <div class="mx-5">
+            <h2>#1st</h2>
+            <p>Rp. 10.000.000</p>
+            <br>
+            <h2>#2nd</h2>
+            <p>Rp. 7.500.000</p>
+            <br>
+            <h2>#3rd</h2>
+            <p>Rp. 5.000.000</p>
+            <h2>Best Pitch</h2>
+            <p>Rp. 2.500.000</p>
+          </div>
+        </div>
+        <br><br><br><br><br><br><br>
+        <h2 class="text-center mb-5">Don't forget to register!</h2>
+        <div class="d-flex justify-content-center">
+          <a class="btn btn-lg btn-outline-success mx-3" href="">
+            Register for Your Team!
+          </a>
+        </div>
+        <br><br><br><br><br>
+      </div>
+    </section>
+
   </main>
 
   <footer>
@@ -37,6 +96,7 @@
   ?>
 
   <!-- Import js if need -->
+  <script src="<?php echo base_url() ?>public/js/pages/re_innovation.js"></script>
 </body>
 
 </html>

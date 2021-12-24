@@ -1,0 +1,101 @@
+/* Jumbotron */
+
+#jumbotron {
+	min-height: 730px;
+}
+
+#jumbotron::before {
+	content: "";
+	background-image: url("../../img/re_innovation.jpg");
+	position: absolute;
+	background-size: cover;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+	opacity: 0.5;
+}
+
+#jumbotron h1 {
+	font-size: 50px;
+	font-family: MulishBold;
+}
+
+#jumbotron p {
+	font-size: 16px;
+	font-family: MulishRegular;
+}
+
+#jumbotron i {
+	font-size: 120px;
+}
+
+/* Timeline */
+
+#timeline {
+	min-height: 730px;
+	background-color: var(--futurest-green);
+}
+
+#timeline h2 {
+	font-family: MulishSemiBold;
+	font-size: 35px;
+}
+
+#timeline .row {
+	border-radius: 30px;
+	background: #f3f3f3;
+	box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#timeline .row .col .rounded-timeline {
+	width: 20px;
+	height: 20px;
+	background: #30958d;
+	left: -35px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#timeline .row h3 {
+	font-family: MulishSemiBold;
+	font-size: 25px;
+}
+
+#timeline .row p {
+	font-family: MulishLight;
+	font-size: 18px;
+}
+
+/* prize pool */
+
+#prize-pool {
+  background-color: #f3f3f3;
+  min-height: 730px;
+}
+
+#prize-pool h2 {
+  font-family: MulishSemiBold;
+	font-size: 35px;
+}
+
+#prize-pool i {
+  font-size: 300px;
+}
+
+@media screen and (max-width: 768px) {
+  #prize-pool i {
+    font-size: 200px;
+    margin-bottom: 40px;
+  }
+
+  #prize-pool h2, #prize-pool p {
+    text-align: center !important;
+  }
+}
+
+#prize-pool p {
+  font-family: MulishLight;
+	font-size: 18px;
+}
