@@ -57,16 +57,25 @@ $route['translate_uri_dashes'] = FALSE;
 $route['details'] = 'home/details';
 $route['events'] = 'home/events';
 $route['contact'] = 'home/contact';
-$route['register'] = 'home/register';
 $route['login'] = 'home/login';
 $route['logout'] = 'auth/logout';
 
 // Competitions
 $route['essay'] = 'home/essay';
-$route['innovation'] = 'home/innovation';
+$route['re-innovation'] = 'home/re_innovation';
 
 // Events
-$route['grand-talksow'] = 'home/grand_talkshow';
+$route['grand-talkshow'] = 'home/grand_talkshow';
 $route['climate-change-community'] = 'home/climate_change_community';
 $route['awarding-night'] = 'home/awarding_night';
 $route['final-talkshow'] = 'home/final_talkshow';
+$route['re-101'] = "home/re_101";
+
+// Registration
+$route['register-essay-comp-individual'] = "home/registerEssayCompIndividu";
+$route['register-essay-comp-team'] = "home/registerEssayCompTeam";
+$route['register-re-innovation-comp'] = "home/registerReInnovationComp";
+$route['register-grand-talkshow-event'] = "home/registerGrandTalkshowEvent";
+$route['register-re-101-event'] = "home/registerRE101Event";
+$route['register-final-talkshow-event'] = "home/registerFinalTalkshowEvent";
+$route['register-climate-change-event'] = "home/registerClimateChangeEvent";

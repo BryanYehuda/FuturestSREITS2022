@@ -39,7 +39,7 @@
             </a>
           </li>
 					<li>
-            <a class="dropdown-item" href="<?php echo base_url('innovation')?>">
+            <a class="dropdown-item" href="<?php echo base_url('re-innovation')?>">
               RE Innovation
             </a>
           </li>
@@ -50,12 +50,12 @@
             <b>Events</b>
           </li>
           <li>
-            <a class="dropdown-item" href="<?php echo base_url('grand-talksow')?>">
+            <a class="dropdown-item" href="<?php echo base_url('grand-talkshow')?>">
               Grand Talkshow
             </a>
           </li>
           <li>
-            <a class="dropdown-item" href="<?php echo base_url('details')?>">
+            <a class="dropdown-item" href="<?php echo base_url('re-101')?>">
               RE 101
             </a>
           </li>

@@ -90,7 +90,7 @@ class Home extends CI_Controller
         $this->load->view('details_essay_competition');
     }
 
-    public function innovation()
+    public function re_innovation()
     {
         $this->load->view('details_re_innovation');
     }
@@ -115,5 +115,10 @@ class Home extends CI_Controller
     public function final_talkshow()
     {
         $this->load->view('details_final_talkshow');
+    }
+    
+    public function re_101()
+    {
+        $this->load->view("details_re_101");
     }
 }

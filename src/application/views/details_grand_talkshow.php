@@ -93,7 +93,7 @@
             <br><br><br><br><br><br><br>
             <h2 class="text-center mb-5">Don't Forget To Regist!</h2>
             <div class="d-flex justify-content-center">
-              <a class="btn btn-lg btn-success mx-3" href="">
+              <a class="btn btn-lg btn-success mx-3" href="<?php echo base_url("register-grand-talkshow-event")?>">
                 Register!
               </a>
             </div>

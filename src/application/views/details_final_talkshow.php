@@ -33,7 +33,7 @@
                             <b>Final Talkshow</b> is one of the last series of talk shows that presents interesting themes and speakers as the closing of the FUTUREST 2022 event.
                         </p>
                         <a href="#timeline" class="btn btn-success btn-lg">Show Timeline</a>
-                        <a href="#" class="btn btn-warning btn-lg">Register Here</a>
+                        <a href="<?php echo base_url("register-final-talkshow-event"); ?>" class="btn btn-warning btn-lg">Register Here</a>
                     </div>
                     <div class="d-none d-xl-flex col-xl-4 d-flex align-items-center justify-content-center">
                         <i class="bi bi-journal-bookmark"></i>

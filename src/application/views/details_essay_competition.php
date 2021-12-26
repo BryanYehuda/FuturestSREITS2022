@@ -72,10 +72,10 @@
         <br><br><br><br><br><br><br>
         <h2 class="text-center mb-5">Don't forget to register!</h2>
         <div class="d-flex justify-content-center">
-          <a class="btn btn-lg btn-outline-success mx-3" href="">
+          <a class="btn btn-lg btn-outline-success mx-3" href="<?php echo base_url("register-essay-comp-individual");?>">
             As yourself
           </a>
-          <a class="btn btn-lg btn-outline-success mx-3" href="">
+          <a class="btn btn-lg btn-outline-success mx-3" href="<?php echo base_url("register-essay-comp-team");?>">
             As team
           </a>
         </div>

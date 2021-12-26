@@ -8,6 +8,7 @@ class Auth_regis extends CI_Controller{
         parent::__construct();
 		date_default_timezone_set("Asia/Jakarta");
     }
+	
     public function regisRE101(){
         $this->load->model("registrasi");
         $config = array(
