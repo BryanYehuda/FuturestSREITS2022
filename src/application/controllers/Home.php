@@ -106,4 +106,14 @@ class Home extends CI_Controller
     {
         $this->load->view('details_grand_talkshow');
     }
+
+    public function awarding_night()
+    {
+        $this->load->view('details_awarding_night');
+    }
+
+    public function final_talkshow()
+    {
+        $this->load->view('details_final_talkshow');
+    }
 }

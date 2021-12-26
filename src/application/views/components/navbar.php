@@ -60,7 +60,7 @@
             </a>
           </li>
           <li>
-            <a class="dropdown-item" href="<?php echo base_url('details')?>">
+            <a class="dropdown-item" href="<?php echo base_url('final-talkshow')?>">
               Final Talkshow
             </a>
           </li>
@@ -70,7 +70,7 @@
             </a>
           </li>
           <li>
-            <a class="dropdown-item" href="<?php echo base_url('details')?>">
+            <a class="dropdown-item" href="<?php echo base_url('awarding-night')?>">
               Awarding Night
             </a>
           </li>

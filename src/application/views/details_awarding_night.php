@@ -6,13 +6,13 @@
     <?php
     $this->load->view('template/meta');
     ?>
-    <title>Final Talkshow </title>
+    <title>Awarding Night</title>
     <?php
     $this->load->view('template/css');
     ?>
     <!-- Import css if need -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="<?php echo base_url() ?>public/css/pages/final_talkshow.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>public/css/pages/awarding_night.css">
 </head>
 
 <body>
@@ -27,10 +27,10 @@
                 <div class="row">
                     <div class="col-12 text-center text-xl-start col-xl-8">
                         <h1 class="mb-5">
-                            Final Talkshow
+                            Awarding Night
                         </h1>
                         <p class="mb-5">
-                            <b>Final Talkshow</b> is one of the last series of talk shows that presents interesting themes and speakers as the closing of the FUTUREST 2022 event.
+                            <b>Awarding Night</b> is the culmination of a series of events at FUTUREST which includes awarding prizes to the finalists who won the competition.
                         </p>
                         <a href="#timeline" class="btn btn-success btn-lg">Show Timeline</a>
                         <a href="#" class="btn btn-warning btn-lg">Register Here</a>
@@ -44,7 +44,7 @@
 
         <section id="timeline" class="py-5">
             <div class="container d-flex flex-column align-items-center py-5">
-                <h2 class="mb-5">Final Talkshow Timeline</h2>
+                <h2 class="mb-5">Awarding Night Timeline</h2>
                 <div class="row mb-3 px-4 py-3 w-75" v-for="item in timeline">
                     <div class="col position-relative">
                         <div class="position-absolute rounded-timeline rounded-pill"></div>
@@ -67,7 +67,7 @@
     ?>
 
     <!-- Import js if need -->
-    <script src="<?php echo base_url() ?>public/js/pages/final_talkshow.js"></script>
+    <script src="<?php echo base_url() ?>public/js/pages/awarding_night.js"></script>
 </body>
 
 </html>

@@ -68,3 +68,5 @@ $route['innovation'] = 'home/innovation';
 // Events
 $route['grand-talksow'] = 'home/grand_talkshow';
 $route['climate-change-community'] = 'home/climate_change_community';
+$route['awarding-night'] = 'home/awarding_night';
+$route['final-talkshow'] = 'home/final_talkshow';
