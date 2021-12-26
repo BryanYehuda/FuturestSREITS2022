@@ -30,7 +30,7 @@
               RE Innovation Brainstorm Competition
             </h1>
             <p class="mb-5">
-              Renewable Energy Innovation Brainstorm is a national paper competition that encourages undergraduate and vocational students to conduct scientific approaches to develop existing or create new fascinating innovations in order to reduce greenhouse gases (GHG) emissions and sustainably solve energy issues. With the help of various professionals as mentors to guide top 10 (ten) teams to improve their ideas in an insightful experience.
+              <b>Renewable Energy Innovation Brainstorm</b> is a national paper competition that encourages undergraduate and vocational students to conduct scientific approaches to develop existing or create new fascinating innovations in order to reduce greenhouse gases (GHG) emissions and sustainably solve energy issues. With the help of various professionals as mentors to guide top 10 (ten) teams to improve their ideas in an insightful experience.
             </p>
             <a href="#timeline" class="btn btn-success btn-lg">Show Timeline</a>
           </div>

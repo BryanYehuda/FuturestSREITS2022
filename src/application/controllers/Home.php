@@ -95,8 +95,15 @@ class Home extends CI_Controller
         $this->load->view('details_re_innovation');
     }
 
-    public function details_climate_change()
+    // Events
+
+    public function climate_change_community()
     {
         $this->load->view('details_climate_change');
+    }
+
+    public function grand_talkshow()
+    {
+        $this->load->view('details_grand_talkshow');
     }
 }

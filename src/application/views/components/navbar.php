@@ -50,7 +50,7 @@
             <b>Events</b>
           </li>
           <li>
-            <a class="dropdown-item" href="<?php echo base_url('details')?>">
+            <a class="dropdown-item" href="<?php echo base_url('grand-talksow')?>">
               Grand Talkshow
             </a>
           </li>
@@ -65,7 +65,7 @@
             </a>
           </li>
           <li>
-            <a class="dropdown-item" href="<?php echo base_url('details')?>">
+            <a class="dropdown-item" href="<?php echo base_url('climate-change-community')?>">
               Climate Change Community
             </a>
           </li>

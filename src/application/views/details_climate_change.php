@@ -6,7 +6,7 @@
   <?php
   $this->load->view('template/meta');
   ?>
-  <title>Details RE Innovation</title>
+  <title>Climate Change Community</title>
   <?php
   $this->load->view('template/css');
   ?>
