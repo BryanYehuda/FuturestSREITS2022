@@ -10,7 +10,7 @@
 
 		<!-- Navbar Button Mobile -->
 		<input class="input-btn-mobile d-block d-md-none float-end" type="checkbox" onchange="handlerNav(this)"/>
-		<i class="bi bi-list icon-btn-mobile d-block d-md-none float-end"></i>
+		<i class="fas fa-bars icon-btn-mobile d-block d-md-none float-end"></i>
 
 		<!-- Navbar Links -->
 		<div class="navbar-links d-flex flex-column flex-md-row align-items-center justify-content-start">
