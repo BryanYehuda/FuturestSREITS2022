@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 22, 2021 at 08:26 PM
+-- Generation Time: Dec 26, 2021 at 02:43 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.11
 
@@ -24,6 +24,20 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `account`
+--
+
+CREATE TABLE `account` (
+  `account_id` int(11) NOT NULL,
+  `account_username` varchar(255) NOT NULL,
+  `account_password` varchar(70) NOT NULL,
+  `account_role` varchar(30) NOT NULL,
+  `account_event/comp` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `pendaftaran_climatechangecommunity`
 --
 
@@ -32,13 +46,14 @@ CREATE TABLE `pendaftaran_climatechangecommunity` (
   `pendaftaranclimatechangecommunity_name` varchar(255) NOT NULL,
   `pendaftaranclimatechangecommunity_email` varchar(255) NOT NULL,
   `pendaftaranclimatechangecommunity_domicile` varchar(255) NOT NULL,
+  `pendaftaranclimatechangecommunity_university` varchar(255) NOT NULL,
   `pendaftaranclimatechangecommunity_major` varchar(255) NOT NULL,
   `pendaftaranclimatechangecommunity_batch` int(4) NOT NULL,
   `pendaftaranclimatechangecommunity_linkedin` varchar(2083) NOT NULL,
   `pendaftaranclimatechangecommunity_cv` varchar(255) NOT NULL,
   `pendaftaranclimatechangecommunity_motivation` text NOT NULL,
   `pendaftaranclimatechangecommunity_contribution` text NOT NULL,
-  `pendaftaranclimatechangecommunity_prioritze` int(2) NOT NULL,
+  `pendaftaranclimatechangecommunity_prioritize` int(2) NOT NULL,
   `pendaftaranclimatechangecommunity_willingness` tinyint(1) NOT NULL,
   `pendaftaranclimatechangecommunity_committed` tinyint(1) NOT NULL,
   `pendaftaranclimatechangecommunity_followingfuturestig` varchar(255) NOT NULL,
@@ -57,11 +72,25 @@ CREATE TABLE `pendaftaran_climatechangecommunity` (
 
 CREATE TABLE `pendaftaran_essaycompetition` (
   `pendaftaranessaycompetition_id` bigint(11) NOT NULL,
-  `pendaftaranessaycompetition_nama` varchar(255) NOT NULL,
-  `pendaftaranessaycompetition_instansi` varchar(255) NOT NULL,
-  `pendaftaranessaycompetition_foto` varchar(255) NOT NULL,
-  `pendaftaranessaycompetition_kartuIdentitas` varchar(255) NOT NULL,
-  `pendaftaranessaycompetition_buktiPembayaran` varchar(255) NOT NULL,
+  `pendaftaranessaycompetition_teamname` varchar(255) NOT NULL,
+  `pendaftaranessaycompetition_1_name` varchar(255) NOT NULL,
+  `pendaftaranessaycompetition_1_age` int(11) NOT NULL,
+  `pendaftaranessaycompetition_1_college` varchar(255) NOT NULL,
+  `pendaftaranessaycompetition_1_major` varchar(255) NOT NULL,
+  `pendaftaranessaycompetition_1_card` varchar(255) NOT NULL,
+  `pendaftaranessaycompetition_1_photo` varchar(255) NOT NULL,
+  `pendaftaranessaycompetition_1_phone` varchar(20) NOT NULL,
+  `pendaftaranessaycompetition_1_email` varchar(255) NOT NULL,
+  `pendaftaranessaycompetition_1_follow` varchar(255) NOT NULL,
+  `pendaftaranessaycompetition_2_name` varchar(255) NOT NULL,
+  `pendaftaranessaycompetition_2_age` int(11) NOT NULL,
+  `pendaftaranessaycompetition_2_college` varchar(255) NOT NULL,
+  `pendaftaranessaycompetition_2_major` varchar(255) NOT NULL,
+  `pendaftaranessaycompetition_2_card` varchar(255) NOT NULL,
+  `pendaftaranessaycompetition_2_photo` varchar(255) NOT NULL,
+  `pendaftaranessaycompetition_2_phone` varchar(20) NOT NULL,
+  `pendaftaranessaycompetition_2_email` varchar(255) NOT NULL,
+  `pendaftaranessaycompetition_2_follow` varchar(255) NOT NULL,
   `pendaftaranessaycompetition_dataCreated` datetime NOT NULL DEFAULT current_timestamp(),
   `pendaftaranessaycompetition_dataUpdated` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -79,6 +108,7 @@ CREATE TABLE `pendaftaran_finaltalkshow` (
   `pendaftaranfinaltalkshow_domicile` varchar(255) NOT NULL,
   `pendaftaranfinaltalkshow_university` varchar(255) NOT NULL,
   `pendaftaranfinaltalkshow_major` varchar(255) NOT NULL,
+  `pendaftaranfinaltalkshow_batch` int(11) NOT NULL,
   `pendaftaranfinaltalkshow_question` text NOT NULL,
   `pendaftaranfinaltalkshow_followingfuturestig` varchar(255) NOT NULL,
   `pendaftaranfinaltalkshow_followingsreig` varchar(255) NOT NULL,
@@ -100,6 +130,7 @@ CREATE TABLE `pendaftaran_grandtalkshow` (
   `pendaftarangrandtalkshow_domicile` varchar(255) NOT NULL,
   `pendaftarangrandtalkshow_university` varchar(255) NOT NULL,
   `pendaftarangrandtalkshow_major` varchar(255) NOT NULL,
+  `pendaftarangrandtalkshow_batch` int(11) NOT NULL,
   `pendaftarangrandtalkshow_question` text NOT NULL,
   `pendaftarangrandtalkshow_followingfuturestig` varchar(255) NOT NULL,
   `pendaftarangrandtalkshow_followingsreig` varchar(255) NOT NULL,
@@ -121,6 +152,7 @@ CREATE TABLE `pendaftaran_re101` (
   `pendaftaranre101_domicile` varchar(255) NOT NULL,
   `pendaftaranre101_university` varchar(255) NOT NULL,
   `pendaftaranre101_major` varchar(255) NOT NULL,
+  `pendaftaranre101_batch` int(11) NOT NULL,
   `pendaftaranre101_question` text NOT NULL,
   `pendaftaranre101_followingfuturestig` varchar(255) NOT NULL,
   `pendaftaranre101_followingsreig` varchar(255) NOT NULL,
@@ -137,11 +169,35 @@ CREATE TABLE `pendaftaran_re101` (
 
 CREATE TABLE `pendaftaran_reinnovation` (
   `pendaftaranreinnovation_id` bigint(11) NOT NULL,
-  `pendaftaranreinnovation_nama` varchar(255) NOT NULL,
-  `pendaftaranreinnovation_instansi` varchar(255) NOT NULL,
-  `pendaftaranreinnovation_foto` varchar(255) NOT NULL,
-  `pendaftaranreinnovation_kartuIdentitas` varchar(255) NOT NULL,
-  `pendaftaranreinnovation_buktiPembayaran` varchar(255) NOT NULL,
+  `pendaftaranreinnovation_teamname` varchar(255) NOT NULL,
+  `pendaftaranreinnovation_college` varchar(255) NOT NULL,
+  `pendaftaranreinnovation_1_name` varchar(255) NOT NULL,
+  `pendaftaranreinnovation_1_major` varchar(255) NOT NULL,
+  `pendaftaranreinnovation_1_batch` int(11) NOT NULL,
+  `pendaftaranreinnovation_1_card` varchar(255) NOT NULL,
+  `pendaftaranreinnovation_1_activestudent` varchar(255) NOT NULL,
+  `pendaftaranreinnovation_1_photo` varchar(255) NOT NULL,
+  `pendaftaranreinnovation_1_phone` varchar(20) NOT NULL,
+  `pendaftaranreinnovation_1_email` varchar(255) NOT NULL,
+  `pendaftaranreinnovation_1_follow` varchar(255) NOT NULL,
+  `pendaftaranreinnovation_2_name` varchar(255) NOT NULL,
+  `pendaftaranreinnovation_2_major` varchar(255) NOT NULL,
+  `pendaftaranreinnovation_2_batch` int(11) NOT NULL,
+  `pendaftaranreinnovation_2_card` varchar(255) NOT NULL,
+  `pendaftaranreinnovation_2_activestudent` varchar(255) NOT NULL,
+  `pendaftaranreinnovation_2_photo` varchar(255) NOT NULL,
+  `pendaftaranreinnovation_2_phone` varchar(20) NOT NULL,
+  `pendaftaranreinnovation_2_email` varchar(255) NOT NULL,
+  `pendaftaranreinnovation_2_follow` varchar(255) NOT NULL,
+  `pendaftaranreinnovation_3_name` varchar(255) NOT NULL,
+  `pendaftaranreinnovation_3_major` varchar(255) NOT NULL,
+  `pendaftaranreinnovation_3_batch` int(11) NOT NULL,
+  `pendaftaranreinnovation_3_card` varchar(255) NOT NULL,
+  `pendaftaranreinnovation_3_activestudent` varchar(255) NOT NULL,
+  `pendaftaranreinnovation_3_photo` varchar(255) NOT NULL,
+  `pendaftaranreinnovation_3_phone` varchar(20) NOT NULL,
+  `pendaftaranreinnovation_3_email` varchar(255) NOT NULL,
+  `pendaftaranreinnovation_3_follow` varchar(255) NOT NULL,
   `pendaftaranreinnovation_dataCreated` datetime NOT NULL DEFAULT current_timestamp(),
   `pendaftaranreinnovation_dataUpdated` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -166,6 +222,12 @@ CREATE TABLE `pendaftaran_webinar` (
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `account`
+--
+ALTER TABLE `account`
+  ADD PRIMARY KEY (`account_id`);
 
 --
 -- Indexes for table `pendaftaran_climatechangecommunity`
@@ -208,6 +270,52 @@ ALTER TABLE `pendaftaran_reinnovation`
 --
 ALTER TABLE `pendaftaran_webinar`
   ADD PRIMARY KEY (`pendaftaranwebinar_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `account`
+--
+ALTER TABLE `account`
+  MODIFY `account_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `pendaftaran_climatechangecommunity`
+--
+ALTER TABLE `pendaftaran_climatechangecommunity`
+  MODIFY `pendaftaranclimatechangecommunity_id` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `pendaftaran_essaycompetition`
+--
+ALTER TABLE `pendaftaran_essaycompetition`
+  MODIFY `pendaftaranessaycompetition_id` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `pendaftaran_finaltalkshow`
+--
+ALTER TABLE `pendaftaran_finaltalkshow`
+  MODIFY `pendaftaranfinaltalkshow_id` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `pendaftaran_grandtalkshow`
+--
+ALTER TABLE `pendaftaran_grandtalkshow`
+  MODIFY `pendaftarangrandtalkshow_id` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `pendaftaran_re101`
+--
+ALTER TABLE `pendaftaran_re101`
+  MODIFY `pendaftaranre101_id` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT for table `pendaftaran_reinnovation`
+--
+ALTER TABLE `pendaftaran_reinnovation`
+  MODIFY `pendaftaranreinnovation_id` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

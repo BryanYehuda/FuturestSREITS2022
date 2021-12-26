@@ -42,186 +42,274 @@
                                     <div class="col-md-13  container">
                                         <div class="col-md-7  container">
                                             <!-- Form -->
-                                            <form action="#" class="">
+                                            <?php echo form_open_multipart(base_url().'Auth_regis/regisReInnovation');?>
+                                            <form action="#" class="" method="post">
 
                                                 <div class="form-group text-dark ">
                                                     <label for="name" class="text-dark"><i class="text-dark"> </i> Team Name </label>
-                                                    <input type="text" class="form-control text-dark" name="name" placeholder="Team Name ll Ex: FuturesTeam">
+                                                    <input type="text" class="form-control text-dark <?php $ok = " "; (form_error('teamname') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" name="teamname" placeholder="Team Name ll Ex: FuturesTeam" required>
+                                                    <div class="invalid-feedback">
+                                                        <?php echo form_error('teamname');?>
+                                                    </div>
                                                 </div><br>
                                                 <div class="form-group text-dark ">
                                                     <label for="name" class="text-dark"><i class="text-dark"> </i> College Name </label>
-                                                    <input type="text" class="form-control text-dark" name="name" placeholder="College Name ll Ex: Institut Teknologi Sepuluh Nopember">
+                                                    <input type="text" class="form-control text-dark <?php $ok = " "; (form_error('college') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" name="college" placeholder="College Name ll Ex: Institut Teknologi Sepuluh Nopember" required>
+                                                    <div class="invalid-feedback">
+                                                        <?php echo form_error('college');?>
+                                                    </div>
                                                 </div><br>
                                                 <div class="d-inline p-2 bg-dark text-white">Member 1 (Team Leader)</div>
 
                                                 <div class="form-group text-dark ">
                                                     <br><label for="name" class="text-dark"><i class="text-dark"> </i> Full Name </label>
-                                                    <input type="text" class="form-control text-dark" name="name" placeholder="Your Name ll Ex: Devitweb development">
+                                                    <input type="text" class="form-control text-dark <?php $ok = " "; (form_error('name_1') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" name="name_1" placeholder="Your Name ll Ex: Devitweb development" required>
+                                                    <div class="invalid-feedback">
+                                                        <?php echo form_error('name_1');?>
+                                                    </div>
                                                 </div><br>
 
 
                                                 <div class="form-group text-dark">
                                                     <label for="name"><i class="float"></i> Major </label>
-                                                    <input type="text" class="form-control text-dark" id="mjr" name="major" placeholder="Major ll Ex: Information Technology">
+                                                    <input type="text" class="form-control text-dark <?php $ok = " "; (form_error('major_1') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" id="mjr" name="major_1" placeholder="Major ll Ex: Information Technology" required>
+                                                    <div class="invalid-feedback">
+                                                        <?php echo form_error('name_1');?>
+                                                    </div>
                                                 </div><br>
 
                                                 <label for="pwd"><i class="float"></i> Batch </label>
-                                                <select class="form-select" aria-label="Default select example">
+                                                <select class="form-select <?php $ok = " "; (form_error('batch_1') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" aria-label="Default select example" name="batch_1" required>
                                                     <option selected>-</option>
                                                     <option value="1">2019</option>
                                                     <option value="2">2020</option>
                                                     <option value="3">2021</option>
                                                 </select><br>
+                                                <div class="invalid-feedback">
+                                                    <?php echo form_error('batch_1');?>
+                                                </div>
 
                                                 <div class="mb-3">
                                                     <label for="name"><i class="float"></i> Student ID Card Scan<b>(pdf)</b></label>
-                                                    <input class="form-control text-dark" type="file" id="formFileMultiple" multiple>
+                                                    <input class="form-control text-dark <?php $ok = " "; (!empty($error['card_1'])) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" type="file" id="formFileMultiple" name="card_1" multiple required>
+                                                    <div class="invalid-feedback">
+                                                        <?php echo $error['card_1'];?>
+                                                    </div>
                                                 </div>
                                                 <br>
 
                                                 <div class="mb-3">
                                                     <label for="name"><i class="float"></i> Statement Letter of Active Student Scan<b>(pdf)</b></label>
-                                                    <input class="form-control text-dark" type="file" id="formFileMultiple" multiple>
+                                                    <input class="form-control text-dark <?php $ok = " "; (!empty($error['activestudent_1'])) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" type="file" id="formFileMultiple" name="activestudent_1" multiple required>
+                                                    <div class="invalid-feedback">
+                                                        <?php echo $error['activestudent_1'];?>
+                                                    </div>
                                                 </div>
                                                 <br>
 
                                                 <div class="mb-3">
                                                     <label for="name"><i class="float"></i> Half-body picture 4 x 6</label>
                                                     <label for="name"><i class="float"></i> <b>formal, plain background </b>(JPG, JPEG, PNG)</label>
-                                                    <input class="form-control text-dark" type="file" id="formFileMultiple" multiple>
+                                                    <input class="form-control text-dark <?php $ok = " "; (!empty($error['photo_1'])) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" type="file" id="formFileMultiple" name="photo_1" multiple required>
+                                                    <div class="invalid-feedback">
+                                                        <?php echo $error['photo_1'];?>
+                                                    </div>
                                                 </div>
                                                 <br>
                                                 <div class="form-group text-dark">
                                                     <label for="phone"><i class="text-dark float"></i> Phone Number </label>
-                                                    <input type="phone" class="form-control text-dark" name="phone" placeholder="phone ll Ex: 08XX XXXX XXXX">
+                                                    <input type="phone" class="form-control text-dark <?php $ok = " "; (form_error('phone_1') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" name="phone_1" placeholder="phone ll Ex: 08XX XXXX XXXX" required> 
+                                                    <div class="invalid-feedback">
+                                                        <?php echo form_error('phone_1');?>
+                                                    </div>
                                                 </div><br>
 
                                                 <div class="form-group text-dark">
                                                     <label for="email"><i class="text-dark float"></i> Email Address</label>
-                                                    <input type="email" class="form-control text-dark" name="email" placeholder="Email ll Ex: Devitweb@gmail.com">
+                                                    <input type="email" class="form-control text-dark <?php $ok = " "; (form_error('email_1') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" name="email_1" placeholder="Email ll Ex: Devitweb@gmail.com" required>
+                                                    <div class="invalid-feedback">
+                                                        <?php echo form_error('email_1');?>
+                                                    </div>
                                                 </div><br>
 
 
                                                 <div class="mb-3">
                                                     <label for="name"><i class="float"></i> Proof of following our official Instagram account @futurest2022 or our linkedin at </label>
                                                     <a href="https://www.linkedin.com/company/futureenergysummit/" class="link-primary">https://www.linkedin.com/company/futureenergysummit/</a>
-                                                    <input class="form-control text-dark" type="file" id="formFileMultiple" multiple>
+                                                    <input class="form-control text-dark <?php $ok = " "; (!empty($error['follow_1'])) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" type="file" id="formFileMultiple" name="follow_1" multiple required>
+                                                    <div class="invalid-feedback">
+                                                        <?php echo $error['follow_1'];?>
+                                                    </div>
                                                 </div><br>
 
                                                 <div class="d-inline p-2 bg-dark text-white">Member 2</div>
 
                                                 <div class="form-group text-dark ">
                                                     <br><label for="name" class="text-dark"><i class="text-dark"> </i> Full Name </label>
-                                                    <input type="text" class="form-control text-dark" name="name" placeholder="Your Name ll Ex: Devitweb development">
+                                                    <input type="text" class="form-control text-dark <?php $ok = " "; (form_error('name_2') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" name="name_2" placeholder="Your Name ll Ex: Devitweb development" required>
+                                                    <div class="invalid-feedback">
+                                                        <?php echo form_error('name_2');?>
+                                                    </div>
                                                 </div><br>
 
 
                                                 <div class="form-group text-dark">
                                                     <label for="name"><i class="float"></i> Major </label>
-                                                    <input type="text" class="form-control text-dark" id="mjr" name="major" placeholder="Major ll Ex: Information Technology">
+                                                    <input type="text" class="form-control text-dark <?php $ok = " "; (form_error('major_2') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" id="mjr" name="major_2" placeholder="Major ll Ex: Information Technology" required>
+                                                    <div class="invalid-feedback">
+                                                        <?php echo form_error('major_2');?>
+                                                    </div>
                                                 </div><br>
 
                                                 <label for="pwd"><i class="float"></i> Batch </label>
-                                                <select class="form-select" aria-label="Default select example">
+                                                <select class="form-select" aria-label="Default select example <?php $ok = " "; (form_error('batch_2') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" name="batch_2" required>
                                                     <option selected>-</option>
                                                     <option value="1">2019</option>
                                                     <option value="2">2020</option>
                                                     <option value="3">2021</option>
                                                 </select><br>
+                                                <div class="invalid-feedback">
+                                                    <?php echo form_error('batch_2');?>
+                                                </div>
 
                                                 <div class="mb-3">
                                                     <label for="name"><i class="float"></i> Student ID Card Scan<b>(pdf)</b></label>
-                                                    <input class="form-control text-dark" type="file" id="formFileMultiple" multiple>
+                                                    <input class="form-control text-dark <?php $ok = " "; (!empty($error['card_2'])) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" type="file" id="formFileMultiple" name="card_2" multiple required>
+                                                    <div class="invalid-feedback">
+                                                        <?php echo $error['card_2'];?>
+                                                    </div>
                                                 </div>
                                                 <br>
 
                                                 <div class="mb-3">
                                                     <label for="name"><i class="float"></i> Statement Letter of Active Student Scan<b>(pdf)</b></label>
-                                                    <input class="form-control text-dark" type="file" id="formFileMultiple" multiple>
+                                                    <input class="form-control text-dark <?php $ok = " "; (!empty($error['activestudent_2'])) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" type="file" id="formFileMultiple" name="activestudent_2" multiple required>
+                                                    <div class="invalid-feedback">
+                                                        <?php echo $error['activestudent_2'];?>
+                                                    </div>
                                                 </div>
                                                 <br>
 
                                                 <div class="mb-3">
                                                     <label for="name"><i class="float"></i> Half-body picture 4 x 6</label>
                                                     <label for="name"><i class="float"></i> <b>formal, plain background </b>(JPG, JPEG, PNG)</label>
-                                                    <input class="form-control text-dark" type="file" id="formFileMultiple" multiple>
+                                                    <input class="form-control text-dark <?php $ok = " "; (!empty($error['photo_2'])) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" type="file" id="formFileMultiple" name="photo_2" multiple required>
+                                                    <div class="invalid-feedback">
+                                                        <?php echo $error['photo_2'];?>
+                                                    </div>
                                                 </div>
                                                 <br>
                                                 <div class="form-group text-dark">
                                                     <label for="phone"><i class="text-dark float"></i> Phone Number </label>
-                                                    <input type="phone" class="form-control text-dark" name="phone" placeholder="phone ll Ex: 08XX XXXX XXXX">
+                                                    <input type="phone" class="form-control text-dark <?php $ok = " "; (form_error('phone_2') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" name="phone_2" placeholder="phone ll Ex: 08XX XXXX XXXX" required>
+                                                    <div class="invalid-feedback">
+                                                        <?php echo form_error('phone_2');?>
+                                                    </div>
                                                 </div><br>
 
                                                 <div class="form-group text-dark">
                                                     <label for="email"><i class="text-dark float"></i> Email Address</label>
-                                                    <input type="email" class="form-control text-dark" name="email" placeholder="Email ll Ex: Devitweb@gmail.com">
+                                                    <input type="email" class="form-control text-dark <?php $ok = " "; (form_error('email_2') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" name="email_2" placeholder="Email ll Ex: Devitweb@gmail.com" required>
+                                                    <div class="invalid-feedback">
+                                                        <?php echo form_error('email_2');?>
+                                                    </div>
                                                 </div><br>
 
 
                                                 <div class="mb-3">
                                                     <label for="name"><i class="float"></i> Proof of following our official Instagram account @futurest2022 or our linkedin at </label>
                                                     <a href="https://www.linkedin.com/company/futureenergysummit/" class="link-primary">https://www.linkedin.com/company/futureenergysummit/</a>
-                                                    <input class="form-control text-dark" type="file" id="formFileMultiple" multiple>
+                                                    <input class="form-control text-dark <?php $ok = " "; (!empty($error['follow_2'])) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" type="file" id="formFileMultiple" name="follow_2" multiple required>
+                                                    <div class="invalid-feedback">
+                                                        <?php echo $error['follow_2'];?>
+                                                    </div>
                                                 </div><br>
 
                                                 <div class="d-inline p-2 bg-dark text-white">Member 3</div>
 
                                                 <div class="form-group text-dark ">
                                                     <br><label for="name" class="text-dark"><i class="text-dark"> </i> Full Name </label>
-                                                    <input type="text" class="form-control text-dark" name="name" placeholder="Your Name ll Ex: Devitweb development">
+                                                    <input type="text" class="form-control text-dark <?php $ok = " "; (form_error('name_3') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" name="name_3" placeholder="Your Name ll Ex: Devitweb development" required>
+                                                    <div class="invalid-feedback">
+                                                        <?php echo form_error('name_3');?>
+                                                    </div>
                                                 </div><br>
 
 
                                                 <div class="form-group text-dark">
                                                     <label for="name"><i class="float"></i> Major </label>
-                                                    <input type="text" class="form-control text-dark" id="mjr" name="major" placeholder="Major ll Ex: Information Technology">
+                                                    <input type="text" class="form-control text-dark <?php $ok = " "; (form_error('major_3') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" id="mjr" name="major_3" placeholder="Major ll Ex: Information Technology" required>
+                                                    <div class="invalid-feedback">
+                                                        <?php echo form_error('major_3');?>
+                                                    </div>
                                                 </div><br>
 
                                                 <label for="pwd"><i class="float"></i> Batch </label>
-                                                <select class="form-select" aria-label="Default select example">
+                                                <select class="form-select <?php $ok = " "; (form_error('batch_3') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" aria-label="Default select example" name="batch_3" required>
                                                     <option selected>-</option>
                                                     <option value="1">2019</option>
                                                     <option value="2">2020</option>
                                                     <option value="3">2021</option>
                                                 </select><br>
+                                                <div class="invalid-feedback">
+                                                    <?php echo form_error('batch_3');?>
+                                                </div>
 
                                                 <div class="mb-3">
                                                     <label for="name"><i class="float"></i> Student ID Card Scan<b>(pdf)</b></label>
-                                                    <input class="form-control text-dark" type="file" id="formFileMultiple" multiple>
+                                                    <input class="form-control text-dark Z<?php $ok = " "; (!empty($error['card_3'])) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" type="file" id="formFileMultiple" name="card_3" multiple required>
+                                                    <div class="invalid-feedback">
+                                                        <?php echo $error['card_3'];?>
+                                                    </div>
                                                 </div>
                                                 <br>
 
                                                 <div class="mb-3">
                                                     <label for="name"><i class="float"></i> Statement Letter of Active Student Scan<b>(pdf)</b></label>
-                                                    <input class="form-control text-dark" type="file" id="formFileMultiple" multiple>
+                                                    <input class="form-control text-dark <?php $ok = " "; (!empty($error['activestudent_3'])) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" type="file" id="formFileMultiple" name="activestudent_3" multiple required>
+                                                    <div class="invalid-feedback">
+                                                        <?php echo $error['activestudent_3'];?>
+                                                    </div>
                                                 </div>
                                                 <br>
 
                                                 <div class="mb-3">
                                                     <label for="name"><i class="float"></i> Half-body picture 4 x 6</label>
                                                     <label for="name"><i class="float"></i> <b>formal, plain background </b>(JPG, JPEG, PNG)</label>
-                                                    <input class="form-control text-dark" type="file" id="formFileMultiple" multiple>
+                                                    <input class="form-control text-dark <?php $ok = " "; (!empty($error['photo_3'])) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" type="file" id="formFileMultiple" name="photo_3" multiple required>
+                                                    <div class="invalid-feedback">
+                                                        <?php echo $error['photo_3'];?>
+                                                    </div>
                                                 </div>
                                                 <br>
                                                 <div class="form-group text-dark">
                                                     <label for="phone"><i class="text-dark float"></i> Phone Number </label>
-                                                    <input type="phone" class="form-control text-dark" name="phone" placeholder="phone ll Ex: 08XX XXXX XXXX">
+                                                    <input type="phone" class="form-control text-dark <?php $ok = " "; (form_error('phone_3') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" name="phone_3" placeholder="phone ll Ex: 08XX XXXX XXXX" required>
+                                                    <div class="invalid-feedback">
+                                                        <?php echo form_error('phone_3');?>
+                                                    </div>
                                                 </div><br>
 
                                                 <div class="form-group text-dark">
                                                     <label for="email"><i class="text-dark float"></i> Email Address</label>
-                                                    <input type="email" class="form-control text-dark" name="email" placeholder="Email ll Ex: Devitweb@gmail.com">
+                                                    <input type="email" class="form-control text-dark <?php $ok = " "; (form_error('email_3') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" name="email_3" placeholder="Email ll Ex: Devitweb@gmail.com" required>
+                                                    <div class="invalid-feedback">
+                                                        <?php echo form_error('email_3');?>
+                                                    </div>
                                                 </div><br>
 
 
                                                 <div class="mb-3">
                                                     <label for="name"><i class="float"></i> Proof of following our official Instagram account @futurest2022 or our linkedin at </label>
                                                     <a href="https://www.linkedin.com/company/futureenergysummit/" class="link-primary">https://www.linkedin.com/company/futureenergysummit/</a>
-                                                    <input class="form-control text-dark" type="file" id="formFileMultiple" multiple>
+                                                    <input class="form-control text-dark <?php $ok = " "; (!empty($error['follow_3'])) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" type="file" id="formFileMultiple" name="follow_3" multiple required>
+                                                    <div class="invalid-feedback">
+                                                        <?php echo $error['follow_3'];?>
+                                                    </div>
                                                 </div><br>
 
 
-                                                <button type="button" class="btn btn-danger">Submit</button>
+                                                <button type="submit" class="btn btn-danger">Submit</button>
                                                 <!-- Example single danger button -->
                                             </form>
                                             <!-- End Form -->
