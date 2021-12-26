@@ -3,157 +3,71 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <?php
+    <?php
     $this->load->view('template/meta');
-  ?>
-  <title>Details Final Talkshow</title>
-  <?php
+    ?>
+    <title>Final Talkshow </title>
+    <?php
     $this->load->view('template/css');
-  ?>
-  <!-- Import css if need -->
-  <link rel="stylesheet" href="<?php echo base_url() ?>public/css/pages/details.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    ?>
+    <!-- Import css if need -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="<?php echo base_url() ?>public/css/pages/final_talkshow.css">
 </head>
 
 <body>
-<?php
-    $this->load->view('components/navbar');
-  ?>
-
-  <section id="jumbotron" class="d-flex align-items-center position-relative">
-    <div class="container text-center">
-    <h1 class="mb-5">Detail Event</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem odit assumenda amet totam vitae, vero aspernatur deleniti quae voluptatibus, ut quod soluta omnis recusandae vel quasi aliquam libero ratione dolores doloribus quia praesentium. Ipsum, voluptas!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem odit assumenda amet totam vitae, vero aspernatur deleniti quae voluptatibus, ut quod soluta omnis recusandae vel quasi aliquam libero ratione dolores doloribus quia praesentium. Ipsum, voluptas!
-      </p><br><br>
-      <a href="<?php echo base_url() . 'register'?>"type="button" class="btn btn-outline-primary">Register Now</a>
-    </div>   
-  </section>
-
-  <section id="container-1" class="d-flex align-items-center position-relative">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-12 col-lg-4">
-          <div class="row font-weight-bold bold-text">
-            <h2>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </h2>
-          </div><br>
-          <div class="row">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem odit assumenda amet totam vitae, vero aspernatur deleniti quae voluptatibus, ut quod soluta omnis recusandae vel quasi aliquam libero ratione dolores doloribus quia praesentium. Ipsum, voluptas!
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem odit assumenda amet totam vitae, vero aspernatur deleniti quae voluptatibus, ut quod soluta omnis recusandae vel quasi aliquam libero ratione dolores doloribus quia praesentium. Ipsum, voluptas!
-            </p>
-          </div><br>
-          <div class="row">
-            <div class="col-6 offset-3 col-lg-6 offset-lg-3">
-              <button type="button" class="btn btn-outline-primary" style="margin-bottom: 40px;">Know More About Futurest 2022</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-8">
-          <div class="card bg-dark text-white">
-            <img class="card-img" src="<?php echo base_url() ?>/public/img/event-parallax-test.jpg" alt="Card image">
-          </div>
-        </div>
-      </div>
-    </div>   
-  </section><br><br><br><br><br>
-
-  <section id="container-2" class="d-flex align-items-center position-relative">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-12 col-lg-8">
-          <div class="card bg-dark text-white">
-            <img class="card-img" src="<?php echo base_url() ?>/public/img/event-parallax-test.jpg" alt="Card image">
-          </div>
-        </div>
-        <div class="col-12 col-lg-4">
-          <div class="row font-weight-bold bold-text">
-            <h2>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </h2>
-          </div><br>
-          <div class="row">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem odit assumenda amet totam vitae, vero aspernatur deleniti quae voluptatibus, ut quod soluta omnis recusandae vel quasi aliquam libero ratione dolores doloribus quia praesentium. Ipsum, voluptas!
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem odit assumenda amet totam vitae, vero aspernatur deleniti quae voluptatibus, ut quod soluta omnis recusandae vel quasi aliquam libero ratione dolores doloribus quia praesentium. Ipsum, voluptas!
-            </p>
-          </div><br>
-          <div class="row">
-            <div class="col-6 offset-3 col-lg-6 offset-lg-3">
-              <button type="button" class="btn btn-outline-primary" style="margin-bottom: 40px;">Know More About Futurest 2022</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>   
-  </section><br><br><br>
-
-  <section id="timeline" class="d-flex align-items-center position-relative">
-    <div class="container">                      
-      <div class="row text-center justify-content-center mb-5">
-        <div class="col-xl-6 col-lg-8">
-          <h2 class="font-weight-bold">Our Evolution</h2>
-          <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="timeline-steps aos-init aos-animate" data-aos="fade-up">
-            <div class="timeline-step">
-              <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2003">
-                <div class="inner-circle"></div>
-                  <p class="h6 mt-3 mb-1">2003</p>
-                  <p class="h6 text-muted mb-0 mb-lg-0">Lorem ipsum dolor</p>
-                </div>
-              </div>
-              <div class="timeline-step">
-                <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2004">
-                  <div class="inner-circle"></div>
-                  <p class="h6 mt-3 mb-1">2004</p>
-                  <p class="h6 text-muted mb-0 mb-lg-0">Lorem ipsum dolor</p>
-                </div>
-              </div>
-              <div class="timeline-step">
-                <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2005">
-                  <div class="inner-circle"></div>
-                  <p class="h6 mt-3 mb-1">2005</p>
-                  <p class="h6 text-muted mb-0 mb-lg-0">Lorem ipsum dolor</p>
-                </div>
-              </div>
-              <div class="timeline-step">
-                <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2010">
-                  <div class="inner-circle"></div>
-                  <p class="h6 mt-3 mb-1">2010</p>
-                  <p class="h6 text-muted mb-0 mb-lg-0">Lorem ipsum dolor</p>
-                </div>
-              </div>
-              <div class="timeline-step mb-0">
-                <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2020">
-                  <div class="inner-circle"></div>
-                  <p class="h6 mt-3 mb-1">2020</p>
-                  <p class="h6 text-muted mb-0 mb-lg-0">Lorem ipsum dolor</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  </section><br><br><br>
-
-  <footer>
     <?php
-      $this->load->view('components/footer');
+    $this->load->view('components/navbar');
     ?>
-  </footer>
 
-  <?php
+    <main id="section">
+
+        <section id="jumbotron" class="d-flex align-items-center position-relative">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center text-xl-start col-xl-8">
+                        <h1 class="mb-5">
+                            Final Talkshow
+                        </h1>
+                        <p class="mb-5">
+                            <b>Final Talkshow</b> is one of the last series of talk shows that presents interesting themes and speakers as the closing of the FUTUREST 2022 event.
+                        </p>
+                        <a href="#timeline" class="btn btn-success btn-lg">Show Timeline</a>
+                        <a href="#" class="btn btn-warning btn-lg">Register Here</a>
+                    </div>
+                    <div class="d-none d-xl-flex col-xl-4 d-flex align-items-center justify-content-center">
+                        <i class="bi bi-journal-bookmark"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="timeline" class="py-5">
+            <div class="container d-flex flex-column align-items-center py-5">
+                <h2 class="mb-5">Final Talkshow Timeline</h2>
+                <div class="row mb-3 px-4 py-3 w-75" v-for="item in timeline">
+                    <div class="col position-relative">
+                        <div class="position-absolute rounded-timeline rounded-pill"></div>
+                        <h3>{{ item.date }}</h3>
+                        <p>{{ item.description }}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <?php
+        $this->load->view('components/footer');
+        ?>
+    </footer>
+
+    <?php
     $this->load->view('template/script');
-  ?>
+    ?>
 
-  <!-- Import js if need -->
+    <!-- Import js if need -->
+    <script src="<?php echo base_url() ?>public/js/pages/final_talkshow.js"></script>
 </body>
 
 </html>
