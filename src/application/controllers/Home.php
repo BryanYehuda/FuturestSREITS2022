@@ -94,4 +94,9 @@ class Home extends CI_Controller
     {
         $this->load->view('details_re_innovation');
     }
+
+    public function details_climate_change()
+    {
+        $this->load->view('details_climate_change');
+    }
 }
