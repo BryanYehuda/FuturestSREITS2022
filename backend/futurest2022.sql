@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 26, 2021 at 02:43 PM
+-- Generation Time: Dec 28, 2021 at 05:27 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.11
 
@@ -91,6 +91,7 @@ CREATE TABLE `pendaftaran_essaycompetition` (
   `pendaftaranessaycompetition_2_phone` varchar(20) NOT NULL,
   `pendaftaranessaycompetition_2_email` varchar(255) NOT NULL,
   `pendaftaranessaycompetition_2_follow` varchar(255) NOT NULL,
+  `pendaftaranessaycompetition_payment` varchar(255) NOT NULL,
   `pendaftaranessaycompetition_dataCreated` datetime NOT NULL DEFAULT current_timestamp(),
   `pendaftaranessaycompetition_dataUpdated` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -198,6 +199,7 @@ CREATE TABLE `pendaftaran_reinnovation` (
   `pendaftaranreinnovation_3_phone` varchar(20) NOT NULL,
   `pendaftaranreinnovation_3_email` varchar(255) NOT NULL,
   `pendaftaranreinnovation_3_follow` varchar(255) NOT NULL,
+  `pendaftaranreinnovation_payment` varchar(255) NOT NULL,
   `pendaftaranreinnovation_dataCreated` datetime NOT NULL DEFAULT current_timestamp(),
   `pendaftaranreinnovation_dataUpdated` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -285,13 +287,13 @@ ALTER TABLE `account`
 -- AUTO_INCREMENT for table `pendaftaran_climatechangecommunity`
 --
 ALTER TABLE `pendaftaran_climatechangecommunity`
-  MODIFY `pendaftaranclimatechangecommunity_id` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `pendaftaranclimatechangecommunity_id` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `pendaftaran_essaycompetition`
 --
 ALTER TABLE `pendaftaran_essaycompetition`
-  MODIFY `pendaftaranessaycompetition_id` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `pendaftaranessaycompetition_id` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `pendaftaran_finaltalkshow`
@@ -315,7 +317,7 @@ ALTER TABLE `pendaftaran_re101`
 -- AUTO_INCREMENT for table `pendaftaran_reinnovation`
 --
 ALTER TABLE `pendaftaran_reinnovation`
-  MODIFY `pendaftaranreinnovation_id` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `pendaftaranreinnovation_id` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

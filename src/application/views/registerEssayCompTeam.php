@@ -197,7 +197,16 @@
                                                         <?php echo $error['follow_2'];?>
                                                     </div>
                                                 </div><br>
-
+                                                
+                                                <div class="mb-3">
+                                                    <label for="name"><i class="float"></i> Payment</label>
+                                                    <input class="form-control text-dark <?php $ok = " "; (!empty($error['payment'])) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" type="file" id="formFileMultiple" name="payment" multiple required>
+                                                    <div class="invalid-feedback">
+                                                        <?php echo $error['payment'];?>
+                                                    </div>
+                                                    </div>
+                                                <br>
+                                                
                                                 <button type="submit" class="btn btn-danger">Submit</button>
                                                 <!-- Example single danger button -->
                                             </form>

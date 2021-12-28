@@ -118,6 +118,7 @@ class registrasi extends CI_Model{
             'pendaftaranreinnovation_3_phone'           => $this->input->post('phone_3'),
             'pendaftaranreinnovation_3_email'           => $this->input->post('email_3'),
             'pendaftaranreinnovation_3_follow'          => $data['follow_3'],
+            'pendaftaranreinnovation_payment'           => $data['payment'],
             'pendaftaranreinnovation_dataUpdated'       => date('Y-m-d')
         );
 
@@ -145,6 +146,7 @@ class registrasi extends CI_Model{
             'pendaftaranessaycompetition_2_phone'       => $this->input->post('phone_2'),
             'pendaftaranessaycompetition_2_email'       => $this->input->post('email_2'),
             'pendaftaranessaycompetition_2_follow'      => $data['follow_2'],
+            'pendaftaranessaycompetition_payment'       => $data['payment'],
             'pendaftaranessaycompetition_dataUpdated'   => date('Y-m-d')
         );
 
@@ -163,6 +165,7 @@ class registrasi extends CI_Model{
             'pendaftaranessaycompetition_1_phone'       => $this->input->post('phone_1'),
             'pendaftaranessaycompetition_1_email'       => $this->input->post('email_1'),
             'pendaftaranessaycompetition_1_follow'      => $data['follow_1'],
+            'pendaftaranessaycompetition_payment'       => $data['payment'],
             'pendaftaranessaycompetition_dataUpdated'   => date('Y-m-d')
         );
 

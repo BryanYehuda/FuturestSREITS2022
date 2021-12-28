@@ -364,6 +364,17 @@ class Auth_regis extends CI_Controller{
 			$error['photo_3'] = $this->photo3->display_errors();
 		}
 			
+		$config = array(
+			'allowed_types' => 'jpg|png|jpeg',
+			'upload_path'	=> './upload/REinnovation/payment'
+		);
+
+		$this->load->library('upload', $config, 'payment');
+		$this->payment->initialize($config);
+        $this->payment->do_upload('payment');
+		$data['payment'] = $this->payment->data('file_name');
+		$error['payment'] = $this->payment->display_errors();
+		
 		if(!$this->form_validation->run() || !$this->registrasi->is_it_empty($error)){
 			if(empty($error['photo_1'])){
 				$path = './upload/REinnovation/photo/';
@@ -413,7 +424,10 @@ class Auth_regis extends CI_Controller{
 				$path = './upload/REinnovation/card/';
 				unlink($path.$data['card_3']);
 			}
-
+			if(empty($error['payment'])){
+				$path = './upload/REinnovation/payment/';
+				unlink($path.$data['payment']);
+			}
 			
 			$this->load->view('registerReInnovationComp',
 				array(
@@ -452,6 +466,15 @@ class Auth_regis extends CI_Controller{
 
 		$config = array(
 			'allowed_types' => 'jpg|png|jpeg',
+			'upload_path'	=> './upload/EssayCompetition/payment'
+		);
+
+		$this->load->library('upload', $config, 'payment');
+		$this->payment->initialize($config);
+        $this->payment->do_upload('payment');
+
+		$config = array(
+			'allowed_types' => 'jpg|png|jpeg',
 			'max_size'	 	=> 3000,
 			'max_width' 	=> 410,
 			'max_height' 	=> 610,
@@ -465,13 +488,15 @@ class Auth_regis extends CI_Controller{
 		$data = array(
 			'card_1' 		=> $this->card->data('file_name'),
 			'follow_1' 	    => $this->follow->data('file_name'),
-			'photo_1' 	    => $this->photo->data('file_name')
+			'photo_1' 	    => $this->photo->data('file_name'),
+			'payment'		=> $this->payment->data('file_name')
 		);
 
 		$error = array(
 			'card_1' 		=> $this->card->display_errors(),
 			'follow_1'      => $this->follow->display_errors(),
-			'photo_1'       => $this->photo->display_errors()
+			'photo_1'       => $this->photo->display_errors(),
+			'payment'		=> $this->payment->display_errors()
 		);
 
 		if(!$this->form_validation->run() || !$this->registrasi->is_it_empty($error)){
@@ -486,6 +511,10 @@ class Auth_regis extends CI_Controller{
 			if(empty($error['photo_1'])){
 				$path = './upload/EssayCompetition/photo/';
 				unlink($path.$data['photo_1']);
+			}
+			if(empty($error['payment'])){
+				$path = './upload/EssayCompetition/payment/';
+				unlink($path.$data['payment']);
 			}
 			$this->load->view('registerEssayCompIndividu',
 				array(
@@ -531,6 +560,15 @@ class Auth_regis extends CI_Controller{
 
 		$config = array(
 			'allowed_types' => 'jpg|png|jpeg',
+			'upload_path'	=> './upload/EssayCompetition/payment'
+		);
+
+		$this->load->library('upload', $config, 'payment');
+		$this->payment->initialize($config);
+        $this->payment->do_upload('payment');
+
+		$config = array(
+			'allowed_types' => 'jpg|png|jpeg',
 			'max_size'	 	=> 3000,
 			'max_width' 	=> 410,
 			'max_height' 	=> 610,
@@ -551,7 +589,8 @@ class Auth_regis extends CI_Controller{
 			'photo_1' 	    => $this->photo->data('file_name'),
 			'card_2' 		=> $this->card2->data('file_name'),
 			'follow_2' 	    => $this->follow2->data('file_name'),
-			'photo_2' 	    => $this->photo2->data('file_name')
+			'photo_2' 	    => $this->photo2->data('file_name'),
+			'payment'		=> $this->payment->data('file_name')
 		);
 
 		$error = array(
@@ -560,7 +599,8 @@ class Auth_regis extends CI_Controller{
 			'photo_1'       => $this->photo->display_errors(),
 			'card_2' 		=> $this->card2->display_errors(),
 			'follow_2'      => $this->follow2->display_errors(),
-			'photo_2'       => $this->photo2->display_errors()
+			'photo_2'       => $this->photo2->display_errors(),
+			'payment'		=> $this->payment->display_errors()
 		);
 
 		if(!$this->form_validation->run() || !$this->registrasi->is_it_empty($error)){
@@ -587,6 +627,10 @@ class Auth_regis extends CI_Controller{
 			if(empty($error['photo_2'])){
 				$path = './upload/EssayCompetition/photo/';
 				unlink($path.$data['photo_2']);
+			}
+			if(empty($error['payment'])){
+				$path = './upload/EssayCompetition/payment/';
+				unlink($path.$data['payment']);
 			}
 			$this->load->view('registerEssayCompTeam',
 				array(
