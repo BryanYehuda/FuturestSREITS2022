@@ -8,21 +8,21 @@ use PHPMailer\PHPMailer\Exception;
 require '../vendor/autoload.php';
 
 class Admin extends CI_Controller {
-
+	/*
 	public function __construct()
     {
         parent::__construct();
-		if(!($this->session->userdata('role')))
+		if(!($this->session->userdata('account_role')))
 		{
 			redirect('home');
 		}
-        else if($this->session->userdata('role') == 'user')
+        else if($this->session->userdata('account_role') == 'user')
         {
             redirect('user');
         }
 		date_default_timezone_set("Asia/Jakarta");
     }
-
+	*/
 	public function index()
 	{
 		$this->load->view('dashboard_admin_home');

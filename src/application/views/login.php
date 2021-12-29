@@ -41,15 +41,18 @@
                 <div class="row">
                   <div class="col-md-13  container">
                     <div class="col-md-7  container">
+                    <?php echo $this->session->flashdata('message'); ?>
                       <!-- Form -->
-                      <form action="auth/logging_in" method="POST" class="">
+                      <form action="<?= base_url('Auth/logging_in'); ?>" method="POST">
                         <div class="form-group text-dark ">
                           <label for="username" class="text-dark"><i class="text-dark"> </i> Username</label>
-                          <input name="username" id="username" type="text" class="form-control text-dark">
+                          <input name="username" id="username" type="text" class="form-control text-dark" placeholder="Enter username" value="<?php echo set_value('username'); ?>">
+                          <?= form_error('username', '<small class="text-danger">', '</small>'); ?>
                         </div><br>
                         <div class="form-group text-dark">
                           <label for="password"><i class="float"></i> Password</label>
-                          <input type="password" name="password" id="password" class="form-control text-dark">
+                          <input type="password" name="password" id="password" class="form-control text-dark" placeholder="Enter password">
+                          <?= form_error('password', '<small class="text-danger">', '</small>'); ?>
                         </div><br>
                         <button type="submit" class="btn btn1 mb-4 mt-1 float-center ">Login</button>
                         <p>Don't have an account? <a href="<?php echo base_url('register')?>">Register Here</a></p>

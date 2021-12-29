@@ -7,9 +7,9 @@ class Home extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        if ($this->session->userdata('role') == 'admin') {
+        if ($this->session->userdata('account_role') == 'admin') {
             redirect('admin');
-        } else if ($this->session->userdata('role') == 'user') {
+        } else if ($this->session->userdata('account_role') == 'user') {
             redirect('user');
         }
         date_default_timezone_set("Asia/Jakarta");
