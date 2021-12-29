@@ -3,19 +3,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class User extends CI_Controller {
 
-	// public function __construct()
-  //   {
-  //       parent::__construct();
-	// 	if(!($this->session->userdata('role')))
-	// 	{
-	// 		redirect('home');
-	// 	}
-  //       else if($this->session->userdata('role') == 'admin')
-  //       {
-  //           redirect('admin');
-  //       }
-	// 	date_default_timezone_set("Asia/Jakarta");
-  //   }
+	public function __construct()
+    {
+        parent::__construct();
+		if(!($this->session->userdata('account_role')))
+		{
+			redirect('home');
+		}
+        else if($this->session->userdata('account_role') == 'admin')
+        {
+            redirect('admin');
+        }
+		date_default_timezone_set("Asia/Jakarta");
+    }
 
 	public function index()
 	{
