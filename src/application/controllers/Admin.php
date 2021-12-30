@@ -25,17 +25,29 @@ class Admin extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('dashboard_admin_home');
+		$tableName = $this->session->userdata('account_table');
+		$this->load->model("dashboard");
+		$query = $this->dashboard->getData($tableName);
+		$data = [
+			'data' => count($query)
+		];
+		$this->load->view('dashboard_admin_home', $data);
 	}
 
 	public function list()
 	{
-		$this->load->view('dashboard_admin_team_list');
+		$tableName = $this->session->userdata('account_table');
+		$this->load->model("dashboard");
+		$data = $this->dashboard->getData($tableName);
+		$this->load->view('dashboard_admin_team_list', $data);
 	}
 
 	public function confirmation()
 	{
-		$this->load->view('dashboard_admin_team_confirmation');
+		$tableName = $this->session->userdata('account_table');
+		$this->load->model("dashboard");
+		$data = $this->dashboard->getData($tableName);
+		$this->load->view('dashboard_admin_team_confirmation', $data);
 	}
 
 	public function email()

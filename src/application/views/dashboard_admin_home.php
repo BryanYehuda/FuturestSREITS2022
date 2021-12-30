@@ -49,7 +49,7 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 px-4">
                 <div class="d-flex align-items-center">
                     <i class="fs-4 me-3" id="menu-toggle"></i>
-                    <h2 class="primary-text">Welcome to Admin dashboard</h2>
+                    <h2 class="primary-text">Welcome to Dashboard Admin (<?= $this->session->userdata('account_username');?>)</h2>
                 </div>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,7 +60,7 @@
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle second-text fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fas fa-user me-2 info-color"></i>@admin_futurest
+                                <i class="fas fa-user me-2 info-color"></i><?= $this->session->userdata('account_username'); ?>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="<?php echo base_url('admin')?>">Home</a></li>
@@ -83,7 +83,7 @@
                             <i class="fas fa-users fs-1 info-color p-3"></i>
                             <div>
                                 <p class="fs-6 text-black-50 regular-text">Number of Team</p>
-                                <h5 class="primary-text">50</h5>
+                                <h5 class="primary-text"><?= $data ?> </h5>
                             </div>
                         </div>
                     </div>

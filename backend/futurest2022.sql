@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 30, 2021 at 01:49 PM
+-- Generation Time: Dec 30, 2021 at 08:16 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.12
 
@@ -33,20 +33,35 @@ CREATE TABLE `account` (
   `account_username` varchar(255) NOT NULL,
   `account_password` varchar(70) NOT NULL,
   `account_role` varchar(30) NOT NULL,
-  `account_event/comp` varchar(255) NOT NULL
+  `account_table` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `account`
 --
 
-INSERT INTO `account` (`account_id`, `account_oldid`, `account_username`, `account_password`, `account_role`, `account_event/comp`) VALUES
-(1, 1, 'FuturestNationalEssay', '$2y$10$NUsuOOTYmmJZA6yHN1alSu6USYd5xOw.PZYbt4pca.2nF4g0I5dl.', 'admin', 'nationalessay'),
-(2, 1, 'FuturestREInnovation', '$2y$10$92vhGK8Ja6j9zuWbSJrOoOSIJk3qvNSNTIfRrUgxYGK7Wstm73.26', 'admin', 'reinnovation'),
-(3, 1, 'FuturestGrandTalkshow', '$2y$10$VIgXobkWjwivkG9NeM1.6OD9Hsmxt9VxVSAYFzkTPAfft5riTLMKi', 'admin', 'grandtalkshow'),
-(4, 1, 'FuturestRE101', '$2y$10$bepOt0sWWmW.8XsLkmzyd.eM8K5h.XI8VDYl2LhU2QENGic65KTwi', 'admin', 're101'),
-(5, 1, 'FuturestClimateChangeCommunity', '$2y$10$UXa3eW1tsrBdG97PbNyh0.I1hgOzMzFILokYK4Q7KwSeZNYWplmRC', 'admin', 'climatechangecommunity'),
-(6, 1, 'FuturestAwardingNight', '$2y$10$.dftyg3k0xPcdyS0SSKfFuLsP6VMvDEScAd7D0cPLmcAVL0SmK0hS', 'admin', 'awardingnight');
+INSERT INTO `account` (`account_id`, `account_oldid`, `account_username`, `account_password`, `account_role`, `account_table`) VALUES
+(1, 1, 'FuturestNationalEssay', '$2y$10$NUsuOOTYmmJZA6yHN1alSu6USYd5xOw.PZYbt4pca.2nF4g0I5dl.', 'admin', 'pendaftaran_essaycompetition'),
+(2, 1, 'FuturestREInnovation', '$2y$10$92vhGK8Ja6j9zuWbSJrOoOSIJk3qvNSNTIfRrUgxYGK7Wstm73.26', 'admin', 'pendaftaran_reinnovation'),
+(3, 1, 'FuturestGrandTalkshow', '$2y$10$VIgXobkWjwivkG9NeM1.6OD9Hsmxt9VxVSAYFzkTPAfft5riTLMKi', 'admin', 'pendaftaran_grandtalkshow'),
+(4, 1, 'FuturestRE101', '$2y$10$bepOt0sWWmW.8XsLkmzyd.eM8K5h.XI8VDYl2LhU2QENGic65KTwi', 'admin', 'pendaftaran_re101'),
+(5, 1, 'FuturestClimateChangeCommunity', '$2y$10$UXa3eW1tsrBdG97PbNyh0.I1hgOzMzFILokYK4Q7KwSeZNYWplmRC', 'admin', 'pendaftaran_climatechangecommunity'),
+(6, 1, 'FuturestAwardingNight', '$2y$10$.dftyg3k0xPcdyS0SSKfFuLsP6VMvDEScAd7D0cPLmcAVL0SmK0hS', 'admin', 'pendaftaran_awardingnight'),
+(7, 1, 'FuturestFinalTalkshow', '$2y$10$f7yka8gQH9iMVthWu2XYGeVKJ.Z6NHYLftRKKNmlJsxy8oSb3e8rO', 'admin', 'pendaftaran_finaltalkshow');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pendaftaran_awardingnight`
+--
+
+CREATE TABLE `pendaftaran_awardingnight` (
+  `pendaftaranawardingnight_id` bigint(11) NOT NULL,
+  `pendaftaranawardingnight_nama` varchar(255) NOT NULL,
+  `pendaftaranawardingnight_instansi` varchar(255) NOT NULL,
+  `pendaftaranawardingnight_dataCreated` datetime NOT NULL DEFAULT current_timestamp(),
+  `pendaftaranawardingnight_dataUpdated` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -108,6 +123,13 @@ CREATE TABLE `pendaftaran_essaycompetition` (
   `pendaftaranessaycompetition_dataCreated` datetime NOT NULL DEFAULT current_timestamp(),
   `pendaftaranessaycompetition_dataUpdated` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `pendaftaran_essaycompetition`
+--
+
+INSERT INTO `pendaftaran_essaycompetition` (`pendaftaranessaycompetition_id`, `pendaftaranessaycompetition_teamname`, `pendaftaranessaycompetition_1_name`, `pendaftaranessaycompetition_1_age`, `pendaftaranessaycompetition_1_college`, `pendaftaranessaycompetition_1_major`, `pendaftaranessaycompetition_1_card`, `pendaftaranessaycompetition_1_photo`, `pendaftaranessaycompetition_1_phone`, `pendaftaranessaycompetition_1_email`, `pendaftaranessaycompetition_1_follow`, `pendaftaranessaycompetition_2_name`, `pendaftaranessaycompetition_2_age`, `pendaftaranessaycompetition_2_college`, `pendaftaranessaycompetition_2_major`, `pendaftaranessaycompetition_2_card`, `pendaftaranessaycompetition_2_photo`, `pendaftaranessaycompetition_2_phone`, `pendaftaranessaycompetition_2_email`, `pendaftaranessaycompetition_2_follow`, `pendaftaranessaycompetition_payment`, `pendaftaranessaycompetition_dataCreated`, `pendaftaranessaycompetition_dataUpdated`) VALUES
+(5, 'NamaTim', 'Saifulah', 12, 'ITS', 'CS', 'a', 'a', '123', 'wa@fada', 'a', 'a', 12, 'a', 'a', 'a', 'a', '2134', 'a@g', 'ada', 'a', '2021-12-31 02:03:44', '2021-12-30 19:59:17');
 
 -- --------------------------------------------------------
 
@@ -217,23 +239,6 @@ CREATE TABLE `pendaftaran_reinnovation` (
   `pendaftaranreinnovation_dataUpdated` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- --------------------------------------------------------
-
---
--- Table structure for table `pendaftaran_webinar`
---
-
-CREATE TABLE `pendaftaran_webinar` (
-  `pendaftaranwebinar_id` bigint(11) NOT NULL,
-  `pendaftaranwebinar_nama` varchar(255) NOT NULL,
-  `pendaftaranwebinar_instansi` varchar(255) NOT NULL,
-  `pendaftaranwebinar_foto` varchar(255) NOT NULL,
-  `pendaftaranwebinar_kartuIdentitas` varchar(255) NOT NULL,
-  `pendaftaranwebinar_buktiPembayaran` varchar(255) NOT NULL,
-  `pendaftaranwebinar_dataCreated` datetime NOT NULL DEFAULT current_timestamp(),
-  `pendaftaranwebinar_dataUpdated` datetime DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
 --
 -- Indexes for dumped tables
 --
@@ -243,6 +248,12 @@ CREATE TABLE `pendaftaran_webinar` (
 --
 ALTER TABLE `account`
   ADD PRIMARY KEY (`account_id`);
+
+--
+-- Indexes for table `pendaftaran_awardingnight`
+--
+ALTER TABLE `pendaftaran_awardingnight`
+  ADD PRIMARY KEY (`pendaftaranawardingnight_id`);
 
 --
 -- Indexes for table `pendaftaran_climatechangecommunity`
@@ -281,12 +292,6 @@ ALTER TABLE `pendaftaran_reinnovation`
   ADD PRIMARY KEY (`pendaftaranreinnovation_id`);
 
 --
--- Indexes for table `pendaftaran_webinar`
---
-ALTER TABLE `pendaftaran_webinar`
-  ADD PRIMARY KEY (`pendaftaranwebinar_id`);
-
---
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -294,7 +299,7 @@ ALTER TABLE `pendaftaran_webinar`
 -- AUTO_INCREMENT for table `account`
 --
 ALTER TABLE `account`
-  MODIFY `account_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `account_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `pendaftaran_climatechangecommunity`
@@ -306,7 +311,7 @@ ALTER TABLE `pendaftaran_climatechangecommunity`
 -- AUTO_INCREMENT for table `pendaftaran_essaycompetition`
 --
 ALTER TABLE `pendaftaran_essaycompetition`
-  MODIFY `pendaftaranessaycompetition_id` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `pendaftaranessaycompetition_id` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `pendaftaran_finaltalkshow`
@@ -324,7 +329,7 @@ ALTER TABLE `pendaftaran_grandtalkshow`
 -- AUTO_INCREMENT for table `pendaftaran_re101`
 --
 ALTER TABLE `pendaftaran_re101`
-  MODIFY `pendaftaranre101_id` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `pendaftaranre101_id` bigint(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `pendaftaran_reinnovation`

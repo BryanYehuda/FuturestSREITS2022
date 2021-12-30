@@ -40,7 +40,7 @@ class Auth extends CI_Controller {
 						'account_oldid' => $user['account_oldid'],
 						'account_username' => $user['account_username'],
 						'account_role' => $user['account_role'],
-						'account_event/comp' => $user['account_event/comp']
+						'account_table' => $user['account_table']
 					);
 					$this->session->set_userdata($data);
 					if($user['account_role'] == 'admin')
