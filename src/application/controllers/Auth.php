@@ -12,90 +12,59 @@ class Auth extends CI_Controller {
 
 	public function logging_in()
 	{
-		if($this->session->userdata('account_role') == 'admin')
-		{
-			redirect('admin');
-		}
-		else if ($this->session->userdata('account_role') == 'user')
-		{
-			redirect('user');
-		}
+		$this->form_validation->set_rules('username', 'Username', 'trim|required', [
+			'required' => "Username harus diisi!"
+		]);
+		$this->form_validation->set_rules('password', 'Password', 'trim|required', [
+			'required' => "Password harus diisi!"
+		]);
 
-		$this->form_validation->set_rules('username', 'Username', 'trim|required');
-		$this->form_validation->set_rules('password', 'Password', 'trim|required');
-
-		if($this->form_validation->run() == false)
+		if($this->form_validation->run() == FALSE)
 		{
+			$this->session->set_flashdata('usernameError', form_error('username', '<small class="text-danger">', '</small>'));
+			$this->session->set_flashdata('passwordError', form_error('password', '<small class="text-danger">', '</small>'));
 			redirect('login');
 		}
 		else
 		{
-			$this->_login();
-		}
-	}
-
-	private function _login()
-	{
-		$username = $this->input->post('username');
-		$password = $this->input->post('password');
-
-		$user = $this->db->get_where('account', ['account_username' => $username])->row_array();
-		
-		if($user)
-		{
-			if($user['account_role'] == 'admin')
+			$username = $this->input->post('username');
+			$password = $this->input->post('password');
+			$this->load->model('login');
+			$user = $this->login->getUser($username);
+			if($user)
 			{
-				if($password == $user['account_password'])
+				if(password_verify($password, $user['account_password']))
 				{
 					$data = array(
+						'account_id' => $user['account_id'],
+						'account_oldid' => $user['account_oldid'],
 						'account_username' => $user['account_username'],
 						'account_role' => $user['account_role'],
 						'account_event/comp' => $user['account_event/comp']
 					);
 					$this->session->set_userdata($data);
-					redirect('admin');
+					if($user['account_role'] == 'admin')
+					{
+						redirect('admin');
+					}
+					else if($user['account_role'] == 'user')
+					{
+						redirect('user');
+					}
 				}
 				else
 				{
-					$this->session->set_flashdata('message', '
-                    <div class="alert alert-danger" role="alert">
-                        Wrong password!
-                    </div>');
+					$this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert"> Password salah! </div>');
 					redirect('login');
 				}
 			}
-			else if($user['account_role'] == 'user')
+			else
 			{
-				if($password == $user['account_password'])
-				{
-					$data = [
-						'account_username' => $user['account_username'],
-						'account_role' => $user['account_role'],
-						'account_event/comp' => $user['account_event/comp']
-					];
-					$this->session->set_userdata($data);
-					redirect('user');
-				}
-				else
-				{
-					$this->session->set_flashdata('message', '
-                    <div class="alert alert-danger" role="alert">
-                        Wrong password!
-                    </div>');
-					redirect('login');
-				}
-			}
+				$this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert"> Akun tidak terdaftar! </div>');
+				redirect('login');
+			}	
 		}
-		else
-		{
-			$this->session->set_flashdata('message', '
-            <div class="alert alert-danger" role="alert">
-				You have not registered yet!
-            </div>');
-			redirect('login');
-		}	
 	}
-
 
 	public function logout()
 	{
