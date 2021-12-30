@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 28, 2021 at 05:27 PM
+-- Generation Time: Dec 30, 2021 at 06:29 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.11
 
@@ -29,6 +29,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `account` (
   `account_id` int(11) NOT NULL,
+  `account_oldid` int(11) NOT NULL,
   `account_username` varchar(255) NOT NULL,
   `account_password` varchar(70) NOT NULL,
   `account_role` varchar(30) NOT NULL,
