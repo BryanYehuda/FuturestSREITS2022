@@ -45,6 +45,7 @@ class Auth_regis extends CI_Controller{
 			'sharestory'        => $this->sharestory->display_errors()
 		);
         if(!$this->form_validation->run() || !$this->registrasi->is_it_empty($error)){
+			$error = array_merge($error, $this->form_validation->error_array());
 			if(empty($error['followfuturestig'])){
 				$path = './upload/RE101/followfuturestig/';
 				unlink($path.$data['followfuturestig']);
@@ -57,15 +58,10 @@ class Auth_regis extends CI_Controller{
 				$path = './upload/RE101/sharestory/';
 				unlink($path.$data['sharestory']);
 			}
-			$this->load->view('registerRE101Event',
-				array(
-					'error' => $error
-				)
-			);
-			return;
+			echo json_encode($error);
 		}else{
 			$this->registrasi->regisRE101($data);
-			redirect('Home');
+			echo "1";
 		}
     }
 
@@ -106,6 +102,7 @@ class Auth_regis extends CI_Controller{
 		);
         //var_dump($this->input->post());
         if(!$this->form_validation->run() || !$this->registrasi->is_it_empty($error)){
+			$error = array_merge($error, $this->form_validation->error_array());
 			if(empty($error['followfuturestig'])){
 				$path = './upload/GrandTalkshow/followfuturestig/';
 				unlink($path.$data['followfuturestig']);
@@ -118,15 +115,11 @@ class Auth_regis extends CI_Controller{
 				$path = './upload/GrandTalkshow/sharestory/';
 				unlink($path.$data['sharestory']);
 			}
-			$this->load->view('registerGrandTalkshowEvent',
-				array(
-					'error' => $error
-				)
-			);
-			return;
+			
+			echo json_encode($error);
 		}else{
 			$this->registrasi->regisGrandTalkshow($data);
-			redirect('Home');
+			echo "1";
 		}
     }
 
@@ -167,6 +160,7 @@ class Auth_regis extends CI_Controller{
 		);
         //var_dump($this->input->post());
         if(!$this->form_validation->run() || !$this->registrasi->is_it_empty($error)){
+			$error = array_merge($error, $this->form_validation->error_array());
 			if(empty($error['followfuturestig'])){
 				$path = './upload/FinalTalkshow/followfuturestig/';
 				unlink($path.$data['followfuturestig']);
@@ -179,19 +173,15 @@ class Auth_regis extends CI_Controller{
 				$path = './upload/FinalTalkshow/sharestory/';
 				unlink($path.$data['sharestory']);
 			}
-			$this->load->view('registerFinalTalkshowEvent',
-				array(
-					'error' => $error
-				)
-			);
-			return;
+			echo json_encode($error);
 		}else{
 			$this->registrasi->regisFinalTalkshow($data);
-			redirect('Home');
+			echo "1";
 		}
     }
 
 	public function regisClimateChange(){
+		//echo var_dump(empty($this->input->post('prioritze')) && empty($this->input->post('willingness')) && empty($this->input->post('committed')));
 		$this->load->model("registrasi");
         $config = array(
 			'allowed_types'	=> 'pdf|gif|jpg|png',
@@ -241,7 +231,8 @@ class Auth_regis extends CI_Controller{
 			'CV'				=> $this->CV->display_errors()
 		);
         //var_dump($this->input->post());
-        if(!$this->form_validation->run() || !$this->registrasi->is_it_empty($error)){
+        if((!$this->form_validation->run() || !$this->registrasi->is_it_empty($error) || (empty($this->input->post('prioritze')) || empty($this->input->post('willingness')) || empty($this->input->post('committed'))))){
+			$error = array_merge($error, $this->form_validation->error_array());
 			if(empty($error['followfuturestig'])){
 				$path = './upload/3C/followfuturestig/';
 				unlink($path.$data['followfuturestig']);
@@ -262,15 +253,10 @@ class Auth_regis extends CI_Controller{
 				$path = './upload/3C/CV/';
 				unlink($path.$data['CV']);
 			}
-			$this->load->view('registerClimateChangeEvent',
-				array(
-					'error' => $error
-				)
-			);
-			return;
+			echo json_encode($error);
 		}else{
 			$this->registrasi->regis3C($data);
-			redirect('Home');
+			echo "1";
 		}
 	}
 
@@ -376,6 +362,7 @@ class Auth_regis extends CI_Controller{
 		$error['payment'] = $this->payment->display_errors();
 		
 		if(!$this->form_validation->run() || !$this->registrasi->is_it_empty($error)){
+			$error = array_merge($error, $this->form_validation->error_array());
 			if(empty($error['photo_1'])){
 				$path = './upload/REinnovation/photo/';
 				unlink($path.$data['photo_1']);
@@ -429,15 +416,10 @@ class Auth_regis extends CI_Controller{
 				unlink($path.$data['payment']);
 			}
 			
-			$this->load->view('registerReInnovationComp',
-				array(
-					'error' => $error
-				)
-			);
-			return;
+			echo json_encode($error);
 		}else{
 			$this->registrasi->regisReInnovation($data);
-			redirect('Home');
+			echo "1";
 		}
 	}
 
@@ -500,6 +482,7 @@ class Auth_regis extends CI_Controller{
 		);
 
 		if(!$this->form_validation->run() || !$this->registrasi->is_it_empty($error)){
+			$error = array_merge($error, $this->form_validation->error_array());
 			if(empty($error['card_1'])){
 				$path = './upload/EssayCompetition/card/';
 				unlink($path.$data['card_1']);
@@ -516,15 +499,10 @@ class Auth_regis extends CI_Controller{
 				$path = './upload/EssayCompetition/payment/';
 				unlink($path.$data['payment']);
 			}
-			$this->load->view('registerEssayCompIndividu',
-				array(
-					'error' => $error
-				)
-			);
-			return;
+			echo json_encode($error);
 		}else{
 			$this->registrasi->regisEssayCompetition($data);
-			redirect('Home');
+			echo "1";
 		}
 	}
 	public function regisEssayCompTeam(){
@@ -604,6 +582,7 @@ class Auth_regis extends CI_Controller{
 		);
 
 		if(!$this->form_validation->run() || !$this->registrasi->is_it_empty($error)){
+			$error = array_merge($error, $this->form_validation->error_array());
 			if(empty($error['card_1'])){
 				$path = './upload/EssayCompetition/card/';
 				unlink($path.$data['card_1']);
@@ -632,15 +611,10 @@ class Auth_regis extends CI_Controller{
 				$path = './upload/EssayCompetition/payment/';
 				unlink($path.$data['payment']);
 			}
-			$this->load->view('registerEssayCompTeam',
-				array(
-					'error' => $error
-				)
-			);
-			return;
+			echo json_encode($error);
 		}else{
 			$this->registrasi->regisEssayCompetitionteam($data);
-			redirect('Home');
+			echo "1";
 		}
 	}
 }

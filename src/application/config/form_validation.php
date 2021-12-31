@@ -50,7 +50,7 @@ $config = array(
         array(
             'field' => 'batch',
             'label' => 'Batch',
-            'rules' => 'trim',
+            'rules' => 'trim|required',
             'errors' => array(
                 'required' 			=> 'Please fill this column'
             )
@@ -113,7 +113,7 @@ $config = array(
         array(
             'field' => 'batch',
             'label' => 'Batch',
-            'rules' => 'trim',
+            'rules' => 'trim|required',
             'errors' => array(
                 'required' 			=> 'Please fill this column'
             )
@@ -176,7 +176,7 @@ $config = array(
         array(
             'field' => 'batch',
             'label' => 'Batch',
-            'rules' => 'trim',
+            'rules' => 'trim|required',
             'errors' => array(
                 'required' 			=> 'Please fill this column'
             )
@@ -239,7 +239,7 @@ $config = array(
         array(
             'field' => 'batch',
             'label' => 'Batch',
-            'rules' => 'trim',
+            'rules' => 'trim|required',
             'errors' => array(
                 'required' 			=> 'Please fill this column'
             )
@@ -397,7 +397,10 @@ $config = array(
         array(
             'field' => 'batch_3',
             'label' => 'Batch_3',
-            'rules' => 'trim'
+            'rules' => 'trim|required',
+            'errors' => array(
+                'required' 			=> 'Please fill this column'
+            )
         ),
         array(
             'field' => 'phone_3',
@@ -586,7 +589,7 @@ $config = array(
                 'required' 			=> 'Please fill this column',
                 'max_length[255]' 	=> 'You exceed the limit' 
             )
-        )
+        ),
     )
 );
 
