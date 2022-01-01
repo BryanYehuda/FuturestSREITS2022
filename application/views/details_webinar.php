@@ -4,11 +4,11 @@
 
 <head>
   <?php
-    $this->load->view('template/meta');
+  $this->load->view('template/meta');
   ?>
   <title>Details Webinar</title>
   <?php
-    $this->load->view('template/css');
+  $this->load->view('template/css');
   ?>
   <!-- Import css if need -->
   <link rel="stylesheet" href="<?php echo base_url() ?>public/css/pages/details.css">
@@ -16,19 +16,19 @@
 </head>
 
 <body>
-<?php
-    $this->load->view('components/navbar');
+  <?php
+  $this->load->view('components/navbar');
   ?>
 
   <section id="jumbotron" class="d-flex align-items-center position-relative">
     <div class="container text-center">
-    <h1 class="mb-5">Detail Event</h1>
+      <h1 class="mb-5">Detail Event</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem odit assumenda amet totam vitae, vero aspernatur deleniti quae voluptatibus, ut quod soluta omnis recusandae vel quasi aliquam libero ratione dolores doloribus quia praesentium. Ipsum, voluptas!
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem odit assumenda amet totam vitae, vero aspernatur deleniti quae voluptatibus, ut quod soluta omnis recusandae vel quasi aliquam libero ratione dolores doloribus quia praesentium. Ipsum, voluptas!
       </p><br><br>
-      <a href="<?php echo base_url() . 'register'?>"type="button" class="btn btn-outline-primary">Register Now</a>
-    </div>   
+      <a href="<?php echo base_url() . 'register' ?>" type="button" class="btn btn-outline-primary">Register Now</a>
+    </div>
   </section>
 
   <section id="container-1" class="d-flex align-items-center position-relative">
@@ -58,7 +58,7 @@
           </div>
         </div>
       </div>
-    </div>   
+    </div>
   </section><br><br><br><br><br>
 
   <section id="container-2" class="d-flex align-items-center position-relative">
@@ -88,11 +88,11 @@
           </div>
         </div>
       </div>
-    </div>   
+    </div>
   </section><br><br><br>
 
   <section id="timeline" class="d-flex align-items-center position-relative">
-    <div class="container">                      
+    <div class="container">
       <div class="row text-center justify-content-center mb-5">
         <div class="col-xl-6 col-lg-8">
           <h2 class="font-weight-bold">Our Evolution</h2>
@@ -105,52 +105,52 @@
             <div class="timeline-step">
               <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2003">
                 <div class="inner-circle"></div>
-                  <p class="h6 mt-3 mb-1">2003</p>
-                  <p class="h6 text-muted mb-0 mb-lg-0">Lorem ipsum dolor</p>
-                </div>
+                <p class="h6 mt-3 mb-1">2003</p>
+                <p class="h6 text-muted mb-0 mb-lg-0">Lorem ipsum dolor</p>
               </div>
-              <div class="timeline-step">
-                <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2004">
-                  <div class="inner-circle"></div>
-                  <p class="h6 mt-3 mb-1">2004</p>
-                  <p class="h6 text-muted mb-0 mb-lg-0">Lorem ipsum dolor</p>
-                </div>
+            </div>
+            <div class="timeline-step">
+              <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2004">
+                <div class="inner-circle"></div>
+                <p class="h6 mt-3 mb-1">2004</p>
+                <p class="h6 text-muted mb-0 mb-lg-0">Lorem ipsum dolor</p>
               </div>
-              <div class="timeline-step">
-                <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2005">
-                  <div class="inner-circle"></div>
-                  <p class="h6 mt-3 mb-1">2005</p>
-                  <p class="h6 text-muted mb-0 mb-lg-0">Lorem ipsum dolor</p>
-                </div>
+            </div>
+            <div class="timeline-step">
+              <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2005">
+                <div class="inner-circle"></div>
+                <p class="h6 mt-3 mb-1">2005</p>
+                <p class="h6 text-muted mb-0 mb-lg-0">Lorem ipsum dolor</p>
               </div>
-              <div class="timeline-step">
-                <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2010">
-                  <div class="inner-circle"></div>
-                  <p class="h6 mt-3 mb-1">2010</p>
-                  <p class="h6 text-muted mb-0 mb-lg-0">Lorem ipsum dolor</p>
-                </div>
+            </div>
+            <div class="timeline-step">
+              <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2010">
+                <div class="inner-circle"></div>
+                <p class="h6 mt-3 mb-1">2010</p>
+                <p class="h6 text-muted mb-0 mb-lg-0">Lorem ipsum dolor</p>
               </div>
-              <div class="timeline-step mb-0">
-                <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2020">
-                  <div class="inner-circle"></div>
-                  <p class="h6 mt-3 mb-1">2020</p>
-                  <p class="h6 text-muted mb-0 mb-lg-0">Lorem ipsum dolor</p>
-                </div>
+            </div>
+            <div class="timeline-step mb-0">
+              <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2020">
+                <div class="inner-circle"></div>
+                <p class="h6 mt-3 mb-1">2020</p>
+                <p class="h6 text-muted mb-0 mb-lg-0">Lorem ipsum dolor</p>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
   </section><br><br><br>
 
   <footer>
     <?php
-      $this->load->view('components/footer');
+    $this->load->view('components/footer');
     ?>
   </footer>
 
   <?php
-    $this->load->view('template/script');
+  $this->load->view('template/script');
   ?>
 
   <!-- Import js if need -->

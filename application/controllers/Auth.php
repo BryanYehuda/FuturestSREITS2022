@@ -76,4 +76,3 @@ class Auth extends CI_Controller {
 		redirect('home');
 	}
 }
-?>

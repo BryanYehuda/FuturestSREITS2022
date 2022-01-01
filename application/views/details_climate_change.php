@@ -56,7 +56,7 @@
 
       <h2 class="text-center mb-5">Don't forget to register!</h2>
       <div class="d-flex justify-content-center">
-        <a class="btn btn-success btn-lg" href="<?php echo base_url("register-climate-change-event");?>">
+        <a class="btn btn-success btn-lg" href="<?php echo base_url("register-climate-change-event"); ?>">
           Register for Your Self!
         </a>
     </section>

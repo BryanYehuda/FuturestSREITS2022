@@ -6,4 +6,3 @@ class dashboard extends CI_Model
         return $this->db->get($userdata)->result_array();
     }
 }
-?>

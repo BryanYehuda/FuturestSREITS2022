@@ -3,46 +3,46 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <?php
-    $this->load->view('template/meta');
-  ?>
-  <title>Futurest Event</title>
-  <?php
-    $this->load->view('template/css');
-  ?>
-  <!-- Import css if need -->
-  <link rel="stylesheet" href="<?php echo base_url() ?>public/css/pages/event.css">
+   <?php
+   $this->load->view('template/meta');
+   ?>
+   <title>Futurest Event</title>
+   <?php
+   $this->load->view('template/css');
+   ?>
+   <!-- Import css if need -->
+   <link rel="stylesheet" href="<?php echo base_url() ?>public/css/pages/event.css">
 </head>
 
 <body>
    <?php
-      $this->load->view('components/navbar');
+   $this->load->view('components/navbar');
    ?>
 
-  <main id="section">
+   <main id="section">
 
-  <section id="jumbotron" class="d-flex align-items-center position-relative">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center text-xl-start col-xl-8">
-          <h1 class="mb-5">{{ jumbotron.title }}</h1>
-          <p class="mb-5">
-            {{ jumbotron.description }}
-          </p>
-          <a href="#our-events" class="btn btn-success btn-lg">Read More</a>
-        </div>
-        <div class="d-none d-xl-flex col-xl-4 d-flex align-items-center justify-content-center">
-          <i class="bi bi-calendar4-event"></i>
-        </div>
-      </div>
-    </div>   
-  </section>
+      <section id="jumbotron" class="d-flex align-items-center position-relative">
+         <div class="container">
+            <div class="row">
+               <div class="col-12 text-center text-xl-start col-xl-8">
+                  <h1 class="mb-5">{{ jumbotron.title }}</h1>
+                  <p class="mb-5">
+                     {{ jumbotron.description }}
+                  </p>
+                  <a href="#our-events" class="btn btn-success btn-lg">Read More</a>
+               </div>
+               <div class="d-none d-xl-flex col-xl-4 d-flex align-items-center justify-content-center">
+                  <i class="bi bi-calendar4-event"></i>
+               </div>
+            </div>
+         </div>
+      </section>
 
-    <section id="our-events" class="py-5">
-        <div class="container py-5">
-          <h2 class="text-center mb-5">Our Events</h2>
-          <div class="row text-center d-flex justify-content-center">
-               <div class="card-apa-saja col-11 col-lg-5 d-flex flex-column align-items-center justify-content-center mx-3 p-3 mb-5" v-for="item in events"> 
+      <section id="our-events" class="py-5">
+         <div class="container py-5">
+            <h2 class="text-center mb-5">Our Events</h2>
+            <div class="row text-center d-flex justify-content-center">
+               <div class="card-apa-saja col-11 col-lg-5 d-flex flex-column align-items-center justify-content-center mx-3 p-3 mb-5" v-for="item in events">
                   <i :class="item.icon"></i>
                   <h3 class="text-bold">{{ item.title }}</h3>
                   <p>
@@ -51,7 +51,7 @@
                   <a href="" class="btn btn-lg btn-outline-success">Know More</a>
                </div>
             </div>
-        </div>
+         </div>
       </section>
 
       <section id="our-competitions" class="py-5">
@@ -72,14 +72,14 @@
 
       <section id="fakta-unik" class="pt-5">
          <div class="container pt-5">
-           <h2 class="text-center mb-5">Unique Fact</h2>
+            <h2 class="text-center mb-5">Unique Fact</h2>
             <div class="row px-3">
                <div class="d-none d-lg-block col-lg-6">
                   <img src="<?php echo base_url() ?>/public/img/fakta-unik.jpg" alt="Fakta Unik Futurest 2022" class="img-fluid">
                </div>
                <div class="container-desc-fakta-unik col d-flex align-items-center justify-content-center text-center p-5">
                   <p>
-                    Futurest 2022 is the first competitions held by one of the biggest organization at ITS, SRE.
+                     Futurest 2022 is the first competitions held by one of the biggest organization at ITS, SRE.
                   </p>
                </div>
             </div>
@@ -129,20 +129,20 @@
             </div>
          </div>
       </section>
-  </main>
+   </main>
 
-  <footer>
-    <?php
+   <footer>
+      <?php
       $this->load->view('components/footer');
-    ?>
-  </footer>
+      ?>
+   </footer>
 
-  <?php
-    $this->load->view('template/script');
-  ?>
+   <?php
+   $this->load->view('template/script');
+   ?>
 
-  <!-- Import js if need -->
-  <script src="<?php echo base_url() ?>public/js/pages/event.js"></script>
+   <!-- Import js if need -->
+   <script src="<?php echo base_url() ?>public/js/pages/event.js"></script>
 </body>
 
 </html>

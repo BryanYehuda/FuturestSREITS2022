@@ -32,4 +32,3 @@ class User extends CI_Controller {
 		$this->load->view('dashboard_user_team');
 	}
 }
-?>

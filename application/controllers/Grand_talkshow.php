@@ -73,4 +73,3 @@ class Grand_talkshow extends CI_Controller {
 		$mail->smtpClose();
 	}
 }
-?>

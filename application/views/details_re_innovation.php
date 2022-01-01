@@ -4,11 +4,11 @@
 
 <head>
   <?php
-    $this->load->view('template/meta');
+  $this->load->view('template/meta');
   ?>
   <title>Details RE Innovation</title>
   <?php
-    $this->load->view('template/css');
+  $this->load->view('template/css');
   ?>
   <!-- Import css if need -->
   <link rel="stylesheet" href="<?php echo base_url() ?>public/css/pages/re_innovation.css">
@@ -16,7 +16,7 @@
 
 <body>
   <?php
-    $this->load->view('components/navbar');
+  $this->load->view('components/navbar');
   ?>
 
   <main id="section">
@@ -37,20 +37,20 @@
             <i class="bi bi-journal-bookmark"></i>
           </div>
         </div>
-      </div>   
+      </div>
     </section>
 
     <section id="timeline" class="py-5">
-         <div class="container d-flex flex-column align-items-center py-5">
-            <h2 class="mb-5">RE Innovation Brainstorm Timeline</h2>
-            <div class="row mb-3 px-4 py-3 w-75" v-for="item in timeline">
-               <div class="col position-relative">
-                  <div class="position-absolute rounded-timeline rounded-pill"></div>
-                  <h3>{{ item.date }}</h3>
-                  <p>{{ item.description }}</p>
-               </div>
-            </div>
-         </div>
+      <div class="container d-flex flex-column align-items-center py-5">
+        <h2 class="mb-5">RE Innovation Brainstorm Timeline</h2>
+        <div class="row mb-3 px-4 py-3 w-75" v-for="item in timeline">
+          <div class="col position-relative">
+            <div class="position-absolute rounded-timeline rounded-pill"></div>
+            <h3>{{ item.date }}</h3>
+            <p>{{ item.description }}</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="prize-pool" class="py-5">
@@ -86,12 +86,12 @@
 
   <footer>
     <?php
-      $this->load->view('components/footer');
+    $this->load->view('components/footer');
     ?>
   </footer>
 
   <?php
-    $this->load->view('template/script');
+  $this->load->view('template/script');
   ?>
 
   <!-- Import js if need -->

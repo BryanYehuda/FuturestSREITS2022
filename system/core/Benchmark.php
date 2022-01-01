@@ -1,4 +1,5 @@
 <?php
+
 /**
  * CodeIgniter
  *
@@ -35,7 +36,7 @@
  * @since	Version 1.0.0
  * @filesource
  */
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /**
  * Benchmark Class
@@ -49,7 +50,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * @author		EllisLab Dev Team
  * @link		https://codeigniter.com/user_guide/libraries/benchmark.html
  */
-class CI_Benchmark {
+class CI_Benchmark
+{
 
 	/**
 	 * List of all benchmark markers
@@ -94,18 +96,15 @@ class CI_Benchmark {
 	 */
 	public function elapsed_time($point1 = '', $point2 = '', $decimals = 4)
 	{
-		if ($point1 === '')
-		{
+		if ($point1 === '') {
 			return '{elapsed_time}';
 		}
 
-		if ( ! isset($this->marker[$point1]))
-		{
+		if (!isset($this->marker[$point1])) {
 			return '';
 		}
 
-		if ( ! isset($this->marker[$point2]))
-		{
+		if (!isset($this->marker[$point2])) {
 			$this->marker[$point2] = microtime(TRUE);
 		}
 
@@ -129,5 +128,4 @@ class CI_Benchmark {
 	{
 		return '{memory_usage}';
 	}
-
 }

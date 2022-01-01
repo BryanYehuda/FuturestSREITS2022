@@ -4,7 +4,7 @@
 
 <head>
     <?php
-        $this->load->view('template/meta');
+    $this->load->view('template/meta');
     ?>
 
     <!-- Bootstrap CSS -->
@@ -34,11 +34,11 @@
         <div class="bg-white" id="sidebar-wrapper">
             <div class="sidebar-heading text-center py-4 img-fluid"><img src="<?php echo base_url() ?>/public/img/Logo.png" alt=""></div>
             <div class="list-group list-group-flush my-3">
-                <a href="<?php echo base_url('dashboard-grand-talkshow')?>" class="list-group-item list-group-item-action bg-transparent primary-text"><i class="fas fa-home-alt me-2"></i>Home</a>
-                <a href="<?php echo base_url('dashboard-grand-talkshow-list')?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text active"><i class="fas fa-users-cog me-2"></i>Registeree List</a>
-                <a href="<?php echo base_url('dashboard-grand-talkshow-confirmation')?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text"><i class="fas fa-money-check-alt me-2"></i>Confirmation</a>
+                <a href="<?php echo base_url('dashboard-grand-talkshow') ?>" class="list-group-item list-group-item-action bg-transparent primary-text"><i class="fas fa-home-alt me-2"></i>Home</a>
+                <a href="<?php echo base_url('dashboard-grand-talkshow-list') ?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text active"><i class="fas fa-users-cog me-2"></i>Registeree List</a>
+                <a href="<?php echo base_url('dashboard-grand-talkshow-confirmation') ?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text"><i class="fas fa-money-check-alt me-2"></i>Confirmation</a>
                 <hr class="info-color">
-                <a href="<?php echo base_url('logout')?>" class="list-group-item list-group-item-action bg-transparent text-danger primary-text"><i class="fas fa-power-off me-2"></i>Logout</a>
+                <a href="<?php echo base_url('logout') ?>" class="list-group-item list-group-item-action bg-transparent text-danger primary-text"><i class="fas fa-power-off me-2"></i>Logout</a>
             </div>
         </div>
         <!-- /#sidebar-wrapper -->
@@ -62,10 +62,10 @@
                                 <i class="fas fa-user me-2 info-color"></i>@FuturestGrandTalkshow
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="<?php echo base_url('dashboard-grand-talkshow')?>">Home</a></li>
-                                <li><a class="dropdown-item" href="<?php echo base_url('dashboard-grand-talkshow-list')?>">Registeree List</a></li>
-                                <li><a class="dropdown-item" href="<?php echo base_url('dashboard-grand-talkshow-confirmation')?>">Confirmation</a></li>
-                                <li><a class="dropdown-item" href="<?php echo base_url('logout')?>">Logout</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url('dashboard-grand-talkshow') ?>">Home</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url('dashboard-grand-talkshow-list') ?>">Registeree List</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url('dashboard-grand-talkshow-confirmation') ?>">Confirmation</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url('logout') ?>">Logout</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -73,52 +73,52 @@
             </nav>
 
             <!-- Info Card -->
-            
+
             <div class="container-fluid px-4 pb-5">
                 <div class="row g-3 my-2">
                     <h4 class="mb-3 primary-text">User Registered</h4>
-                        <div class="table-responsive">
-                            <table class="table">
-                                <thead>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">No.</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Domicile</th>
+                                    <th scope="col">University</th>
+                                    <th scope="col">Major</th>
+                                    <th scope="col">Batch</th>
+                                    <th scope="col">Question</th>
+                                    <th scope="col">Following Futurest</th>
+                                    <th scope="col">Following SRE</th>
+                                    <th scope="col">Sharing IGS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php $i = 1; ?>
+                                <?php foreach ($data as $item) : ?>
                                     <tr>
-                                        <th scope="col">No.</th>
-                                        <th scope="col">Name</th>
-                                        <th scope="col">Email</th>
-                                        <th scope="col">Domicile</th>
-                                        <th scope="col">University</th>
-                                        <th scope="col">Major</th>
-                                        <th scope="col">Batch</th>
-                                        <th scope="col">Question</th>
-                                        <th scope="col">Following Futurest</th>
-                                        <th scope="col">Following SRE</th>
-                                        <th scope="col">Sharing IGS</th>
+                                        <th scope="row"><?= $i++; ?></th>
+                                        <td><?= $item['pendaftarangrandtalkshow_name'] ?></td>
+                                        <td><?= $item['pendaftarangrandtalkshow_email'] ?></td>
+                                        <td><?= $item['pendaftarangrandtalkshow_domicile'] ?></td>
+                                        <td><?= $item['pendaftarangrandtalkshow_university'] ?></td>
+                                        <td><?= $item['pendaftarangrandtalkshow_major'] ?></td>
+                                        <td><?= $item['pendaftarangrandtalkshow_batch'] ?></td>
+                                        <td><?= $item['pendaftarangrandtalkshow_question'] ?></td>
+                                        <td><a href="<?php echo base_url($item['pendaftarangrandtalkshow_followingfuturestig']) ?>" target="_blank">Show</a></td>
+                                        <td><a href="<?php echo base_url($item['pendaftarangrandtalkshow_followingsreig']) ?>" target="_blank">Show</a></td>
+                                        <td><a href="<?php echo base_url($item['pendaftarangrandtalkshow_sharestory']) ?>" target="_blank">Show</a></td>
                                     </tr>
-                                </thead>
-                                <tbody>
-                                    <?php $i = 1;?>
-                                    <?php foreach($data as $item):?>
-                                    <tr>
-                                        <th scope="row"><?= $i++;?></th>
-                                        <td><?= $item['pendaftarangrandtalkshow_name']?></td>
-                                        <td><?= $item['pendaftarangrandtalkshow_email']?></td>
-                                        <td><?= $item['pendaftarangrandtalkshow_domicile']?></td>
-                                        <td><?= $item['pendaftarangrandtalkshow_university']?></td>
-                                        <td><?= $item['pendaftarangrandtalkshow_major']?></td>
-                                        <td><?= $item['pendaftarangrandtalkshow_batch']?></td>
-                                        <td><?= $item['pendaftarangrandtalkshow_question']?></td>
-                                        <td><a href="<?php echo base_url($item['pendaftarangrandtalkshow_followingfuturestig'])?>" target="_blank">Show</a></td>
-                                        <td><a href="<?php echo base_url($item['pendaftarangrandtalkshow_followingsreig'])?>" target="_blank">Show</a></td>
-                                        <td><a href="<?php echo base_url($item['pendaftarangrandtalkshow_sharestory'])?>" target="_blank">Show</a></td>
-                                    </tr>
-                                    <?php endforeach;?>
-                                </tbody>
-                            </table>
-                        </div>
+                                <?php endforeach; ?>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-                <!-- /info card -->
             </div>
+            <!-- /info card -->
         </div>
+    </div>
     </div>
     <!-- /#page-content-wrapper -->
 

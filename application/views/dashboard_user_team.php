@@ -4,7 +4,7 @@
 
 <head>
     <?php
-        $this->load->view('template/meta');
+    $this->load->view('template/meta');
     ?>
 
     <!-- Bootstrap CSS -->
@@ -35,11 +35,11 @@
             <div class="sidebar-heading text-center py-4 img-fluid"><img src="<?php echo base_url() ?>/public/img/Logo.png" alt="Futurest 2022"></div>
             <div class="list-group list-group-flush my-3">
 
-                <a href="<?php echo base_url('user')?>" class="list-group-item list-group-item-action bg-transparent primary-text second-text"><i class="fas fa-home-alt me-2"></i>Home</a>
-                <a href="<?php echo base_url('user/team')?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text active"><i class="fas fa-users-cog me-2"></i>Team Identity</a>
-                <a href="<?php echo base_url('user/payment')?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text"><i class="fas fa-money-check-alt me-2"></i>Payment</a>
+                <a href="<?php echo base_url('user') ?>" class="list-group-item list-group-item-action bg-transparent primary-text second-text"><i class="fas fa-home-alt me-2"></i>Home</a>
+                <a href="<?php echo base_url('user/team') ?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text active"><i class="fas fa-users-cog me-2"></i>Team Identity</a>
+                <a href="<?php echo base_url('user/payment') ?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text"><i class="fas fa-money-check-alt me-2"></i>Payment</a>
                 <hr class="info-color">
-                <a href="<?php echo base_url('logout')?>" class="list-group-item list-group-item-action bg-transparent text-danger primary-text"><i class="fas fa-power-off me-2"></i>Logout</a>
+                <a href="<?php echo base_url('logout') ?>" class="list-group-item list-group-item-action bg-transparent text-danger primary-text"><i class="fas fa-power-off me-2"></i>Logout</a>
             </div>
         </div>
         <!-- /#sidebar-wrapper -->
@@ -63,10 +63,10 @@
                                 <i class="fas fa-user me-2 info-color"></i>@username
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="<?php echo base_url('user')?>">Home</a></li>
-                                <li><a class="dropdown-item" href="<?php echo base_url('user/team')?>">Team Identity</a></li>
-                                <li><a class="dropdown-item" href="<?php echo base_url('user/payment')?>">Payment</a></li>
-                                <li><a class="dropdown-item" href="<?php echo base_url('logout')?>">Logout</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url('user') ?>">Home</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url('user/team') ?>">Team Identity</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url('user/payment') ?>">Payment</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url('logout') ?>">Logout</a></li>
                             </ul>
                         </li>
                     </ul>

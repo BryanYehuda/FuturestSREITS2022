@@ -4,11 +4,11 @@
 
 <head>
   <?php
-    $this->load->view('template/meta');
+  $this->load->view('template/meta');
   ?>
   <title>Grand TalkShow</title>
   <?php
-    $this->load->view('template/css');
+  $this->load->view('template/css');
   ?>
   <!-- Import css if need -->
   <link rel="stylesheet" href="<?php echo base_url() ?>public/css/pages/grand_talkshow.css">
@@ -16,7 +16,7 @@
 
 <body>
   <?php
-    $this->load->view('components/navbar');
+  $this->load->view('components/navbar');
   ?>
 
   <main id="section">
@@ -37,20 +37,20 @@
             <i class="bi bi-journal-bookmark"></i>
           </div>
         </div>
-      </div>   
+      </div>
     </section>
 
     <section id="timeline" class="py-5">
-         <div class="container d-flex flex-column align-items-center py-5">
-            <h2 class="mb-5">Grand Talk Show Timeline</h2>
-            <div class="row mb-3 px-4 py-3 w-75" v-for="item in timeline">
-               <div class="col position-relative">
-                  <div class="position-absolute rounded-timeline rounded-pill"></div>
-                  <h3>{{ item.date }}</h3>
-                  <p>{{ item.description }}</p>
-               </div>
-            </div>
-         </div>
+      <div class="container d-flex flex-column align-items-center py-5">
+        <h2 class="mb-5">Grand Talk Show Timeline</h2>
+        <div class="row mb-3 px-4 py-3 w-75" v-for="item in timeline">
+          <div class="col position-relative">
+            <div class="position-absolute rounded-timeline rounded-pill"></div>
+            <h3>{{ item.date }}</h3>
+            <p>{{ item.description }}</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="speakers" class="py-5">
@@ -71,46 +71,46 @@
     </section>
 
     <section id="pertanyaan" class="py-5">
-         <div class="container py-5">
-            <h2 class="mb-5 text-center">
-              Grand Talk Show QNA
-            </h2>
-            <div class="accordion" id="accordionExample">
-               <div class="accordion-item" v-for="item in pertanyaan">
-                  <h3 class="accordion-header" :id="item.id">
-                     <button class="accordion-button shadow-none" :class="item.collapsed" type="button" data-bs-toggle="collapse" :data-bs-target="item.dataBsTarget" :aria-expanded="item.ariaExpanded" :aria-controls="item.ariaControls">
-                        {{ item.question }}
-                     </button>
-                  </h3>
-                  <div :id="item.ariaControls" class="accordion-collapse collapse" :class="item.show" :aria-labelledby="item.id" data-bs-parent="#accordionExample">
-                     <div class="accordion-body">
-                        {{ item.answer }}
-                     </div>
-                  </div>
-               </div>
+      <div class="container py-5">
+        <h2 class="mb-5 text-center">
+          Grand Talk Show QNA
+        </h2>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item" v-for="item in pertanyaan">
+            <h3 class="accordion-header" :id="item.id">
+              <button class="accordion-button shadow-none" :class="item.collapsed" type="button" data-bs-toggle="collapse" :data-bs-target="item.dataBsTarget" :aria-expanded="item.ariaExpanded" :aria-controls="item.ariaControls">
+                {{ item.question }}
+              </button>
+            </h3>
+            <div :id="item.ariaControls" class="accordion-collapse collapse" :class="item.show" :aria-labelledby="item.id" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                {{ item.answer }}
+              </div>
             </div>
+          </div>
+        </div>
 
-            <br><br><br><br><br><br><br>
-            <h2 class="text-center mb-5">Don't Forget To Regist!</h2>
-            <div class="d-flex justify-content-center">
-              <a class="btn btn-lg btn-success mx-3" href="<?php echo base_url("register-grand-talkshow-event")?>">
-                Register!
-              </a>
-            </div>
-            <br><br><br>
-         </div>
+        <br><br><br><br><br><br><br>
+        <h2 class="text-center mb-5">Don't Forget To Regist!</h2>
+        <div class="d-flex justify-content-center">
+          <a class="btn btn-lg btn-success mx-3" href="<?php echo base_url("register-grand-talkshow-event") ?>">
+            Register!
+          </a>
+        </div>
+        <br><br><br>
+      </div>
     </section>
 
   </main>
 
   <footer>
     <?php
-      $this->load->view('components/footer');
+    $this->load->view('components/footer');
     ?>
   </footer>
 
   <?php
-    $this->load->view('template/script');
+  $this->load->view('template/script');
   ?>
 
   <!-- Import js if need -->

@@ -185,5 +185,3 @@ class registrasi extends CI_Model{
         return $this->db->get($nama_table, $limit, $start)->result_array();
     }
 }
-
-?>

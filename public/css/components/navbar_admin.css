@@ -1,12 +1,12 @@
 .navbar {
-	background: #f3f3f3;
+    background: #f3f3f3;
 }
 
 .navbar h2 {
-	font-family: MaldenSansBoldItalic;
-	color: var(--futurest-green);
+    font-family: MaldenSansBoldItalic;
+    color: var(--futurest-green);
 }
 
 .navbar p {
-	font-family: MulishSemiBold;
+    font-family: MulishSemiBold;
 }

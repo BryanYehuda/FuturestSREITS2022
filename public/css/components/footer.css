@@ -1,20 +1,20 @@
 .footer {
-	background: var(--futurest-black);
-	color: var(--futurest-white);
+    background: var(--futurest-black);
+    color: var(--futurest-white);
 }
 
 .footer h3 {
-	font-size: 25px;
-	font-family: MulishSemiBold;
+    font-size: 25px;
+    font-family: MulishSemiBold;
 }
 
 .footer a {
-	text-decoration: none;
-	color: grey;
-	font-family: MulishLight;
-	font-size: 18px;
+    text-decoration: none;
+    color: grey;
+    font-family: MulishLight;
+    font-size: 18px;
 }
 
 .footer a:hover {
-	color: var(--futurest-green);
+    color: var(--futurest-green);
 }

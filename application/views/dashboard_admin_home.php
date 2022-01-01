@@ -4,7 +4,7 @@
 
 <head>
     <?php
-        $this->load->view('template/meta');
+    $this->load->view('template/meta');
     ?>
 
     <!-- Bootstrap CSS -->
@@ -35,11 +35,11 @@
             <div class="sidebar-heading text-center py-4 img-fluid"><img src="<?php echo base_url() ?>/public/img/Logo.png" alt=""></div>
             <div class="list-group list-group-flush my-3">
 
-                <a href="<?php echo base_url('admin')?>" class="list-group-item list-group-item-action bg-transparent primary-text active"><i class="fas fa-home-alt me-2"></i>Home</a>
-                <a href="<?php echo base_url('admin/list')?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text"><i class="fas fa-users-cog me-2"></i>Team List</a>
-                <a href="<?php echo base_url('admin/confirmation')?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text"><i class="fas fa-money-check-alt me-2"></i>Confirmation</a>
+                <a href="<?php echo base_url('admin') ?>" class="list-group-item list-group-item-action bg-transparent primary-text active"><i class="fas fa-home-alt me-2"></i>Home</a>
+                <a href="<?php echo base_url('admin/list') ?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text"><i class="fas fa-users-cog me-2"></i>Team List</a>
+                <a href="<?php echo base_url('admin/confirmation') ?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text"><i class="fas fa-money-check-alt me-2"></i>Confirmation</a>
                 <hr class="info-color">
-                <a href="<?php echo base_url('logout')?>" class="list-group-item list-group-item-action bg-transparent text-danger primary-text"><i class="fas fa-power-off me-2"></i>Logout</a>
+                <a href="<?php echo base_url('logout') ?>" class="list-group-item list-group-item-action bg-transparent text-danger primary-text"><i class="fas fa-power-off me-2"></i>Logout</a>
             </div>
         </div>
         <!-- /#sidebar-wrapper -->
@@ -49,7 +49,7 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 px-4">
                 <div class="d-flex align-items-center">
                     <i class="fs-4 me-3" id="menu-toggle"></i>
-                    <h2 class="primary-text">Welcome to Dashboard Admin (<?= $this->session->userdata('account_username');?>)</h2>
+                    <h2 class="primary-text">Welcome to Dashboard Admin (<?= $this->session->userdata('account_username'); ?>)</h2>
                 </div>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,10 +63,10 @@
                                 <i class="fas fa-user me-2 info-color"></i><?= $this->session->userdata('account_username'); ?>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="<?php echo base_url('admin')?>">Home</a></li>
-                                <li><a class="dropdown-item" href="<?php echo base_url('admin/list')?>">Team List</a></li>
-                                <li><a class="dropdown-item" href="<?php echo base_url('admin/confirmation')?>">Confirmation</a></li>
-                                <li><a class="dropdown-item" href="<?php echo base_url('logout')?>">Logout</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url('admin') ?>">Home</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url('admin/list') ?>">Team List</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url('admin/confirmation') ?>">Confirmation</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url('logout') ?>">Logout</a></li>
                             </ul>
                         </li>
                     </ul>
