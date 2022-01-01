@@ -6,7 +6,7 @@
 <meta name="author" content="IT Dev FUTUREST 2022">
 <meta name="theme-color" content="#B2D430" />
 
-<link rel="icon" href="<?php echo base_url() ?>/public/img/colours.css" type="image/x-icon">
+<link rel="icon" href="<?php echo base_url() ?>/public/img/logohijau.png" type="image/x-icon">
 <link rel="apple-touch-icon" href="<?php echo base_url() ?>/public/img/logohijau.png">
 <link rel="shortcut icon" href="<?php echo base_url() ?>/public/img/logohijau.png">
 <link rel="shortcut icon" href="<?php echo base_url() ?>/public/img/logohijau.png" type="image/x-icon">
