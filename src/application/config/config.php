@@ -24,8 +24,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 |
 */
 
-// Ganti ya sesuai server e
-$config['base_url'] = 'http://localhost/FuturestSREITS2022/src/';
+$config['base_url'] = 'https://futurest-its.com/';
 
 /*
 |--------------------------------------------------------------------------

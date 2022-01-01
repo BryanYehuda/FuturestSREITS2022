@@ -1,5 +1,4 @@
 
-
 $("button#submit").click(function(){
     let form = $('#form')[0];
     let data = new FormData(form);
@@ -22,12 +21,13 @@ $("button#submit").click(function(){
         success: function(response){
             if(response == "1"){
                 Swal.fire({
-                    title: 'Register Berhasil',
-                    text: 'Silahkan kembali ke Home dan tunggu konfirmasi melalui email',
+                    title: 'Thank you for your interest and registration in the Grand Talkshow!',
+                    text: 'Kindly check your email for further notice!',
                     type: 'success',
-                    icon: 'success'
+                    icon: 'success',
+                    confirmButtonText: 'Go Back'
                 }).then( function(){
-                    window.location.href = base_url+'Home';
+                    window.location.href = base_url;
                 });
                
             }else{
@@ -41,8 +41,8 @@ $("button#submit").click(function(){
                 }
 
                 for(let key of Object.keys(ok)){
-                    console.log(key)
-                    console.log(ok[key])
+                    //console.log(key)
+                    //console.log(ok[key])
                     if(ok[key] != ""){
                         document.querySelector("#"+key).classList.add("is-invalid");
                         $("#"+key+"-false").html(ok[key])

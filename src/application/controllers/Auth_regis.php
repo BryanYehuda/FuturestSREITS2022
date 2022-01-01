@@ -5,7 +5,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-require '../vendor/autoload.php';
+require './vendor/autoload.php';
 
 class Auth_regis extends CI_Controller{
 
@@ -16,7 +16,7 @@ class Auth_regis extends CI_Controller{
     }
 	
     public function regisRE101(){
-        $this->load->model("registrasi");
+        $this->load->model("REGISTRASI");
         $config = array(
 			'allowed_types'	=> 'gif|jpg|png',
 			'max_size'	 	=> 10000,
@@ -50,7 +50,7 @@ class Auth_regis extends CI_Controller{
 			'followsreig'       => $this->followsreig->display_errors(),
 			'sharestory'        => $this->sharestory->display_errors()
 		);
-        if(!$this->form_validation->run() || !$this->registrasi->is_it_empty($error)){
+        if(!$this->form_validation->run() || !$this->REGISTRASI->is_it_empty($error)){
 			$error = array_merge($error, $this->form_validation->error_array());
 			if(empty($error['followfuturestig'])){
 				$path = './upload/RE101/followfuturestig/';
@@ -66,13 +66,14 @@ class Auth_regis extends CI_Controller{
 			}
 			echo json_encode($error);
 		}else{
-			$this->registrasi->regisRE101($data);
+			$this->REGISTRASI->regisRE101($data);
 			echo "1";
 		}
     }
 
 	public function regisGrandTalkshow(){
-        $this->load->model("registrasi");
+	    //var_dump($this->input->post());
+        $this->load->model("Registrasi");
         $config = array(
 			'allowed_types'	=> 'gif|jpg|png',
 			'max_size'	 	=> 10000,
@@ -107,7 +108,7 @@ class Auth_regis extends CI_Controller{
 			'sharestory'        => $this->sharestory->display_errors()
 		);
         //var_dump($this->input->post());
-        if(!$this->form_validation->run() || !$this->registrasi->is_it_empty($error)){
+        if(!$this->form_validation->run() || !$this->Registrasi->is_it_empty($error)){
 			$error = array_merge($error, $this->form_validation->error_array());
 			if(empty($error['followfuturestig'])){
 				$path = './upload/GrandTalkshow/followfuturestig/';
@@ -124,8 +125,9 @@ class Auth_regis extends CI_Controller{
 			
 			echo json_encode($error);
 		}else{
-			$this->registrasi->regisGrandTalkshow($data);
+			$this->Registrasi->regisGrandTalkshow($data);
 			$name = $this->input->post('name');
+			$university = $this->input->post('university');
 			$email = $this->input->post('email');
 			$mail = new PHPMailer(true);
 			try
@@ -135,11 +137,24 @@ class Auth_regis extends CI_Controller{
 				$mail->SMTPAuth = "true";
 				$mail->SMTPSecure = "tls";
 				$mail->Port = "465";
-				$mail->Username = "futurestits2022@gmail.com";
+				$mail->Username = "futurest.sreits@gmail.com";
 				$mail->Password = "SREFuturest!";
-				$mail->Subject = "FUTUREST 2022 - GRAND TALKSHOW REGISTRATION";
-				$mail->setFrom("futurestits2022@gmail.com", "Futurest 2022");
-				$mail->Body = "Hi, $name. Thank you for signing up on grand talkshow futurest 2022 on the theme \"the urgency of climate change mitigation\", the email which you are using is registered. This event will be held on Saturday, January 15, 2022 at 9:00 a.m., with zoom's link will be send at h-1 event via email used to register.";
+				$mail->Subject = "[Confirmation] Grand Talkshow: The Urgency of Climate Change Mitigation";
+				$mail->setFrom("futurest.sreits@gmail.com", "Futurest 2022");
+				$mail->Body = "Dear $name from $university,<br>
+				<br>
+				Thank you for registering for our event, \"Grand Talkshow: The Urgency of Climate Change Mitigation.\"<br>
+				<br>
+				Hereby, we've received your submission. We'll check the completeness of the requirements that have been submitted.<br>
+				<br>
+				This is the confirmation email, and you will receive an invitation email one day before the event is held.<br>
+				<br>
+				Thank you.<br>
+				<br>
+				--<br>
+				Best regards,<br>
+				<br>
+				Future Energy Summit 2022";
 				$mail->IsHTML(TRUE);
 				$mail->addAddress($email);
 				$mail->Send();
@@ -154,7 +169,7 @@ class Auth_regis extends CI_Controller{
     }
 
 	public function regisFinalTalkshow(){
-        $this->load->model("registrasi");
+        $this->load->model("REGISTRASI");
         $config = array(
 			'allowed_types'	=> 'gif|jpg|png',
 			'max_size'	 	=> 10000,
@@ -189,7 +204,7 @@ class Auth_regis extends CI_Controller{
 			'sharestory'        => $this->sharestory->display_errors()
 		);
         //var_dump($this->input->post());
-        if(!$this->form_validation->run() || !$this->registrasi->is_it_empty($error)){
+        if(!$this->form_validation->run() || !$this->REGISTRASI->is_it_empty($error)){
 			$error = array_merge($error, $this->form_validation->error_array());
 			if(empty($error['followfuturestig'])){
 				$path = './upload/FinalTalkshow/followfuturestig/';
@@ -205,14 +220,14 @@ class Auth_regis extends CI_Controller{
 			}
 			echo json_encode($error);
 		}else{
-			$this->registrasi->regisFinalTalkshow($data);
+			$this->REGISTRASI->regisFinalTalkshow($data);
 			echo "1";
 		}
     }
 
 	public function regisClimateChange(){
 		//echo var_dump(empty($this->input->post('prioritze')) && empty($this->input->post('willingness')) && empty($this->input->post('committed')));
-		$this->load->model("registrasi");
+		$this->load->model("REGISTRASI");
         $config = array(
 			'allowed_types'	=> 'pdf|gif|jpg|png',
 			'max_size'	 	=> 10000,
@@ -261,7 +276,7 @@ class Auth_regis extends CI_Controller{
 			'CV'				=> $this->CV->display_errors()
 		);
         //var_dump($this->input->post());
-        if((!$this->form_validation->run() || !$this->registrasi->is_it_empty($error) || (empty($this->input->post('prioritze')) || empty($this->input->post('willingness')) || empty($this->input->post('committed'))))){
+        if((!$this->form_validation->run() || !$this->REGISTRASI->is_it_empty($error) || (empty($this->input->post('prioritze')) || empty($this->input->post('willingness')) || empty($this->input->post('committed'))))){
 			$error = array_merge($error, $this->form_validation->error_array());
 			if(empty($error['followfuturestig'])){
 				$path = './upload/3C/followfuturestig/';
@@ -285,13 +300,13 @@ class Auth_regis extends CI_Controller{
 			}
 			echo json_encode($error);
 		}else{
-			$this->registrasi->regis3C($data);
+			$this->REGISTRASI->regis3C($data);
 			echo "1";
 		}
 	}
 
 	public function regisReInnovation(){
-		$this->load->model("registrasi");
+		$this->load->model("REGISTRASI");
 		//jpg|png|jpeg
 		$config = array(
 			'allowed_types'	=> 'pdf',
@@ -391,7 +406,7 @@ class Auth_regis extends CI_Controller{
 		$data['payment'] = $this->payment->data('file_name');
 		$error['payment'] = $this->payment->display_errors();
 		
-		if(!$this->form_validation->run() || !$this->registrasi->is_it_empty($error)){
+		if(!$this->form_validation->run() || !$this->REGISTRASI->is_it_empty($error)){
 			$error = array_merge($error, $this->form_validation->error_array());
 			if(empty($error['photo_1'])){
 				$path = './upload/REinnovation/photo/';
@@ -448,13 +463,13 @@ class Auth_regis extends CI_Controller{
 			
 			echo json_encode($error);
 		}else{
-			$this->registrasi->regisReInnovation($data);
+			$this->REGISTRASI->regisReInnovation($data);
 			echo "1";
 		}
 	}
 
 	public function regisEssayCompIndividu(){
-		$this->load->model("registrasi");
+		$this->load->model("REGISTRASI");
 		$config = array(
 			'allowed_types'	=> 'pdf',
 			'max_size'	 	=> 10000,
@@ -511,7 +526,7 @@ class Auth_regis extends CI_Controller{
 			'payment'		=> $this->payment->display_errors()
 		);
 
-		if(!$this->form_validation->run() || !$this->registrasi->is_it_empty($error)){
+		if(!$this->form_validation->run() || !$this->REGISTRASI->is_it_empty($error)){
 			$error = array_merge($error, $this->form_validation->error_array());
 			if(empty($error['card_1'])){
 				$path = './upload/EssayCompetition/card/';
@@ -531,12 +546,12 @@ class Auth_regis extends CI_Controller{
 			}
 			echo json_encode($error);
 		}else{
-			$this->registrasi->regisEssayCompetition($data);
+			$this->REGISTRASI->regisEssayCompetition($data);
 			echo "1";
 		}
 	}
 	public function regisEssayCompTeam(){
-		$this->load->model("registrasi");
+		$this->load->model("REGISTRASI");
 		$config = array(
 			'allowed_types'	=> 'pdf',
 			'max_size'	 	=> 10000,
@@ -611,7 +626,7 @@ class Auth_regis extends CI_Controller{
 			'payment'		=> $this->payment->display_errors()
 		);
 
-		if(!$this->form_validation->run() || !$this->registrasi->is_it_empty($error)){
+		if(!$this->form_validation->run() || !$this->REGISTRASI->is_it_empty($error)){
 			$error = array_merge($error, $this->form_validation->error_array());
 			if(empty($error['card_1'])){
 				$path = './upload/EssayCompetition/card/';
@@ -643,7 +658,7 @@ class Auth_regis extends CI_Controller{
 			}
 			echo json_encode($error);
 		}else{
-			$this->registrasi->regisEssayCompetitionteam($data);
+			$this->REGISTRASI->regisEssayCompetitionteam($data);
 			echo "1";
 		}
 	}

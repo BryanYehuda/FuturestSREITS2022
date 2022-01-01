@@ -83,6 +83,11 @@ class Home extends CI_Controller
         $this->load->view('chooseteamindividual');
     }
 
+    public function finishregist()
+    {
+        $this->load->view('finish_regist');
+    }
+
     // Comp
 
     public function essay()

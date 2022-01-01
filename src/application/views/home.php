@@ -20,7 +20,7 @@
 
   <section id="jumbotron" class="d-flex align-items-center position-relative">
     <div class="container text-center">
-      <h1 class="mb-5">SRE ITS BOS!!!</h1>
+      <h1 class="mb-5">Hello world</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem odit assumenda amet totam vitae, vero aspernatur deleniti quae voluptatibus, ut quod soluta omnis recusandae vel quasi aliquam libero ratione dolores doloribus quia praesentium. Ipsum, voluptas!
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem odit assumenda amet totam vitae, vero aspernatur deleniti quae voluptatibus, ut quod soluta omnis recusandae vel quasi aliquam libero ratione dolores doloribus quia praesentium. Ipsum, voluptas!

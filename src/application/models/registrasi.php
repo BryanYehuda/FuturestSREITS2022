@@ -1,6 +1,6 @@
-<?php
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class registrasi extends CI_Model{
+class Registrasi extends CI_Model{
 
     function data(){
         $query = "SELECT * FROM `pendaftaran1`";

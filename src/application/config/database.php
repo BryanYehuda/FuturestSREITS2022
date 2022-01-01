@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'futurest2022',
+	'hostname' => '103.163.138.3',
+	'username' => 'futurest_user',
+	'password' => 'Sur4b4y4k0t4',
+	'database' => 'futurest_database',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

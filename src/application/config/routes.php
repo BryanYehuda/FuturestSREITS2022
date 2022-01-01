@@ -51,7 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 
 // HOME
-$route['default_controller'] = 'home';
+$route['default_controller'] = 'home/registerGrandTalkshowEvent';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['details'] = 'home/details';
@@ -59,6 +59,7 @@ $route['events'] = 'home/events';
 $route['contact'] = 'home/contact';
 $route['login'] = 'home/login';
 $route['logout'] = 'auth/logout';
+$route['finish-register'] = 'home/finishregist';
 
 // Competitions
 $route['essay'] = 'home/essay';

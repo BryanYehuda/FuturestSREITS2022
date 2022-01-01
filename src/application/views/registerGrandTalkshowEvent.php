@@ -11,19 +11,13 @@
     $this->load->view('template/css');
     ?>
     <link rel="stylesheet" href="<?php echo base_url() ?>public/css/pages/register.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>public/css/pages/registerGTS.css">
     <!-- Import css if need -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
-
 <body>
-
-    <header>
-        <?php
-        $this->load->view('components/navbar');
-        ?>
-    </header>
 
     <br><br><br><br><br>
     <main id="section">
@@ -33,9 +27,11 @@
 
                 <!-- Main Data -->
                 <div class="row">
-                    <div class=".col-6 .col-md-10 register-right ">
+                    <div class=".col-6 .col-md-10 register-right">
                         <br>
-                        <h1 class="register text-center">Grand Talkshow</h1>
+                        <!-- image -->
+                        <img src="<?php echo base_url() ?>/public/img/logo-utama.png" width="200" height="200" alt="FUTUREST" class="d-block mx-auto img-fluid" /><br>
+                        <h2 class="logo-regist">Futurest 2022</h2>
                         <div class="register-form mt-3 mb-3">
                             <div class="">
                                 <div class="row">
@@ -134,6 +130,7 @@
                                 </div>
                             </div>
                         </div>
+                        <br><br>
                     </div>
                 </div>
                 <!-- End Main Data -->
@@ -168,4 +165,4 @@
     <script type="text/javascript" src="<?php echo base_url() ?>public/js/backend/register.js"></script>
 </body>
 
-</html> -->
+</html>
