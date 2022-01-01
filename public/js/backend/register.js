@@ -1,11 +1,10 @@
-
-$("button#submit").click(function(){
+$("button#submit").click(function() {
     let form = $('#form')[0];
     let data = new FormData(form);
-    
+
     data.append('submit', 'bisa');
-     
-    $('form').submit(function(){
+
+    $('form').submit(function() {
         return false;
     });
 
@@ -18,37 +17,37 @@ $("button#submit").click(function(){
         processData: false,
         contentType: false,
         cache: false,
-        success: function(response){
-            if(response == "1"){
+        success: function(response) {
+            if (response == "1") {
                 Swal.fire({
-                    title: 'Thank you for register to Futurest!',
-                    text: 'Please check your email for next confirmation...',
+                    title: 'Thank you for your interest and registration in the Grand Talkshow!',
+                    text: 'Kindly check your email for further notice!',
                     type: 'success',
                     icon: 'success',
-                    confirmButtonText: 'Bact to Home'
-                }).then( function(){
-                    window.location.href = base_url+'Home';
+                    confirmButtonText: 'Back to Home'
+                }).then(function() {
+                    window.location.href = base_url;
                 });
-               
-            }else{
+
+            } else {
                 //console.log(response)
                 let ok = JSON.parse(response)
                 let key = Object.keys(ok);
-                for(let datakey of data.keys()){
-                    if(datakey != 'prioritze' && datakey != 'willingness' && datakey != 'committed'){
-                         document.querySelector("#"+datakey).classList.remove("is-invalid");
+                for (let datakey of data.keys()) {
+                    if (datakey != 'prioritze' && datakey != 'willingness' && datakey != 'committed') {
+                        document.querySelector("#" + datakey).classList.remove("is-invalid");
                     }
                 }
 
-                for(let key of Object.keys(ok)){
+                for (let key of Object.keys(ok)) {
                     //console.log(key)
                     //console.log(ok[key])
-                    if(ok[key] != ""){
-                        document.querySelector("#"+key).classList.add("is-invalid");
-                        $("#"+key+"-false").html(ok[key])
+                    if (ok[key] != "") {
+                        document.querySelector("#" + key).classList.add("is-invalid");
+                        $("#" + key + "-false").html(ok[key])
                     }
                 }
             }
         }
-    })    
-})  
+    })
+})
