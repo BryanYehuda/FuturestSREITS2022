@@ -1,5 +1,4 @@
 
-
 $("button#submit").click(function(){
     let form = $('#form')[0];
     let data = new FormData(form);
@@ -22,10 +21,11 @@ $("button#submit").click(function(){
         success: function(response){
             if(response == "1"){
                 Swal.fire({
-                    title: 'Register Berhasil',
-                    text: 'Silahkan kembali ke Home dan tunggu konfirmasi melalui email',
+                    title: 'Thank you for register to Futurest!',
+                    text: 'Please check your email for next confirmation...',
                     type: 'success',
-                    icon: 'success'
+                    icon: 'success',
+                    confirmButtonText: 'Bact to Home'
                 }).then( function(){
                     window.location.href = base_url+'Home';
                 });
@@ -41,8 +41,8 @@ $("button#submit").click(function(){
                 }
 
                 for(let key of Object.keys(ok)){
-                    console.log(key)
-                    console.log(ok[key])
+                    //console.log(key)
+                    //console.log(ok[key])
                     if(ok[key] != ""){
                         document.querySelector("#"+key).classList.add("is-invalid");
                         $("#"+key+"-false").html(ok[key])

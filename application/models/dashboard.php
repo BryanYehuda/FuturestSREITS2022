@@ -1,5 +1,5 @@
 <?php
-class dashboard extends CI_Model
+class DASHBOARD extends CI_Model
 {
     function getData($userdata)
     {

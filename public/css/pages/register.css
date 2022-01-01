@@ -1,11 +1,11 @@
 html {
-    width: 100vw !important;
-    margin: 0 !important;
-    padding: 0 !important;
+	width: 100vw !important;
+	margin: 0 !important;
+	padding: 0 !important;
 }
 
 body {
-    overflow-x: hidden;
+	overflow-x: hidden;
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;

@@ -1,0 +1,19 @@
+main#section {
+	background: radial-gradient(ellipse at bottom, #a1ffab 0%, #faffd1 100%);
+	text-align: center;
+}
+
+main#section h1 {
+	font-size: 50px;
+	font-family: MulishBold;
+}
+
+main#section p {
+	font-size: 20px;
+	font-family: MulishRegular;
+}
+
+main#section a {
+	display: block;
+	margin: 0 auto;
+}

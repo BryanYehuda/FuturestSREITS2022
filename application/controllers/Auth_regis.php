@@ -1,19 +1,23 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Auth_regis extends CI_Controller
-{
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+require '../vendor/autoload.php';
+
+class Auth_regis extends CI_Controller{
 
 	public function __construct()
 	{
 		parent::__construct();
 		date_default_timezone_set("Asia/Jakarta");
-	}
-
-	public function regisRE101()
-	{
-		$this->load->model("registrasi");
-		$config = array(
+    }
+	
+    public function regisRE101(){
+        $this->load->model("REGISTRASI");
+        $config = array(
 			'allowed_types'	=> 'gif|jpg|png',
 			'max_size'	 	=> 10000,
 			'max_width' 	=> 10000,
@@ -120,16 +124,39 @@ class Auth_regis extends CI_Controller
 			}
 
 			echo json_encode($error);
-		} else {
-			$this->registrasi->regisGrandTalkshow($data);
+		}else{
+			$this->REGISTRASI->regisGrandTalkshow($data);
+			$name = $this->input->post('name');
+			$email = $this->input->post('email');
+			$mail = new PHPMailer(true);
+			try
+			{
+				$mail->isSMTP();
+				$mail->Host = "ssl://smtp.gmail.com";
+				$mail->SMTPAuth = "true";
+				$mail->SMTPSecure = "tls";
+				$mail->Port = "465";
+				$mail->Username = "futurestits2022@gmail.com";
+				$mail->Password = "SREFuturest!";
+				$mail->Subject = "FUTUREST 2022 - GRAND TALKSHOW REGISTRATION";
+				$mail->setFrom("futurestits2022@gmail.com", "Futurest 2022");
+				$mail->Body = "Hi, $name. Thank you for signing up on grand talkshow futurest 2022 on the theme \"the urgency of climate change mitigation\", the email which you are using is registered. This event will be held on Saturday, January 15, 2022 at 9:00 a.m., with zoom's link will be send at h-1 event via email used to register.";
+				$mail->IsHTML(TRUE);
+				$mail->addAddress($email);
+				$mail->Send();
+			} 
+			catch (Exception $e)
+			{
+				echo "Message could not be sent. Mailer Error : {$mail->ErrorInfo}";
+			}
+			$mail->smtpClose();
 			echo "1";
 		}
 	}
 
-	public function regisFinalTalkshow()
-	{
-		$this->load->model("registrasi");
-		$config = array(
+	public function regisFinalTalkshow(){
+        $this->load->model("REGISTRASI");
+        $config = array(
 			'allowed_types'	=> 'gif|jpg|png',
 			'max_size'	 	=> 10000,
 			'max_width' 	=> 10000,
@@ -187,8 +214,8 @@ class Auth_regis extends CI_Controller
 	public function regisClimateChange()
 	{
 		//echo var_dump(empty($this->input->post('prioritze')) && empty($this->input->post('willingness')) && empty($this->input->post('committed')));
-		$this->load->model("registrasi");
-		$config = array(
+		$this->load->model("REGISTRASI");
+        $config = array(
 			'allowed_types'	=> 'pdf|gif|jpg|png',
 			'max_size'	 	=> 10000,
 			'max_width' 	=> 10000,
@@ -265,9 +292,8 @@ class Auth_regis extends CI_Controller
 		}
 	}
 
-	public function regisReInnovation()
-	{
-		$this->load->model("registrasi");
+	public function regisReInnovation(){
+		$this->load->model("REGISTRASI");
 		//jpg|png|jpeg
 		$config = array(
 			'allowed_types'	=> 'pdf',
@@ -429,9 +455,8 @@ class Auth_regis extends CI_Controller
 		}
 	}
 
-	public function regisEssayCompIndividu()
-	{
-		$this->load->model("registrasi");
+	public function regisEssayCompIndividu(){
+		$this->load->model("REGISTRASI");
 		$config = array(
 			'allowed_types'	=> 'pdf',
 			'max_size'	 	=> 10000,
@@ -507,14 +532,13 @@ class Auth_regis extends CI_Controller
 				unlink($path . $data['payment']);
 			}
 			echo json_encode($error);
-		} else {
-			$this->registrasi->regisEssayCompetition($data);
+		}else{
+			$this->REGISTRASI->regisEssayCompetition($data);
 			echo "1";
 		}
 	}
-	public function regisEssayCompTeam()
-	{
-		$this->load->model("registrasi");
+	public function regisEssayCompTeam(){
+		$this->load->model("REGISTRASI");
 		$config = array(
 			'allowed_types'	=> 'pdf',
 			'max_size'	 	=> 10000,

@@ -59,6 +59,7 @@ $route['events'] = 'home/events';
 $route['contact'] = 'home/contact';
 $route['login'] = 'home/login';
 $route['logout'] = 'auth/logout';
+$route['finish-register'] = 'home/finishregist';
 
 // Competitions
 $route['essay'] = 'home/essay';
