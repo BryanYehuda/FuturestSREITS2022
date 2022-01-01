@@ -127,6 +127,7 @@ class Auth_regis extends CI_Controller{
 		}else{
 			$this->REGISTRASI->regisGrandTalkshow($data);
 			$name = $this->input->post('name');
+			$university = $this->input->post('university');
 			$email = $this->input->post('email');
 			$mail = new PHPMailer(true);
 			try
@@ -136,11 +137,24 @@ class Auth_regis extends CI_Controller{
 				$mail->SMTPAuth = "true";
 				$mail->SMTPSecure = "tls";
 				$mail->Port = "465";
-				$mail->Username = "futurestits2022@gmail.com";
+				$mail->Username = "futurest.sreits@gmail.com";
 				$mail->Password = "SREFuturest!";
-				$mail->Subject = "FUTUREST 2022 - GRAND TALKSHOW REGISTRATION";
-				$mail->setFrom("futurestits2022@gmail.com", "Futurest 2022");
-				$mail->Body = "Hi, $name. Thank you for signing up on grand talkshow futurest 2022 on the theme \"the urgency of climate change mitigation\", the email which you are using is registered. This event will be held on Saturday, January 15, 2022 at 9:00 a.m., with zoom's link will be send at h-1 event via email used to register.";
+				$mail->Subject = "[Confirmation] Grand Talkshow: The Urgency of Climate Change Mitigation";
+				$mail->setFrom("futurest.sreits@gmail.com", "Futurest 2022");
+				$mail->Body = "Dear $name from $university,<br>
+				<br>
+				Thank you for registering for our event, \"Grand Talkshow: The Urgency of Climate Change Mitigation.\"<br>
+				<br>
+				Hereby, we've received your submission. We'll check the completeness of the requirements that have been submitted.<br>
+				<br>
+				This is the confirmation email, and you will receive an invitation email one day before the event is held.<br>
+				<br>
+				Thank you.<br>
+				<br>
+				--<br>
+				Best regards,<br>
+				<br>
+				Future Energy Summit 2022";
 				$mail->IsHTML(TRUE);
 				$mail->addAddress($email);
 				$mail->Send();
