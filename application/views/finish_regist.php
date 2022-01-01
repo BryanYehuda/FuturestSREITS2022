@@ -40,7 +40,6 @@
   ?>
 
   <!-- Import js if need -->
-  <script src="<?php echo base_url() ?>public/js/pages/event.js"></script>
 </body>
 
 </html>
