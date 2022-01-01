@@ -22,8 +22,8 @@ class Grand_talkshow extends CI_Controller {
 	public function index()
 	{
 		$tableName = $this->session->userdata('account_table');
-		$this->load->model("dashboard");
-		$query = $this->dashboard->getData($tableName);
+		$this->load->model("DASHBOARD");
+		$query = $this->DASHBOARD->getData($tableName);
 		$data = [
 			'data' => count($query)
 		];
@@ -33,9 +33,9 @@ class Grand_talkshow extends CI_Controller {
 	public function list()
 	{
 		$tableName = $this->session->userdata('account_table');
-		$this->load->model("dashboard");
+		$this->load->model("DASHBOARD");
 		$data =[
-			'data' => $this->dashboard->getData($tableName)
+			'data' => $this->DASHBOARD->getData($tableName)
 		];
 		$this->load->view('admin/dashboard_grand_talkshow/list', $data);
 	}
@@ -43,8 +43,8 @@ class Grand_talkshow extends CI_Controller {
 	public function confirmation()
 	{
 		$tableName = $this->session->userdata('account_table');
-		$this->load->model("dashboard");
-		$data = $this->dashboard->getData($tableName);
+		$this->load->model("DASHBOARD");
+		$data = $this->DASHBOARD->getData($tableName);
 		$this->load->view('admin/dashboard_grand_talkshow/confirmation', $data);
 	}
 
