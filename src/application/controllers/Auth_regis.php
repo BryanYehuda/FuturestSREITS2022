@@ -1,6 +1,12 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+require '../vendor/autoload.php';
+
 class Auth_regis extends CI_Controller{
 
     public function __construct()
@@ -119,6 +125,30 @@ class Auth_regis extends CI_Controller{
 			echo json_encode($error);
 		}else{
 			$this->registrasi->regisGrandTalkshow($data);
+			$name = $this->input->post('name');
+			$email = $this->input->post('email');
+			$mail = new PHPMailer(true);
+			try
+			{
+				$mail->isSMTP();
+				$mail->Host = "ssl://smtp.gmail.com";
+				$mail->SMTPAuth = "true";
+				$mail->SMTPSecure = "tls";
+				$mail->Port = "465";
+				$mail->Username = "futurestits2022@gmail.com";
+				$mail->Password = "SREFuturest!";
+				$mail->Subject = "FUTUREST 2022 - GRAND TALKSHOW REGISTRATION";
+				$mail->setFrom("futurestits2022@gmail.com", "Futurest 2022");
+				$mail->Body = "Hi, $name. Thank you for signing up on grand talkshow futurest 2022 on the theme \"the urgency of climate change mitigation\", the email which you are using is registered. This event will be held on Saturday, January 15, 2022 at 9:00 a.m., with zoom's link will be send at h-1 event via email used to register.";
+				$mail->IsHTML(TRUE);
+				$mail->addAddress($email);
+				$mail->Send();
+			} 
+			catch (Exception $e)
+			{
+				echo "Message could not be sent. Mailer Error : {$mail->ErrorInfo}";
+			}
+			$mail->smtpClose();
 			echo "1";
 		}
     }
