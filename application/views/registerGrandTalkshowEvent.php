@@ -33,7 +33,7 @@
 
                 <!-- Main Data -->
                 <div class="row">
-                    <div class=".col-6 .col-md-10 register-right" style="border: 2px solid black;">
+                    <div class=".col-6 .col-md-10 register-right">
                         <br>
                         <h1 class="register text-center">Grand Talkshow</h1>
                         <div class="register-form mt-3 mb-3">
