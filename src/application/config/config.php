@@ -25,6 +25,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 */
 
 $config['base_url'] = 'https://futurest-its.com/';
+// $config['base_url'] = 'http://localhost:8080/FuturestSREITS2022/src/';
 
 /*
 |--------------------------------------------------------------------------
