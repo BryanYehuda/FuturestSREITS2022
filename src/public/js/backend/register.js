@@ -1,5 +1,5 @@
 
-$("button#submit").click(function(){
+$("button#submit").on('click', function(){
     let form = $('#form')[0];
     let data = new FormData(form);
     
@@ -8,7 +8,10 @@ $("button#submit").click(function(){
     $('form').submit(function(){
         return false;
     });
-
+    
+    $("button#submit").attr("disabled", "disabled");
+    document.querySelector("#loading").classList.remove("d-none");
+    
     $.ajax({
         url: url,
         type: "POST",
@@ -29,7 +32,8 @@ $("button#submit").click(function(){
                 }).then( function(){
                     window.location.href = base_url;
                 });
-               
+                document.querySelector("#loading").classList.add("d-none");
+                $("button#submit").removeAttr("disabled");
             }else{
                 //console.log(response)
                 let ok = JSON.parse(response)
@@ -48,6 +52,8 @@ $("button#submit").click(function(){
                         $("#"+key+"-false").html(ok[key])
                     }
                 }
+                document.querySelector("#loading").classList.add("d-none");
+                $("button#submit").removeAttr("disabled");
             }
         }
     })    

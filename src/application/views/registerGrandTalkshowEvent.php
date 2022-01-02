@@ -122,8 +122,9 @@
                                                     </div>
                                                 </div>
 
-
-                                                <button type="submit" class="btn btn-danger" id="submit">Submit</button>
+                                            
+                                                <button type="submit" class="btn btn-danger" id="submit">
+                                                    <i class="hide loading-icon fa fa-spinner fa-spin d-none" id="loading"></i>Submit</button>
                                                 <!-- Example single danger button -->
                                             </form>
                                             <!-- End Form -->
@@ -160,7 +161,7 @@
     ?>
 
     <!-- Import js if need -->
-    <script>var url = '<?php echo base_url().'Auth_regis/regisGrandTalkshow'?>';</script>
+    <script>var url = 'Auth_regis/regisGrandTalkshow'</script>
     <script>var base_url = '<?php echo base_url()?>';</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
