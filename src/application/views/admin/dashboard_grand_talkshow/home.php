@@ -35,9 +35,7 @@
             <div class="sidebar-heading text-center py-4 img-fluid"><img src="<?php echo base_url() ?>/public/img/Logo.png" alt=""></div>
             <div class="list-group list-group-flush my-3">
                 <a href="<?php echo base_url('dashboard-grand-talkshow')?>" class="list-group-item list-group-item-action bg-transparent primary-text active"><i class="fas fa-home-alt me-2"></i>Home</a>
-                <a href="<?php echo base_url('dashboard-grand-talkshow-list')?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text"><i class="fas fa-users-cog me-2"></i>Registeree List</a>
-                <a href="<?php echo base_url('dashboard-grand-talkshow-confirmation')?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text"><i class="fas fa-money-check-alt me-2"></i>Confirmation</a>
-                <hr class="info-color">
+                <a href="<?php echo base_url('dashboard-grand-talkshow-list')?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text"><i class="fas fa-users-cog me-2"></i>Registeree List</a>                <hr class="info-color">
                 <a href="<?php echo base_url('logout')?>" class="list-group-item list-group-item-action bg-transparent text-danger primary-text"><i class="fas fa-power-off me-2"></i>Logout</a>
             </div>
         </div>
@@ -64,7 +62,6 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="<?php echo base_url('dashboard-grand-talkshow')?>">Home</a></li>
                                 <li><a class="dropdown-item" href="<?php echo base_url('dashboard-grand-talkshow-list')?>">Registeree List</a></li>
-                                <li><a class="dropdown-item" href="<?php echo base_url('dashboard-grand-talkshow-confirmation')?>">Confirmation</a></li>
                                 <li><a class="dropdown-item" href="<?php echo base_url('logout')?>">Logout</a></li>
                             </ul>
                         </li>

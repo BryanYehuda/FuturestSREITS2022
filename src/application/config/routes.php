@@ -84,4 +84,3 @@ $route['register-climate-change-event'] = "home/registerClimateChangeEvent";
 //Dashboard Grand Talkshow
 $route['dashboard-grand-talkshow'] = "grand_talkshow";
 $route['dashboard-grand-talkshow-list'] = "grand_talkshow/list";
-$route['dashboard-grand-talkshow-confirmation'] = "grand_talkshow/confirmation";
