@@ -78,6 +78,8 @@
                                                 <label for="pwd"><i class="float"></i> Batch </label>
                                                 <select class="form-select <?php $ok = " "; (form_error('batch') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" aria-label="Default select example" id="batch" name="batch" required>
                                                     <option selected disabled>-</option>
+                                                    <option value="2017+">2017+</option>
+                                                    <option value="2018">2018</option>
                                                     <option value="2019">2019</option>
                                                     <option value="2020">2020</option>
                                                     <option value="2021">2021</option>
