@@ -65,6 +65,26 @@ $route['finish-register'] = 'home/finishregist';
 $route['essay'] = 'home/essay';
 $route['re-innovation'] = 'home/re_innovation';
 
+//Dashboard Grand Talkshow
+$route['dashboard-grand-talkshow'] = "grand_talkshow";
+$route['dashboard-grand-talkshow-list'] = "grand_talkshow/list";
+
+//Dashboard RE 101
+$route['dashboard-re-101'] = "re_101";
+$route['dashboard-re-101-list'] = "re_101/list";
+
+//Dashboard Final Talkshow
+$route['dashboard-final-talkshow'] = "final_talkshow";
+$route['dashboard-final-talkshow-list'] = "final_talkshow/list";
+
+//Dashboard Climate Change Community
+$route['dashboard-climate-change-community'] = "climate_change_community";
+$route['dashboard-climate-change-community-list'] = "climate_change_community/list";
+
+//Dashboard Awarding Night
+$route['dashboard-awarding-night'] = "awarding_night";
+$route['dashboard-awarding-night-list'] = "awarding_night/list";
+
 // Events
 $route['grand-talkshow'] = 'home/grand_talkshow';
 $route['climate-change-community'] = 'home/climate_change_community';
@@ -81,6 +101,4 @@ $route['register-re-101-event'] = "home/registerRE101Event";
 $route['register-final-talkshow-event'] = "home/registerFinalTalkshowEvent";
 $route['register-climate-change-event'] = "home/registerClimateChangeEvent";
 
-//Dashboard Grand Talkshow
-$route['dashboard-grand-talkshow'] = "grand_talkshow";
-$route['dashboard-grand-talkshow-list'] = "grand_talkshow/list";
+

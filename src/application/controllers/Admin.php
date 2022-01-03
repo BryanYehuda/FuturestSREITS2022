@@ -25,19 +25,19 @@ class Admin extends CI_Controller {
 		}
 		else if ($this->session->userdata('account_username') == "FuturestRE101")
 		{
-
+			redirect('dashboard-re-101');
 		}
 		else if ($this->session->userdata('account_username') == "FuturestClimateChangeCommunity")
 		{
-
+			redirect('dashboard-climate-change-community');
 		}
 		else if ($this->session->userdata('account_username') == "FuturestFinalTalkshow")
 		{
-
+			redirect('dashboard-final-talkshow');
 		}
 		else if ($this->session->userdata('account_username') == "FuturestAwardingNight")
 		{
-
+			redirect('dashboard-awarding-night');
 		}
     }
 

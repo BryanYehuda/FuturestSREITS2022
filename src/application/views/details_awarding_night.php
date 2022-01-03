@@ -33,7 +33,6 @@
                             <b>Awarding Night</b> is the culmination of a series of events at FUTUREST which includes awarding prizes to the finalists who won the competition.
                         </p>
                         <a href="#timeline" class="btn btn-success btn-lg">Show Timeline</a>
-                        <a href="#" class="btn btn-warning btn-lg">Register Here</a>
                     </div>
                     <div class="d-none d-xl-flex col-xl-4 d-flex align-items-center justify-content-center">
                         <i class="bi bi-journal-bookmark"></i>
