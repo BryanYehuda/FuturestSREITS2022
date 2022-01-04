@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 04, 2022 at 01:42 PM
+-- Generation Time: Jan 04, 2022 at 06:30 PM
 -- Server version: 10.4.21-MariaDB
--- PHP Version: 8.0.11
+-- PHP Version: 8.0.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `futurest_database`
+-- Database: `futurest2022`
 --
 
 -- --------------------------------------------------------
@@ -59,6 +59,9 @@ CREATE TABLE `pendaftaran_awardingnight` (
   `pendaftaranawardingnight_id` bigint(11) NOT NULL,
   `pendaftaranawardingnight_nama` varchar(255) NOT NULL,
   `pendaftaranawardingnight_instansi` varchar(255) NOT NULL,
+  `pendaftaranawardingnight_email` varchar(255) NOT NULL,
+  `pendaftaranawardingnight_juara` tinyint(1) NOT NULL,
+  `pendaftaranawardingnight_bidang` varchar(255) NOT NULL,
   `pendaftaranawardingnight_dataCreated` datetime NOT NULL DEFAULT current_timestamp(),
   `pendaftaranawardingnight_dataUpdated` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
