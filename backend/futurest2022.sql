@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 04, 2022 at 06:30 PM
+-- Generation Time: Jan 04, 2022 at 06:50 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.12
 
@@ -57,8 +57,8 @@ INSERT INTO `account` (`account_id`, `account_oldid`, `account_username`, `accou
 
 CREATE TABLE `pendaftaran_awardingnight` (
   `pendaftaranawardingnight_id` bigint(11) NOT NULL,
-  `pendaftaranawardingnight_nama` varchar(255) NOT NULL,
-  `pendaftaranawardingnight_instansi` varchar(255) NOT NULL,
+  `pendaftaranawardingnight_name` varchar(255) NOT NULL,
+  `pendaftaranawardingnight_university` varchar(255) NOT NULL,
   `pendaftaranawardingnight_email` varchar(255) NOT NULL,
   `pendaftaranawardingnight_juara` tinyint(1) NOT NULL,
   `pendaftaranawardingnight_bidang` varchar(255) NOT NULL,
@@ -303,28 +303,34 @@ ALTER TABLE `account`
   MODIFY `account_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
+-- AUTO_INCREMENT for table `pendaftaran_awardingnight`
+--
+ALTER TABLE `pendaftaran_awardingnight`
+  MODIFY `pendaftaranawardingnight_id` bigint(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `pendaftaran_climatechangecommunity`
 --
 ALTER TABLE `pendaftaran_climatechangecommunity`
-  MODIFY `pendaftaranclimatechangecommunity_id` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `pendaftaranclimatechangecommunity_id` bigint(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `pendaftaran_essaycompetition`
 --
 ALTER TABLE `pendaftaran_essaycompetition`
-  MODIFY `pendaftaranessaycompetition_id` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `pendaftaranessaycompetition_id` bigint(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `pendaftaran_finaltalkshow`
 --
 ALTER TABLE `pendaftaran_finaltalkshow`
-  MODIFY `pendaftaranfinaltalkshow_id` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `pendaftaranfinaltalkshow_id` bigint(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `pendaftaran_grandtalkshow`
 --
 ALTER TABLE `pendaftaran_grandtalkshow`
-  MODIFY `pendaftarangrandtalkshow_id` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=162;
+  MODIFY `pendaftarangrandtalkshow_id` bigint(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `pendaftaran_re101`
@@ -336,7 +342,7 @@ ALTER TABLE `pendaftaran_re101`
 -- AUTO_INCREMENT for table `pendaftaran_reinnovation`
 --
 ALTER TABLE `pendaftaran_reinnovation`
-  MODIFY `pendaftaranreinnovation_id` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `pendaftaranreinnovation_id` bigint(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
