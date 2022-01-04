@@ -33,7 +33,7 @@ const vm = new Vue({
       },
       {
         title: "Final Talkshow",
-        icon: "bi bi-music-note-beamed",
+        icon: "fas fa-microphone-alt",
         description: "Final talk show is one of the last series of talk shows that presents interesting themes and speakers as the closing of the FUTUREST 2022 event.",
       },
       {
@@ -43,7 +43,7 @@ const vm = new Vue({
       },
       {
         title: "Awarding Night",
-        icon: "bi bi-moon-stars-fill",
+        icon: "fas fa-award",
         description: "Awarding Night  is the culmination of a series of events at FUTUREST which includes awarding prizes to the finalists who won the competition.",
       },
     ],
@@ -106,18 +106,18 @@ const vm = new Vue({
 				collapsed: "",
 				show: "show",
 				answer:
-					"Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quis at et omnis similique incidunt nostrum consectetur maxime, tempora, quo aliquam deserunt odit sit harum deleniti repellat voluptatum ratione culpa veniam laborum sint. Quaerat et quam sit, autem, atque ad corrupti magni iusto quas dolor qui odit possimus iure pariatur!",
+					"You can register by visiting the details page of our events and then pressing the register button on the page. Or you can click the login button above, then click don't have an account, then click the appropriate event you want to register. <b>Please note that one account can only register for one event.</b>",
 			},
 			{
 				id: "headingTwo",
-				question: "How many prize i will get? ",
+				question: "Will I get a prize?",
 				dataBsTarget: "#collapseTwo",
 				ariaControls: "collapseTwo",
 				ariaExpanded: "false",
 				collapsed: "collapsed",
 				show: "",
 				answer:
-					"Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quis at et omnis similique incidunt nostrum consectetur maxime, tempora, quo aliquam deserunt odit sit harum deleniti repellat voluptatum ratione culpa veniam laborum sint. Quaerat et quam sit, autem, atque ad corrupti magni iusto quas dolor qui odit possimus iure pariatur!",
+					"Of course, we provide prizes for the winners in every competition we hold.",
 			},
 			{
 				id: "headingThree",
@@ -128,19 +128,19 @@ const vm = new Vue({
 				collapsed: "collapsed",
 				show: "",
 				answer:
-					"Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quis at et omnis similique incidunt nostrum consectetur maxime, tempora, quo aliquam deserunt odit sit harum deleniti repellat voluptatum ratione culpa veniam laborum sint. Quaerat et quam sit, autem, atque ad corrupti magni iusto quas dolor qui odit possimus iure pariatur!",
+					"This event is held online.",
 			},
-			{
-				id: "headingFour",
-				question: "The benefits that i will get?",
-				dataBsTarget: "#collapseFour",
-				ariaControls: "collapseFour",
-				ariaExpanded: "false",
-				collapsed: "collapsed",
-				show: "",
-				answer:
-					"Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quis at et omnis similique incidunt nostrum consectetur maxime, tempora, quo aliquam deserunt odit sit harum deleniti repellat voluptatum ratione culpa veniam laborum sint. Quaerat et quam sit, autem, atque ad corrupti magni iusto quas dolor qui odit possimus iure pariatur!",
-			},
+			// {
+			// 	id: "headingFour",
+			// 	question: "The benefits that i will get?",
+			// 	dataBsTarget: "#collapseFour",
+			// 	ariaControls: "collapseFour",
+			// 	ariaExpanded: "false",
+			// 	collapsed: "collapsed",
+			// 	show: "",
+			// 	answer:
+			// 		"Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quis at et omnis similique incidunt nostrum consectetur maxime, tempora, quo aliquam deserunt odit sit harum deleniti repellat voluptatum ratione culpa veniam laborum sint. Quaerat et quam sit, autem, atque ad corrupti magni iusto quas dolor qui odit possimus iure pariatur!",
+			// },
 		],
 	},
 });

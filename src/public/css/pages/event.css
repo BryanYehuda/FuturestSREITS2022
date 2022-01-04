@@ -48,10 +48,16 @@
 	background: #f3f3f3;
 	border-radius: 30px;
 	box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
+	transition: all 0.3s ease;
+}
+
+#our-events .card-apa-saja:hover {
+	transform: scale(1.03);
 }
 
 #our-events .card-apa-saja i {
 	font-size: 100px;
+	margin-bottom: 10px;
 }
 
 #our-events .card-apa-saja h3 {
@@ -81,6 +87,11 @@
 	background: #e3e3e3;
 	border-radius: 30px;
 	box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
+	transition: all 0.3s ease;
+}
+
+#our-competitions .card-apa-saja:hover {
+	transform: scale(1.03);
 }
 
 #our-competitions .card-apa-saja i {

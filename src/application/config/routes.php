@@ -54,9 +54,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
 $route['default_controller'] = 'home/registerGrandTalkshowEvent';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+$route['home'] = 'home/index';
 $route['details'] = 'home/details';
 $route['events'] = 'home/events';
 $route['contact'] = 'home/contact';
+$route['choose-event'] = 'home/chooseEvent';
 $route['login'] = 'home/login';
 $route['logout'] = 'auth/logout';
 $route['finish-register'] = 'home/finishregist';
@@ -100,5 +102,3 @@ $route['register-grand-talkshow-event'] = "home/registerGrandTalkshowEvent";
 $route['register-re-101-event'] = "home/registerRE101Event";
 $route['register-final-talkshow-event'] = "home/registerFinalTalkshowEvent";
 $route['register-climate-change-event'] = "home/registerClimateChangeEvent";
-
-
