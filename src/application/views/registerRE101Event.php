@@ -35,7 +35,10 @@
                 <div class="row">
                     <div class=".col-6 .col-md-10 register-right ">
                         <br>
-                        <h1 class="register text-center">Renewable Energy 101</h1>
+                        <!-- image -->
+                        <img src="<?php echo base_url() ?>/public/img/logo-utama.png" width="200" height="200" alt="FUTUREST" class="d-block mx-auto img-fluid" /><br>
+                        <h2 class="logo-regist">Futurest 2022</h2><br><br>
+                        <h1 class="register text-center">Register Renewable Energy 101</h1>
                         <div class="register-form mt-3 mb-3">
                             <div class="">
                                 <div class="row">
@@ -82,6 +85,8 @@
                                                 <label for="pwd"><i class="float"></i> Batch </label>
                                                 <select class="form-select <?php $ok = " "; (form_error('batch') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" aria-label="Default select example" id="batch" name="batch" required>
                                                     <option selected disabled>-</option>
+                                                    <option value="2017+">2017+</option>
+                                                    <option value="2018">2018</option>
                                                     <option value="2019">2019</option>
                                                     <option value="2020">2020</option>
                                                     <option value="2021">2021</option>
@@ -125,7 +130,9 @@
                                                 </div>
 
 
-                                                <button type="submit" class="btn btn-danger" id="submit">Submit</button>
+                                                <button type="submit" class="btn btn-danger" id="submit">
+                                                    <i class="hide loading-icon fa fa-spinner fa-spin d-none" id="loading"></i>Submit
+                                                </button>
                                                 <!-- Example single danger button -->
                                             </form>
                                             <!-- End Form -->
@@ -161,11 +168,10 @@
     ?>
 
     <!-- Import js if need -->
-    <script>var url = '<?php echo base_url().'Auth_regis/regisRE101'?>';</script>
     <script>var base_url = '<?php echo base_url()?>';</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script type="text/javascript" src="<?php echo base_url() ?>public/js/backend/register.js"></script>
+    <script type="text/javascript" src="<?php echo base_url() ?>public/js/backend/registerre101.js"></script>
 </body>
 
 </html> -->

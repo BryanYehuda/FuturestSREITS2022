@@ -31,7 +31,8 @@
                         <br>
                         <!-- image -->
                         <img src="<?php echo base_url() ?>/public/img/logo-utama.png" width="200" height="200" alt="FUTUREST" class="d-block mx-auto img-fluid" /><br>
-                        <h2 class="logo-regist">Futurest 2022</h2>
+                        <h2 class="logo-regist">Futurest 2022</h2><br><br>
+                        <h1 class="register text-center">Register Grand Talkshow</h1>
                         <div class="register-form mt-3 mb-3">
                             <div class="">
                                 <div class="row">
@@ -114,7 +115,7 @@
                                                 </div><br>
 
                                                 <div class="mb-3">
-                                                    <label for="name"><i class="float"></i> Proof of share story and tag 3 friends
+                                                    <label for="name"><i class="float"></i> Proof of share story and tag 3 friends (You can get the poster at <a href="bit.ly/PosterGT">Here!</a>)
                                                     </label>
                                                     <input class="form-control text-dark <?php $ok = " "; (!empty($error['sharestory'])) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" type="file" id="sharestory" multiple name="sharestory" required>
                                                     <div class="invalid-feedback" id="sharestory-false">

@@ -35,7 +35,10 @@
                 <div class="row">
                     <div class=".col-6 .col-md-10 register-right ">
                         <br>
-                        <h1 class="register text-center">RE Innovation Brainstorm Competition </h1>
+                        <!-- image -->
+                        <img src="<?php echo base_url() ?>/public/img/logo-utama.png" width="200" height="200" alt="FUTUREST" class="d-block mx-auto img-fluid" /><br>
+                        <h2 class="logo-regist">Futurest 2022</h2><br><br>
+                        <h1 class="register text-center">Register Renewable Energy Brainstorm Competition</h1>
                         <div class="register-form mt-3 mb-3">
                             <div class="">
                                 <div class="row">
