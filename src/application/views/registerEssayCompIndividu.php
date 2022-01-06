@@ -82,6 +82,14 @@
                               <?php echo $error['card_1'];?>
                           </div>
                       </div>
+                      <div class="mb-3">
+                          <label for="name"><i class="float"></i> Statement Letter of Active Student Scan<b>(pdf)</b></label>
+                          <input class="form-control text-dark <?php $ok = " "; (!empty($error['activestudent_1'])) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" type="file" id="activestudent_1" name="activestudent_1" multiple required>
+                          <div class="invalid-feedback" id="activestudent_1-false">
+                              <?php echo $error['activestudent_1'];?>
+                          </div>
+                      </div>
+                      <br>
                       <br>
                       <div class="mb-3">
                           <label for="name"><i class="float"></i> Half-body picture 4 x 6</label>
@@ -127,7 +135,9 @@
                           </div>
                       <br>
                       
-                      <button type="submit" class="btn btn-danger" id="submit">Submit</button>
+                      <button type="submit" class="btn btn-danger" id="submit">
+                          <i class="hide loading-icon fa fa-spinner fa-spin d-none" id="loading"></i>Submit
+                      </button>
                         <!-- Example single danger button -->
                       </form>
                       <!-- End Form -->
@@ -163,11 +173,10 @@
   ?>
 
   <!-- Import js if need -->
-  <script>var url = '<?php echo base_url().'Auth_regis/regisEssayCompIndividu'?>';</script>
   <script>var base_url = '<?php echo base_url()?>';</script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script type="text/javascript" src="<?php echo base_url() ?>public/js/backend/register.js"></script>
+  <script type="text/javascript" src="<?php echo base_url() ?>public/js/backend/registeressaycompindividu.js"></script>
 </body>
 
 </html> -->

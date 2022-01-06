@@ -16,7 +16,7 @@ class Auth_regis extends CI_Controller{
     }
 	
     public function regisRE101(){
-        $this->load->model("REGISTRASI");
+        $this->load->model("Registrasi");
         $config = array(
 			'allowed_types'	=> 'gif|jpg|png',
 			'max_size'	 	=> 10000,
@@ -50,7 +50,7 @@ class Auth_regis extends CI_Controller{
 			'followsreig'       => $this->followsreig->display_errors(),
 			'sharestory'        => $this->sharestory->display_errors()
 		);
-        if(!$this->form_validation->run() || !$this->REGISTRASI->is_it_empty($error)){
+        if(!$this->form_validation->run() || !$this->Registrasi->is_it_empty($error)){
 			$error = array_merge($error, $this->form_validation->error_array());
 			if(empty($error['followfuturestig'])){
 				$path = './upload/RE101/followfuturestig/';
@@ -66,7 +66,7 @@ class Auth_regis extends CI_Controller{
 			}
 			echo json_encode($error);
 		}else{
-			$this->REGISTRASI->regisRE101($data);
+			$this->Registrasi->regisRE101($data);
 			echo "1";
 		}
     }
@@ -169,7 +169,7 @@ class Auth_regis extends CI_Controller{
     }
 
 	public function regisFinalTalkshow(){
-        $this->load->model("REGISTRASI");
+        $this->load->model("Registrasi");
         $config = array(
 			'allowed_types'	=> 'gif|jpg|png',
 			'max_size'	 	=> 10000,
@@ -204,7 +204,7 @@ class Auth_regis extends CI_Controller{
 			'sharestory'        => $this->sharestory->display_errors()
 		);
         //var_dump($this->input->post());
-        if(!$this->form_validation->run() || !$this->REGISTRASI->is_it_empty($error)){
+        if(!$this->form_validation->run() || !$this->Registrasi->is_it_empty($error)){
 			$error = array_merge($error, $this->form_validation->error_array());
 			if(empty($error['followfuturestig'])){
 				$path = './upload/FinalTalkshow/followfuturestig/';
@@ -220,14 +220,14 @@ class Auth_regis extends CI_Controller{
 			}
 			echo json_encode($error);
 		}else{
-			$this->REGISTRASI->regisFinalTalkshow($data);
+			$this->Registrasi->regisFinalTalkshow($data);
 			echo "1";
 		}
     }
 
 	public function regisClimateChange(){
 		//echo var_dump(empty($this->input->post('prioritze')) && empty($this->input->post('willingness')) && empty($this->input->post('committed')));
-		$this->load->model("REGISTRASI");
+		$this->load->model("Registrasi");
         $config = array(
 			'allowed_types'	=> 'pdf|gif|jpg|png',
 			'max_size'	 	=> 10000,
@@ -276,7 +276,7 @@ class Auth_regis extends CI_Controller{
 			'CV'				=> $this->CV->display_errors()
 		);
         //var_dump($this->input->post());
-        if((!$this->form_validation->run() || !$this->REGISTRASI->is_it_empty($error) || (empty($this->input->post('prioritze')) || empty($this->input->post('willingness')) || empty($this->input->post('committed'))))){
+        if((!$this->form_validation->run() || !$this->Registrasi->is_it_empty($error) || (empty($this->input->post('prioritze')) || empty($this->input->post('willingness')) || empty($this->input->post('committed'))))){
 			$error = array_merge($error, $this->form_validation->error_array());
 			if(empty($error['followfuturestig'])){
 				$path = './upload/3C/followfuturestig/';
@@ -300,13 +300,13 @@ class Auth_regis extends CI_Controller{
 			}
 			echo json_encode($error);
 		}else{
-			$this->REGISTRASI->regis3C($data);
+			$this->Registrasi->regis3C($data);
 			echo "1";
 		}
 	}
 
 	public function regisReInnovation(){
-		$this->load->model("REGISTRASI");
+		$this->load->model("Registrasi");
 		//jpg|png|jpeg
 		$config = array(
 			'allowed_types'	=> 'pdf',
@@ -406,7 +406,7 @@ class Auth_regis extends CI_Controller{
 		$data['payment'] = $this->payment->data('file_name');
 		$error['payment'] = $this->payment->display_errors();
 		
-		if(!$this->form_validation->run() || !$this->REGISTRASI->is_it_empty($error)){
+		if(!$this->form_validation->run() || !$this->Registrasi->is_it_empty($error)){
 			$error = array_merge($error, $this->form_validation->error_array());
 			if(empty($error['photo_1'])){
 				$path = './upload/REinnovation/photo/';
@@ -463,13 +463,13 @@ class Auth_regis extends CI_Controller{
 			
 			echo json_encode($error);
 		}else{
-			$this->REGISTRASI->regisReInnovation($data);
+			$this->Registrasi->regisReInnovation($data);
 			echo "1";
 		}
 	}
 
 	public function regisEssayCompIndividu(){
-		$this->load->model("REGISTRASI");
+		$this->load->model("Registrasi");
 		$config = array(
 			'allowed_types'	=> 'pdf',
 			'max_size'	 	=> 10000,
@@ -490,6 +490,15 @@ class Auth_regis extends CI_Controller{
 		$this->load->library('upload', $config, 'follow');
 		$this->follow->initialize($config);
         $this->follow->do_upload('follow_1');
+        
+        $config = array(
+			'allowed_types' => 'pdf|jpg|png|jpeg',
+			'upload_path'	=> './upload/EssayCompetition/activestudent'
+		);
+
+		$this->load->library('upload', $config, 'activestudent');
+		$this->activestudent->initialize($config);
+        $this->activestudent->do_upload('activestudent_1');
 
 		$config = array(
 			'allowed_types' => 'jpg|png|jpeg',
@@ -513,20 +522,22 @@ class Auth_regis extends CI_Controller{
         $this->photo->do_upload('photo_1');
 
 		$data = array(
-			'card_1' 		=> $this->card->data('file_name'),
-			'follow_1' 	    => $this->follow->data('file_name'),
-			'photo_1' 	    => $this->photo->data('file_name'),
-			'payment'		=> $this->payment->data('file_name')
+			'card_1' 		    => $this->card->data('file_name'),
+			'follow_1' 	        => $this->follow->data('file_name'),
+			'photo_1' 	        => $this->photo->data('file_name'),
+			'activestudent_1'   => $this->activestudent->data('file_name'),
+			'payment'		    => $this->payment->data('file_name')
 		);
 
 		$error = array(
-			'card_1' 		=> $this->card->display_errors(),
-			'follow_1'      => $this->follow->display_errors(),
-			'photo_1'       => $this->photo->display_errors(),
-			'payment'		=> $this->payment->display_errors()
+			'card_1' 		    => $this->card->display_errors(),
+			'follow_1'          => $this->follow->display_errors(),
+			'photo_1'           => $this->photo->display_errors(),
+			'activestudent_1'   => $this->activestudent->display_errors(),
+			'payment'		    => $this->payment->display_errors()
 		);
 
-		if(!$this->form_validation->run() || !$this->REGISTRASI->is_it_empty($error)){
+		if(!$this->form_validation->run() || !$this->Registrasi->is_it_empty($error)){
 			$error = array_merge($error, $this->form_validation->error_array());
 			if(empty($error['card_1'])){
 				$path = './upload/EssayCompetition/card/';
@@ -540,18 +551,22 @@ class Auth_regis extends CI_Controller{
 				$path = './upload/EssayCompetition/photo/';
 				unlink($path.$data['photo_1']);
 			}
+			if(empty($error['activestudent_1'])){
+				$path = './upload/EssayCompetition/activestudent/';
+				unlink($path.$data['activestudent_1']);
+			}
 			if(empty($error['payment'])){
 				$path = './upload/EssayCompetition/payment/';
 				unlink($path.$data['payment']);
 			}
 			echo json_encode($error);
 		}else{
-			$this->REGISTRASI->regisEssayCompetition($data);
+			$this->Registrasi->regisEssayCompetition($data);
 			echo "1";
 		}
 	}
 	public function regisEssayCompTeam(){
-		$this->load->model("REGISTRASI");
+		$this->load->model("Registrasi");
 		$config = array(
 			'allowed_types'	=> 'pdf',
 			'max_size'	 	=> 10000,
@@ -580,6 +595,19 @@ class Auth_regis extends CI_Controller{
 		$this->load->library('upload', $config, 'follow2');
 		$this->follow2->initialize($config);
         $this->follow2->do_upload('follow_2');
+        
+        $config = array(
+			'allowed_types' => 'pdf|jpg|png|jpeg',
+			'upload_path'	=> './upload/EssayCompetition/activestudent'
+		);
+
+		$this->load->library('upload', $config, 'activestudent');
+		$this->activestudent->initialize($config);
+        $this->activestudent->do_upload('activestudent_1');
+
+		$this->load->library('upload', $config, 'activestudent2');
+		$this->activestudent2->initialize($config);
+        $this->activestudent2->do_upload('activestudent_2');
 
 		$config = array(
 			'allowed_types' => 'jpg|png|jpeg',
@@ -604,29 +632,33 @@ class Auth_regis extends CI_Controller{
 
 		$this->load->library('upload', $config, 'photo2');
 		$this->photo2->initialize($config);
-        $this->photo2->do_upload('photo_1');
+        $this->photo2->do_upload('photo_2');
 
 		$data = array(
-			'card_1' 		=> $this->card->data('file_name'),
-			'follow_1' 	    => $this->follow->data('file_name'),
-			'photo_1' 	    => $this->photo->data('file_name'),
-			'card_2' 		=> $this->card2->data('file_name'),
-			'follow_2' 	    => $this->follow2->data('file_name'),
-			'photo_2' 	    => $this->photo2->data('file_name'),
-			'payment'		=> $this->payment->data('file_name')
+			'card_1' 		    => $this->card->data('file_name'),
+			'follow_1' 	        => $this->follow->data('file_name'),
+			'photo_1' 	        => $this->photo->data('file_name'),
+			'activestudent_1'   => $this->activestudent->data('file_name'),
+			'card_2' 		    => $this->card2->data('file_name'),
+			'follow_2' 	        => $this->follow2->data('file_name'),
+			'photo_2' 	        => $this->photo2->data('file_name'),
+			'activestudent_2'   => $this->activestudent2->data('file_name'),
+			'payment'		    => $this->payment->data('file_name')
 		);
 
 		$error = array(
-			'card_1' 		=> $this->card->display_errors(),
-			'follow_1'      => $this->follow->display_errors(),
-			'photo_1'       => $this->photo->display_errors(),
-			'card_2' 		=> $this->card2->display_errors(),
-			'follow_2'      => $this->follow2->display_errors(),
-			'photo_2'       => $this->photo2->display_errors(),
-			'payment'		=> $this->payment->display_errors()
+			'card_1' 		    => $this->card->display_errors(),
+			'follow_1'          => $this->follow->display_errors(),
+			'photo_1'           => $this->photo->display_errors(),
+			'activestudent_1'   => $this->activestudent->display_errors(),
+			'card_2' 		    => $this->card2->display_errors(),
+			'follow_2'          => $this->follow2->display_errors(),
+			'photo_2'           => $this->photo2->display_errors(),
+			'activestudent_2'   => $this->activestudent2->display_errors(),
+			'payment'		    => $this->payment->display_errors()
 		);
 
-		if(!$this->form_validation->run() || !$this->REGISTRASI->is_it_empty($error)){
+		if(!$this->form_validation->run() || !$this->Registrasi->is_it_empty($error)){
 			$error = array_merge($error, $this->form_validation->error_array());
 			if(empty($error['card_1'])){
 				$path = './upload/EssayCompetition/card/';
@@ -640,6 +672,10 @@ class Auth_regis extends CI_Controller{
 				$path = './upload/EssayCompetition/photo/';
 				unlink($path.$data['photo_1']);
 			}
+			if(empty($error['activestudent_1'])){
+				$path = './upload/EssayCompetition/activestudent/';
+				unlink($path.$data['activestudent_1']);
+			}
 			if(empty($error['card_2'])){
 				$path = './upload/EssayCompetition/card/';
 				unlink($path.$data['card_2']);
@@ -652,13 +688,17 @@ class Auth_regis extends CI_Controller{
 				$path = './upload/EssayCompetition/photo/';
 				unlink($path.$data['photo_2']);
 			}
+			if(empty($error['activestudent_2'])){
+				$path = './upload/EssayCompetition/activestudent/';
+				unlink($path.$data['activestudent_2']);
+			}
 			if(empty($error['payment'])){
 				$path = './upload/EssayCompetition/payment/';
 				unlink($path.$data['payment']);
 			}
 			echo json_encode($error);
 		}else{
-			$this->REGISTRASI->regisEssayCompetitionteam($data);
+			$this->Registrasi->regisEssayCompetitionteam($data);
 			echo "1";
 		}
 	}

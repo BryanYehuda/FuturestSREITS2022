@@ -109,66 +109,96 @@ class Registrasi extends CI_Model{
             'pendaftaranreinnovation_2_phone'           => $this->input->post('phone_2'),
             'pendaftaranreinnovation_2_email'           => $this->input->post('email_2'),
             'pendaftaranreinnovation_2_follow'          => $data['follow_2'],
-            'pendaftaranreinnovation_3_name'            => $this->input->post('name_3'),
-            'pendaftaranreinnovation_3_major'           => $this->input->post('major_3'),
-            'pendaftaranreinnovation_3_batch'           => $this->input->post('batch_3'),
-            'pendaftaranreinnovation_3_card'            => $data['card_3'],
-            'pendaftaranreinnovation_3_activestudent'   => $data['activestudent_3'],
-            'pendaftaranreinnovation_3_photo'           => $data['photo_3'],
-            'pendaftaranreinnovation_3_phone'           => $this->input->post('phone_3'),
-            'pendaftaranreinnovation_3_email'           => $this->input->post('email_3'),
-            'pendaftaranreinnovation_3_follow'          => $data['follow_3'],
             'pendaftaranreinnovation_payment'           => $data['payment'],
             'pendaftaranreinnovation_dataUpdated'       => date('Y-m-d')
         );
+        
+        if(!empty($this->input->post('name_3'))){
+            $regis['pendaftaranreinnovation_3_name']            = $this->input->post('name_3');
+        }
+        if(!empty($this->input->post('major_3'))){
+            $regis['pendaftaranreinnovation_3_major']           = $this->input->post('major_3');
+        }
+        if(!empty($this->input->post('batch_3'))){
+            $regis['pendaftaranreinnovation_3_batch']           = $this->input->post('batch_3');
+        }
+        if(!empty($data['card_3'])){
+            $regis['pendaftaranreinnovation_3_card']            = $data['card_3'];
+        }
+        if(!empty($data['activestudent_3'])){
+            $regis['pendaftaranreinnovation_3_activestudent']   = $data['activestudent_3'];
+        }
+        if(!empty($data['photo_3'])){
+            $regis['pendaftaranreinnovation_3_photo']           = $data['photo_3'];
+        }
+        if(!empty($this->input->post('phone_3'))){
+            $regis['pendaftaranreinnovation_3_phone']           = $this->input->post('phone_3');
+        }
+        if(!empty($this->input->post('email_3'))){
+            $regis['pendaftaranreinnovation_3_email']           = $this->input->post('email_3');
+        }
+        if(!empty($data['follow_3'])){
+            $regis['pendaftaranreinnovation_3_follow']          = $data['follow_3'];
+        }
 
         $this->db->insert('pendaftaran_reinnovation', $regis);
     }
 
     function regisEssayCompetitionteam($data){
         $regis = array(
-            'pendaftaranessaycompetition_teamname'      => $this->input->post('teamname'),
-            'pendaftaranessaycompetition_1_name'        => $this->input->post('name_1'),
-            'pendaftaranessaycompetition_1_age'         => $this->input->post('age_1'),
-            'pendaftaranessaycompetition_1_college'     => $this->input->post('university_1'),
-            'pendaftaranessaycompetition_1_major'       => $this->input->post('major_1'),
-            'pendaftaranessaycompetition_1_card'        => $data['card_1'],
-            'pendaftaranessaycompetition_1_photo'       => $data['photo_1'],
-            'pendaftaranessaycompetition_1_phone'       => $this->input->post('phone_1'),
-            'pendaftaranessaycompetition_1_email'       => $this->input->post('email_1'),
-            'pendaftaranessaycompetition_1_follow'      => $data['follow_1'],
-            'pendaftaranessaycompetition_2_name'        => $this->input->post('name_2'),
-            'pendaftaranessaycompetition_2_age'         => $this->input->post('age_2'),
-            'pendaftaranessaycompetition_2_college'     => $this->input->post('university_2'),
-            'pendaftaranessaycompetition_2_major'       => $this->input->post('major_2'),
-            'pendaftaranessaycompetition_2_card'        => $data['card_2'],
-            'pendaftaranessaycompetition_2_photo'       => $data['photo_2'],
-            'pendaftaranessaycompetition_2_phone'       => $this->input->post('phone_2'),
-            'pendaftaranessaycompetition_2_email'       => $this->input->post('email_2'),
-            'pendaftaranessaycompetition_2_follow'      => $data['follow_2'],
-            'pendaftaranessaycompetition_payment'       => $data['payment'],
-            'pendaftaranessaycompetition_dataUpdated'   => date('Y-m-d')
+            'pendaftaranessaycompetition_teamname'          => $this->input->post('teamname'),
+            'pendaftaranessaycompetition_1_name'            => $this->input->post('name_1'),
+            'pendaftaranessaycompetition_1_age'             => $this->input->post('age_1'),
+            'pendaftaranessaycompetition_1_college'         => $this->input->post('university_1'),
+            'pendaftaranessaycompetition_1_card'            => $data['card_1'],
+            'pendaftaranessaycompetition_1_photo'           => $data['photo_1'],
+            'pendaftaranessaycompetition_1_phone'           => $this->input->post('phone_1'),
+            'pendaftaranessaycompetition_1_email'           => $this->input->post('email_1'),
+            'pendaftaranessaycompetition_1_follow'          => $data['follow_1'],
+            'pendaftaranessaycompetition_1_activestudent'   => $data['activestudent_1'],
+            'pendaftaranessaycompetition_2_name'            => $this->input->post('name_2'),
+            'pendaftaranessaycompetition_2_age'             => $this->input->post('age_2'),
+            'pendaftaranessaycompetition_2_college'         => $this->input->post('university_2'),
+            'pendaftaranessaycompetition_2_card'            => $data['card_2'],
+            'pendaftaranessaycompetition_2_photo'           => $data['photo_2'],
+            'pendaftaranessaycompetition_2_phone'           => $this->input->post('phone_2'),
+            'pendaftaranessaycompetition_2_email'           => $this->input->post('email_2'),
+            'pendaftaranessaycompetition_2_follow'          => $data['follow_2'],
+            'pendaftaranessaycompetition_2_activestudent'   => $data['activestudent_2'],
+            'pendaftaranessaycompetition_payment'           => $data['payment'],
+            'pendaftaranessaycompetition_dataUpdated'       => date('Y-m-d')
         );
-
+        
+        if(!empty($this->input->post('major_1'))){
+            $regis['pendaftaranessaycompetition_1_major']       = $this->input->post('major_1');
+        }
+        if(!empty($this->input->post('major_2'))){
+            $regis['pendaftaranessaycompetition_2_major']       = $this->input->post('major_2');
+        }
+        
         $this->db->insert('pendaftaran_essaycompetition', $regis);
     }
 
     function regisEssayCompetition($data){
         $regis = array(
-            'pendaftaranessaycompetition_teamname'      => '--INDIVIDU--',
-            'pendaftaranessaycompetition_1_name'        => $this->input->post('name_1'),
-            'pendaftaranessaycompetition_1_age'         => $this->input->post('age_1'),
-            'pendaftaranessaycompetition_1_college'     => $this->input->post('university_1'),
-            'pendaftaranessaycompetition_1_major'       => $this->input->post('major_1'),
-            'pendaftaranessaycompetition_1_card'        => $data['card_1'],
-            'pendaftaranessaycompetition_1_photo'       => $data['photo_1'],
-            'pendaftaranessaycompetition_1_phone'       => $this->input->post('phone_1'),
-            'pendaftaranessaycompetition_1_email'       => $this->input->post('email_1'),
-            'pendaftaranessaycompetition_1_follow'      => $data['follow_1'],
-            'pendaftaranessaycompetition_payment'       => $data['payment'],
-            'pendaftaranessaycompetition_dataUpdated'   => date('Y-m-d')
+            'pendaftaranessaycompetition_teamname'          => '--INDIVIDU--',
+            'pendaftaranessaycompetition_1_name'            => $this->input->post('name_1'),
+            'pendaftaranessaycompetition_1_age'             => $this->input->post('age_1'),
+            'pendaftaranessaycompetition_1_college'         => $this->input->post('university_1'),
+            'pendaftaranessaycompetition_1_card'            => $data['card_1'],
+            'pendaftaranessaycompetition_1_photo'           => $data['photo_1'],
+            'pendaftaranessaycompetition_1_phone'           => $this->input->post('phone_1'),
+            'pendaftaranessaycompetition_1_email'           => $this->input->post('email_1'),
+            'pendaftaranessaycompetition_1_follow'          => $data['follow_1'],
+            'pendaftaranessaycompetition_1_activestudent'   => $data['activestudent_1'],
+            'pendaftaranessaycompetition_payment'           => $data['payment'],
+            'pendaftaranessaycompetition_dataUpdated'       => date('Y-m-d')
         );
-
+        
+        if(!empty($this->input->post('major_1'))){
+            $regis['pendaftaranessaycompetition_1_major']       = $this->input->post('major_1');
+        }
+        
         $this->db->insert('pendaftaran_essaycompetition', $regis);
     }
 

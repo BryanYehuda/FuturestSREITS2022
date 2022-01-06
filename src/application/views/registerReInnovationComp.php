@@ -231,7 +231,7 @@
 
                                                 <div class="form-group text-dark ">
                                                     <br><label for="name" class="text-dark"><i class="text-dark"> </i> Full Name </label>
-                                                    <input type="text" class="form-control text-dark <?php $ok = " "; (form_error('name_3') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" id="name_3" name="name_3" placeholder="Your Name ll Ex: Devitweb development" required>
+                                                    <input type="text" class="form-control text-dark <?php $ok = " "; (form_error('name_3') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" id="name_3" name="name_3" placeholder="Your Name ll Ex: Devitweb development" >
                                                     <div class="invalid-feedback" id="name_3-false">
                                                         <?php echo form_error('name_3');?>
                                                     </div>
@@ -240,14 +240,14 @@
 
                                                 <div class="form-group text-dark">
                                                     <label for="name"><i class="float"></i> Major </label>
-                                                    <input type="text" class="form-control text-dark <?php $ok = " "; (form_error('major_3') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" id="major_3" name="major_3" placeholder="Major ll Ex: Information Technology" required>
+                                                    <input type="text" class="form-control text-dark <?php $ok = " "; (form_error('major_3') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" id="major_3" name="major_3" placeholder="Major ll Ex: Information Technology" >
                                                     <div class="invalid-feedback" id="major_3-false">
                                                         <?php echo form_error('name_3');?>
                                                     </div>
                                                 </div><br>
 
                                                 <label for="pwd"><i class="float"></i> Batch </label>
-                                                <select class="form-select <?php $ok = " "; (form_error('batch_3') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" aria-label="Default select example" id="batch_3" name="batch_3" required>
+                                                <select class="form-select <?php $ok = " "; (form_error('batch_3') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" aria-label="Default select example" id="batch_3" name="batch_3" >
                                                     <option selected>-</option>
                                                     <option value="1">2019</option>
                                                     <option value="2">2020</option>
@@ -259,7 +259,7 @@
 
                                                 <div class="mb-3">
                                                     <label for="name"><i class="float"></i> Student ID Card Scan<b>(pdf)</b></label>
-                                                    <input class="form-control text-dark <?php $ok = " "; (!empty($error['card_3'])) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" type="file" id="card_3" name="card_3" multiple required>
+                                                    <input class="form-control text-dark <?php $ok = " "; (!empty($error['card_3'])) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" type="file" id="card_3" name="card_3" multiple >
                                                     <div class="invalid-feedback"  id="card_3-false">
                                                         <?php echo $error['card_3'];?>
                                                     </div>
@@ -268,7 +268,7 @@
 
                                                 <div class="mb-3">
                                                     <label for="name"><i class="float"></i> Statement Letter of Active Student Scan<b>(pdf)</b></label>
-                                                    <input class="form-control text-dark <?php $ok = " "; (!empty($error['activestudent_3'])) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" type="file" id="activestudent_3" name="activestudent_3" multiple required>
+                                                    <input class="form-control text-dark <?php $ok = " "; (!empty($error['activestudent_3'])) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" type="file" id="activestudent_3" name="activestudent_3" multiple >
                                                     <div class="invalid-feedback" id="activestudent_3-false">
                                                         <?php echo $error['activestudent_3'];?>
                                                     </div>
@@ -278,7 +278,7 @@
                                                 <div class="mb-3">
                                                     <label for="name"><i class="float"></i> Half-body picture 4 x 6</label>
                                                     <label for="name"><i class="float"></i> <b>formal, plain background </b>(JPG, JPEG, PNG)</label>
-                                                    <input class="form-control text-dark <?php $ok = " "; (!empty($error['photo_3'])) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" type="file" id="photo_3" name="photo_3" multiple required>
+                                                    <input class="form-control text-dark <?php $ok = " "; (!empty($error['photo_3'])) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" type="file" id="photo_3" name="photo_3" multiple >
                                                     <div class="invalid-feedback" id="photo_3-false">
                                                         <?php echo $error['photo_3'];?>
                                                     </div>
@@ -286,7 +286,7 @@
                                                 <br>
                                                 <div class="form-group text-dark">
                                                     <label for="phone"><i class="text-dark float"></i> Phone Number </label>
-                                                    <input type="phone" class="form-control text-dark <?php $ok = " "; (form_error('phone_3') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" id="phone_3" name="phone_3" placeholder="phone ll Ex: 08XX XXXX XXXX" required> 
+                                                    <input type="phone" class="form-control text-dark <?php $ok = " "; (form_error('phone_3') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" id="phone_3" name="phone_3" placeholder="phone ll Ex: 08XX XXXX XXXX" > 
                                                     <div class="invalid-feedback" id="phone_3-false">
                                                         <?php echo form_error('phone_3');?>
                                                     </div>
@@ -294,7 +294,7 @@
 
                                                 <div class="form-group text-dark">
                                                     <label for="email"><i class="text-dark float"></i> Email Address</label>
-                                                    <input type="email" class="form-control text-dark <?php $ok = " "; (form_error('email_3') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" id="email_3" name="email_3" placeholder="Email ll Ex: Devitweb@gmail.com" required>
+                                                    <input type="email" class="form-control text-dark <?php $ok = " "; (form_error('email_3') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" id="email_3" name="email_3" placeholder="Email ll Ex: Devitweb@gmail.com" >
                                                     <div class="invalid-feedback" id="email_3-false">
                                                         <?php echo form_error('email_3');?>
                                                     </div>
@@ -304,7 +304,7 @@
                                                 <div class="mb-3">
                                                     <label for="name"><i class="float"></i> Proof of following our official Instagram account @futurest2022 or our linkedin at </label>
                                                     <a href="https://www.linkedin.com/company/futureenergysummit/" class="link-primary">https://www.linkedin.com/company/futureenergysummit/</a>
-                                                    <input class="form-control text-dark <?php $ok = " "; (!empty($error['follow_3'])) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" type="file" id="follow_3" name="follow_3" multiple required>
+                                                    <input class="form-control text-dark <?php $ok = " "; (!empty($error['follow_3'])) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" type="file" id="follow_3" name="follow_3" multiple >
                                                     <div class="invalid-feedback" id="follow_3-false">
                                                         <?php echo $error['follow_3'];?>
                                                     </div>
@@ -319,7 +319,9 @@
                                                     </div>
                                                 <br>
 
-                                                <button type="submit" class="btn btn-danger" id="submit">Submit</button>
+                                                <button type="submit" class="btn btn-danger" id="submit">
+                                                    <i class="hide loading-icon fa fa-spinner fa-spin d-none" id="loading"></i>Submit
+                                                </button>
                                                 <!-- Example single danger button -->
                                             </form>
                                             <!-- End Form -->
@@ -355,11 +357,10 @@
     ?>
 
     <!-- Import js if need -->
-    <script>var url = '<?php echo base_url().'Auth_regis/regisReInnovation'?>';</script>
     <script>var base_url = '<?php echo base_url()?>';</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script type="text/javascript" src="<?php echo base_url() ?>public/js/backend/register.js"></script>
+    <script type="text/javascript" src="<?php echo base_url() ?>public/js/backend/registerreinnovation.js"></script>
 </body>
 
 </html> -->
