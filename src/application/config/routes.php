@@ -63,10 +63,6 @@ $route['login'] = 'home/login';
 $route['logout'] = 'auth/logout';
 $route['finish-register'] = 'home/finishregist';
 
-// Competitions
-$route['essay'] = 'home/essay';
-$route['re-innovation'] = 'home/re_innovation';
-
 //Dashboard Grand Talkshow
 $route['dashboard-grand-talkshow'] = "grand_talkshow";
 $route['dashboard-grand-talkshow-list'] = "grand_talkshow/list";
@@ -87,12 +83,21 @@ $route['dashboard-climate-change-community-list'] = "climate_change_community/li
 $route['dashboard-awarding-night'] = "awarding_night";
 $route['dashboard-awarding-night-list'] = "awarding_night/list";
 
+//Dashboard Awarding Night
+$route['dashboard-national-essay'] = "national_essay";
+$route['dashboard-national-essay-list'] = "national_essay/list";
+$route['dashboard-national-essay-confirmation'] = "national_essay/confirmation";
+
 // Events
 $route['grand-talkshow'] = 'home/grand_talkshow';
 $route['climate-change-community'] = 'home/climate_change_community';
 $route['awarding-night'] = 'home/awarding_night';
 $route['final-talkshow'] = 'home/final_talkshow';
 $route['re-101'] = "home/re_101";
+
+// Competitions
+$route['essay'] = 'home/essay';
+$route['re-innovation'] = 'home/re_innovation';
 
 // Registration
 $route['register-essay-comp-individual'] = "home/registerEssayCompIndividu";

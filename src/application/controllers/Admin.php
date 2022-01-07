@@ -13,7 +13,7 @@ class Admin extends CI_Controller {
 		date_default_timezone_set("Asia/Jakarta");
 		if($this->session->userdata('account_username') == "FuturestNationalEssay")
 		{
-			
+			redirect('dashboard-national-essay');
 		}
 		else if ($this->session->userdata('account_username') == "FuturestREInnovation")
 		{
