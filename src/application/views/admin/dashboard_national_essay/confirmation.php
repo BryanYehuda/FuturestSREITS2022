@@ -77,6 +77,9 @@
             <div class="container-fluid px-4 pb-5">
                 <div class="row g-3 my-2">
                     <h4 class="mb-3 primary-text">Team Entered</h4>
+                    <?php if ($this->session->flashdata('response')) : ?>
+                        <?= $this->session->flashdata('response'); ?>
+                    <?php endif; ?>
                     <?php foreach($data as $item):?>
                     <div class="col-12 col-sm-6 mb-3">
                         <div class="p-3 bg-white shadow info-card">

@@ -78,32 +78,86 @@
                 <div class="row g-3 my-2">
                     <h4 class="mb-3 primary-text">Team Confirmed</h4>
 
+                    <?php foreach($data as $item):?>
                     <div class="col-12 col-sm-6 mb-3">
                         <div class="p-3 bg-white shadow info-card">
-                            <i class="fas fa-users fs-1 info-color"></i>
-                            <hr>
-                            <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 1px;">Team Name</p>
-                            <h5 class="primary-text mb-2">HMIT</h5>
+                        <i class="fas fa-users fs-1 info-color"></i>
+                        <hr>
+                            <?php if($item['pendaftaranessaycompetition_teamname'] === '--INDIVIDU--'):?>
+                            <h6 class="primary-text mb-2">Individual</h6>
+                            <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 1px;">Full Name</p>
+                            <h5 class="primary-text mb-2"><?= $item['pendaftaranessaycompetition_1_name']?></h5>
 
+                            <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 1px;">Age</p>
+                            <h5 class="primary-text mb-2"><?= $item['pendaftaranessaycompetition_1_age']?></h5>
+                            
                             <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 1px;">Institution</p>
-                            <h5 class="primary-text mb-2">Institut Teknologi Sepuluh Nopember</h5>
+                            <h5 class="primary-text mb-2"><?= $item['pendaftaranessaycompetition_1_college']?></h5>
 
-                            <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 1px;">Member Team</p>
+                            <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 1px;">Major</p>
+                            <h5 class="primary-text mb-2"><?= $item['pendaftaranessaycompetition_1_major']?></h5>
+
+                            <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 1px;">Email</p>
+                            <h5 class="primary-text mb-2"><?= $item['pendaftaranessaycompetition_1_email']?></h5>
+
+                            <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 1px;">Phone</p>
+                            <h5 class="primary-text mb-2"><?= $item['pendaftaranessaycompetition_1_phone']?></h5>
+                            
+                            <p class="fs-6 text-black-50 regular-text" style="margin-bottom: -3px;">KTP / Student ID</p>
+                            <a href="<?= base_url('/upload/EssayCompetition/card/' . $item['pendaftaranessaycompetition_1_card'])?>" target="_blank">Show</a>
+
+                            <p class="fs-6 text-black-50 regular-text" style="margin-bottom: -3px;">Active Student</p>
+                            <a href="<?= base_url('/upload/EssayCompetition/activestudent/' . $item['pendaftaranessaycompetition_1_activestudent'])?>" target="_blank">Show</a>
+
+                            <p class="fs-6 text-black-50 regular-text" style="margin-bottom: -3px;">Photo 4x6</p>
+                            <a href="<?= base_url('/upload/EssayCompetition/photo/' . $item['pendaftaranessaycompetition_1_photo'])?>" target="_blank">Show</a>
+
+                            <p class="fs-6 text-black-50 regular-text" style="margin-bottom: -3px;">Proof of Following</p>
+                            <a href="<?= base_url('/upload/EssayCompetition/follow/' . $item['pendaftaranessaycompetition_1_follow'])?>" target="_blank">Show</a>
+
+                            <?php else: ?>
+                                
+                            <h6 class="primary-text mb-2">Group</h6>
+                            <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 1px;">Team Name</p>
+                            <h5 class="primary-text mb-2"><?= $item['pendaftaranessaycompetition_teamname']?></h5>
+                            
+                            <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 1px;">Member 1</p>
                             <h5 class="primary-text mb-2 fs-6">
                                 <ul>
-                                    <li>Hafizh Abid Wibowo</li>
-                                    <li>Achmad Aushaf Amerga</li>
-                                    <li>M Firdho Kustiawan</li>
+                                    <li>Full Name: <?=$item['pendaftaranessaycompetition_1_name']?></li>
+                                    <li>Age: <?=$item['pendaftaranessaycompetition_1_age']?></li>
+                                    <li>Institution: <?=$item['pendaftaranessaycompetition_1_college']?></li>
+                                    <li>Major: <?=$item['pendaftaranessaycompetition_1_major']?></li>
+                                    <li>Email: <?=$item['pendaftaranessaycompetition_1_email']?></li>
+                                    <li>Phone: <?=$item['pendaftaranessaycompetition_1_phone']?></li>
+                                    <li>KTP / Student ID: <a href="<?= base_url('/upload/EssayCompetition/card/' . $item['pendaftaranessaycompetition_1_card'])?>" target="_blank">Show</a></li>
+                                    <li>Active Student: <a href="<?= base_url('/upload/EssayCompetition/activestudent/' . $item['pendaftaranessaycompetition_1_activestudent'])?>" target="_blank">Show</a></li>
+                                    <li>Photo 4x6: <a href="<?= base_url('/upload/EssayCompetition/photo/' . $item['pendaftaranessaycompetition_1_photo'])?>" target="_blank">Show</a></li>
+                                    <li>Proof of Following: <a href="<?= base_url('/upload/EssayCompetition/follow/' . $item['pendaftaranessaycompetition_1_follow'])?>" target="_blank">Show</a></li>
                                 </ul>
                             </h5>
-
-                            <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 1px;">Event Entered</p>
-                            <h5 class="primary-text mb-2">Essay Competition</h5>
-
-                            <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 1px;">Evidence of transfer</p>
-                            <a href="<?php echo base_url() ?>/public/img/bukti-tf.png" target="_blank">Show</a>
+                            <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 1px;">Member 2</p>
+                            <h5 class="primary-text mb-2 fs-6">
+                                <ul>
+                                    <li>Full Name: <?=$item['pendaftaranessaycompetition_2_name']?></li>
+                                    <li>Age: <?=$item['pendaftaranessaycompetition_2_age']?></li>
+                                    <li>Institution: <?=$item['pendaftaranessaycompetition_2_college']?></li>
+                                    <li>Major: <?=$item['pendaftaranessaycompetition_2_major']?></li>
+                                    <li>Email: <?=$item['pendaftaranessaycompetition_2_email']?></li>
+                                    <li>Phone: <?=$item['pendaftaranessaycompetition_2_phone']?></li>
+                                    <li>KTP / Student ID: <a href="<?= base_url('/upload/EssayCompetition/card/' . $item['pendaftaranessaycompetition_2_card'])?>" target="_blank">Show</a></li>
+                                    <li>Active Student: <a href="<?= base_url('/upload/EssayCompetition/activestudent/' . $item['pendaftaranessaycompetition_2_activestudent'])?>" target="_blank">Show</a></li>
+                                    <li>Photo 4x6: <a href="<?= base_url('/upload/EssayCompetition/photo/' . $item['pendaftaranessaycompetition_2_photo'])?>" target="_blank">Show</a></li>
+                                    <li>Proof of Following: <a href="<?= base_url('/upload/EssayCompetition/follow/' . $item['pendaftaranessaycompetition_2_follow'])?>" target="_blank">Show</a></li>
+                                </ul>
+                            </h5>
+                            <?php endif;?>
+                            
+                            <p class="fs-6 text-black-50 regular-text" style="margin-bottom: -4px;">Proof of Payment</p>
+                            <a href="<?= base_url('/upload/EssayCompetition/payment/' . $item['pendaftaranessaycompetition_payment'])?>" target="_blank">Show</a></h5>
                         </div>
                     </div>
+                    <?php endforeach;?>
                 </div>
                 <!-- /info card -->
             </div>

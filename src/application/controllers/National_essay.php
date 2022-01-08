@@ -1,6 +1,12 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+require './vendor/autoload.php';
+
 class National_essay extends CI_Controller {
 	
 	public function __construct()
@@ -29,7 +35,7 @@ class National_essay extends CI_Controller {
 		$tableName = $this->session->userdata('account_table');
 		$this->load->model("Dashboard");
 		$data =[
-			'data' => $this->Dashboard->getData($tableName)
+			'data' => $this->Dashboard->getDataEssayWhere($tableName, 1)
 		];
 		$this->load->view('admin/dashboard_national_essay/list', $data);
 	}
@@ -39,9 +45,79 @@ class National_essay extends CI_Controller {
         $tableName = $this->session->userdata('account_table');
 		$this->load->model("Dashboard");
 		$data =[
-			'data' => $this->Dashboard->getData($tableName)
+			'data' => $this->Dashboard->getDataEssayWhere($tableName, 0)
 		];
 		$this->load->view('admin/dashboard_national_essay/confirmation', $data);
     }
+
+	public function confirm($id)
+	{
+		$this->load->model("Dashboard");
+		$data = [
+			'id' => $id,
+			'tableName' => $this->session->userdata('account_table'),
+			'status' => 1
+		];
+		$result = $this->Dashboard->confirmStsEssay($data);
+		
+		$username = $result['username'];
+		$password = $result['password'];
+		$email = $result['email'];
+		$mail = new PHPMailer(true);
+		try
+		{
+			$mail->isSMTP();
+			$mail->Host = "ssl://smtp.gmail.com";
+			$mail->SMTPAuth = "true";
+			$mail->SMTPSecure = "tls";
+			$mail->Port = "465";
+			$mail->Username = "futurest.sreits@gmail.com";
+			$mail->Password = "SREFuturest!";
+			$mail->Subject = "[Confirmation] National Essay Account";
+			$mail->setFrom("futurest.sreits@gmail.com", "Futurest 2022");
+			$mail->Body = "Username	: $username
+			<br>
+			Password : $password
+			<br>";
+			$mail->IsHTML(TRUE);
+			$mail->addAddress('wibowohafizhabid@yahoo.co.id'); //EMAIL BELUM DISESUAIKAN
+			$mail->Send();
+		} 
+		catch (Exception $e)
+		{
+			echo "Message could not be sent. Mailer Error : {$mail->ErrorInfo}";
+		}
+		$mail->smtpClose();		
+		$this->session->set_flashdata('response', '<div class="alert alert-success" role="alert">Berhasil mengkonfirmasi peserta!</div>');
+		redirect('dashboard-national-essay-confirmation');
+	}
+
+	public function reject()
+	{
+		$mail = new PHPMailer(true);
+		try
+		{
+			$mail->isSMTP();
+			$mail->Host = "ssl://smtp.gmail.com";
+			$mail->SMTPAuth = "true";
+			$mail->SMTPSecure = "tls";
+			$mail->Port = "465";
+			$mail->Username = "futurest.sreits@gmail.com";
+			$mail->Password = "SREFuturest!";
+			$mail->Subject = "[Confirmation] National Essay Account";
+			$mail->setFrom("futurest.sreits@gmail.com", "Futurest 2022");
+			$mail->Body = "Data Rejected";
+			$mail->IsHTML(TRUE);
+			$mail->addAddress('wibowohafizhabid@yahoo.co.id'); //EMAIL BELUM DISESUAIKAN
+			$mail->Send();
+		} 
+		catch (Exception $e)
+		{
+			echo "Message could not be sent. Mailer Error : {$mail->ErrorInfo}";
+		}
+		$mail->smtpClose();		
+		$this->session->set_flashdata('response', '<div class="alert alert-success" role="alert">Berhasil mereject peserta!</div>');
+		redirect('dashboard-national-essay-confirmation');
+	}
 }
 ?>
