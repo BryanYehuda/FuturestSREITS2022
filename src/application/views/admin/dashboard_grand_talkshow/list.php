@@ -88,6 +88,7 @@
                                         <th scope="col">Question</th>
                                         <th scope="col">Following Futurest</th>
                                         <th scope="col">Following SRE</th>
+                                        <th scope="col">Posting Twibbon</th>
                                         <th scope="col">Sharing IGS</th>
                                     </tr>
                                 </thead>
@@ -105,6 +106,7 @@
                                         <td><?= $item['pendaftarangrandtalkshow_question']?></td>
                                         <td><a href="<?php echo base_url('/upload/GrandTalkshow/followfuturestig/' . $item['pendaftarangrandtalkshow_followingfuturestig'])?>" target="_blank">Show</a></td>
                                         <td><a href="<?php echo base_url('/upload/GrandTalkshow/followsreig/' . $item['pendaftarangrandtalkshow_followingsreig'])?>" target="_blank">Show</a></td>
+                                        <td><a href="<?php echo base_url('/upload/GrandTalkshow/twibbon/' . $item['pendaftarangrandtalkshow_twibbon'])?>" target="_blank">Show</a></td>
                                         <td><a href="<?php echo base_url('/upload/GrandTalkshow/sharestory/' . $item['pendaftarangrandtalkshow_sharestory'])?>" target="_blank">Show</a></td>
                                     </tr>
                                     <?php endforeach;?>
