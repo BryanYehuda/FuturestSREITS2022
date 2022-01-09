@@ -106,7 +106,12 @@
                                         <td><?= $item['pendaftarangrandtalkshow_question']?></td>
                                         <td><a href="<?php echo base_url('/upload/GrandTalkshow/followfuturestig/' . $item['pendaftarangrandtalkshow_followingfuturestig'])?>" target="_blank">Show</a></td>
                                         <td><a href="<?php echo base_url('/upload/GrandTalkshow/followsreig/' . $item['pendaftarangrandtalkshow_followingsreig'])?>" target="_blank">Show</a></td>
-                                        <td><a href="<?php echo base_url('/upload/GrandTalkshow/twibbon/' . $item['pendaftarangrandtalkshow_twibbon'])?>" target="_blank">Show</a></td>
+                                        <td><?php if($item['pendaftarangrandtalkshow_twibbon'] == NULL):?>
+                                            <?= "Registered before twibbon." ?>
+                                            <?php else: ?>
+                                            <a href="<?php echo base_url('/upload/GrandTalkshow/twibbon/' . $item['pendaftarangrandtalkshow_twibbon'])?>" target="_blank">Show</a>
+                                            <?php endif;?>
+                                        </td>
                                         <td><a href="<?php echo base_url('/upload/GrandTalkshow/sharestory/' . $item['pendaftarangrandtalkshow_sharestory'])?>" target="_blank">Show</a></td>
                                     </tr>
                                     <?php endforeach;?>
