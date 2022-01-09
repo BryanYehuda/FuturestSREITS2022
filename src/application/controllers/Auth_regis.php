@@ -211,7 +211,7 @@ class Auth_regis extends CI_Controller{
 																	<table class='heading_block' width='100%' border='0' cellpadding='0' cellspacing='0' role='presentation' style='mso-table-lspace: 0pt;mso-table-rspace: 0pt;box-sizing: border-box;'>
 																		<tr style='box-sizing: border-box;'>
 																			<td style='text-align: center;width: 100%;box-sizing: border-box;'>
-																				<h3 style='margin: 0;color: #555555;direction: ltr;font-family: ; box-sizing: border-box; montserrat, trebuchet ms, lucida grande, sans unicode, sans, tahoma, sans-serif; font-size: 18px; font-weight: normal; letter-spacing: 1px; line-height: 200%; text-align: center; margin-top: 0; margin-bottom: 0;'>Future Energy Summit 2022</h3>
+																			<h3 style='margin:0;color:#555555;direction:ltr;font-family:Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;font-size:18px;font-weight:normal;letter-spacing:1px;line-height:200%;text-align:center;margin-top:0;margin-bottom:0;'>Future Energy Summit 2022</h3>
 																			</td>
 																		</tr>
 																	</table>
