@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 04, 2022 at 06:50 PM
+-- Generation Time: Jan 09, 2022 at 05:57 PM
 -- Server version: 10.4.21-MariaDB
--- PHP Version: 8.0.12
+-- PHP Version: 8.0.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `futurest2022`
+-- Database: `futurest_database`
 --
 
 -- --------------------------------------------------------
@@ -57,11 +57,8 @@ INSERT INTO `account` (`account_id`, `account_oldid`, `account_username`, `accou
 
 CREATE TABLE `pendaftaran_awardingnight` (
   `pendaftaranawardingnight_id` bigint(11) NOT NULL,
-  `pendaftaranawardingnight_name` varchar(255) NOT NULL,
-  `pendaftaranawardingnight_university` varchar(255) NOT NULL,
-  `pendaftaranawardingnight_email` varchar(255) NOT NULL,
-  `pendaftaranawardingnight_juara` tinyint(1) NOT NULL,
-  `pendaftaranawardingnight_bidang` varchar(255) NOT NULL,
+  `pendaftaranawardingnight_nama` varchar(255) NOT NULL,
+  `pendaftaranawardingnight_instansi` varchar(255) NOT NULL,
   `pendaftaranawardingnight_dataCreated` datetime NOT NULL DEFAULT current_timestamp(),
   `pendaftaranawardingnight_dataUpdated` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -170,6 +167,7 @@ CREATE TABLE `pendaftaran_grandtalkshow` (
   `pendaftarangrandtalkshow_question` text NOT NULL,
   `pendaftarangrandtalkshow_followingfuturestig` varchar(255) NOT NULL,
   `pendaftarangrandtalkshow_followingsreig` varchar(255) NOT NULL,
+  `pendaftarangrandtalkshow_twibbon` varchar(255) DEFAULT NULL,
   `pendaftarangrandtalkshow_sharestory` varchar(255) NOT NULL,
   `pendaftarangrandtalkshow_dataCreated` datetime NOT NULL DEFAULT current_timestamp(),
   `pendaftarangrandtalkshow_dataUpdated` datetime DEFAULT NULL
@@ -303,46 +301,40 @@ ALTER TABLE `account`
   MODIFY `account_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table `pendaftaran_awardingnight`
---
-ALTER TABLE `pendaftaran_awardingnight`
-  MODIFY `pendaftaranawardingnight_id` bigint(11) NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT for table `pendaftaran_climatechangecommunity`
 --
 ALTER TABLE `pendaftaran_climatechangecommunity`
-  MODIFY `pendaftaranclimatechangecommunity_id` bigint(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `pendaftaranclimatechangecommunity_id` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `pendaftaran_essaycompetition`
 --
 ALTER TABLE `pendaftaran_essaycompetition`
-  MODIFY `pendaftaranessaycompetition_id` bigint(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `pendaftaranessaycompetition_id` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `pendaftaran_finaltalkshow`
 --
 ALTER TABLE `pendaftaran_finaltalkshow`
-  MODIFY `pendaftaranfinaltalkshow_id` bigint(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `pendaftaranfinaltalkshow_id` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `pendaftaran_grandtalkshow`
 --
 ALTER TABLE `pendaftaran_grandtalkshow`
-  MODIFY `pendaftarangrandtalkshow_id` bigint(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `pendaftarangrandtalkshow_id` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=384;
 
 --
 -- AUTO_INCREMENT for table `pendaftaran_re101`
 --
 ALTER TABLE `pendaftaran_re101`
-  MODIFY `pendaftaranre101_id` bigint(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `pendaftaranre101_id` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `pendaftaran_reinnovation`
 --
 ALTER TABLE `pendaftaran_reinnovation`
-  MODIFY `pendaftaranreinnovation_id` bigint(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `pendaftaranreinnovation_id` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

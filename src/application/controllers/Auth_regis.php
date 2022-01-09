@@ -96,16 +96,23 @@ class Auth_regis extends CI_Controller{
 		$this->sharestory->initialize($config);
         $foto = $this->sharestory->do_upload('sharestory');
 
+        $config['upload_path']	= './upload/GrandTalkshow/twibbon';
+        $this->load->library('upload', $config, 'twibbon');
+		$this->twibbon->initialize($config);
+        $foto = $this->twibbon->do_upload('twibbon');
+
         $data = array(
 			'followfuturestig' 	=> $this->followfuturestig->data('file_name'),
 			'followsreig' 	    => $this->followsreig->data('file_name'),
-			'sharestory' 	    => $this->sharestory->data('file_name')
+			'sharestory' 	    => $this->sharestory->data('file_name'),
+			'twibbon'			=> $this->twibbon->data('file_name')
 		);
 
 		$error = array(
 			'followfuturestig' 	=> $this->followfuturestig->display_errors(),
 			'followsreig'       => $this->followsreig->display_errors(),
-			'sharestory'        => $this->sharestory->display_errors()
+			'sharestory'        => $this->sharestory->display_errors(),
+			'twibbon'			=> $this->twibbon->display_errors()
 		);
         //var_dump($this->input->post());
         if(!$this->form_validation->run() || !$this->Registrasi->is_it_empty($error)){
@@ -121,6 +128,10 @@ class Auth_regis extends CI_Controller{
 			if(empty($error['sharestory'])){
 				$path = './upload/GrandTalkshow/sharestory/';
 				unlink($path.$data['sharestory']);
+			}
+			if(empty($error['twibbon'])){
+				$path = './upload/GrandTalkshow/twibbon/';
+				unlink($path.$data['twibbon']);
 			}
 			
 			echo json_encode($error);

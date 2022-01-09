@@ -37,6 +37,7 @@ class Registrasi extends CI_Model{
             'pendaftarangrandtalkshow_question'             => $this->input->post('question'),
             'pendaftarangrandtalkshow_followingfuturestig'  => $data['followfuturestig'],
             'pendaftarangrandtalkshow_followingsreig'       => $data['followsreig'],
+            'pendaftarangrandtalkshow_twibbon'              => $data['twibbon'],
             'pendaftarangrandtalkshow_sharestory'           => $data['sharestory'],
             'pendaftarangrandtalkshow_dataUpdated'          => date('Y-m-d')
         );

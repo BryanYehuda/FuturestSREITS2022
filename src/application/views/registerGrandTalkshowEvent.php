@@ -113,7 +113,14 @@
                                                         <?php echo $error['followsreig'];?>
                                                     </div>
                                                 </div><br>
-
+                                                <div class="mb-3">
+                                                    <label for="name"><i class="float"></i> Proof of uploading our twibbon in your Instagram main account (You can get the twibbon at <a href="https://twb.nz/grandtalkshowfuturest2022">Here!</a>)
+                                                    </label>
+                                                    <input class="form-control text-dark <?php $ok = " "; (!empty($error['sharestory'])) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" type="file" id="twibbon" multiple name="twibbon" required>
+                                                    <div class="invalid-feedback" id="twibbon-false">
+                                                        <?php echo $error['twibbon'];?>
+                                                    </div>
+                                                </div><br>
                                                 <div class="mb-3">
                                                     <label for="name"><i class="float"></i> Proof of share story and tag 3 friends (You can get the poster at <a href="https://drive.google.com/file/d/1Xu9m-OkesjuN-E3G2M4wGmNYxryUGvCX/view">Here!</a>)
                                                     </label>
