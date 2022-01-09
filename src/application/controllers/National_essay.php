@@ -35,7 +35,7 @@ class National_essay extends CI_Controller {
 		$tableName = $this->session->userdata('account_table');
 		$this->load->model("Dashboard");
 		$data =[
-			'data' => $this->Dashboard->getDataEssayWhere($tableName, 1)
+			'data' => $this->Dashboard->getDataEssayWhere(1)
 		];
 		$this->load->view('admin/dashboard_national_essay/list', $data);
 	}
@@ -45,7 +45,7 @@ class National_essay extends CI_Controller {
         $tableName = $this->session->userdata('account_table');
 		$this->load->model("Dashboard");
 		$data =[
-			'data' => $this->Dashboard->getDataEssayWhere($tableName, 0)
+			'data' => $this->Dashboard->getDataEssayWhere(0)
 		];
 		$this->load->view('admin/dashboard_national_essay/confirmation', $data);
     }
@@ -55,7 +55,6 @@ class National_essay extends CI_Controller {
 		$this->load->model("Dashboard");
 		$data = [
 			'id' => $id,
-			'tableName' => $this->session->userdata('account_table'),
 			'status' => 1
 		];
 		$result = $this->Dashboard->confirmStsEssay($data);
@@ -92,8 +91,31 @@ class National_essay extends CI_Controller {
 		redirect('dashboard-national-essay-confirmation');
 	}
 
-	public function reject()
+	public function reject($id)
 	{
+		$this->load->model("Dashboard");
+		$data = $this->Dashboard->getDataEssayId($id);	
+
+		if($data['pendaftaranessaycompetition_teamname'] == "--INDIVIDU--")
+		{
+			unlink('./upload/EssayCompetition/card/' . $data['pendaftaranessaycompetition_1_card']);
+			unlink('./upload/EssayCompetition/follow/' . $data['pendaftaranessaycompetition_1_follow']);
+			unlink('./upload/EssayCompetition/photo/' . $data['pendaftaranessaycompetition_1_photo']);
+			unlink('./upload/EssayCompetition/activestudent/' . $data['pendaftaranessaycompetition_1_activestudent']);
+		}
+		else
+		{
+			unlink('./upload/EssayCompetition/card/' . $data['pendaftaranessaycompetition_1_card']);
+			unlink('./upload/EssayCompetition/follow/' . $data['pendaftaranessaycompetition_1_follow']);
+			unlink('./upload/EssayCompetition/photo/' . $data['pendaftaranessaycompetition_1_photo']);
+			unlink('./upload/EssayCompetition/activestudent/' . $data['pendaftaranessaycompetition_1_activestudent']);
+			unlink('./upload/EssayCompetition/card/' . $data['pendaftaranessaycompetition_2_card']);
+			unlink('./upload/EssayCompetition/follow/' . $data['pendaftaranessaycompetition_2_follow']);
+			unlink('./upload/EssayCompetition/photo/' . $data['pendaftaranessaycompetition_2_photo']);
+			unlink('./upload/EssayCompetition/activestudent/' . $data['pendaftaranessaycompetition_2_activestudent']);
+		}
+		unlink('./upload/EssayCompetition/payment/' . $data['pendaftaranessaycompetition_payment']);
+		$this->Dashboard->deleteDataEssayId($id);
 		$mail = new PHPMailer(true);
 		try
 		{

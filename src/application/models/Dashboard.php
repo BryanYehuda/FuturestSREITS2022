@@ -6,18 +6,18 @@ class Dashboard extends CI_Model
         return $this->db->get($userdata)->result_array();
     }
 
-    function getDataEssayWhere($userdata, $where)
+    function getDataEssayWhere($where)
     {
-        return $this->db->get_where($userdata, ['pendaftaranessaycompetition_status' => $where])->result_array();
+        return $this->db->get_where("pendaftaran_essaycompetition", ['pendaftaranessaycompetition_status' => $where])->result_array();
     }
 
     function confirmStsEssay($data)
     {
         $this->db->set('pendaftaranessaycompetition_status', $data['status']);
         $this->db->where('pendaftaranessaycompetition_id', $data['id']);
-        $this->db->update($data['tableName']);
+        $this->db->update("pendaftaran_essaycompetition");
 
-        $query = $this->db->get_where($data['tableName'], ['pendaftaranessaycompetition_id' => $data['id']])->result_array();
+        $query = $this->db->get_where("pendaftaran_essaycompetition", ['pendaftaranessaycompetition_id' => $data['id']])->result_array();
         $res = $query[0];
         $id = $res['pendaftaranessaycompetition_id'];
         if($res['pendaftaranessaycompetition_teamname'] === '--INDIVIDU--')
@@ -49,6 +49,19 @@ class Dashboard extends CI_Model
         ];
 
         return $return;
+    }
+
+    function getDataEssayId($id)
+    {
+        $query = $this->db->get_where('pendaftaran_essaycompetition', ['pendaftaranessaycompetition_id' => $id])->result_array();
+        $res = $query[0];
+        return $res;
+    }
+
+    function deleteDataEssayId($id)
+    {
+        $this->db->where('pendaftaranessaycompetition_id', $id);
+        $this->db->delete('pendaftaran_essaycompetition');
     }
 }
 ?>
