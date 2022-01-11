@@ -160,8 +160,12 @@
                             <a href="<?= base_url('/upload/EssayCompetition/payment/' . $item['pendaftaranessaycompetition_payment'])?>" target="_blank">Show</a></h5>
 
                             <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 2px;">Confirmation?</p>
-                            <a href="national_essay/confirm/<?= $item['pendaftaranessaycompetition_id']?>" class="btn btn-success">Accept</a>
-                            <a href="national_essay/reject/<?= $item['pendaftaranessaycompetition_id']?>" class="btn btn-danger">Reject</a>
+                            <a href= "national_essay/confirm/<?= $item['pendaftaranessaycompetition_id']?>" class="btn btn-success" id="accept-<?= $item['pendaftaranessaycompetition_id']?>" onclick="accept(this.id)">
+                                <i class="hide loading-icon fa fa-spinner fa-spin d-none" id="loading-accept-<?= $item['pendaftaranessaycompetition_id']?>"></i>Accept
+                            </a>
+                            <a href="national_essay/reject/<?= $item['pendaftaranessaycompetition_id']?>" class="btn btn-danger" id="reject-<?= $item['pendaftaranessaycompetition_id']?>" onclick="reject(this.id)">
+                                <i class="hide loading-icon fa fa-spinner fa-spin d-none" id="loading-reject-<?= $item['pendaftaranessaycompetition_id']?>"></i>Reject
+                            </a>
                         </div>
                     </div>
                     <?php endforeach;?>
@@ -186,6 +190,15 @@
 
         toggleButton.onclick = function() {
             el.classList.toggle("toggled");
+        }; 
+
+        function reject(id){
+            document.getElementById(id).classList.add("disabled");
+            document.getElementById("loading-" + id).classList.remove("d-none");
+        };
+        function accept(id){
+            document.getElementById(id).classList.add("disabled");
+            document.getElementById("loading-" + id).classList.remove("d-none");
         };
     </script>
 </body>
