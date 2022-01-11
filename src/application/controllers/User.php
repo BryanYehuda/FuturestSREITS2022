@@ -24,7 +24,12 @@ class User extends CI_Controller {
 		$this->load->model("Dashboard_user");
 		$data = $this->Dashboard_user->getData($table, $oldid);
 		//var_dump($data);
-		$this->load->view('user/dashboard_national_essay/home', array('data' => $data));
+		if($table === 'pendaftaran_essaycompetition'){
+			$this->load->view('user/dashboard_national_essay/home', array('data' => $data));
+		}elseif($table === 'pendaftaran_reinnovation'){
+			$this->load->view('user/dashboard_re_innovation/home', array('data' => $data));
+		}
+		
 	}
 
 	public function payment()
@@ -34,7 +39,11 @@ class User extends CI_Controller {
 		$this->load->model("Dashboard_user");
 		$data = $this->Dashboard_user->getData($table, $oldid);
 		//var_dump($data);
-		$this->load->view('user/dashboard_national_essay/payment', array('data' => $data));
+		if($table === 'pendaftaran_essaycompetition'){
+			$this->load->view('user/dashboard_national_essay/payment', array('data' => $data));
+		}elseif($table === 'pendaftaran_reinnovation'){
+			$this->load->view('user/dashboard_re_innovation/payment', array('data' => $data));
+		}
 	}
 
 	public function team()
@@ -44,7 +53,11 @@ class User extends CI_Controller {
 		$this->load->model("Dashboard_user");
 		$data = $this->Dashboard_user->getData($table, $oldid);
 		//var_dump($data);
-		$this->load->view('user/dashboard_national_essay/team', array('data' => $data));
+		if($table === 'pendaftaran_essaycompetition'){
+			$this->load->view('user/dashboard_national_essay/team', array('data' => $data));
+		}elseif($table === 'pendaftaran_reinnovation'){
+			$this->load->view('user/dashboard_re_innovation/team', array('data' => $data));
+		}
 	}
 }
 ?>
