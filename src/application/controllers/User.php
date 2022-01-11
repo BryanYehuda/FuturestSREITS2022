@@ -19,17 +19,32 @@ class User extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('dashboard_user');
+		$table = $this->session->userdata('account_table');
+		$oldid = $this->session->userdata('account_oldid');
+		$this->load->model("Dashboard_user");
+		$data = $this->Dashboard_user->getData($table, $oldid);
+		//var_dump($data);
+		$this->load->view('user/dashboard_national_essay/home', array('data' => $data));
 	}
 
 	public function payment()
 	{
-		$this->load->view('dashboard_user_payment');
+		$table = $this->session->userdata('account_table');
+		$oldid = $this->session->userdata('account_oldid');
+		$this->load->model("Dashboard_user");
+		$data = $this->Dashboard_user->getData($table, $oldid);
+		//var_dump($data);
+		$this->load->view('user/dashboard_national_essay/payment', array('data' => $data));
 	}
 
 	public function team()
 	{
-		$this->load->view('dashboard_user_team');
+		$table = $this->session->userdata('account_table');
+		$oldid = $this->session->userdata('account_oldid');
+		$this->load->model("Dashboard_user");
+		$data = $this->Dashboard_user->getData($table, $oldid);
+		//var_dump($data);
+		$this->load->view('user/dashboard_national_essay/team', array('data' => $data));
 	}
 }
 ?>

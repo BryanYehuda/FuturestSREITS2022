@@ -14,6 +14,7 @@ class Dashboard extends CI_Model
     function confirmStsEssay($data)
     {
         $this->db->set('pendaftaranessaycompetition_status', $data['status']);
+        $this->db->set('pendaftaranessaycompetition_dataUpdated', date('Y-m-d H:i:s'));
         $this->db->where('pendaftaranessaycompetition_id', $data['id']);
         $this->db->update("pendaftaran_essaycompetition");
 
