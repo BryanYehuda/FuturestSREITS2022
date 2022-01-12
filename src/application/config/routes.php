@@ -83,10 +83,15 @@ $route['dashboard-climate-change-community-list'] = "climate_change_community/li
 $route['dashboard-awarding-night'] = "awarding_night";
 $route['dashboard-awarding-night-list'] = "awarding_night/list";
 
-//Dashboard Awarding Night
+//Dashboard National Essay
 $route['dashboard-national-essay'] = "national_essay";
 $route['dashboard-national-essay-list'] = "national_essay/list";
 $route['dashboard-national-essay-confirmation'] = "national_essay/confirmation";
+
+//Dashboard RE Innovation
+$route['dashboard-re-innovation'] = "re_innovation";
+$route['dashboard-re-innovation-list'] = "re_innovation/list";
+$route['dashboard-re-innovation-confirmation'] = "re_innovation/confirmation";
 
 // Events
 $route['grand-talkshow'] = 'home/grand_talkshow';

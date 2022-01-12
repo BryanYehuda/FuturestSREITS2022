@@ -79,7 +79,7 @@ class National_essay extends CI_Controller {
 			Password : $password
 			<br>";
 			$mail->IsHTML(TRUE);
-			$mail->addAddress('wibowohafizhabid@yahoo.co.id'); //EMAIL BELUM DISESUAIKAN
+			$mail->addAddress($email); //EMAIL BELUM DISESUAIKAN
 			$mail->Send();
 		} 
 		catch (Exception $e)
@@ -130,7 +130,7 @@ class National_essay extends CI_Controller {
 			$mail->setFrom("futurest.sreits@gmail.com", "Futurest 2022");
 			$mail->Body = "Data Rejected";
 			$mail->IsHTML(TRUE);
-			$mail->addAddress('wibowohafizhabid@yahoo.co.id'); //EMAIL BELUM DISESUAIKAN
+			$mail->addAddress($data['pendaftaranessaycompetition_1_email']); //EMAIL BELUM DISESUAIKAN
 			$mail->Send();
 		} 
 		catch (Exception $e)

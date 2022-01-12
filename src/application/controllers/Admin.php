@@ -17,7 +17,7 @@ class Admin extends CI_Controller {
 		}
 		else if ($this->session->userdata('account_username') == "FuturestREInnovation")
 		{
-			
+			redirect('dashboard-re-innovation');
 		}
 		else if ($this->session->userdata('account_username') == "FuturestGrandTalkshow")
 		{

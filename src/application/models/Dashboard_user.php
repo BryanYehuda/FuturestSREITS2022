@@ -11,7 +11,7 @@ class Dashboard_user extends CI_Model
 			$column = 'pendaftaranreinnovation_id';
 		}
         
-        $this->db->where('pendaftaranreinnovation_id', $oldid);
+        $this->db->where($column, $oldid);
         return $this->db->get($table)->result_array();
     }
 }
