@@ -68,7 +68,9 @@
                     </ul>
                 </div>
             </nav>
-
+            <?php if ($this->session->flashdata('response')) : ?>
+                <?= $this->session->flashdata('response'); ?>
+            <?php endif; ?>
             <!-- Info Card -->
             <div class="container-fluid px-4">
                 <div class="row g-3 my-2">
