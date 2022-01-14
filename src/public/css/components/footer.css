@@ -4,7 +4,7 @@
 }
 
 .footer h3 {
-	font-size: 25px;
+	font-size: 1.25rem;
 	font-family: MulishSemiBold;
 }
 
@@ -12,7 +12,7 @@
 	text-decoration: none;
 	color: grey;
 	font-family: MulishLight;
-	font-size: 18px;
+	font-size: 1rem;
 }
 
 .footer a:hover {
