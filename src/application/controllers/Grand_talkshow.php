@@ -59,7 +59,7 @@ class Grand_talkshow extends CI_Controller {
 				$mail->Port = "465";
 				$mail->Username = "futurest.sreits@gmail.com";
 				$mail->Password = "SREFuturest!";
-				$mail->Subject = "[Confirmation] Grand Talkshow: The Urgency of Climate Change Mitigation";
+				$mail->Subject = "Grand Talkshow: The Urgency of Mitigating Climate Change";
 				$mail->setFrom("futurest.sreits@gmail.com", "Futurest 2022");
 				$mail->IsHTML(TRUE);
 				$mail->Body = "<!DOCTYPE html>
@@ -193,7 +193,7 @@ class Grand_talkshow extends CI_Controller {
 																				<div style='font-family: sans-serif;box-sizing: border-box;'>
 																					<div style='font-size: 12px;mso-line-height-alt: 18px;color: #555555;line-height: 1.5;font-family: Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;box-sizing: border-box;'>
 																						<p style='margin: 0;font-size: 14px;text-align: center;mso-line-height-alt: 21px;letter-spacing: 1px;box-sizing: border-box;line-height: inherit;'>See you at the Grand Talkshow!<span style='color: #a8bf6f;font-size: 14px;box-sizing: border-box;'><strong style='box-sizing: border-box;'><br style='box-sizing: border-box;'></strong></span></p>
-																						<p style='margin: 0;font-size: 14px;text-align: center;letter-spacing: 1px;box-sizing: border-box;line-height: inherit;'>$name</p>
+																						<p style='margin: 0;font-size: 14px;text-align: center;letter-spacing: 1px;box-sizing: border-box;line-height: inherit;'></p>
 																					</div>
 																				</div>
 																			</td>
