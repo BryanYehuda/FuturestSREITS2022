@@ -126,4 +126,9 @@ class Home extends CI_Controller
   {
     $this->load->view("details_re_101");
   }
+
+  public function close_regist_gts()
+  {
+    $this->load->view("close_regis_grandtalk");
+  }
 }
