@@ -100,7 +100,7 @@
                             </h5>
 
                             <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 1px;">Event Entered</p>
-                            <h5 class="primary-text mb-3">Essay Competition</h5>
+                            <h5 class="primary-text mb-3">RE Innovation Competition</h5>
                         </div>
                     </div>
                 </div>

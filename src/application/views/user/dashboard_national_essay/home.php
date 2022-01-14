@@ -36,7 +36,7 @@
             <div class="list-group list-group-flush my-3">
 
                 <a href="<?php echo base_url('user')?>" class="list-group-item list-group-item-action bg-transparent primary-text active"><i class="fas fa-home-alt me-2"></i>Home</a>
-                <a href="<?php echo base_url('user/team')?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text"><i class="fas fa-users-cog me-2"></i>Team Identity</a>
+                <a href="<?php echo base_url('user/team')?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text"><i class="fas fa-users-cog me-2"></i><?php if($data[0]['pendaftaranessaycompetition_teamname'] !== '--INDIVIDU--'){ echo "Team ";}?>Identity</a>
                 <a href="<?php echo base_url('user/payment')?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text"><i class="fas fa-money-check-alt me-2"></i>Payment</a>
                 <hr class="info-color">
                 <a href="<?php echo base_url('logout')?>" class="list-group-item list-group-item-action bg-transparent text-danger primary-text"><i class="fas fa-power-off me-2"></i>Logout</a>
@@ -64,7 +64,7 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="<?php echo base_url('user')?>">Home</a></li>
-                                <li><a class="dropdown-item" href="<?php echo base_url('user/team')?>">Team Identity</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url('user/team')?>"><?php if($data[0]['pendaftaranessaycompetition_teamname'] !== '--INDIVIDU--'){ echo "Team ";}?>Identity</a></li>
                                 <li><a class="dropdown-item" href="<?php echo base_url('user/payment')?>">Payment</a></li>
                                 <li><a class="dropdown-item" href="<?php echo base_url('logout')?>">Logout</a></li>
                             </ul>
@@ -89,7 +89,7 @@
                             </div>
                             <?php }else{?>
                                 <div>
-                                <p class="fs-6 text-black-50 regular-text">Name</p>
+                                <p class="fs-6 text-black-50 regular-text">Team Name</p>
                                 <h5 class="primary-text"><?= $data[0]['pendaftaranessaycompetition_teamname']?></h5>
                             </div>
                             <?php }?>

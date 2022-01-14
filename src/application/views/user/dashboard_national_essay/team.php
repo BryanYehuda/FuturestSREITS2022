@@ -36,7 +36,7 @@
             <div class="list-group list-group-flush my-3">
 
                 <a href="<?php echo base_url('user')?>" class="list-group-item list-group-item-action bg-transparent primary-text second-text"><i class="fas fa-home-alt me-2"></i>Home</a>
-                <a href="<?php echo base_url('user/team')?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text active"><i class="fas fa-users-cog me-2"></i>Team Identity</a>
+                <a href="<?php echo base_url('user/team')?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text active"><i class="fas fa-users-cog me-2"></i><?php if($data[0]['pendaftaranessaycompetition_teamname'] !== '--INDIVIDU--'){ echo "Team ";}?>Identity</a>
                 <a href="<?php echo base_url('user/payment')?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text"><i class="fas fa-money-check-alt me-2"></i>Payment</a>
                 <hr class="info-color">
                 <a href="<?php echo base_url('logout')?>" class="list-group-item list-group-item-action bg-transparent text-danger primary-text"><i class="fas fa-power-off me-2"></i>Logout</a>
@@ -64,7 +64,7 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="<?php echo base_url('user')?>">Home</a></li>
-                                <li><a class="dropdown-item" href="<?php echo base_url('user/team')?>">Team Identity</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url('user/team')?>"><?php if($data[0]['pendaftaranessaycompetition_teamname'] !== '--INDIVIDU--'){ echo "Team ";}?>Identity</a></li>
                                 <li><a class="dropdown-item" href="<?php echo base_url('user/payment')?>">Payment</a></li>
                                 <li><a class="dropdown-item" href="<?php echo base_url('logout')?>">Logout</a></li>
                             </ul>
@@ -88,7 +88,11 @@
                             <?php }?>
                             <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 1px;">Institution</p>
                             <h5 class="primary-text mb-3"><?= $data[0]['pendaftaranessaycompetition_1_college']?></h5>
-
+                            
+                            <?php if($data[0]['pendaftaranessaycompetition_teamname'] === '--INDIVIDU--'){?>
+                            <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 1px;">Name</p>
+                            <h5 class="primary-text mb-3"><?= $data[0]['pendaftaranessaycompetition_1_name']?></h5>
+                            <?php }else{?>
                             <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 1px;">Member Team</p>
                             <h5 class="primary-text mb-3 fs-6">
                                 <ul>
@@ -96,6 +100,7 @@
                                     <li><?= $data[0]['pendaftaranessaycompetition_2_name']?></li>
                                 </ul>
                             </h5>
+                            <?php }?>
                             <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 1px;">Event Entered</p>
                             <h5 class="primary-text mb-3">Essay Competition</h5>
                         </div>

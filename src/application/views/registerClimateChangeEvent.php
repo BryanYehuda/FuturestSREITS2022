@@ -11,6 +11,7 @@
     $this->load->view('template/css');
     ?>
     <link rel="stylesheet" href="<?php echo base_url() ?>public/css/pages/register.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>public/css/pages/registerGTS.css">
     <!-- Import css if need -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -279,4 +280,4 @@
     <script type="text/javascript" src="<?php echo base_url() ?>public/js/backend/register3c.js"></script>
 </body>
 
-</html> -->
+</html>

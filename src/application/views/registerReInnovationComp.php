@@ -11,6 +11,7 @@
     $this->load->view('template/css');
     ?>
     <link rel="stylesheet" href="<?php echo base_url() ?>public/css/pages/register.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>public/css/pages/registerGTS.css">
     <!-- Import css if need -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -83,9 +84,11 @@
                                                 <label for="pwd"><i class="float"></i> Batch </label>
                                                 <select class="form-select <?php $ok = " "; (form_error('batch_1') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" aria-label="Default select example" id="batch_1" name="batch_1" required>
                                                     <option selected>-</option>
-                                                    <option value="1">2019</option>
-                                                    <option value="2">2020</option>
-                                                    <option value="3">2021</option>
+                                                    <option value="2017+">2017+</option>
+                                                    <option value="2018">2018</option>
+                                                    <option value="2019">2019</option>
+                                                    <option value="2020">2020</option>
+                                                    <option value="2021">2021</option>
                                                 </select><br>
                                                 <div class="invalid-feedback" id="batch_1-false">
                                                     <?php echo form_error('batch_1');?>
@@ -166,9 +169,11 @@
                                                 <label for="pwd"><i class="float"></i> Batch </label>
                                                 <select class="form-select <?php $ok = " "; (form_error('batch_2') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" aria-label="Default select example" id="batch_2" name="batch_2" required>
                                                     <option selected>-</option>
-                                                    <option value="1">2019</option>
-                                                    <option value="2">2020</option>
-                                                    <option value="3">2021</option>
+                                                    <option value="2017+">2017+</option>
+                                                    <option value="2018">2018</option>
+                                                    <option value="2019">2019</option>
+                                                    <option value="2020">2020</option>
+                                                    <option value="2021">2021</option>
                                                 </select><br>
                                                 <div class="invalid-feedback" id="batch_2-false">
                                                     <?php echo form_error('batch_2');?>
@@ -249,9 +254,11 @@
                                                 <label for="pwd"><i class="float"></i> Batch </label>
                                                 <select class="form-select <?php $ok = " "; (form_error('batch_3') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" aria-label="Default select example" id="batch_3" name="batch_3" >
                                                     <option selected>-</option>
-                                                    <option value="1">2019</option>
-                                                    <option value="2">2020</option>
-                                                    <option value="3">2021</option>
+                                                    <option value="2017+">2017+</option>
+                                                    <option value="2018">2018</option>
+                                                    <option value="2019">2019</option>
+                                                    <option value="2020">2020</option>
+                                                    <option value="2021">2021</option>
                                                 </select><br>
                                                 <div class="invalid-feedback" id="batch_3-false">
                                                     <?php echo form_error('batch_3');?>
@@ -363,4 +370,4 @@
     <script type="text/javascript" src="<?php echo base_url() ?>public/js/backend/registerreinnovation.js"></script>
 </body>
 
-</html> -->
+</html> 

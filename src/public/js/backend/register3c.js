@@ -30,7 +30,7 @@ $("button#submit").on('click', function(){
                     icon: 'success',
                     confirmButtonText: 'Go Back'
                 }).then( function(){
-                    window.location.href = base_url + 'register-climate-change-event';
+                    window.location.href = base_url + 'finish-register';
                 });
                 document.querySelector("#loading").classList.add("d-none");
                 $("button#submit").removeAttr("disabled");
