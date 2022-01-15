@@ -6,7 +6,7 @@
   <?php
   $this->load->view('template/meta');
   ?>
-  <title>Futurest Event</title>
+  <title>Events</title>
   <?php
   $this->load->view('template/css');
   ?>
@@ -24,12 +24,14 @@
     <section id="jumbotron" class="d-flex align-items-center position-relative">
       <div class="container">
         <div class="row">
-          <div class="col-12 text-center text-xl-start col-xl-8">
+          <div class="col-12 text-center text-xl-start col-xl-8 ">
             <h1 class="mb-5">{{ jumbotron.title }}</h1>
             <p class="mb-5">
               {{ jumbotron.description }}
             </p>
-            <a href="#our-events" class="btn btn-success btn-lg">Read More</a>
+            <a href="#our-events" class="btn btn-primary">
+              Read more
+            </a>
           </div>
           <div class="d-none d-xl-flex col-xl-4 d-flex align-items-center justify-content-center">
             <i class="bi bi-calendar4-event"></i>
@@ -38,7 +40,9 @@
       </div>
     </section>
 
-    <section id="our-events" class="py-5">
+    <section id="our-events" class="py-5 position-relative">
+      <img src="<?php echo base_url() ?>public/img/ornamen/ornam6.png" alt="Ornamen" id="ornamen_events" class="position-absolute">
+      <img src="<?php echo base_url() ?>public/img/ornamen/ornam2.png" alt="Ornamen" id="ornamen_events_2" class="position-absolute" width="300" height="300">
       <div class="container py-5">
         <h2 class="text-center mb-5">Our Events</h2>
         <div class="row text-center d-flex justify-content-center">
@@ -48,13 +52,14 @@
             <p>
               {{ item.description }}
             </p>
-            <a href="" class="btn btn-lg btn-outline-success">Know More</a>
+            <a :href="item.link" class="btn btn-primary">Know More</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="our-competitions" class="py-5">
+    <section id="our-competitions" class="py-5 position-relative">
+      <img src="<?php echo base_url() ?>public/img/ornamen/ornam4.png" alt="Ornamen" id="ornamen_compe" class="position-absolute" width="300" height="300">
       <div class="container py-5">
         <h2 class="text-center mb-5">Our Competitions</h2>
         <div class="row text-center d-flex justify-content-center">
@@ -64,29 +69,29 @@
             <p>
               {{ item.description }}
             </p>
-            <a href="" class="btn btn-lg btn-outline-success">Know More</a>
+            <a :href="item.link" class="btn btn-primary">Know More</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="fakta-unik" class="pt-5">
+    <section id="fakta-unik" class="pt-5 position-relative">
+      <img src="<?php echo base_url() ?>public/img/ornamen/green-energy.png" alt="Ornamen" id="ornamen_fact" class="position-absolute" width="150" height="150">
       <div class="container pt-5">
-        <h2 class="text-center mb-5">Unique Fact</h2>
-        <div class="row px-3">
-          <div class="d-none d-lg-block col-lg-6">
-            <img src="<?php echo base_url() ?>/public/img/fakta-unik.jpg" alt="Fakta Unik Futurest 2022" class="img-fluid">
-          </div>
-          <div class="container-desc-fakta-unik col d-flex align-items-center justify-content-center text-center p-5">
-            <p>
+        <h2 class="text-center">Unique Fact</h2>
+        <div class="row">
+          <img src="<?php echo base_url() ?>/public/img/logo-utama.png" alt="Fakta Unik Futurest 2022" class="img-fluid w-25 mx-auto mb-3 fact">
+          <p class="text-center">
+            <q>
               Futurest 2022 is the first competitions held by one of the biggest organization at ITS, SRE.
-            </p>
-          </div>
+            </q>
+          </p>
         </div>
       </div>
     </section>
 
-    <section id="timeline" class="py-5">
+    <section id="timeline" class="py-5 position-relative">
+      <img src="<?php echo base_url() ?>public/img/ornamen/ornam1.png" alt="Ornamen" id="ornamen_timeline" class="position-absolute" width="300" height="300">
       <div class="container d-flex flex-column align-items-center py-5">
         <h2 class="mb-5">General Timeline</h2>
         <div class="row mb-3 px-4 py-3 w-75" v-for="item in timeline">
@@ -110,7 +115,8 @@
          </div>
       </section> -->
 
-    <section id="pertanyaan" class="py-5">
+    <section id="pertanyaan" class="py-5 position-relative">
+      <img src="<?php echo base_url() ?>public/img/ornamen/ornam7.png" alt="Ornamen" id="ornamen_tanya" class="position-absolute" width="300" height="300">
       <div class="container py-5">
         <h2 class="mb-5 text-center">General Question and Answer</h2>
         <div class="accordion" id="accordionExample">

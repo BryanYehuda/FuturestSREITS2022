@@ -12,6 +12,7 @@
   ?>
   <!-- Import css if need -->
   <link rel="stylesheet" href="<?php echo base_url() ?>public/css/pages/home.css">
+</head>
 
 <body>
   <?php
@@ -70,10 +71,10 @@
         <img src="<?= base_url() ?>/public/img/ornamen/ornam5.png" class="position-absolute" id="ornamen-slash">
         <img src="<?= base_url() ?>/public/img/ornamen/ornam7.png" class="position-absolute" id="ornamen-tree">
         <div class="row">
-          <h2 class="text-center mb-5">Futurest 2022 Support</h2>
+          <h2 class="text-center mb-5">Futurest 2022 Supporters</h2>
           <div class="d-flex flex-wrap justify-content-center mb-5">
-            <img src="<?= base_url() ?>/public/img/its.png" alt="Logo Sponsor" class="img-fluid m-4" width="150" height="150">
             <img src="<?= base_url() ?>/public/img/esdm.png" alt="Logo Sponsor" class="img-fluid m-4" width="150" height="150">
+            <img src="<?= base_url() ?>/public/img/its.png" alt="Logo Sponsor" class="img-fluid m-4" width="150" height="150">
             <img src="<?= base_url() ?>/public/img/sre_nasional.png" alt="Logo Sponsor" class="img-fluid m-4" width="150" height="150">
           </div>
           <h2 class="text-center my-5">Futurest 2022 Sponsors</h2>

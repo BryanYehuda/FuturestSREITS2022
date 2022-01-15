@@ -30,7 +30,7 @@
             <p class="mb-5">
               Confused about the explanation of the existing competition? Contact some of our people to ask questions by pressing the button below:
             </p>
-            <a href="#futurest-sosmed" class="btn btn-outline-success btn-lg">Read More</a>
+            <a href="#re-contact" class="btn btn-primary">Read More</a>
           </div>
           <div class="d-none d-xl-flex col-xl-4 d-flex align-items-center justify-content-center">
             <i class="bi bi-person-lines-fill"></i>
@@ -56,7 +56,7 @@
                 <br>
                 WA: +6285215371119
               </p>
-              <a href="https://wa.me/6285215371119" class="btn btn-success" target="_blank">Contact by WA now</a>
+              <a href="https://wa.me/6285215371119" class="btn btn-primary" target="_blank">Contact by WA now</a>
             </div>
           </div>
 
@@ -70,7 +70,7 @@
                 <br>
                 WA: +6288228249694
               </p>
-              <a href="https://wa.me/6288228249694" class="btn btn-success" target="_blank">Contact by WA now</a>
+              <a href="https://wa.me/6288228249694" class="btn btn-primary" target="_blank">Contact by WA now</a>
             </div>
           </div>
 
@@ -90,6 +90,7 @@
             <div class="p-3">
               <h3>Wury</h3>
               <p>Line : wuryhanda36</p>
+              <a href="https://wa.me/628" class="btn btn-primary" target="_blank">Contact by WA now</a>
             </div>
           </div>
 
@@ -99,6 +100,7 @@
             <div class="p-3">
               <h3>Daffa</h3>
               <p>WA : 082245606252</p>
+              <a href="https://wa.me/6282245606252" class="btn btn-primary" target="_blank">Contact by WA now</a>
             </div>
           </div>
 
@@ -119,7 +121,7 @@
             <label for="exampleFormControlTextarea1" class="form-label">Message Text</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Enter a message here..."></textarea>
           </div>
-          <button class="btn btn-lg btn-success d-block m-auto">Submit</button>
+          <button class="btn btn-primary d-block m-auto">Submit</button>
         </form>
       </div>
     </section>

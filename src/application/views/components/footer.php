@@ -6,7 +6,7 @@
     <div class="row pt-5 mb-sm-5">
 
       <!-- col 1 -->
-      <div class="col-sm-2 d-flex flex-column mb-5 mb-sm-1">
+      <div class="col-md-2 d-flex flex-column mb-5 mb-md-1">
         <h3 class="mb-4">Futurest</h3>
         <a href="https://www.instagram.com/futurest2022/" target="_blank" class="mb-3">Instagram</a>
         <a href="https://www.linkedin.com/company/futureenergysummit/" target="_blank" class="mb-3">LinkedIn</a>
@@ -14,14 +14,14 @@
       </div>
 
       <!-- col 2 -->
-      <div class="col-sm-2 d-flex flex-column mb-5 mb-sm-1">
+      <div class="col-md-2 d-flex flex-column mb-5 mb-md-1">
         <h3 class="mb-4">ITS Campus</h3>
         <a href="https://www.instagram.com/its_campus/" target="_blank" class="mb-3">Instagram</a>
         <a href="https://www.youtube.com/c/itseurekatv" target="_blank" class="mb-3">Youtube</a>
       </div>
 
       <!-- col 3 -->
-      <div class="col-sm-2 d-flex flex-column mb-5 mb-sm-1">
+      <div class="col-md-2 d-flex flex-column mb-5 mb-md-1">
         <h3 class="mb-4">SRE ITS</h3>
         <a href="https://www.instagram.com/sre_its/" target="_blank" class="mb-3">Instagram</a>
         <a href="https://www.linkedin.com/company/sreits/" target="_blank" class="mb-3">LinkedIn</a>
