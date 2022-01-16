@@ -18,8 +18,8 @@ class Auth_regis extends CI_Controller{
     public function regisRE101(){
         $this->load->model("Registrasi");
         $config = array(
-			'allowed_types'	=> 'gif|jpg|png',
-			'max_size'	 	=> 10000,
+			'allowed_types'	=> 'jpg|png|jpeg',
+			'max_size'	 	=> 1025,
 			'max_width' 	=> 10000,
 			'max_height' 	=> 10000
 		);
@@ -75,8 +75,8 @@ class Auth_regis extends CI_Controller{
 	    //var_dump($this->input->post());
         $this->load->model("Registrasi");
         $config = array(
-			'allowed_types'	=> 'gif|jpg|png',
-			'max_size'	 	=> 10000,
+			'allowed_types'	=> 'jpg|png|jpeg',
+			'max_size'	 	=> 1025,
 			'max_width' 	=> 10000,
 			'max_height' 	=> 10000
 		);
@@ -211,7 +211,7 @@ class Auth_regis extends CI_Controller{
 																	<table class='heading_block' width='100%' border='0' cellpadding='0' cellspacing='0' role='presentation' style='mso-table-lspace: 0pt;mso-table-rspace: 0pt;box-sizing: border-box;'>
 																		<tr style='box-sizing: border-box;'>
 																			<td style='text-align: center;width: 100%;box-sizing: border-box;'>
-																			<h3 style='margin:0;color:#555555;direction:ltr;font-family:Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;font-size:18px;font-weight:normal;letter-spacing:1px;line-height:200%;text-align:center;margin-top:0;margin-bottom:0;'>Future Energy Summit 2022</h3>
+																				<h3 style='margin:0;color:#555555;direction:ltr;font-family:Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;font-size:18px;font-weight:normal;letter-spacing:1px;line-height:200%;text-align:center;margin-top:0;margin-bottom:0;'>Future Energy Summit 2022</h3>
 																			</td>
 																		</tr>
 																	</table>
@@ -423,8 +423,8 @@ class Auth_regis extends CI_Controller{
 	public function regisFinalTalkshow(){
         $this->load->model("Registrasi");
         $config = array(
-			'allowed_types'	=> 'gif|jpg|png',
-			'max_size'	 	=> 10000,
+			'allowed_types'	=> 'jpg|png|jpeg',
+			'max_size'	 	=> 1025,
 			'max_width' 	=> 10000,
 			'max_height' 	=> 10000
 		);
@@ -481,8 +481,8 @@ class Auth_regis extends CI_Controller{
 		//echo var_dump(empty($this->input->post('prioritze')) && empty($this->input->post('willingness')) && empty($this->input->post('committed')));
 		$this->load->model("Registrasi");
         $config = array(
-			'allowed_types'	=> 'pdf|gif|jpg|png',
-			'max_size'	 	=> 10000,
+			'allowed_types'	=> 'jpg|png|jpeg',
+			'max_size'	 	=> 1025,
 			'max_width' 	=> 10000,
 			'max_height' 	=> 10000
 		);
@@ -506,6 +506,13 @@ class Auth_regis extends CI_Controller{
         $this->load->library('upload', $config, 'sharestory');
 		$this->sharestory->initialize($config);
         $foto = $this->sharestory->do_upload('sharestory');
+        
+        $config = array(
+			'allowed_types'	=> 'pdf|jpg|png|jpeg',
+			'max_size'	 	=> 1025,
+			'max_width' 	=> 10000,
+			'max_height' 	=> 10000
+		);
 
 		$config['upload_path']	= './upload/3C/CV';
         $this->load->library('upload', $config, 'CV');
@@ -562,7 +569,7 @@ class Auth_regis extends CI_Controller{
 		//jpg|png|jpeg
 		$config = array(
 			'allowed_types'	=> 'pdf',
-			'max_size'	 	=> 10000,
+			'max_size'	 	=> 1025,
 			'max_width' 	=> 10000,
 			'max_height' 	=> 10000
 		);
@@ -625,7 +632,7 @@ class Auth_regis extends CI_Controller{
 		
 		$config = array(
 			'allowed_types'	=> 'jpg|png|jpeg',
-			'max_size'	 	=> 3000,
+			'max_size'	 	=> 1025,
 			'max_width' 	=> 410,
 			'max_height' 	=> 610
 		);
@@ -724,7 +731,7 @@ class Auth_regis extends CI_Controller{
 		$this->load->model("Registrasi");
 		$config = array(
 			'allowed_types'	=> 'pdf',
-			'max_size'	 	=> 10000,
+			'max_size'	 	=> 1025,
 			'max_width' 	=> 10000,
 			'max_height' 	=> 10000,
 			'upload_path'	=> './upload/EssayCompetition/card'
@@ -744,7 +751,7 @@ class Auth_regis extends CI_Controller{
         $this->follow->do_upload('follow_1');
         
         $config = array(
-			'allowed_types' => 'pdf|jpg|png|jpeg',
+			'allowed_types' => 'pdf',
 			'upload_path'	=> './upload/EssayCompetition/activestudent'
 		);
 
@@ -763,7 +770,7 @@ class Auth_regis extends CI_Controller{
 
 		$config = array(
 			'allowed_types' => 'jpg|png|jpeg',
-			'max_size'	 	=> 3000,
+			'max_size'	 	=> 1025,
 			'max_width' 	=> 410,
 			'max_height' 	=> 610,
 			'upload_path'	=> './upload/EssayCompetition/photo'
@@ -821,7 +828,7 @@ class Auth_regis extends CI_Controller{
 		$this->load->model("Registrasi");
 		$config = array(
 			'allowed_types'	=> 'pdf',
-			'max_size'	 	=> 10000,
+			'max_size'	 	=> 1025,
 			'max_width' 	=> 10000,
 			'max_height' 	=> 10000,
 			'upload_path'	=> './upload/EssayCompetition/card'
@@ -849,7 +856,7 @@ class Auth_regis extends CI_Controller{
         $this->follow2->do_upload('follow_2');
         
         $config = array(
-			'allowed_types' => 'pdf|jpg|png|jpeg',
+			'allowed_types' => 'pdf',
 			'upload_path'	=> './upload/EssayCompetition/activestudent'
 		);
 
@@ -872,7 +879,7 @@ class Auth_regis extends CI_Controller{
 
 		$config = array(
 			'allowed_types' => 'jpg|png|jpeg',
-			'max_size'	 	=> 3000,
+			'max_size'	 	=> 1025,
 			'max_width' 	=> 410,
 			'max_height' 	=> 610,
 			'upload_path'	=> './upload/EssayCompetition/photo'
@@ -955,4 +962,3 @@ class Auth_regis extends CI_Controller{
 		}
 	}
 }
-

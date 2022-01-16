@@ -1154,6 +1154,16 @@ class CI_Upload {
 		foreach ($msg as $val)
 		{
 			$msg = ($this->_CI->lang->line($val) === FALSE) ? $val : $this->_CI->lang->line($val);
+			if($val == "upload_invalid_filesize") {
+				$msg = $msg . ($this->max_size-1) . " KB.";
+			}
+			if($val == "upload_invalid_filetype") {
+				foreach($this->allowed_types as $tipe){
+					if(end($this->allowed_types) == $tipe) $msg = $msg . $tipe . ".";
+					else $msg = $msg . $tipe . "/";
+				}
+				//$msg = $msg . ".";
+			}
 			$this->error_msg[] = $msg;
 			log_message($log_level, $msg);
 		}

@@ -82,7 +82,7 @@
                           <div class="invalid-feedback" id="card_1-false">
                               <?php echo $error['card_1'];?>
                           </div>
-                      </div>
+                      </div><br>
                       <div class="mb-3">
                           <label for="name"><i class="float"></i> Statement Letter of Active Student Scan<b>(pdf)</b></label>
                           <input class="form-control text-dark <?php $ok = " "; (!empty($error['activestudent_1'])) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" type="file" id="activestudent_1" name="activestudent_1" multiple required>
@@ -91,7 +91,7 @@
                           </div>
                       </div>
                       <br>
-                      <br>
+                      
                       <div class="mb-3">
                           <label for="name"><i class="float"></i> Half-body picture 4 x 6</label>
                           <label for="name"><i class="float"></i> <b>formal, plain background </b>(JPG, JPEG, PNG)</label>
