@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 09, 2022 at 05:57 PM
+-- Generation Time: Jan 16, 2022 at 07:42 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.11
 
@@ -128,6 +128,7 @@ CREATE TABLE `pendaftaran_essaycompetition` (
   `pendaftaranessaycompetition_status` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+
 -- --------------------------------------------------------
 
 --
@@ -238,6 +239,20 @@ CREATE TABLE `pendaftaran_reinnovation` (
   `pendaftaranreinnovation_status` tinyint(1) DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `suggestion`
+--
+
+CREATE TABLE `suggestion` (
+  `suggestion_id` int(11) NOT NULL,
+  `suggestion_email` varchar(255) NOT NULL,
+  `suggestion_message` text NOT NULL,
+  `suggestion_datetime` datetime NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 --
 -- Indexes for dumped tables
 --
@@ -291,6 +306,12 @@ ALTER TABLE `pendaftaran_reinnovation`
   ADD PRIMARY KEY (`pendaftaranreinnovation_id`);
 
 --
+-- Indexes for table `suggestion`
+--
+ALTER TABLE `suggestion`
+  ADD PRIMARY KEY (`suggestion_id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -298,7 +319,7 @@ ALTER TABLE `pendaftaran_reinnovation`
 -- AUTO_INCREMENT for table `account`
 --
 ALTER TABLE `account`
-  MODIFY `account_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `account_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `pendaftaran_climatechangecommunity`
@@ -310,7 +331,7 @@ ALTER TABLE `pendaftaran_climatechangecommunity`
 -- AUTO_INCREMENT for table `pendaftaran_essaycompetition`
 --
 ALTER TABLE `pendaftaran_essaycompetition`
-  MODIFY `pendaftaranessaycompetition_id` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `pendaftaranessaycompetition_id` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `pendaftaran_finaltalkshow`
@@ -334,7 +355,13 @@ ALTER TABLE `pendaftaran_re101`
 -- AUTO_INCREMENT for table `pendaftaran_reinnovation`
 --
 ALTER TABLE `pendaftaran_reinnovation`
-  MODIFY `pendaftaranreinnovation_id` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `pendaftaranreinnovation_id` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+--
+-- AUTO_INCREMENT for table `suggestion`
+--
+ALTER TABLE `suggestion`
+  MODIFY `suggestion_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

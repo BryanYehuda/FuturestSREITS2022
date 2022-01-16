@@ -131,4 +131,17 @@ class Home extends CI_Controller
   {
     $this->load->view("close_regis_grandtalk");
   }
+
+  //add suggestion
+  public function add_suggestion()
+  {
+    $this->load->model('Contact');
+    
+    if(!$this->form_validation->run()){
+      echo json_encode($this->form_validation->error_array());
+    }else{
+      $this->Contact->addSuggestion();
+      echo "1";
+    }
+  }
 }

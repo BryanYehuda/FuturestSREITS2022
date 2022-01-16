@@ -590,6 +590,25 @@ $config = array(
                 'max_length[255]' 	=> 'You exceed the limit' 
             )
         ),
+    ),
+    'Home/add_suggestion'   => array(
+        array(
+            'field' => 'email',
+            'label' => 'Email',
+            'rules' => 'trim|required|min_length[1]|max_length[255]',
+            'errors' => array(
+                'required' 			=> 'Please fill this column',
+                'max_length[255]' 	=> 'You exceed the limit' 
+            )
+        ),
+        array(
+            'field' => 'message',
+            'label' => 'Message',
+            'rules' => 'trim|required|min_length[1]',
+            'errors' => array(
+                'required' 			=> 'Please fill this column'
+            )
+        )
     )
 );
 

@@ -114,16 +114,22 @@
     <section id="contact-us" class="d-flex align-items-center position-relative">
       <div class="container h-75">
         <h2 class="text-center mb-5">Suggestions for us</h2>
-        <form action="">
+        <form action="" id="form">
           <div class="mb-5">
             <label for="exampleFormControlInput1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your email here...">
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email here...">
+            <div class="invalid-feedback" id="email-false">
+            </div>
           </div>
           <div class="mb-5">
             <label for="exampleFormControlTextarea1" class="form-label">Message Text</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Enter a message here..."></textarea>
+            <textarea class="form-control" rows="5" id="message" name="message" placeholder="Enter a message here..."></textarea>
+            <div class="invalid-feedback" id="message-false">
+            </div>
           </div>
-          <button class="btn btn-primary d-block m-auto">Submit</button>
+          <button type="submit" class="btn btn-primary d-block m-auto" id="submit">
+              <i class="hide loading-icon fa fa-spinner fa-spin d-none" id="loading"></i>Submit
+          </button>
         </form>
       </div>
     </section>
@@ -141,6 +147,10 @@
   ?>
 
   <!-- Import js if need -->
+  <script>var base_url = '<?php echo base_url()?>';</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="text/javascript" src="<?php echo base_url() ?>public/js/backend/contact.js"></script>
 </body>
 
 </html>
