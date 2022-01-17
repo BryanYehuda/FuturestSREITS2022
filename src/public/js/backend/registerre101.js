@@ -13,7 +13,7 @@ $("button#submit").on('click', function(){
     document.querySelector("#loading").classList.remove("d-none");
     
     $.ajax({
-        url: '../Auth_regis/regisRE101',
+        url: './Auth_regis/regisRE101',
         type: "POST",
         enctype: 'multipart/form-data',
         data: data,

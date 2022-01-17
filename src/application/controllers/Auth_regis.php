@@ -961,4 +961,15 @@ class Auth_regis extends CI_Controller{
 			echo "1";
 		}
 	}
+
+	function min_100_words($text){
+        $array_words = explode(" ", $text);
+
+        if(sizeof($array_words) >= 100){
+            return TRUE;
+        }else{
+            $this->form_validation->set_message('min_100_words', 'Please fill in the motivation column with at least 100 words ');
+            return FALSE;
+        }
+    }
 }

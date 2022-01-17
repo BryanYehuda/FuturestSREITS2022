@@ -13,7 +13,7 @@ $("button#submit").on('click', function(){
     document.querySelector("#loading").classList.remove("d-none");
     
     $.ajax({
-        url: '../Auth_regis/regisFinalTalkshow',
+        url: './Auth_regis/regisFinalTalkshow',
         type: "POST",
         enctype: 'multipart/form-data',
         data: data,

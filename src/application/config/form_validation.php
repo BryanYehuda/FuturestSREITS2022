@@ -256,10 +256,9 @@ $config = array(
         array(
             'field' => 'motivation',
             'label' => 'Motivation',
-            'rules' => 'trim|required|min_length[100]',
+            'rules' => 'trim|required|callback_min_100_words',
             'errors' => array(
-                'required' 			=> 'Please fill this column',
-                'min_length[200]'   => 'Please Minimum 100 words'
+                'required' 			=> 'Please fill this column'
             )
         ),
         array(
