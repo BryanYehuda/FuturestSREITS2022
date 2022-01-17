@@ -35,19 +35,36 @@
                         <a href="#timeline" class="btn btn-success btn-lg">Show Timeline</a>
                     </div>
                     <div class="d-none d-xl-flex col-xl-4 d-flex align-items-center justify-content-center">
+                        <img src="<?php echo base_url() ?>public/img/logo_keren.png" alt="Ornamen" id="ornamen_1" class="position-absolute" width="300" height="300">
                         <i class="bi bi-journal-bookmark"></i>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="timeline" class="py-5">
+        <section id="timeline" class="py-5 position-relative">
+            <img src="<?php echo base_url() ?>public/img/ornamen/ornam6.png" alt="Ornamen" id="ornamen_6" class="position-absolute" width="300" height="300">
+            <img src="<?php echo base_url() ?>public/img/ornamen/leaves.png" alt="Ornamen" id="leaves" class="position-absolute" width="300" height="300">
+            <img src="<?php echo base_url() ?>public/img/ornamen/ornam2.png" alt="Ornamen" id="ornamen_1" class="position-absolute" width="300" height="300">
+
+
+
+            <img src="<?php echo base_url() ?>public/img/ornamen/leaves.png" alt="Ornamen" id="ornamen_3" class="position-absolute" width="300" height="300">
+            <img src="<?php echo base_url() ?>public/img/ornamen/leaves.png" alt="Ornamen" id="ornamen_4" class="position-absolute" width="300" height="300">
+            <img src="<?php echo base_url() ?>public/img/ornamen/leaves.png" alt="Ornamen" id="ornamen_5" class="position-absolute" width="300" height="300">
+
             <div class="container d-flex flex-column align-items-center py-5">
                 <h2 class="mb-5">Awarding Night Timeline</h2>
+
                 <div class="row mb-3 px-4 py-3 w-75" v-for="item in timeline">
                     <div class="col position-relative">
+                        <img src="<?php echo base_url() ?>public/img/ornamen/ornam1.png" alt="Ornamen" id="ornamen_2" class="position-absolute" width="400" height="400">
+                        <img src="<?php echo base_url() ?>public/img/ornamen/ornam6.png" alt="Ornamen" id="ornamen_2" class="position-absolute" width="325" height="325">
+                        <img src="<?php echo base_url() ?>public/img/ornamen/ornam3.png" alt="Ornamen" id="ornamen_2" class="position-absolute" width="325" height="325">
                         <div class="position-absolute rounded-timeline rounded-pill"></div>
+
                         <h3>{{ item.date }}</h3>
+
                         <p>{{ item.description }}</p>
                     </div>
                 </div>
