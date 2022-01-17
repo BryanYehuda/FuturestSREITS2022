@@ -49,7 +49,7 @@
                        <!-- Form -->
                        <form action="#" class="" id="form" method="post">
                          <p class="shadow-none p-3 mb-5 bg-light rounded fs-6">
-                           !!!ONLY FOR ITS STUDENTS BATCH 2019-2021!!! and will be selected for 20 students
+                           !!!ONLY FOR ITS STUDENTS BATCH 2019-2021!!! and will be selected for 15 students
                            <br>
                            <b>Guide book link:</b>
                            <a href="https://bit.ly/Guidebook3C" target="_blank">Guide Book Climate Change Community</a>
