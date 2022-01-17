@@ -136,12 +136,17 @@ class Home extends CI_Controller
   public function add_suggestion()
   {
     $this->load->model('Contact');
-    
-    if(!$this->form_validation->run()){
+
+    if (!$this->form_validation->run()) {
       echo json_encode($this->form_validation->error_array());
-    }else{
+    } else {
       $this->Contact->addSuggestion();
       echo "1";
     }
+  }
+
+  public function coming_soon()
+  {
+    $this->load->view("coming_soon");
   }
 }

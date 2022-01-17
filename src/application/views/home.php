@@ -24,7 +24,7 @@
     <!-- jumbotron -->
     <section id="jumbotron" class="py-5">
       <div class="container py-5 position-relative">
-        <img src="<?= base_url() ?>/public/img/ornamen/ornam3.png" class="img-fluid position-absolute" id="ornamen_jumbo">
+        <img src="<?= base_url() ?>/public/img/ornamen/ornam3.png" class="d-none d-lg-block img-fluid position-absolute" id="ornamen_jumbo">
         <img src="<?= base_url() ?>/public/img/logo_keren.png" alt="Futurest Logo" class=" img-fluid d-block mx-auto mt-5" width="180">
         <h1 class="text-center">Futurest 2022</h1>
         <p class="text-center w-75 mx-auto mb-4">
