@@ -20,7 +20,6 @@
   ?>
 
   <main id="section">
-
     <section id="jumbotron" class="d-flex align-items-center position-relative">
       <div class="container">
         <div class="row">
@@ -33,14 +32,17 @@
             </p>
             <a href="#timeline" class="btn btn-success btn-lg">Show Timeline</a>
           </div>
-          <div class="d-none d-xl-flex col-xl-4 d-flex align-items-center justify-content-center">
+          <div class="d-none d-xl-flex col-xl-4 d-fle7x align-items-center justify-content-center">
             <i class="bi bi-journal-bookmark"></i>
           </div>
         </div>
       </div>   
     </section>
 
-    <section id="timeline" class="py-5">
+    <section id="timeline" class="py-5 position-relative">
+    <img src="<?php echo base_url() ?>public/img/ornamen/ornam6.png" alt="Ornamen" id="ornamen_1" class="position-absolute" width="300" height="300">
+    <img src="<?php echo base_url() ?>public/img/ornamen/ornam3.png" alt="Ornamen" id="ornamen_2" class="position-absolute" width="300" height="300">
+    <img src="<?php echo base_url() ?>public/img/ornamen/ornam2.png" alt="Ornamen" id="ornamen_3" class="position-absolute" width="300" height="300">
          <div class="container d-flex flex-column align-items-center py-5">
             <h2 class="mb-5">RE Innovation Brainstorm Timeline</h2>
             <div class="row mb-3 px-4 py-3 w-75" v-for="item in timeline">
@@ -53,7 +55,10 @@
          </div>
     </section>
 
-    <section id="prize-pool" class="py-5">
+    <section id="prize-pool" class="py-5 position-relative">
+    <img src="<?php echo base_url() ?>public/img/ornamen/ornam7.png" alt="Ornamen" id="ornamen_prize" class="position-absolute" width="300" height="300">
+    <img src="<?php echo base_url() ?>public/img/ornamen/leaves.png" alt="Ornamen" id="ornamen_prize_2" class="position-absolute" width="300" height="300">
+    <img src="<?php echo base_url() ?>public/img/ornamen/leaf.png" alt="Ornamen" id="ornamen_prize_3" class="position-absolute" width="300" height="300">
       <div class="container py-5">
         <h2 class="text-center mb-5">RE Innovation Prize Pool!</h2>
         <div class="d-flex flex-column flex-md-row align-items-center justify-content-center pt-5">
