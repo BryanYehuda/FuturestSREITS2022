@@ -257,7 +257,7 @@
                          <div class="mb-3">
                            <label for="name"><i class="float"></i> Proof of post a twibbon </label><br>
                            <label for="name"><i class="float"></i> Link : </label>
-                           <a href="https://drive.google.com/drive/folders/1trXDl2rt7olqcQ77HuUH9PGRzDIsbqdg?usp=sharing" class="link-primary">Twibbon</a>
+                           <a href="https://twb.nz/batch1openrecruitment" class="link-primary">Twibbon</a>
                            <input class="form-control text-dark <?php $ok = " ";
                                                                 (!empty($error['twibbon'])) ? $ok = 'is-invalid' :  $ok = '';
                                                                 echo $ok; ?>" type="file" id="twibbon" multiple name="twibbon">
@@ -312,3 +312,4 @@
  </body>
 
  </html>
+
