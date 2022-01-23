@@ -11,7 +11,7 @@
   $this->load->view('template/css');
   ?>
   <!-- Import css if need -->
-  <link rel="stylesheet" href="<?php echo base_url() ?>public/css/pages/re_innovation.css">
+  <link rel="stylesheet" href="<?php echo base_url() ?>public/css/pages/climate_change.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
@@ -32,7 +32,7 @@
             <p class="mb-5">
               <b>Social Project </b>is an event that provides a forum for prospective delegates which are chosen students from ITS to express their ideas as climate activists that are applicable to renewable energy and can have a big impact on the community. They also will receive coaching from professionals in each pathway.
             </p>
-            <a href="#timeline" class="btn btn-success btn-lg">Show Timeline</a>
+            <a href="#timeline" class="btn btn-primary">Show Timeline</a>
           </div>
           <div class="d-none d-xl-flex col-xl-4 d-flex align-items-center justify-content-center">
             <i class="bi bi-journal-bookmark"></i>
@@ -41,7 +41,11 @@
       </div>
     </section>
 
-    <section id="timeline" class="py-5">
+    <section id="timeline" class="py-5 position-relative">
+      <!-- ornamen -->
+      <img src="<?php echo base_url() ?>public/img/ornamen/ornam6.png" alt="Ornamen" id="ornamen_1" class="position-absolute" width="300" height="300">
+      <img src="<?php echo base_url() ?>public/img/ornamen/ornam2.png" alt="Ornamen" id="ornamen_2" class="position-absolute" width="300" height="300">
+
       <div class="container d-flex flex-column align-items-center py-5">
         <h2 class="mb-5">3C (Climate Change Community) Timeline</h2>
         <div class="row mb-3 px-4 py-3 w-75" v-for="item in timeline">
@@ -53,10 +57,9 @@
         </div>
       </div>
 
-
       <h2 class="text-center mb-5">Don't forget to register!</h2>
       <div class="d-flex justify-content-center">
-        <a class="btn btn-success btn-lg" href="<?php echo base_url("register-climate-change-event");?>">
+        <a class="btn btn-primary" href="<?php echo base_url("register-climate-change-event"); ?>">
           Register for Your Self!
         </a>
     </section>

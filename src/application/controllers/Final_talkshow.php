@@ -34,4 +34,3 @@ class Final_talkshow extends CI_Controller {
 		$this->load->view('admin/dashboard_final_talkshow/list', $data);
 	}
 }
-?>

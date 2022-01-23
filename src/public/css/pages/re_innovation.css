@@ -14,13 +14,18 @@
 	bottom: 0;
 	right: 0;
 	z-index: -1;
-	opacity: 0.5;
 }
 
 #jumbotron h1 {
 	font-size: 50px;
 	font-family: MulishBold;
 	display: inline;
+}
+
+@media screen and (max-width: 576px) {
+	#jumbotron h1 {
+		font-size: 30px;
+	}
 }
 
 #jumbotron p {
@@ -32,7 +37,8 @@
 	font-size: 120px;
 }
 
-#jumbotron h1, #jumbotron p {
+#jumbotron h1,
+#jumbotron p {
 	background-color: var(--futurest-green);
 	padding: 0.5rem;
 	border-radius: 0.5rem;
@@ -48,12 +54,14 @@
 #timeline h2 {
 	font-family: MulishSemiBold;
 	font-size: 35px;
+	z-index: 2;
 }
 
 #timeline .row {
 	border-radius: 30px;
 	background: #f3f3f3;
 	box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
+	z-index: 2;
 }
 
 #timeline .row .col .rounded-timeline {
@@ -78,17 +86,10 @@
 #ornamen_1 {
 	left: 0;
 	top: 0;
-	opacity: 0.5;
-}
-
-@media screen and (max-width: 768px) {
-	#ornamen_1 {
-		opacity: 0.25;
-	}
 }
 
 #ornamen_2 {
-	right: 5%;
+	left: 10%;
 	bottom: 0;
 }
 
@@ -100,32 +101,33 @@
 /* prize pool */
 
 #prize-pool {
-  background-color: #f3f3f3;
-  min-height: 730px;
+	background-color: #f3f3f3;
+	min-height: 730px;
 }
 
 #prize-pool h2 {
-  font-family: MulishSemiBold;
+	font-family: MulishSemiBold;
 	font-size: 35px;
 }
 
 #prize-pool i {
-  font-size: 300px;
+	font-size: 300px;
 }
 
 @media screen and (max-width: 768px) {
-  #prize-pool i {
-    font-size: 200px;
-    margin-bottom: 40px;
-  }
+	#prize-pool i {
+		font-size: 200px;
+		margin-bottom: 40px;
+	}
 
-  #prize-pool h2, #prize-pool p {
-    text-align: center !important;
-  }
+	#prize-pool h2,
+	#prize-pool p {
+		text-align: center !important;
+	}
 }
 
 #prize-pool p {
-  font-family: MulishLight;
+	font-family: MulishLight;
 	font-size: 18px;
 }
 
@@ -142,14 +144,7 @@
 }
 
 #ornamen_prize_3 {
-	bottom: 3%;
-	right: 0;
+	bottom: 7%;
+	right: 3%;
 	opacity: 0.75;
-	transform: rotate(10deg);
-}
-
-@media screen and (max-width: 900px) {
-	#ornamen_prize_2, #ornamen_prize, #ornamen_prize_3 {
-		opacity: 0;
-	}
 }

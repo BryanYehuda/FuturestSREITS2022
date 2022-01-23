@@ -14,11 +14,11 @@
 	bottom: 0;
 	right: 0;
 	z-index: -1;
-	opacity: 0.4;
 }
 
 #jumbotron h1 {
 	font-size: 50px;
+	display: inline;
 	font-family: MulishBold;
 }
 
@@ -29,6 +29,13 @@
 
 #jumbotron i {
 	font-size: 120px;
+}
+
+#jumbotron h1,
+#jumbotron p {
+	background-color: var(--futurest-green);
+	padding: 0.5rem;
+	border-radius: 0.5rem;
 }
 
 /* Timeline */
@@ -44,9 +51,9 @@
 }
 
 @media screen and (max-width: 576px) {
-  #timeline h2 {
-    font-size: 30px;
-  }
+	#timeline h2 {
+		font-size: 30px;
+	}
 }
 
 #timeline .row {
@@ -70,14 +77,13 @@
 }
 
 @media screen and (max-width: 576px) {
-  #timeline .row h3 {
-    font-family: MulishSemiBold;
-    font-size: 20px;
-  }
+	#timeline .row h3 {
+		font-family: MulishSemiBold;
+		font-size: 20px;
+	}
 }
 
 #timeline .row p {
 	font-family: MulishLight;
 	font-size: 18px;
 }
-

@@ -1,7 +1,3 @@
-body {
-	overflow-x: hidden;
-}
-
 /* Jumbotron */
 
 #jumbotron {
@@ -10,7 +6,7 @@ body {
 
 #jumbotron::before {
 	content: "";
-	background-image: url("../../img/awarding-night.jpg");
+	background-image: url("../../img/re_innovation.jpg");
 	position: absolute;
 	background-size: cover;
 	top: 0;
@@ -24,6 +20,12 @@ body {
 	font-size: 50px;
 	font-family: MulishBold;
 	display: inline;
+}
+
+@media screen and (max-width: 576px) {
+	#jumbotron h1 {
+		font-size: 30px;
+	}
 }
 
 #jumbotron p {
@@ -52,20 +54,14 @@ body {
 #timeline h2 {
 	font-family: MulishSemiBold;
 	font-size: 35px;
-	z-index: 22;
-}
-
-@media screen and (max-width: 576px) {
-	#timeline h2 {
-		font-size: 30px;
-	}
+	z-index: 2;
 }
 
 #timeline .row {
 	border-radius: 30px;
 	background: #f3f3f3;
 	box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
-	z-index: 33;
+	z-index: 2;
 }
 
 #timeline .row .col .rounded-timeline {
@@ -82,32 +78,17 @@ body {
 	font-size: 25px;
 }
 
-@media screen and (max-width: 576px) {
-	#timeline .row h3 {
-		font-family: MulishSemiBold;
-		font-size: 20px;
-	}
-}
-
 #timeline .row p {
 	font-family: MulishLight;
 	font-size: 18px;
 }
 
-#ornamen_2 {
-	right: 0%;
-	bottom: 6;
+#ornamen_1 {
+	left: 5%;
+	top: 5%;
 }
 
-#ornamen_3 {
-	right: 42%;
-	top: 55%;
-}
-#ornamen_4 {
-	right: 30%;
-	top: 55%;
-}
-#ornamen_5 {
-	right: 54%;
-	top: 55%;
+#ornamen_2 {
+	bottom: 5%;
+	right: 5%;
 }
