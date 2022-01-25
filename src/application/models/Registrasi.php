@@ -8,7 +8,8 @@ class Registrasi extends CI_Model{
         return $hail->result_array();
     }
     
-    function regisRE101($data){
+    function regisRE101($data)
+    {
         $regis = array(
             'pendaftaranre101_name'                 => $this->input->post('name'),
             'pendaftaranre101_email'                => $this->input->post('email'),
@@ -26,7 +27,8 @@ class Registrasi extends CI_Model{
         $this->db->insert('pendaftaran_re101', $regis);
     }
 
-    function regisGrandTalkshow($data){
+    function regisGrandTalkshow($data)
+    {
         $regis = array(
             'pendaftarangrandtalkshow_name'                 => $this->input->post('name'),
             'pendaftarangrandtalkshow_email'                => $this->input->post('email'),
@@ -45,7 +47,8 @@ class Registrasi extends CI_Model{
         $this->db->insert('pendaftaran_grandtalkshow', $regis);
     }
 
-    function regisFinalTalkshow($data){
+    function regisFinalTalkshow($data)
+    {
         $regis = array(
             'pendaftaranfinaltalkshow_name'                 => $this->input->post('name'),
             'pendaftaranfinaltalkshow_email'                => $this->input->post('email'),
@@ -63,7 +66,8 @@ class Registrasi extends CI_Model{
         $this->db->insert('pendaftaran_finaltalkshow', $regis);
     }
 
-    function regis3C($data){
+    function regis3C($data)
+    {
         $regis = array(
             'pendaftaranclimatechangecommunity_name'                 => $this->input->post('name'),
             'pendaftaranclimatechangecommunity_email'                => $this->input->post('email'),
@@ -88,7 +92,8 @@ class Registrasi extends CI_Model{
         $this->db->insert('pendaftaran_climatechangecommunity', $regis);
     }
 
-    function regisReInnovation($data){
+    function regisReInnovation($data)
+    {
         $regis = array(
             'pendaftaranreinnovation_teamname'          => $this->input->post('teamname'),
             'pendaftaranreinnovation_college'           => $this->input->post('college'),
@@ -114,38 +119,48 @@ class Registrasi extends CI_Model{
             'pendaftaranreinnovation_dataUpdated'       => date('Y-m-d')
         );
         
-        if(!empty($this->input->post('name_3'))){
+        if(!empty($this->input->post('name_3')))
+        {
             $regis['pendaftaranreinnovation_3_name']            = $this->input->post('name_3');
         }
-        if(!empty($this->input->post('major_3'))){
+        if(!empty($this->input->post('major_3')))
+        {
             $regis['pendaftaranreinnovation_3_major']           = $this->input->post('major_3');
         }
-        if(!empty($this->input->post('batch_3'))){
+        if(!empty($this->input->post('batch_3')))
+        {
             $regis['pendaftaranreinnovation_3_batch']           = $this->input->post('batch_3');
         }
-        if(!empty($data['card_3'])){
+        if(!empty($data['card_3']))
+        {
             $regis['pendaftaranreinnovation_3_card']            = $data['card_3'];
         }
-        if(!empty($data['activestudent_3'])){
+        if(!empty($data['activestudent_3']))
+        {
             $regis['pendaftaranreinnovation_3_activestudent']   = $data['activestudent_3'];
         }
-        if(!empty($data['photo_3'])){
+        if(!empty($data['photo_3']))
+        {
             $regis['pendaftaranreinnovation_3_photo']           = $data['photo_3'];
         }
-        if(!empty($this->input->post('phone_3'))){
+        if(!empty($this->input->post('phone_3')))
+        {
             $regis['pendaftaranreinnovation_3_phone']           = $this->input->post('phone_3');
         }
-        if(!empty($this->input->post('email_3'))){
+        if(!empty($this->input->post('email_3')))
+        {
             $regis['pendaftaranreinnovation_3_email']           = $this->input->post('email_3');
         }
-        if(!empty($data['follow_3'])){
+        if(!empty($data['follow_3']))
+        {
             $regis['pendaftaranreinnovation_3_follow']          = $data['follow_3'];
         }
 
         $this->db->insert('pendaftaran_reinnovation', $regis);
     }
 
-    function regisEssayCompetitionteam($data){
+    function regisEssayCompetitionteam($data)
+    {
         $regis = array(
             'pendaftaranessaycompetition_teamname'          => $this->input->post('teamname'),
             'pendaftaranessaycompetition_1_name'            => $this->input->post('name_1'),
@@ -170,10 +185,12 @@ class Registrasi extends CI_Model{
             'pendaftaranessaycompetition_dataUpdated'       => date('Y-m-d')
         );
         
-        if(!empty($this->input->post('major_1'))){
+        if(!empty($this->input->post('major_1')))
+        {
             $regis['pendaftaranessaycompetition_1_major']       = $this->input->post('major_1');
         }
-        if(!empty($this->input->post('major_2'))){
+        if(!empty($this->input->post('major_2')))
+        {
             $regis['pendaftaranessaycompetition_2_major']       = $this->input->post('major_2');
         }
         
@@ -203,16 +220,20 @@ class Registrasi extends CI_Model{
         $this->db->insert('pendaftaran_essaycompetition', $regis);
     }
 
-    function is_it_empty($error){
-        foreach($error as $e){
-            if(!empty($e)){
+    function is_it_empty($error)
+    {
+        foreach($error as $e)
+        {
+            if(!empty($e))
+            {
                 return false;
             }
         }
         return true;
     }
 
-    function showDataUnVerified($nama_table, $limit, $start){
+    function showDataUnVerified($nama_table, $limit, $start)
+    {
         return $this->db->get($nama_table, $limit, $start)->result_array();
     }
 }
