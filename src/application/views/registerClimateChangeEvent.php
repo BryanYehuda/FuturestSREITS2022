@@ -49,7 +49,7 @@
                        <!-- Form -->
                        <form action="#" class="" id="form" method="post">
                          <p class="shadow-none p-3 mb-5 bg-light rounded fs-6">
-                           !!!ONLY FOR ITS STUDENTS BATCH 2019-2021!!! and will be selected for 15 students
+                           Only for ITS students batch 2019-2021 and will be selected for 15 students.
                            <br>
                            <b>Guide book link:</b>
                            <a href="https://bit.ly/Guidebook3C" target="_blank">Guide Book Climate Change Community</a>
@@ -210,7 +210,7 @@
                          </div>
 
                          <br>
-                         <label for="name"><i class="float"></i> Are you committed to following the event from start to finish? (note: if you leave the event, there will be a penalty in the form of money) </label>
+                         <label for="name"><i class="float"></i> Are you committed to following the event from start to finish? (note: if you leave the event, there will be a penalty) </label>
                          <div class="form-check">
                            <input class="form-check-input" type="radio" name="committed" id="flexCheckChecked" value="yes" required>
                            <label class="form-check-label" for="flexCheckChecked">
