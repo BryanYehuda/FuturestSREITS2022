@@ -72,7 +72,7 @@
         <p class="text-center mb-3">
           The program will consist of Curriculum that have been carefully set to prepare you on Climate Change Insights and Skill Development. <br>  There will be renewable energy enrichment, competencies development, mentoring session and community night, and also real time project based. 
           </p>
-          <img src="<?php echo base_url() ?>/public/img/3c_desc.png" class=" my-3 mx-auto desc-img">
+          <img src="<?php echo base_url() ?>/public/img/3c_desc.png" class= "img-fluid my-3 mx-auto desc-img">
         </div>
       </div>
     </section>

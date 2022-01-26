@@ -114,3 +114,9 @@
 .desc-img{
 	width: 50%;
 }
+
+@media screen and (max-width: 992px) {
+	.desc-img {
+		width: 90% !important;
+	}
+}
