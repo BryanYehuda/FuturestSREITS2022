@@ -22,7 +22,7 @@
 
   <main id="section">
 
-    <section id="jumbotron" class="d-flex align-items-center position-relative">
+    <section id="jumbotron" class="d-flex align-items-center position-relative img-fluid">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center text-xl-start col-xl-8">
@@ -30,7 +30,8 @@
               3C (Climate Change Community)
             </h1>
             <p class="mb-5">
-              <b>Social Project </b>is an event that provides a forum for prospective delegates which are chosen students from ITS to express their ideas as climate activists that are applicable to renewable energy and can have a big impact on the community. They also will receive coaching from professionals in each pathway.
+              <b>Climate Change Community </b>is a 4 Months Program (2 Months Learning + 2 Months Implementation) for High Performer Students to express their ideas as
+              Climate Activists on Renewable Energy Implementation in Indonesia. They also will receive coaching from professionals that are exclusively provided. It’s designed for 15 Selected Delegates from Institut Teknologi Sepuluh Nopember Students who are passionate to learn more about Climate Change Mitigation and motivated to build awareness through campaigns while creating impacts for the society through Real Time Project-Based Implementation.
             </p>
             <a href="#timeline" class="btn btn-primary">Show Timeline</a>
           </div>
@@ -62,6 +63,18 @@
         <a class="btn btn-primary" href="<?php echo base_url("register-climate-change-event"); ?>">
           Register for Your Self!
         </a>
+    </section>
+
+    <section id="description" class="py-5 position-relative">
+      <div class="container d-flex flex-column align-items-center py-5">
+        <h2 class="text-center mb-5">Description</h2>
+        <div class="row">
+        <p class="text-center mb-3">
+          The program will consist of Curriculum that have been carefully set to prepare you on Climate Change Insights and Skill Development. <br>  There will be renewable energy enrichment, competencies development, mentoring session and community night, and also real time project based. 
+          </p>
+          <img src="<?php echo base_url() ?>/public/img/3c_desc.png" class=" my-3 mx-auto desc-img">
+        </div>
+      </div>
     </section>
 
 
