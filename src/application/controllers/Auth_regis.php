@@ -16,7 +16,7 @@ class Auth_regis extends CI_Controller{
     }
 	
     public function regisRE101()
-	{
+    {
         $this->load->model("Registrasi");
         $config = array(
 			'allowed_types'	=> 'jpg|png|jpeg',
@@ -52,7 +52,7 @@ class Auth_regis extends CI_Controller{
 			'sharestory'        => $this->sharestory->display_errors()
 		);
         if(!$this->form_validation->run() || !$this->Registrasi->is_it_empty($error))
-		{
+        {
 			$error = array_merge($error, $this->form_validation->error_array());
 			if(empty($error['followfuturestig']))
 			{
@@ -124,7 +124,7 @@ class Auth_regis extends CI_Controller{
 		);
         //var_dump($this->input->post());
         if(!$this->form_validation->run() || !$this->Registrasi->is_it_empty($error))
-		{
+        {
 			$error = array_merge($error, $this->form_validation->error_array());
 			if(empty($error['followfuturestig']))
 			{
@@ -473,7 +473,7 @@ class Auth_regis extends CI_Controller{
 		);
         //var_dump($this->input->post());
         if(!$this->form_validation->run() || !$this->Registrasi->is_it_empty($error))
-		{
+        {
 			$error = array_merge($error, $this->form_validation->error_array());
 			if(empty($error['followfuturestig']))
 			{
@@ -491,9 +491,7 @@ class Auth_regis extends CI_Controller{
 				unlink($path.$data['sharestory']);
 			}
 			echo json_encode($error);
-		}
-		else
-		{
+		}else{
 			$this->Registrasi->regisFinalTalkshow($data);
 			echo "1";
 		}
@@ -559,7 +557,7 @@ class Auth_regis extends CI_Controller{
 		);
         //var_dump($this->input->post());
         if((!$this->form_validation->run() || !$this->Registrasi->is_it_empty($error) || (empty($this->input->post('prioritze')) || empty($this->input->post('willingness')) || empty($this->input->post('committed')))))
-		{
+        {
 			$error = array_merge($error, $this->form_validation->error_array());
 			if(empty($error['followfuturestig']))
 			{
@@ -616,7 +614,8 @@ class Auth_regis extends CI_Controller{
 		$this->card2->do_upload('card_2');
 		$data['card_2'] = $this->card2->data('file_name');
 		$error['card_2'] = $this->card2->display_errors();
-		if(!empty($_FILES['card_3']['name'])){
+		if(!empty($_FILES['card_3']['name']))
+		{
 			$this->load->library('upload', $config, 'card3');
 			$this->card3->do_upload('card_3');
 			$data['card_3'] = $this->card3->data('file_name');
@@ -693,13 +692,13 @@ class Auth_regis extends CI_Controller{
 			'allowed_types' => 'jpg|png|jpeg',
 			'upload_path'	=> './upload/REinnovation/payment'
 		);
-
+        /*
 		$this->load->library('upload', $config, 'payment');
 		$this->payment->initialize($config);
         $this->payment->do_upload('payment');
 		$data['payment'] = $this->payment->data('file_name');
 		$error['payment'] = $this->payment->display_errors();
-		
+		*/
 		if(!$this->form_validation->run() || !$this->Registrasi->is_it_empty($error))
 		{
 			$error = array_merge($error, $this->form_validation->error_array());
@@ -728,8 +727,7 @@ class Auth_regis extends CI_Controller{
 				$path = './upload/REinnovation/follow/';
 				unlink($path.$data['follow_2']);
 			}
-			if(empty($error['follow_3']) && !empty($_FILES['follow_3']['name']))
-			{
+			if(empty($error['follow_3']) && !empty($_FILES['follow_3']['name'])){
 				$path = './upload/REinnovation/follow/';
 				unlink($path.$data['follow_3']);
 			}
@@ -763,11 +761,11 @@ class Auth_regis extends CI_Controller{
 				$path = './upload/REinnovation/card/';
 				unlink($path.$data['card_3']);
 			}
-			if(empty($error['payment']))
+			/*if(empty($error['payment']))
 			{
 				$path = './upload/REinnovation/payment/';
 				unlink($path.$data['payment']);
-			}
+			}*/
 			
 			echo json_encode($error);
 		}
@@ -1034,17 +1032,17 @@ class Auth_regis extends CI_Controller{
 			echo "1";
 		}
 	}
-
+	
 	function min_100_words($text)
 	{
         $array_words = explode(" ", $text);
 
         if(sizeof($array_words) >= 100)
-		{
+        {
             return TRUE;
         }
-		else
-		{
+        else
+        {
             $this->form_validation->set_message('min_100_words', 'Please fill in the motivation column with at least 100 words ');
             return FALSE;
         }
