@@ -53,7 +53,7 @@ class Home extends CI_Controller
     public function registerReInnovationComp()
     {
         //$this->load->view('registerReInnovationComp');
-        $this->load->view('coming_soon');
+        $this->load->view('registerReInnovationComp');
     }
 
     public function registerGrandTalkshowEvent()
@@ -99,7 +99,7 @@ class Home extends CI_Controller
         //$this->load->view('choose-event');
         $this->load->view('coming_soon');
     }
-    
+
     public function regisClosed()
     {
         $this->load->view('close_regis_grandtalk');
@@ -137,20 +137,20 @@ class Home extends CI_Controller
     {
         $this->load->view('details_final_talkshow');
     }
-    
+
     public function re_101()
     {
         //$this->load->view("details_re_101");
         $this->load->view("coming_soon_re101");
     }
-    
+
     public function add_suggestion()
     {
         $this->load->model('Contact');
-        
-        if(!$this->form_validation->run()){
+
+        if (!$this->form_validation->run()) {
             echo json_encode($this->form_validation->error_array());
-        }else{
+        } else {
             $this->Contact->addSuggestion();
             echo "1";
         }
@@ -159,5 +159,4 @@ class Home extends CI_Controller
     {
         $this->load->view("coming_soon");
     }
-
 }
