@@ -114,7 +114,7 @@ class National_essay extends CI_Controller {
 			unlink('./upload/EssayCompetition/photo/' . $data['pendaftaranessaycompetition_2_photo']);
 			unlink('./upload/EssayCompetition/activestudent/' . $data['pendaftaranessaycompetition_2_activestudent']);
 		}
-		unlink('./upload/EssayCompetition/payment/' . $data['pendaftaranessaycompetition_payment']);
+		//unlink('./upload/EssayCompetition/payment/' . $data['pendaftaranessaycompetition_payment']);
 		$this->Dashboard->deleteDataEssayId($id);
 		$mail = new PHPMailer(true);
 		try

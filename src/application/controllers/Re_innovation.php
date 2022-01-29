@@ -132,9 +132,9 @@ class Re_innovation extends CI_Controller {
         if(file_exists('./upload/EssayCompetition/activestudent/' . $data['pendaftaranreinnovation_3_activestudent'])){
             unlink('./upload/EssayCompetition/activestudent/' . $data['pendaftaranreinnovation_3_activestudent']);
         }
-        if(file_exists('./upload/EssayCompetition/payment/' . $data['pendaftaranreinnovation_payment'])){
+        /*if(file_exists('./upload/EssayCompetition/payment/' . $data['pendaftaranreinnovation_payment'])){
             unlink('./upload/EssayCompetition/payment/' . $data['pendaftaranreinnovation_payment']);
-        }
+        }*/
 		$this->Dashboard->deleteDataREIId($id);
 		$mail = new PHPMailer(true);
 		try

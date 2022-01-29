@@ -134,10 +134,10 @@
                                 </ul>
                             </h5> 
                             <?php endif;?>
-                            
+                            <!--
                             <p class="fs-6 text-black-50 regular-text" style="margin-bottom: -4px;">Proof of Payment</p>
                             <a href="<?= base_url('/upload/REinnovation/payment/' . $item['pendaftaranreinnovation_payment'])?>" target="_blank">Show</a></h5>
-
+                            -->
                             <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 2px;">Confirmation?</p>
                             <a href= "re_innovation/confirm/<?= $item['pendaftaranreinnovation_id']?>" class="btn btn-success" id="accept-<?= $item['pendaftaranreinnovation_id']?>" onclick="accept(this.id)">
                                 <i class="hide loading-icon fa fa-spinner fa-spin d-none" id="loading-accept-<?= $item['pendaftaranreinnovation_id']?>"></i>Accept

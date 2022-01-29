@@ -809,14 +809,14 @@ class Auth_regis extends CI_Controller{
 		$this->activestudent->initialize($config);
         $this->activestudent->do_upload('activestudent_1');
 
-		$config = array(
+		/*$config = array(
 			'allowed_types' => 'jpg|png|jpeg',
 			'upload_path'	=> './upload/EssayCompetition/payment'
 		);
 
 		$this->load->library('upload', $config, 'payment');
 		$this->payment->initialize($config);
-        $this->payment->do_upload('payment');
+        $this->payment->do_upload('payment');*/
 
 		$config = array(
 			'allowed_types' => 'jpg|png|jpeg',
@@ -834,16 +834,14 @@ class Auth_regis extends CI_Controller{
 			'card_1' 		    => $this->card->data('file_name'),
 			'follow_1' 	        => $this->follow->data('file_name'),
 			'photo_1' 	        => $this->photo->data('file_name'),
-			'activestudent_1'   => $this->activestudent->data('file_name'),
-			'payment'		    => $this->payment->data('file_name')
+			'activestudent_1'   => $this->activestudent->data('file_name')
 		);
 
 		$error = array(
 			'card_1' 		    => $this->card->display_errors(),
 			'follow_1'          => $this->follow->display_errors(),
 			'photo_1'           => $this->photo->display_errors(),
-			'activestudent_1'   => $this->activestudent->display_errors(),
-			'payment'		    => $this->payment->display_errors()
+			'activestudent_1'   => $this->activestudent->display_errors()
 		);
 
 		if(!$this->form_validation->run() || !$this->Registrasi->is_it_empty($error))
@@ -869,11 +867,11 @@ class Auth_regis extends CI_Controller{
 				$path = './upload/EssayCompetition/activestudent/';
 				unlink($path.$data['activestudent_1']);
 			}
-			if(empty($error['payment']))
+			/*if(empty($error['payment']))
 			{
 				$path = './upload/EssayCompetition/payment/';
 				unlink($path.$data['payment']);
-			}
+			}*/
 			echo json_encode($error);
 		}
 		else
@@ -927,14 +925,14 @@ class Auth_regis extends CI_Controller{
 		$this->activestudent2->initialize($config);
         $this->activestudent2->do_upload('activestudent_2');
 
-		$config = array(
+		/*$config = array(
 			'allowed_types' => 'jpg|png|jpeg',
 			'upload_path'	=> './upload/EssayCompetition/payment'
 		);
 
 		$this->load->library('upload', $config, 'payment');
 		$this->payment->initialize($config);
-        $this->payment->do_upload('payment');
+        $this->payment->do_upload('payment');*/
 
 		$config = array(
 			'allowed_types' => 'jpg|png|jpeg',
@@ -960,8 +958,7 @@ class Auth_regis extends CI_Controller{
 			'card_2' 		    => $this->card2->data('file_name'),
 			'follow_2' 	        => $this->follow2->data('file_name'),
 			'photo_2' 	        => $this->photo2->data('file_name'),
-			'activestudent_2'   => $this->activestudent2->data('file_name'),
-			'payment'		    => $this->payment->data('file_name')
+			'activestudent_2'   => $this->activestudent2->data('file_name')
 		);
 
 		$error = array(
@@ -972,8 +969,7 @@ class Auth_regis extends CI_Controller{
 			'card_2' 		    => $this->card2->display_errors(),
 			'follow_2'          => $this->follow2->display_errors(),
 			'photo_2'           => $this->photo2->display_errors(),
-			'activestudent_2'   => $this->activestudent2->display_errors(),
-			'payment'		    => $this->payment->display_errors()
+			'activestudent_2'   => $this->activestudent2->display_errors()
 		);
 
 		if(!$this->form_validation->run() || !$this->Registrasi->is_it_empty($error))
@@ -1019,11 +1015,11 @@ class Auth_regis extends CI_Controller{
 				$path = './upload/EssayCompetition/activestudent/';
 				unlink($path.$data['activestudent_2']);
 			}
-			if(empty($error['payment']))
+			/*if(empty($error['payment']))
 			{
 				$path = './upload/EssayCompetition/payment/';
 				unlink($path.$data['payment']);
-			}
+			}*/
 			echo json_encode($error);
 		}
 		else
