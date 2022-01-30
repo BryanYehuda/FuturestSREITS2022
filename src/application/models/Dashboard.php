@@ -131,5 +131,19 @@ class Dashboard extends CI_Model
         $this->db->where('pendaftaranreinnovation_id', $id);
         $this->db->update("pendaftaran_reinnovation");
     }
+    
+    function confirmEssaypay($id)
+    {
+        $this->db->set('pendaftaranessaycompetition_status', 2);
+        $this->db->where('pendaftaranessaycompetition_id', $id);
+        $this->db->update("pendaftaran_essaycompetition");
+    }
+
+    function cancelEssaypay($id)
+    {
+        $this->db->set('pendaftaranessaycompetition_status', 1);
+        $this->db->where('pendaftaranessaycompetition_id', $id);
+        $this->db->update("pendaftaran_essaycompetition");
+    }
 }
 ?>

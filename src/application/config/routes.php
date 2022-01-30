@@ -87,6 +87,7 @@ $route['dashboard-awarding-night-list'] = "awarding_night/list";
 $route['dashboard-national-essay'] = "national_essay";
 $route['dashboard-national-essay-list'] = "national_essay/list";
 $route['dashboard-national-essay-confirmation'] = "national_essay/confirmation";
+$route['dashboard-national-essay-payment'] = "national_essay/payment";
 
 //Dashboard RE Innovation
 $route['dashboard-re-innovation'] = "re_innovation";
