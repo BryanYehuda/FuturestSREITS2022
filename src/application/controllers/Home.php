@@ -80,7 +80,14 @@ class Home extends CI_Controller
     }
     public function registerClimateChangeEvent()
     {
-        $this->load->view('registerClimateChangeEvent');
+        date_default_timezone_set("Asia/Jakarta");
+        $date_now = date("Y-m-d H:i:s");
+        
+        if ($date_now < '2022-01-31 07:00:10') {
+            $this->load->view('registerClimateChangeEvent');
+        }else{
+            $this->load->view('finish_regist');
+        }
     }
 
     public function registerEssayCompTeam()
