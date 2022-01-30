@@ -31,7 +31,7 @@ class User extends CI_Controller {
 		}
 		
 	}
-
+	/*
 	public function payment()
 	{
 		$table = $this->session->userdata('account_table');
@@ -45,7 +45,7 @@ class User extends CI_Controller {
 			$this->load->view('user/dashboard_re_innovation/payment', array('data' => $data));
 		}
 	}
-
+	*/
 	public function team()
 	{
 		$table = $this->session->userdata('account_table');

@@ -92,6 +92,7 @@ $route['dashboard-national-essay-confirmation'] = "national_essay/confirmation";
 $route['dashboard-re-innovation'] = "re_innovation";
 $route['dashboard-re-innovation-list'] = "re_innovation/list";
 $route['dashboard-re-innovation-confirmation'] = "re_innovation/confirmation";
+$route['dashboard-re-innovation-payment'] = "re_innovation/payment";
 
 // Events
 $route['grand-talkshow'] = 'home/grand_talkshow';

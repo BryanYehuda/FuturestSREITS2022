@@ -35,7 +35,7 @@ class Re_innovation extends CI_Controller {
 		$tableName = $this->session->userdata('account_table');
 		$this->load->model("Dashboard");
 		$data =[
-			'data' => $this->Dashboard->getDataREIWhere(1)
+			'data' => array_merge($this->Dashboard->getDataREIWhere(2), $this->Dashboard->getDataREIWhere(1))
 		];
 		$this->load->view('admin/dashboard_re_innovation/list', $data);
 	}
@@ -160,6 +160,32 @@ class Re_innovation extends CI_Controller {
 		$mail->smtpClose();		
 		$this->session->set_flashdata('response', '<div class="alert alert-success" role="alert">Berhasil mereject peserta!</div>');
 		redirect('dashboard-re-innovation-confirmation');
+	}
+
+	public function payment()
+    {
+        $tableName = $this->session->userdata('account_table');
+		$this->load->model("Dashboard");
+		$data =[
+			'data' => array_merge($this->Dashboard->getDataREIWhere(1), $this->Dashboard->getDataREIWhere(2))
+		];
+		$this->load->view('admin/dashboard_re_innovation/payment', $data);
+    }
+	
+	public function confirmpay($id)
+	{
+		$this->load->model("Dashboard");
+		$this->Dashboard->confirmREIpay($id);
+		$this->session->set_flashdata('response', '<div class="alert alert-success" role="alert">Berhasil mengubah status pembayaran peserta!</div>');
+		redirect('dashboard-re-innovation-payment');
+	}
+
+	public function cancelpay($id)
+	{
+		$this->load->model("Dashboard");
+		$this->Dashboard->cancelREIpay($id);
+		$this->session->set_flashdata('response', '<div class="alert alert-danger" role="alert">Berhasil membatalkan status pembayaran peserta!</div>');
+		redirect('dashboard-re-innovation-payment');
 	}
 }
 ?>
