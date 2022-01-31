@@ -132,58 +132,7 @@
                 <!-- Announcement card -->
                 <div class="row announcement pb-5">
                     <h4 class="mb-4 primary-text">Announcement</h4>
-                    <div class="col-md-6 p-2">
-                        <div class="card announcement-card shadow">
-                            <div class="card-body">
-                                <h5 class="card-title primary-text">Upload Abstract</h5>
-                                <p class="card-text regular-text">
-                                    Nulla auctor sollicitudin sem, sed sagittis ex porta ac. Cras accumsan elit quis
-                                    metus fringilla, vitae pretium felis aliquam. Mauris ultrices sapien quis felis
-                                    tincidunt vehicula. Nullam ac elementum ex. Praesent fermentum tincidunt quam nec
-                                    iaculis.</p>
-                                <a href="" class="btn btn-outline-success">Upload</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 p-2">
-                        <div class="card announcement-card shadow">
-                            <div class="card-body">
-                                <h5 class="card-title primary-text">Workshop</h5>
-                                <p class="card-text regular-text">
-                                    Nulla auctor sollicitudin sem, sed sagittis ex porta ac. Cras accumsan elit quis
-                                    metus fringilla, vitae pretium felis aliquam. Mauris ultrices sapien quis felis
-                                    tincidunt vehicula. Nullam ac elementum ex. Praesent fermentum tincidunt quam nec
-                                    iaculis.</p>
-                                <a href="" class="btn btn-outline-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 p-2">
-                        <div class="card announcement-card shadow">
-                            <div class="card-body">
-                                <h5 class="card-title primary-text">Upload Full Paper</h5>
-                                <p class="card-text regular-text">
-                                    Nulla auctor sollicitudin sem, sed sagittis ex porta ac. Cras accumsan elit quis
-                                    metus fringilla, vitae pretium felis aliquam. Mauris ultrices sapien quis felis
-                                    tincidunt vehicula. Nullam ac elementum ex. Praesent fermentum tincidunt quam nec
-                                    iaculis.</p>
-                                <a href="" class="btn btn-outline-success">Upload</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 p-2">
-                        <div class="card announcement-card shadow">
-                            <div class="card-body">
-                                <h5 class="card-title primary-text">Essay Submission</h5>
-                                <p class="card-text regular-text">
-                                    Nulla auctor sollicitudin sem, sed sagittis ex porta ac. Cras accumsan elit quis
-                                    metus fringilla, vitae pretium felis aliquam. Mauris ultrices sapien quis felis
-                                    tincidunt vehicula. Nullam ac elementum ex. Praesent fermentum tincidunt quam nec
-                                    iaculis.</p>
-                                <a href="" class="btn btn-outline-success">Upload</a>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
                 <!-- /Announcement card -->
             </div>

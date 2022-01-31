@@ -98,11 +98,7 @@
                         <div class="card announcement-card shadow">
                             <div class="card-body">
                                 <h5 class="card-title primary-text">Abstract List</h5>
-                                <p class="card-text regular-text">
-                                    Nulla auctor sollicitudin sem, sed sagittis ex porta ac. Cras accumsan elit quis
-                                    metus fringilla, vitae pretium felis aliquam. Mauris ultrices sapien quis felis
-                                    tincidunt vehicula. Nullam ac elementum ex. Praesent fermentum tincidunt quam nec
-                                    iaculis.</p>
+                                
                                 <a href="" class="btn btn-outline-success">View</a>
                             </div>
                         </div>
@@ -111,11 +107,7 @@
                         <div class="card announcement-card shadow">
                             <div class="card-body">
                                 <h5 class="card-title primary-text">Workshop</h5>
-                                <p class="card-text regular-text">
-                                    Nulla auctor sollicitudin sem, sed sagittis ex porta ac. Cras accumsan elit quis
-                                    metus fringilla, vitae pretium felis aliquam. Mauris ultrices sapien quis felis
-                                    tincidunt vehicula. Nullam ac elementum ex. Praesent fermentum tincidunt quam nec
-                                    iaculis.</p>
+                                
                                 <a href="" class="btn btn-outline-success">Link</a>
                             </div>
                         </div>
@@ -124,11 +116,7 @@
                         <div class="card announcement-card shadow">
                             <div class="card-body">
                                 <h5 class="card-title primary-text">Full Paper List</h5>
-                                <p class="card-text regular-text">
-                                    Nulla auctor sollicitudin sem, sed sagittis ex porta ac. Cras accumsan elit quis
-                                    metus fringilla, vitae pretium felis aliquam. Mauris ultrices sapien quis felis
-                                    tincidunt vehicula. Nullam ac elementum ex. Praesent fermentum tincidunt quam nec
-                                    iaculis.</p>
+                                
                                 <a href="" class="btn btn-outline-success">View</a>
                             </div>
                         </div>
@@ -137,11 +125,7 @@
                         <div class="card announcement-card shadow">
                             <div class="card-body">
                                 <h5 class="card-title primary-text">Essay List</h5>
-                                <p class="card-text regular-text">
-                                    Nulla auctor sollicitudin sem, sed sagittis ex porta ac. Cras accumsan elit quis
-                                    metus fringilla, vitae pretium felis aliquam. Mauris ultrices sapien quis felis
-                                    tincidunt vehicula. Nullam ac elementum ex. Praesent fermentum tincidunt quam nec
-                                    iaculis.</p>
+                                
                                 <a href="" class="btn btn-outline-success">View</a>
                             </div>
                         </div>
