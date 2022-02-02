@@ -57,8 +57,8 @@ class Home extends CI_Controller
     }
     public function registerReInnovationComp()
     {
-        //$this->load->view('registerReInnovationComp');
         $this->load->view('registerReInnovationComp');
+        //$this->load->view('registerReInnovationComp');
     }
 
     public function registerGrandTalkshowEvent()
