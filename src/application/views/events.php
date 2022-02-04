@@ -91,7 +91,6 @@
     </section>
 
     <section id="timeline" class="py-5 position-relative">
-      <img src="<?php echo base_url() ?>public/img/ornamen/ornam1.png" alt="Ornamen" id="ornamen_timeline" class="position-absolute" width="300" height="300">
       <div class="container d-flex flex-column align-items-center py-5">
         <h2 class="mb-5">General Timeline</h2>
         <div class="row mb-3 px-4 py-3 w-75" v-for="item in timeline">

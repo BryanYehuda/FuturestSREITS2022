@@ -44,9 +44,6 @@
 
     <section id="timeline" class="py-5 position-relative">
       <!-- ornamen -->
-      <img src="<?php echo base_url() ?>public/img/ornamen/ornam6.png" alt="Ornamen" id="ornamen_1" class="position-absolute" width="300" height="300">
-      <img src="<?php echo base_url() ?>public/img/ornamen/ornam2.png" alt="Ornamen" id="ornamen_2" class="position-absolute" width="300" height="300">
-
       <div class="container d-flex flex-column align-items-center py-5">
         <h2 class="mb-5">3C (Climate Change Community) Timeline</h2>
         <div class="row mb-3 px-4 py-3 w-75" v-for="item in timeline">
@@ -69,10 +66,10 @@
       <div class="container d-flex flex-column align-items-center py-5">
         <h2 class="text-center mb-5">Description</h2>
         <div class="row">
-        <p class="text-center mb-3">
-          The program will consist of Curriculum that have been carefully set to prepare you on Climate Change Insights and Skill Development. <br>  There will be renewable energy enrichment, competencies development, mentoring session and community night, and also real time project based. 
+          <p class="text-center mb-3">
+            The program will consist of Curriculum that have been carefully set to prepare you on Climate Change Insights and Skill Development. <br> There will be renewable energy enrichment, competencies development, mentoring session and community night, and also real time project based.
           </p>
-          <img src="<?php echo base_url() ?>/public/img/3c_desc.png" class= "img-fluid my-3 mx-auto desc-img">
+          <img src="<?php echo base_url() ?>/public/img/3c_desc.png" class="img-fluid my-3 mx-auto desc-img">
         </div>
       </div>
     </section>

@@ -7,7 +7,7 @@
 #jumbotron::before {
 	content: "";
 	background-image: url("../../img/3c.png");
-	
+
 	position: absolute;
 	background-size: 100% 100%;
 	top: 0;
@@ -84,16 +84,6 @@
 	font-size: 18px;
 }
 
-#ornamen_1 {
-	left: 5%;
-	top: 5%;
-}
-
-#ornamen_2 {
-	bottom: 5%;
-	right: 5%;
-}
-
 /* Description */
 
 #description {
@@ -111,7 +101,7 @@
 	font-family: MulishRegular;
 }
 
-.desc-img{
+.desc-img {
 	width: 50%;
 }
 

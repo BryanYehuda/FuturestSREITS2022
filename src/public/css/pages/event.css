@@ -200,12 +200,6 @@
 	font-size: 18px;
 }
 
-#ornamen_timeline {
-	right: 0;
-	top: 50%;
-	transform: translateY(-50%) rotate(180deg);
-}
-
 /* Cara Daftar */
 
 /* #cara-daftar {

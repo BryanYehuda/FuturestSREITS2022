@@ -40,9 +40,6 @@
     </section>
 
     <section id="timeline" class="py-5 position-relative">
-      <img src="<?php echo base_url() ?>public/img/ornamen/ornam6.png" alt="Ornamen" id="ornamen_1" class="position-absolute" width="300" height="300">
-      <img src="<?php echo base_url() ?>public/img/ornamen/ornam3.png" alt="Ornamen" id="ornamen_2" class="position-absolute" width="300" height="300">
-      <img src="<?php echo base_url() ?>public/img/ornamen/ornam2.png" alt="Ornamen" id="ornamen_3" class="position-absolute" width="300" height="300">
       <div class="container d-flex flex-column align-items-center py-5">
         <h2 class="mb-5">RE Innovation Brainstorm Timeline</h2>
         <div class="row mb-3 px-4 py-3 w-75" v-for="item in timeline">
@@ -64,13 +61,13 @@
         <div class="d-flex flex-column flex-md-row align-items-center justify-content-center pt-5">
           <i class="fas fa-trophy mx-5"></i>
           <div class="mx-5">
-            <h2>First Place	</h2>
+            <h2>First Place </h2>
             <p>Rp 5.000.000</p>
             <br>
             <h2>Second Place </h2>
             <p>Rp 3.000.000</p>
             <br>
-            <h2>Third Place	</h2>
+            <h2>Third Place </h2>
             <p>Rp 2.500.000</p>
             <h2>Best Pitch Video Prototype </h2>
             <p>RRp 500.000</p>
