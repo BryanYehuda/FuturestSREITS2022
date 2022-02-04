@@ -64,16 +64,18 @@
         <div class="d-flex flex-column flex-md-row align-items-center justify-content-center pt-5">
           <i class="fas fa-trophy mx-5"></i>
           <div class="mx-5">
-            <h2>#1st</h2>
-            <p>Rp. Coming Soon</p>
+            <h2>First Place	</h2>
+            <p>Rp 5.000.000</p>
             <br>
-            <h2>#2nd</h2>
-            <p>Rp. Coming Soon</p>
+            <h2>Second Place </h2>
+            <p>Rp 3.000.000</p>
             <br>
-            <h2>#3rd</h2>
-            <p>Rp. Coming Soon</p>
-            <h2>Best Pitch</h2>
-            <p>Rp. Coming Soon</p>
+            <h2>Third Place	</h2>
+            <p>Rp 2.500.000</p>
+            <h2>Best Pitch Video Prototype </h2>
+            <p>RRp 500.000</p>
+            <h2>Favourite Winner</h2>
+            <p>Rp 500.000</p>
           </div>
         </div>
         <br><br><br><br><br><br><br>
