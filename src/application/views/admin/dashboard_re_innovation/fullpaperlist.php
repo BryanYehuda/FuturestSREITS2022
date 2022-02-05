@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="<?php echo base_url() ?>public/css/pages/dashboard_admin_home.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>public/css/pages/dashboard_admin_team_list.css">
 
     <!-- CSS Fonts Global -->
     <link rel="stylesheet" href="<?php echo base_url() ?>/public/css/fonts.css">
@@ -25,7 +25,7 @@
     <!-- CSS Template Style Global -->
     <link rel="stylesheet" href="<?php echo base_url() ?>/public/css/app.css">
 
-    <title>RE Innovation - Home</title>
+    <title>RE Innovation - Full Paper List</title>
 </head>
 
 <body>
@@ -34,7 +34,7 @@
         <div class="bg-white" id="sidebar-wrapper">
             <div class="sidebar-heading text-center py-4 img-fluid"><img src="<?php echo base_url() ?>/public/img/Logo.png" alt=""></div>
             <div class="list-group list-group-flush my-3">
-                <a href="<?php echo base_url('dashboard-re-innovation')?>" class="list-group-item list-group-item-action bg-transparent primary-text second-text active"><i class="fas fa-home-alt me-2"></i>Home</a>
+                <a href="<?php echo base_url('dashboard-re-innovation')?>" class="list-group-item list-group-item-action bg-transparent primary-text second-text"><i class="fas fa-home-alt me-2"></i>Home</a>
                 <a href="<?php echo base_url('dashboard-re-innovation-list')?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text"><i class="fas fa-users-cog me-2"></i>Team List</a>
                 <a href="<?php echo base_url('dashboard-re-innovation-confirmation')?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text"><i class="fas fa-calendar-check me-2"></i>Confirmation</a>
                 <a href="<?php echo base_url('dashboard-re-innovation-payment') ?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text"><i class="fas fa-money-check-alt me-2"></i>Payment</a>
@@ -75,62 +75,42 @@
             </nav>
 
             <!-- Info Card -->
-            <div class="container-fluid px-4">
+            <div class="container-fluid px-4 pb-5">
                 <div class="row g-3 my-2">
-                    <h4 class="mb-3 primary-text">Info</h4>
+                    <h4 class="mb-3 primary-text">Full Paper List</h4>
 
-                    <div class="col-lg-3 col-md-6 ">
-                        <div class="p-3 bg-white shadow d-flex justify-content-around align-items-center info-card">
-                            <i class="fas fa-users fs-1 info-color p-3"></i>
-                            <div>
-                                <p class="fs-6 text-black-50 regular-text">Number of Team</p>
-                                <h5 class="primary-text"><?= $data ?> </h5>
+                    <?php foreach($data as $item):?>
+                        <?php if( $item['pendaftaranreinnovation_fullpaper'] != NULL){?>
+                        <div class="col-12 col-sm-6 mb-3">
+                            <div class="p-3 bg-white shadow info-card">
+                            <i class="fas fa-users fs-1 info-color"></i>
+                            <hr>                                
+                                <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 1px;">Team Name</p>
+                                <h5 class="primary-text mb-2"><?= $item['pendaftaranreinnovation_teamname']?></h5>
+                                
+                                <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 1px;">Institution</p>
+                                <h5 class="primary-text mb-2"><?= $item['pendaftaranreinnovation_college']?></h5>
+                                
+                                <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 1px;">Member Team</p>
+                                <h5 class="primary-text mb-3 fs-6">
+                                    <ul>
+                                        <li><?= $item['pendaftaranreinnovation_1_name']?></li>
+                                        <li><?= $item['pendaftaranreinnovation_2_name']?></li>
+                                        <?php if(!empty($item['pendaftaranreinnovation_3_name'])){ ?>
+                                            <li><?= $item['pendaftaranreinnovation_3_name']?></li>
+                                        <?php } ?>
+                                    </ul>
+                                </h5>
+
+                                <p class="fs-6 text-black-50 regular-text" style="margin-bottom: -4px;">Full Paper</p>
+                                <a href="<?= base_url('/upload/REinnovation/fullpaper/' . $item['pendaftaranreinnovation_fullpaper'])?>" target="_blank">Show</a></h5>
+                                
                             </div>
                         </div>
-                    </div>
+                        <?php } ?>
+                    <?php endforeach;?>
                 </div>
                 <!-- /info card -->
-
-                <!-- Announcement card -->
-                <div class="row announcement pb-5">
-                    <h4 class="mb-4 primary-text">Announcement</h4>
-                    <div class="col-md-6 p-2">
-                        <div class="card announcement-card shadow">
-                            <div class="card-body">
-                                <h5 class="card-title primary-text">Abstract List</h5>
-                                
-                                <a href="<?php echo base_url('dashboard-re-innovation-abstract')?>" class="btn btn-outline-success">View</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 p-2">
-                        <div class="card announcement-card shadow">
-                            <div class="card-body">
-                                <h5 class="card-title primary-text">Workshop</h5>
-                                
-                                <a href="" class="btn btn-outline-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 p-2">
-                        <div class="card announcement-card shadow">
-                            <div class="card-body">
-                                <h5 class="card-title primary-text">Full Paper List</h5>
-                                
-                                <a href="<?php echo base_url('dashboard-re-innovation-fullpaper')?>" class="btn btn-outline-success">View</a>
-                            </div>
-                        </div>
-                    </div><div class="col-md-6 p-2">
-                        <div class="card announcement-card shadow">
-                            <div class="card-body">
-                                <h5 class="card-title primary-text">Power Point List</h5>
-                                
-                                <a href="<?php echo base_url('dashboard-re-innovation-powerpoint')?>" class="btn btn-outline-success">View</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /Announcement card -->
             </div>
         </div>
     </div>
@@ -139,6 +119,7 @@
     <a class="btn btn-success position-fixed" style="bottom: 30px; right: 30px" href="#wrapper">
         <i class="fas fa-chevron-up"></i>
     </a>
+
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">

@@ -132,7 +132,33 @@
                 <!-- Announcement card -->
                 <div class="row announcement pb-5">
                     <h4 class="mb-4 primary-text">Announcement</h4>
-                    
+                    <!--<div class="col-md-6 p-2">
+                        <div class="card announcement-card shadow">
+                            <div class="card-body">
+                                <h5 class="card-title primary-text">Upload Abstract</h5>
+                                
+                                <a href="<?php echo base_url('user/abstract')?>" class="btn btn-outline-success">Upload</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 p-2">
+                        <div class="card announcement-card shadow">
+                            <div class="card-body">
+                                <h5 class="card-title primary-text">Upload full paper</h5>
+                                
+                                <a href="<?php echo base_url('user/fullpaper')?>" class="btn btn-outline-success">Upload</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 p-2">
+                        <div class="card announcement-card shadow">
+                            <div class="card-body">
+                                <h5 class="card-title primary-text">Upload Power Point</h5>
+                                
+                                <a href="<?php echo base_url('user/powerpoint')?>" class="btn btn-outline-success">Upload</a>
+                            </div>
+                        </div>
+                    </div>-->
                 </div>
                 <!-- /Announcement card -->
             </div>

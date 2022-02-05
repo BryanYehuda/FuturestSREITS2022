@@ -50,6 +50,36 @@ class Re_innovation extends CI_Controller {
 		$this->load->view('admin/dashboard_re_innovation/confirmation', $data);
     }
 
+	public function abstract()
+    {
+        $tableName = $this->session->userdata('account_table');
+		$this->load->model("Dashboard");
+		$data =[
+			'data' => $this->Dashboard->getDataREIWhere(1)
+		];
+		$this->load->view("admin/dashboard_re_innovation/abtractlist", $data);
+    }
+
+	public function fullpaper()
+    {
+        $tableName = $this->session->userdata('account_table');
+		$this->load->model("Dashboard");
+		$data =[
+			'data' => $this->Dashboard->getDataREIWhere(2)
+		];
+		$this->load->view("admin/dashboard_re_innovation/fullpaperlist", $data);
+    }
+
+	public function ppt()
+    {
+        $tableName = $this->session->userdata('account_table');
+		$this->load->model("Dashboard");
+		$data =[
+			'data' => $this->Dashboard->getDataREIWhere(2)
+		];
+		$this->load->view("admin/dashboard_re_innovation/pptlist", $data);
+    }
+
 	public function confirm($id)
 	{
 		$this->load->model("Dashboard");
@@ -187,5 +217,7 @@ class Re_innovation extends CI_Controller {
 		$this->session->set_flashdata('response', '<div class="alert alert-danger" role="alert">Berhasil membatalkan status pembayaran peserta!</div>');
 		redirect('dashboard-re-innovation-payment');
 	}
+
+	
 }
 ?>

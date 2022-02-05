@@ -25,7 +25,7 @@
     <!-- CSS Template Style Global -->
     <link rel="stylesheet" href="<?php echo base_url() ?>/public/css/app.css">
 
-    <title>National Essay - List</title>
+    <title>RE Innovation - List</title>
 </head>
 
 <body>

@@ -25,7 +25,7 @@
     <!-- CSS Template Style Global -->
     <link rel="stylesheet" href="<?php echo base_url() ?>/public/css/app.css">
 
-    <title>Admin Dashboard - Payment</title>
+    <title>National Essay - Payment</title>
 </head>
 
 <body>

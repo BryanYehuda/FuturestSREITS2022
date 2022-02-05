@@ -50,6 +50,16 @@ class National_essay extends CI_Controller {
 		$this->load->view('admin/dashboard_national_essay/confirmation', $data);
     }
 
+	public function esai()
+    {
+        $tableName = $this->session->userdata('account_table');
+		$this->load->model("Dashboard");
+		$data =[
+			'data' => $this->Dashboard->getDataEssayWhere(2)
+		];
+		$this->load->view('admin/dashboard_national_essay/essaylist', $data);
+    }
+
 	public function confirm($id)
 	{
 		$this->load->model("Dashboard");

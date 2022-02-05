@@ -25,7 +25,7 @@
     <!-- CSS Template Style Global -->
     <link rel="stylesheet" href="<?php echo base_url() ?>/public/css/app.css">
 
-    <title>National Essay - Confirmation</title>
+    <title>RE Innovation - Confirmation</title>
 </head>
 
 <body>

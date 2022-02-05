@@ -88,12 +88,16 @@ $route['dashboard-national-essay'] = "national_essay";
 $route['dashboard-national-essay-list'] = "national_essay/list";
 $route['dashboard-national-essay-confirmation'] = "national_essay/confirmation";
 $route['dashboard-national-essay-payment'] = "national_essay/payment";
+$route['dashboard-national-essay-submission'] = "national_essay/esai";
 
 //Dashboard RE Innovation
 $route['dashboard-re-innovation'] = "re_innovation";
 $route['dashboard-re-innovation-list'] = "re_innovation/list";
 $route['dashboard-re-innovation-confirmation'] = "re_innovation/confirmation";
 $route['dashboard-re-innovation-payment'] = "re_innovation/payment";
+$route['dashboard-re-innovation-abstract'] = "re_innovation/abstract";
+$route['dashboard-re-innovation-fullpaper'] = "re_innovation/fullpaper";
+$route['dashboard-re-innovation-powerpoint'] = "re_innovation/ppt";
 
 // Events
 $route['grand-talkshow'] = 'home/grand_talkshow';
