@@ -50,6 +50,16 @@ class National_essay extends CI_Controller {
 		$this->load->view('admin/dashboard_national_essay/confirmation', $data);
     }
 
+	public function esai()
+    {
+        $tableName = $this->session->userdata('account_table');
+		$this->load->model("Dashboard");
+		$data =[
+			'data' => $this->Dashboard->getDataEssayWhere(2)
+		];
+		$this->load->view('admin/dashboard_national_essay/essaylist', $data);
+    }
+
 	public function confirm($id)
 	{
 		$this->load->model("Dashboard");
@@ -114,7 +124,7 @@ class National_essay extends CI_Controller {
 			unlink('./upload/EssayCompetition/photo/' . $data['pendaftaranessaycompetition_2_photo']);
 			unlink('./upload/EssayCompetition/activestudent/' . $data['pendaftaranessaycompetition_2_activestudent']);
 		}
-		unlink('./upload/EssayCompetition/payment/' . $data['pendaftaranessaycompetition_payment']);
+		//unlink('./upload/EssayCompetition/payment/' . $data['pendaftaranessaycompetition_payment']);
 		$this->Dashboard->deleteDataEssayId($id);
 		$mail = new PHPMailer(true);
 		try
@@ -140,6 +150,32 @@ class National_essay extends CI_Controller {
 		$mail->smtpClose();		
 		$this->session->set_flashdata('response', '<div class="alert alert-success" role="alert">Berhasil mereject peserta!</div>');
 		redirect('dashboard-national-essay-confirmation');
+	}
+
+	public function payment()
+    {
+        $tableName = $this->session->userdata('account_table');
+		$this->load->model("Dashboard");
+		$data =[
+			'data' => array_merge($this->Dashboard->getDataEssayWhere(1), $this->Dashboard->getDataEssayWhere(2))
+		];
+		$this->load->view('admin/dashboard_national_essay/payment', $data);
+    }
+	
+	public function confirmpay($id)
+	{
+		$this->load->model("Dashboard");
+		$this->Dashboard->confirmEssaypay($id);
+		$this->session->set_flashdata('response', '<div class="alert alert-success" role="alert">Berhasil mengubah status pembayaran peserta!</div>');
+		redirect('dashboard-national-essay-payment');
+	}
+
+	public function cancelpay($id)
+	{
+		$this->load->model("Dashboard");
+		$this->Dashboard->cancelEssaypay($id);
+		$this->session->set_flashdata('response', '<div class="alert alert-danger" role="alert">Berhasil membatalkan status pembayaran peserta!</div>');
+		redirect('dashboard-national-essay-payment');
 	}
 }
 ?>

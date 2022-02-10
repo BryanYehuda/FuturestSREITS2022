@@ -6,9 +6,10 @@
 
 #jumbotron::before {
 	content: "";
-	background-image: url("../../img/re_innovation.jpg");
+	background-image: url("../../img/3c.png");
+
 	position: absolute;
-	background-size: cover;
+	background-size: 100% 100%;
 	top: 0;
 	left: 0;
 	bottom: 0;
@@ -83,12 +84,29 @@
 	font-size: 18px;
 }
 
-#ornamen_1 {
-	left: 5%;
-	top: 5%;
+/* Description */
+
+#description {
+	min-height: 730px;
+	background-color: #f3f3f3;
 }
 
-#ornamen_2 {
-	bottom: 5%;
-	right: 5%;
+#description h2 {
+	font-size: 35px;
+	font-family: MulishSemiBold;
+}
+
+#description p {
+	font-size: 20px;
+	font-family: MulishRegular;
+}
+
+.desc-img {
+	width: 50%;
+}
+
+@media screen and (max-width: 992px) {
+	.desc-img {
+		width: 90% !important;
+	}
 }

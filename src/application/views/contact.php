@@ -49,7 +49,7 @@
 
           <!-- contact 1 -->
           <div class="card-re-contact m-3 col-md-4 p-0" style="background-color: #e3e3e3;">
-            <img src="<?php echo base_url() ?>public/img/girl.jpg" alt="Contact Image" class="img-fluid" />
+
             <div class="p-3">
               <h3>Chindy</h3>
               <p>
@@ -57,13 +57,13 @@
                 <br>
                 WA: +6285215371119
               </p>
-              <a href="https://wa.me/6285215371119" class="btn btn-primary" target="_blank">Contact by WA now</a>
+              <a href="https://wa.me/6285215371119" class="btn-lg btn-primary" target="_blank">Contact by WA now</a>
             </div>
           </div>
 
           <!-- contact 2 -->
           <div class="card-re-contact m-3 col-md-4 p-0" style="background-color: #e3e3e3;">
-            <img src="<?php echo base_url() ?>public/img/boy.jpg" alt="Contact Image" class="img-fluid" />
+
             <div class="p-3">
               <h3>Khoirul</h3>
               <p>
@@ -71,7 +71,7 @@
                 <br>
                 WA: +6288228249694
               </p>
-              <a href="https://wa.me/6288228249694" class="btn btn-primary" target="_blank">Contact by WA now</a>
+              <a href="https://wa.me/6288228249694" class="btn-lg btn-primary" target="_blank">Contact by WA now</a>
             </div>
           </div>
 
@@ -81,28 +81,28 @@
 
     <!-- Admin Social Media -->
     <section id="admin-sosmed" class="pt-5 position-relative">
-      <img src="<?php echo base_url() ?>public/img/ornamen/ornam1.png" alt="ornamen" id="ornamen_essay" class="position-absolute" width="300" height="300">
+
       <div class="container pt-5">
         <h2 class="text-center mb-5">National Essay Contact</h2>
         <div class="row mt-5 px-3 d-flex justify-content-center">
 
           <!-- card 1 -->
           <div class="card-admin-futurest m-3 col-md-4 p-0" style="background-color: #e3e3e3;">
-            <img src="<?php echo base_url() ?>public/img/girl.jpg" alt="Contact Image" class="img-fluid" />
+
             <div class="p-3">
               <h3>Wury</h3>
               <p>Line : wuryhanda36</p>
-              <a href="https://wa.me/6282245336684" class="btn btn-primary" target="_blank">Contact by WA now</a>
+              <a href="https://wa.me/6282245336684" class="btn-lg btn-primary" target="_blank">Contact by WA now</a>
             </div>
           </div>
 
           <!-- card 2 -->
           <div class="card-admin-futurest m-3 col-md-4 p-0" style="background-color: #e3e3e3;">
-            <img src="<?php echo base_url() ?>public/img/boy.jpg" alt="Contact Image" class="img-fluid" />
+
             <div class="p-3">
               <h3>Daffa</h3>
               <p>WA : 082245606252</p>
-              <a href="https://wa.me/6282245606252" class="btn btn-primary" target="_blank">Contact by WA now</a>
+              <a href="https://wa.me/6282245606252" class="btn-lg btn-primary" target="_blank">Contact by WA now</a>
             </div>
           </div>
 
@@ -127,8 +127,8 @@
             <div class="invalid-feedback" id="message-false">
             </div>
           </div>
-          <button type="submit" class="btn btn-primary d-block m-auto" id="submit">
-              <i class="hide loading-icon fa fa-spinner fa-spin d-none" id="loading"></i>Submit
+          <button type="submit" class="btn-lg btn-primary d-block m-auto" id="submit">
+            <i class="hide loading-icon fa fa-spinner fa-spin d-none" id="loading"></i>Submit
           </button>
         </form>
       </div>
@@ -147,7 +147,9 @@
   ?>
 
   <!-- Import js if need -->
-  <script>var base_url = '<?php echo base_url()?>';</script>
+  <script>
+    var base_url = '<?php echo base_url() ?>';
+  </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script type="text/javascript" src="<?php echo base_url() ?>public/js/backend/contact.js"></script>

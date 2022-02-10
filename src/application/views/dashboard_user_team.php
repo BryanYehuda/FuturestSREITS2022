@@ -4,7 +4,7 @@
 
 <head>
     <?php
-        $this->load->view('template/meta');
+    $this->load->view('template/meta');
     ?>
 
     <!-- Bootstrap CSS -->
@@ -35,11 +35,11 @@
             <div class="sidebar-heading text-center py-4 img-fluid"><img src="<?php echo base_url() ?>/public/img/Logo.png" alt="Futurest 2022"></div>
             <div class="list-group list-group-flush my-3">
 
-                <a href="<?php echo base_url('user')?>" class="list-group-item list-group-item-action bg-transparent primary-text second-text"><i class="fas fa-home-alt me-2"></i>Home</a>
-                <a href="<?php echo base_url('user/team')?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text active"><i class="fas fa-users-cog me-2"></i>Team Identity</a>
-                <a href="<?php echo base_url('user/payment')?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text"><i class="fas fa-money-check-alt me-2"></i>Payment</a>
+                <a href="<?php echo base_url('user') ?>" class="list-group-item list-group-item-action bg-transparent primary-text second-text"><i class="fas fa-home-alt me-2"></i>Home</a>
+                <a href="<?php echo base_url('user/team') ?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text active"><i class="fas fa-users-cog me-2"></i>Team Identity</a>
+                <a href="<?php echo base_url('user/payment') ?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text"><i class="fas fa-money-check-alt me-2"></i>Payment</a>
                 <hr class="info-color">
-                <a href="<?php echo base_url('logout')?>" class="list-group-item list-group-item-action bg-transparent text-danger primary-text"><i class="fas fa-power-off me-2"></i>Logout</a>
+                <a href="<?php echo base_url('logout') ?>" class="list-group-item list-group-item-action bg-transparent text-danger primary-text"><i class="fas fa-power-off me-2"></i>Logout</a>
             </div>
         </div>
         <!-- /#sidebar-wrapper -->
@@ -63,10 +63,10 @@
                                 <i class="fas fa-user me-2 info-color"></i>@username
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="<?php echo base_url('user')?>">Home</a></li>
-                                <li><a class="dropdown-item" href="<?php echo base_url('user/team')?>">Team Identity</a></li>
-                                <li><a class="dropdown-item" href="<?php echo base_url('user/payment')?>">Payment</a></li>
-                                <li><a class="dropdown-item" href="<?php echo base_url('logout')?>">Logout</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url('user') ?>">Home</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url('user/team') ?>">Team Identity</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url('user/payment') ?>">Payment</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url('logout') ?>">Logout</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -103,6 +103,54 @@
                     </div>
                 </div>
                 <!-- /info card -->
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid px-4">
+        <div class="row g-3 my-2">
+            <h4>Payment Status</h4>
+            <div class="col-md-12 p-2">
+                <table class="table table-borderless row-gap center">
+                    <tbody>
+
+                        <tr class="invoice-head shadow primary-text" valign="middle">
+                            <td>
+                                Date and Time
+                            </td>
+                            <td>ID</td>
+                            <td>
+                                Status
+                            </td>
+                        </tr>
+
+                        <tr class="invoice-row shadow regular-text" valign="middle">
+                            <td>
+                                03-02-2022
+                                <br>
+                                12:00:00
+                            </td>
+                            <td>0001</td>
+                            <td>
+                                <div class="on-progress primary-text">On Progress</div>
+                            </td>
+                        </tr>
+
+                        <tr class="invoice-row shadow regular-text" valign="middle">
+                            <td>
+                                04-02-2022
+                                <br>
+                                13:00:00
+                            </td>
+                            <td>0002</td>
+                            <td>
+                                <div class="paid primary-text">PAID</div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

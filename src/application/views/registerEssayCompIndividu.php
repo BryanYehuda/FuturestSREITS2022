@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en" dir="ltr">
 
@@ -91,7 +91,6 @@
                           </div>
                       </div>
                       <br>
-                      
                       <div class="mb-3">
                           <label for="name"><i class="float"></i> Half-body picture 4 x 6</label>
                           <label for="name"><i class="float"></i> <b>formal, plain background </b>(JPG, JPEG, PNG)</label>
@@ -126,7 +125,7 @@
                               <?php echo $error['follow_1'];?>
                           </div>
                       </div><br>
-                      
+                      <!--
                       <div class="mb-3">
                           <label for="name"><i class="float"></i> Payment</label>
                           <input class="form-control text-dark <?php $ok = " "; (!empty($error['payment'])) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" type="file" id="payment" name="payment" multiple required>
@@ -135,7 +134,7 @@
                           </div>
                           </div>
                       <br>
-                      
+                      -->
                       <button type="submit" class="btn btn-danger" id="submit">
                           <i class="hide loading-icon fa fa-spinner fa-spin d-none" id="loading"></i>Submit
                       </button>
@@ -180,4 +179,4 @@
   <script type="text/javascript" src="<?php echo base_url() ?>public/js/backend/registeressaycompindividu.js"></script>
 </body>
 
-</html> 
+</html>

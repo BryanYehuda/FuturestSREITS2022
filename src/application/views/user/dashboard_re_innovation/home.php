@@ -37,7 +37,6 @@
 
                 <a href="<?php echo base_url('user')?>" class="list-group-item list-group-item-action bg-transparent primary-text active"><i class="fas fa-home-alt me-2"></i>Home</a>
                 <a href="<?php echo base_url('user/team')?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text"><i class="fas fa-users-cog me-2"></i>Team Identity</a>
-                <a href="<?php echo base_url('user/payment')?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text"><i class="fas fa-money-check-alt me-2"></i>Payment</a>
                 <hr class="info-color">
                 <a href="<?php echo base_url('logout')?>" class="list-group-item list-group-item-action bg-transparent text-danger primary-text"><i class="fas fa-power-off me-2"></i>Logout</a>
             </div>
@@ -65,7 +64,6 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="<?php echo base_url('user')?>">Home</a></li>
                                 <li><a class="dropdown-item" href="<?php echo base_url('user/team')?>">Team Identity</a></li>
-                                <li><a class="dropdown-item" href="<?php echo base_url('user/payment')?>">Payment</a></li>
                                 <li><a class="dropdown-item" href="<?php echo base_url('logout')?>">Logout</a></li>
                             </ul>
                         </li>
@@ -119,7 +117,11 @@
                             <i class="fas fa-money-check-alt fs-1 status-color p-3"></i>
                             <div>
                                 <p class="fs-6 text-black-50 text-black-50 regular-text">Payment Status</p>
-                                <h5 class="status-color primary-text">Verified</h5>
+                                <?php if($data[0]['pendaftaranreinnovation_status'] != 2) {?>
+                                    <h5 class="text-danger"><b>Not Verified</b></h5>
+                                <?php }elseif($data[0]['pendaftaranreinnovation_status'] == 2){?>
+                                    <h5 class="status-color primary-text">Verified</h5>
+                                <?php }?>
                             </div>
 
                         </div>
@@ -130,58 +132,33 @@
                 <!-- Announcement card -->
                 <div class="row announcement pb-5">
                     <h4 class="mb-4 primary-text">Announcement</h4>
-                    <div class="col-md-6 p-2">
+                    <!--<div class="col-md-6 p-2">
                         <div class="card announcement-card shadow">
                             <div class="card-body">
                                 <h5 class="card-title primary-text">Upload Abstract</h5>
-                                <p class="card-text regular-text">
-                                    Nulla auctor sollicitudin sem, sed sagittis ex porta ac. Cras accumsan elit quis
-                                    metus fringilla, vitae pretium felis aliquam. Mauris ultrices sapien quis felis
-                                    tincidunt vehicula. Nullam ac elementum ex. Praesent fermentum tincidunt quam nec
-                                    iaculis.</p>
-                                <a href="" class="btn btn-outline-success">Upload</a>
+                                
+                                <a href="<?php echo base_url('user/abstract')?>" class="btn btn-outline-success">Upload</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 p-2">
                         <div class="card announcement-card shadow">
                             <div class="card-body">
-                                <h5 class="card-title primary-text">Workshop</h5>
-                                <p class="card-text regular-text">
-                                    Nulla auctor sollicitudin sem, sed sagittis ex porta ac. Cras accumsan elit quis
-                                    metus fringilla, vitae pretium felis aliquam. Mauris ultrices sapien quis felis
-                                    tincidunt vehicula. Nullam ac elementum ex. Praesent fermentum tincidunt quam nec
-                                    iaculis.</p>
-                                <a href="" class="btn btn-outline-success">Link</a>
+                                <h5 class="card-title primary-text">Upload full paper</h5>
+                                
+                                <a href="<?php echo base_url('user/fullpaper')?>" class="btn btn-outline-success">Upload</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 p-2">
                         <div class="card announcement-card shadow">
                             <div class="card-body">
-                                <h5 class="card-title primary-text">Upload Full Paper</h5>
-                                <p class="card-text regular-text">
-                                    Nulla auctor sollicitudin sem, sed sagittis ex porta ac. Cras accumsan elit quis
-                                    metus fringilla, vitae pretium felis aliquam. Mauris ultrices sapien quis felis
-                                    tincidunt vehicula. Nullam ac elementum ex. Praesent fermentum tincidunt quam nec
-                                    iaculis.</p>
-                                <a href="" class="btn btn-outline-success">Upload</a>
+                                <h5 class="card-title primary-text">Upload Power Point</h5>
+                                
+                                <a href="<?php echo base_url('user/powerpoint')?>" class="btn btn-outline-success">Upload</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 p-2">
-                        <div class="card announcement-card shadow">
-                            <div class="card-body">
-                                <h5 class="card-title primary-text">Essay Submission</h5>
-                                <p class="card-text regular-text">
-                                    Nulla auctor sollicitudin sem, sed sagittis ex porta ac. Cras accumsan elit quis
-                                    metus fringilla, vitae pretium felis aliquam. Mauris ultrices sapien quis felis
-                                    tincidunt vehicula. Nullam ac elementum ex. Praesent fermentum tincidunt quam nec
-                                    iaculis.</p>
-                                <a href="" class="btn btn-outline-success">Upload</a>
-                            </div>
-                        </div>
-                    </div>
+                    </div>-->
                 </div>
                 <!-- /Announcement card -->
             </div>

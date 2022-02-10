@@ -15,7 +15,7 @@ const vm = new Vue({
       {
 				date: "20 February – 13 March 2022",
 				description:
-					"Open Abstract Submission",
+					"Open Registration & Abstract Submission",
 			},
 			{
 				date: "13 March 2022",
@@ -40,32 +40,32 @@ const vm = new Vue({
       {
 				date: "28 April 2022",
 				description:
-					"Selected Paper Announcement (Top 10)",
+					"Finalists Announcement (Top 10)",
+			},
+		{
+				date: "30 April 2022",
+				description:
+					"Technical Meeting for Climate Innovators Camp",
 			},
       {
-				date: "1 May 2022 & 8 May 2022",
+				date: "1 May 2022 - 22 May 2022",
 				description:
-					"Climate Innovators Camp for Top 10",
+					"Climate Innovators Camp (mentoring program)",
 			},
       {
-				date: "13 May 2022",
+				date: "22 May 2022",
 				description:
-					"Prototype Video Pitch Submission",
+					"Prototype Video Pitch Submission Due Date (Pre-Recorded)",
 			},
       {
-				date: "23 May 2022",
+				date: "2 June 2022",
 				description:
-					"Finalist Announcement (Top 5)",
-			},
-      {
-				date: "28 May 2022",
-				description:
-					"Technical Meeting for Finalists",
+					"PowerPoint Submission Due Date",
 			},
       {
 				date: "5 June 2022",
 				description:
-					"Final Presentation Day",
+					"Final Presentation Day	",
 			},
       {
 				date: "12 June 2022",

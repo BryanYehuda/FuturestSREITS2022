@@ -26,10 +26,10 @@
       <div class="container py-5 position-relative">
         <img src="<?= base_url() ?>/public/img/ornamen/ornam3.png" class="d-none d-lg-block img-fluid position-absolute" id="ornamen_jumbo">
         <img src="<?= base_url() ?>/public/img/logo_keren.png" alt="Futurest Logo" class=" img-fluid d-block mx-auto mt-5" width="180">
-        <h1 class="text-center">Futurest 2022</h1>
+        <h1 class="text-center">FUTUREST 2022</h1>
         <p class="text-center w-75 mx-auto mb-4">
           <q>
-            Generating Young Indonesian Leaders with Concrete and Feasible Actions for Climate Catastrophe Prevention Through Energy Transformation
+            <h3> Generating Young Indonesian Leaders with Concrete and Feasible Actions for Climate Catastrophe Prevention Through Energy Transformation</h3>
           </q>
         </p>
         <a href="#introduction" class="btn btn-primary d-block mx-auto d-flex justify-content-evenly align-items-center" style="width: 200px;">
@@ -43,9 +43,9 @@
     <!-- introduction -->
     <section id="introduction" class="py-5">
       <div class="container py-5 position-relative">
-        <img src="<?= base_url() ?>/public/img/star.png" class="position-absolute" id="ornamen_intro">
+
         <div class="row">
-          <h2 class="mb-lg-5">Introduction</h2>
+          <h2 class="mb-lg-5 text-center">Introduction</h2>
           <div class="row">
             <div class="d-none d-lg-block col-lg-5">
               <img src="<?= base_url() ?>/public/img/circle_star.png" alt="Photos of Introduction " class="img-fluid" width="300">
@@ -68,8 +68,7 @@
     <!-- partners -->
     <section id="partners">
       <div class="container position-relative">
-        <img src="<?= base_url() ?>/public/img/ornamen/ornam5.png" class="position-absolute" id="ornamen-slash">
-        <img src="<?= base_url() ?>/public/img/ornamen/ornam7.png" class="position-absolute" id="ornamen-tree">
+
         <div class="row">
           <h2 class="text-center mb-5">Futurest 2022 Supporters</h2>
           <div class="d-flex flex-wrap justify-content-center mb-5">

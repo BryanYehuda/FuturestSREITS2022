@@ -41,13 +41,11 @@
     </section>
 
     <section id="timeline" class="py-5 position-relative">
-      <img src="<?php echo base_url() ?>public/img/ornamen/ornam2.png" alt="Ornamen" id="ornamen_1" class="position-absolute" width="300" height="300">
-      <img src="<?php echo base_url() ?>public/img/ornamen/ornam6.png" alt="Ornamen" id="ornamen_2" class="position-absolute" width="300" height="300">
       <div class="container d-flex flex-column align-items-center py-5">
         <h2 class="mb-5">National Essay Timeline</h2>
         <div class="row mb-3 px-4 py-3 w-75" v-for="item in timeline">
           <div class="col position-relative">
-            <div class="position-absolute rounded-timeline rounded-pill"></div>
+            <div class="position-absolute "></div>
             <h3>{{ item.date }}</h3>
             <p>{{ item.description }}</p>
           </div>
@@ -55,7 +53,7 @@
       </div>
     </section>
 
-    <section id="prize-pool" class="py-5 position-relative">
+    <!-- <section id="prize-pool" class="py-5 position-relative">
       <img src="<?php echo base_url() ?>public/img/ornamen/ornam5.png" alt="Ornamen" id="ornamen_prize" class="position-absolute" width="300" height="300">
       <div class="container py-5">
         <h2 class="text-center mb-5">National Essay Prize Pool!</h2>
@@ -84,7 +82,7 @@
         </div>
         <br><br><br><br><br>
       </div>
-    </section>
+    </section> -->
 
   </main>
 

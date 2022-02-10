@@ -37,7 +37,8 @@
 
                 <a href="<?php echo base_url('dashboard-national-essay')?>" class="list-group-item list-group-item-action bg-transparent primary-text second-text"><i class="fas fa-home-alt me-2"></i>Home</a>
                 <a href="<?php echo base_url('dashboard-national-essay-list')?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text"><i class="fas fa-users-cog me-2"></i>Team List</a>
-                <a href="<?php echo base_url('dashboard-national-essay-confirmation')?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text active"><i class="fas fa-money-check-alt me-2"></i>Confirmation</a>
+                <a href="<?php echo base_url('dashboard-national-essay-confirmation')?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text active"><i class="fas fa-calendar-check me-2"></i>Confirmation</a>
+                <a href="<?php echo base_url('dashboard-national-essay-payment') ?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text"><i class="fas fa-money-check-alt me-2"></i>Payment</a>
                 <hr class="info-color">
                 <a href="<?php echo base_url('logout')?>" class="list-group-item list-group-item-action bg-transparent text-danger primary-text"><i class="fas fa-power-off me-2"></i>Logout</a>
             </div>
@@ -66,6 +67,7 @@
                                 <li><a class="dropdown-item" href="<?php echo base_url('dashboard-national-essay')?>">Home</a></li>
                                 <li><a class="dropdown-item" href="<?php echo base_url('dashboard-national-essay-list')?>">Team List</a></li>
                                 <li><a class="dropdown-item" href="<?php echo base_url('dashboard-national-essay-confirmation')?>">Confirmation</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url('dashboard-national-essay-payment') ?>">Payment</a></li>
                                 <li><a class="dropdown-item" href="<?php echo base_url('logout')?>">Logout</a></li>
                             </ul>
                         </li>
@@ -155,10 +157,10 @@
                             </h5>
                             <?php endif;?>
                             
-
+                            <!--
                             <p class="fs-6 text-black-50 regular-text" style="margin-bottom: -4px;">Proof of Payment</p>
                             <a href="<?= base_url('/upload/EssayCompetition/payment/' . $item['pendaftaranessaycompetition_payment'])?>" target="_blank">Show</a></h5>
-
+                            -->
                             <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 2px;">Confirmation?</p>
                             <a href= "national_essay/confirm/<?= $item['pendaftaranessaycompetition_id']?>" class="btn btn-success" id="accept-<?= $item['pendaftaranessaycompetition_id']?>" onclick="accept(this.id)">
                                 <i class="hide loading-icon fa fa-spinner fa-spin d-none" id="loading-accept-<?= $item['pendaftaranessaycompetition_id']?>"></i>Accept

@@ -35,7 +35,7 @@ class Re_innovation extends CI_Controller {
 		$tableName = $this->session->userdata('account_table');
 		$this->load->model("Dashboard");
 		$data =[
-			'data' => $this->Dashboard->getDataREIWhere(1)
+			'data' => array_merge($this->Dashboard->getDataREIWhere(2), $this->Dashboard->getDataREIWhere(1))
 		];
 		$this->load->view('admin/dashboard_re_innovation/list', $data);
 	}
@@ -48,6 +48,36 @@ class Re_innovation extends CI_Controller {
 			'data' => $this->Dashboard->getDataREIWhere(0)
 		];
 		$this->load->view('admin/dashboard_re_innovation/confirmation', $data);
+    }
+
+	public function abstract()
+    {
+        $tableName = $this->session->userdata('account_table');
+		$this->load->model("Dashboard");
+		$data =[
+			'data' => $this->Dashboard->getDataREIWhere(1)
+		];
+		$this->load->view("admin/dashboard_re_innovation/abtractlist", $data);
+    }
+
+	public function fullpaper()
+    {
+        $tableName = $this->session->userdata('account_table');
+		$this->load->model("Dashboard");
+		$data =[
+			'data' => $this->Dashboard->getDataREIWhere(2)
+		];
+		$this->load->view("admin/dashboard_re_innovation/fullpaperlist", $data);
+    }
+
+	public function ppt()
+    {
+        $tableName = $this->session->userdata('account_table');
+		$this->load->model("Dashboard");
+		$data =[
+			'data' => $this->Dashboard->getDataREIWhere(2)
+		];
+		$this->load->view("admin/dashboard_re_innovation/pptlist", $data);
     }
 
 	public function confirm($id)
@@ -132,9 +162,9 @@ class Re_innovation extends CI_Controller {
         if(file_exists('./upload/EssayCompetition/activestudent/' . $data['pendaftaranreinnovation_3_activestudent'])){
             unlink('./upload/EssayCompetition/activestudent/' . $data['pendaftaranreinnovation_3_activestudent']);
         }
-        if(file_exists('./upload/EssayCompetition/payment/' . $data['pendaftaranreinnovation_payment'])){
+        /*if(file_exists('./upload/EssayCompetition/payment/' . $data['pendaftaranreinnovation_payment'])){
             unlink('./upload/EssayCompetition/payment/' . $data['pendaftaranreinnovation_payment']);
-        }
+        }*/
 		$this->Dashboard->deleteDataREIId($id);
 		$mail = new PHPMailer(true);
 		try
@@ -161,5 +191,33 @@ class Re_innovation extends CI_Controller {
 		$this->session->set_flashdata('response', '<div class="alert alert-success" role="alert">Berhasil mereject peserta!</div>');
 		redirect('dashboard-re-innovation-confirmation');
 	}
+
+	public function payment()
+    {
+        $tableName = $this->session->userdata('account_table');
+		$this->load->model("Dashboard");
+		$data =[
+			'data' => array_merge($this->Dashboard->getDataREIWhere(1), $this->Dashboard->getDataREIWhere(2))
+		];
+		$this->load->view('admin/dashboard_re_innovation/payment', $data);
+    }
+	
+	public function confirmpay($id)
+	{
+		$this->load->model("Dashboard");
+		$this->Dashboard->confirmREIpay($id);
+		$this->session->set_flashdata('response', '<div class="alert alert-success" role="alert">Berhasil mengubah status pembayaran peserta!</div>');
+		redirect('dashboard-re-innovation-payment');
+	}
+
+	public function cancelpay($id)
+	{
+		$this->load->model("Dashboard");
+		$this->Dashboard->cancelREIpay($id);
+		$this->session->set_flashdata('response', '<div class="alert alert-danger" role="alert">Berhasil membatalkan status pembayaran peserta!</div>');
+		redirect('dashboard-re-innovation-payment');
+	}
+
+	
 }
 ?>
