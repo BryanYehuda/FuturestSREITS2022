@@ -1,25 +1,25 @@
 body {
-	background: radial-gradient(ellipse at bottom, #a1ffab 0%, #faffd1 100%);
+    background: radial-gradient(ellipse at bottom, #a1ffab 0%, #faffd1 100%);
 }
 
 main#section {
-	min-height: 630px;
+    min-height: 630px;
 }
 
 main#section h1 {
-	font-size: 2rem;
-	font-family: MulishBold;
+    font-size: 4rem;
+    font-family: MulishBold;
 }
 
 main#section #ornamen {
-	width: 300px;
-	height: 300px;
-	right: 0;
-	bottom: 3rem;
+    width: 300px;
+    height: 300px;
+    right: 0;
+    bottom: 3rem;
 }
 
 @media screen and (max-width: 576px) {
-	main#section img {
-		width: 50% !important;
-	}
+    main#section img {
+        width: 50% !important;
+    }
 }

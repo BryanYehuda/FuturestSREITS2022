@@ -1,212 +1,219 @@
 /* Jumbotron */
 
 #jumbotron {
-	min-height: 730px;
+    min-height: 730px;
 }
 
 #jumbotron::before {
-	content: "";
-	background-image: url("../../img/event-parallax.jpg");
-	position: absolute;
-	background-size: cover;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	z-index: -1;
+    content: "";
+    background-image: url("../../img/event-parallax.jpg");
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 50%;
 }
 
 #jumbotron h1 {
-	font-size: 50px;
-	font-family: MulishBold;
-	display: inline;
+    font-size: 50px;
+    font-family: MulishBold;
+    display: inline;
 }
 
 #jumbotron p {
-	font-size: 20px;
-	font-family: MulishRegular;
+    font-size: 20px;
+    font-family: MulishRegular;
 }
 
 #jumbotron h1,
 #jumbotron p {
-	background-color: var(--futurest-green);
-	padding: 0.5rem;
-	border-radius: 0.5rem;
+    background-color: var(--futurest-green);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
 }
 
 #jumbotron i {
-	font-size: 120px;
+    font-size: 120px;
 }
+
 
 /* Events */
 
 #our-events {
-	min-height: 730px;
-	background-color: var(--futurest-green);
+    min-height: 730px;
+    background-color: var(--futurest-green);
 }
 
 #our-events h2 {
-	font-size: 35px;
-	font-family: MulishSemiBold;
-	color: var(--futurest-black);
-	z-index: 2;
+    font-size: 35px;
+    font-family: MulishSemiBold;
+    color: var(--futurest-black);
+    z-index: 2;
 }
 
 #our-events .card-apa-saja {
-	background: #f3f3f3;
-	border-radius: 30px;
-	box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
-	z-index: 2;
+    background: #f3f3f3;
+    border-radius: 30px;
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 2;
 }
 
 #our-events .card-apa-saja i {
-	font-size: 100px;
-	margin-bottom: 10px;
+    font-size: 100px;
+    margin-bottom: 10px;
 }
 
 #our-events .card-apa-saja h3 {
-	font-family: MulishSemiBold;
-	font-size: 25px;
+    font-family: MulishSemiBold;
+    font-size: 25px;
 }
 
 #our-events .card-apa-saja p {
-	font-family: MulishLight;
-	font-size: 18px;
+    font-family: MulishLight;
+    font-size: 18px;
 }
 
 #ornamen_events {
-	width: 300px;
-	height: 300px;
-	left: 0;
-	top: 0;
+    width: 300px;
+    height: 300px;
+    left: 0;
+    top: 0;
 }
 
 @media screen and (max-width: 576px) {
-	#ornamen_events {
-		opacity: 0.5;
-	}
+    #ornamen_events {
+        opacity: 0.5;
+    }
 }
 
 #ornamen_events_2 {
-	bottom: 0;
-	right: 0;
+    bottom: 0;
+    right: 0;
 }
+
 
 /* Competitions */
 
 #our-competitions {
-	min-height: 730px;
-	background-color: var(--futurest-green);
+    min-height: 730px;
+    background-color: var(--futurest-green);
 }
 
 #our-competitions h2 {
-	font-size: 35px;
-	font-family: MulishSemiBold;
-	color: var(--futurest-black);
+    font-size: 35px;
+    font-family: MulishSemiBold;
+    color: var(--futurest-black);
 }
 
 #our-competitions .card-apa-saja {
-	background: #e3e3e3;
-	border-radius: 30px;
-	box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
-	z-index: 1;
+    background: #e3e3e3;
+    border-radius: 30px;
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
 #our-competitions .card-apa-saja i {
-	font-size: 100px;
+    font-size: 100px;
 }
 
 #our-competitions .card-apa-saja h3 {
-	font-family: MulishSemiBold;
-	font-size: 25px;
+    font-family: MulishSemiBold;
+    font-size: 25px;
 }
 
 #our-competitions .card-apa-saja p {
-	font-family: MulishLight;
-	font-size: 18px;
+    font-family: MulishLight;
+    font-size: 18px;
 }
 
 #ornamen_compe {
-	left: 0;
-	top: 50%;
-	transform: translateY(-50%);
-	z-index: 0;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
 }
+
 
 /* Fakta Unik */
 
 #fakta-unik {
-	min-height: 730px;
-	background-color: #f3f3f3;
+    min-height: 730px;
+    background-color: #f3f3f3;
 }
 
 #fakta-unik h2 {
-	font-size: 35px;
-	font-family: MulishSemiBold;
+    font-size: 35px;
+    font-family: MulishSemiBold;
 }
 
 #fakta-unik p {
-	font-size: 20px;
-	font-family: MulishRegular;
+    font-size: 20px;
+    font-family: MulishRegular;
 }
 
 @media screen and (max-width: 765px) {
-	#fakta-unik img.fact {
-		width: 50% !important;
-	}
+    #fakta-unik img.fact {
+        width: 50% !important;
+    }
 }
 
 #ornamen_fact {
-	top: 50%;
-	left: 30%;
-	opacity: 0.5;
+    top: 50%;
+    left: 30%;
+    opacity: 0.5;
 }
+
 
 /* Timeline */
 
 #timeline {
-	min-height: 730px;
-	background-color: var(--futurest-green);
+    min-height: 730px;
+    background-color: var(--futurest-green);
 }
 
 #timeline h2 {
-	font-family: MulishSemiBold;
-	font-size: 35px;
+    font-family: MulishSemiBold;
+    font-size: 35px;
 }
 
 #timeline .row {
-	border-radius: 30px;
-	background: #f3f3f3;
-	box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
-	z-index: 1;
+    border-radius: 30px;
+    background: #f3f3f3;
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
 #timeline .row .col .rounded-timeline {
-	width: 20px;
-	height: 20px;
-	background: #30958d;
-	left: -35px;
-	top: 50%;
-	transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background: #30958d;
+    left: -35px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 #timeline .row h3 {
-	font-family: MulishSemiBold;
-	font-size: 25px;
+    font-family: MulishSemiBold;
+    font-size: 25px;
 }
 
 #timeline .row p {
-	font-family: MulishLight;
-	font-size: 18px;
+    font-family: MulishLight;
+    font-size: 18px;
 }
 
 #ornamen_timeline {
-	right: 0;
-	top: 50%;
-	transform: translateY(-50%) rotate(180deg);
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
 }
 
+
 /* Cara Daftar */
+
 
 /* #cara-daftar {
 	min-height: 730px;
@@ -246,42 +253,43 @@
 	font-family: MulishRegular;
 } */
 
+
 /* Pertanyaan */
 
 #pertanyaan {
-	min-height: 730px;
-	background-color: #f3f3f3;
+    min-height: 730px;
+    background-color: #f3f3f3;
 }
 
 #pertanyaan h2 {
-	font-family: MulishSemiBold;
-	font-size: 35px;
+    font-family: MulishSemiBold;
+    font-size: 35px;
 }
 
 #pertanyaan .accordion {
-	z-index: 2;
+    z-index: 2;
 }
 
 #pertanyaan h3 button {
-	font-family: MulishSemiBold;
-	font-size: 20px;
+    font-family: MulishSemiBold;
+    font-size: 20px;
 }
 
 #pertanyaan button {
-	background: #e3e3e3;
-	color: var(--futurest-black);
-	font-size: 25px;
-	font-family: MulishSemiBold;
+    background: #e3e3e3;
+    color: var(--futurest-black);
+    font-size: 25px;
+    font-family: MulishSemiBold;
 }
 
 #pertanyaan .accordion-body {
-	font-size: 18px;
-	font-family: MulishLight;
-	background-color: #fff;
+    font-size: 18px;
+    font-family: MulishLight;
+    background-color: #fff;
 }
 
 #ornamen_tanya {
-	top: 50%;
-	transform: translateY(-50%);
-	left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
 }

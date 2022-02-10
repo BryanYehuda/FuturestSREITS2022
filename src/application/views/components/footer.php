@@ -3,10 +3,10 @@
   <div class="container py-5">
 
     <!-- Links -->
-    <div class="row pt-5 mb-sm-5">
+    <div class="row pt-5 mb-sm-5 text-center">
 
       <!-- col 1 -->
-      <div class="col-md-2 d-flex flex-column mb-5 mb-md-1">
+      <div class="col-md-2 d-flex flex-column mb-5 mb-md-1 offset-md-3">
         <h3 class="mb-4">Futurest</h3>
         <a href="https://www.instagram.com/futurest2022/" target="_blank" class="mb-3">Instagram</a>
         <a href="https://www.linkedin.com/company/futureenergysummit/" target="_blank" class="mb-3">LinkedIn</a>
@@ -33,7 +33,7 @@
     <br>
 
     <!-- Image -->
-    <img src="<?php echo base_url() ?>/public/img/logo-formal.png" alt="Logo Formal" class="img-fluid d-block ms-auto">
+    <img src="<?php echo base_url() ?>/public/img/logo-formal.png" alt="Logo Formal" class="img-fluid d-block mx-auto">
 
   </div>
 </div>
