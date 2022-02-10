@@ -1,143 +1,146 @@
 /* Jumbotron */
 
 #jumbotron {
-	min-height: 730px;
+    min-height: 730px;
 }
 
 #jumbotron::before {
-	content: "";
-	background-image: url("../../img/contact_us_paral.jpg");
-	position: absolute;
-	background-size: cover;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	z-index: -1;
+    content: "";
+    background-image: url("../../img/contact_us_paral.jpg");
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
 }
 
 #jumbotron h1 {
-	font-size: 50px;
-	font-family: MulishBold;
-	display: inline;
+    font-size: 50px;
+    font-family: MulishBold;
+    display: inline;
 }
 
 #jumbotron p {
-	font-size: 20px;
-	font-family: MulishRegular;
+    font-size: 20px;
+    font-family: MulishRegular;
 }
 
 #jumbotron h1,
 #jumbotron p {
-	background-color: var(--futurest-green);
-	padding: 0.5rem;
-	border-radius: 0.5rem;
+    background-color: var(--futurest-green);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
 }
 
 #jumbotron i {
-	font-size: 120px;
+    font-size: 120px;
 }
+
 
 /* Futurest Sosmed */
 
 #re-contact {
-	min-height: 730px;
-	background: var(--futurest-green);
+    min-height: 730px;
+    background: var(--futurest-green);
 }
 
 #re-contact h2 {
-	font-size: 35px;
-	font-family: MulishSemiBold;
+    font-size: 35px;
+    font-family: MulishSemiBold;
 }
 
 #re-contact h3 {
-	font-size: 25px;
-	font-family: MulishSemiBold;
+    font-size: 25px;
+    font-family: MulishSemiBold;
 }
 
 #re-contact p {
-	font-size: 18px;
-	font-family: MulishRegular;
+    font-size: 18px;
+    font-family: MulishRegular;
 }
 
 #re-contact .card-re-contact {
-	border-radius: 30px;
-	box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
-	z-index: 2;
+    border-radius: 30px;
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 2;
 }
 
 #re-contact .card-re-contact img {
-	border-radius: 30px 30px 0 0;
+    border-radius: 30px 30px 0 0;
 }
 
 #ornamen_re {
-	right: 10%;
-	top: 50%;
-	transform: translateY(-50%);
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
 }
+
 
 /* Admin Sosmed */
 
 #admin-sosmed {
-	min-height: 730px;
-	background: #f3f3f3;
+    min-height: 730px;
+    background: #f3f3f3;
 }
 
 #admin-sosmed h2 {
-	font-size: 35px;
-	font-family: MulishSemiBold;
+    font-size: 35px;
+    font-family: MulishSemiBold;
 }
 
 #admin-sosmed h3 {
-	font-size: 25px;
-	font-family: MulishSemiBold;
+    font-size: 25px;
+    font-family: MulishSemiBold;
 }
 
 #admin-sosmed p {
-	font-size: 18px;
-	font-family: MulishRegular;
+    font-size: 18px;
+    font-family: MulishRegular;
 }
 
 #admin-sosmed .card-admin-futurest {
-	border-radius: 30px;
-	box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
-	z-index: 2;
+    border-radius: 30px;
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 2;
 }
 
 #admin-sosmed .card-admin-futurest img {
-	border-radius: 30px 30px 0 0;
+    border-radius: 30px 30px 0 0;
 }
 
 #ornamen_essay {
-	left: 10%;
-	top: 50%;
-	transform: translateY(-50%);
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
 }
+
 
 /* Contact Us */
 
 #contact-us {
-	background: var(--futurest-green);
-	min-height: 730px;
+    background: var(--futurest-green);
+    min-height: 730px;
 }
 
 #contact-us h2 {
-	font-family: MulishSemiBold;
-	font-size: 35px;
+    font-family: MulishSemiBold;
+    font-size: 35px;
 }
 
 #contact-us label {
-	font-family: MulishSemiBold;
-	font-size: 25px;
+    font-family: MulishSemiBold;
+    font-size: 25px;
 }
 
 #contact-us form input,
 #contact-us form textarea {
-	font-family: MulishLight;
-	font-size: 18px;
+    font-family: MulishLight;
+    font-size: 18px;
 }
 
 #contact-us form input:focus,
 #contact-us form textarea:focus {
-	outline: 4.3px solid var(--futurest-teal);
+    outline: 4.3px solid var(--futurest-teal);
 }

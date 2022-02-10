@@ -1,53 +1,57 @@
 .navbar {
-	background-color: #f3f3f3;
-	box-shadow: 2px 0 10px grey;
+    background-color: #f3f3f3;
+    box-shadow: 2px 0 10px grey;
 }
+
 
 /* Navbar Brand */
 
 .navbar-brand a {
-	text-decoration: none;
-	color: var(--futurest-green);
+    text-decoration: none;
+    color: var(--futurest-green);
 }
 
 .navbar-brand h2 {
-	font-family: MaldenSansBoldItalic;
-	font-size: 20px;
+    font-family: MaldenSansBoldItalic;
+    font-size: 20px;
 }
+
 
 /* Navbar Links */
 
 .navbar-links {
-	position: relative;
-	font-family: MulishRegular;
+    position: relative;
+    font-family: MulishRegular;
 }
 
 .navbar-links a:not(:last-child) {
-	position: relative;
-	text-decoration: none;
-	color: var(--futurest-black);
-	font-size: 18px;
-	/* padding-bottom: 4px; */
-	padding: 0.25rem 0.5rem;
-	border-radius: 0.25rem;
+    position: relative;
+    text-decoration: none;
+    color: var(--futurest-black);
+    font-size: 18px;
+    /* padding-bottom: 4px; */
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
 }
+
 
 /* Dropdown Style */
 
 .navbar-links .dropdown-navbar-futurest {
-	margin-top: -2px;
+    margin-top: -2px;
 }
 
 .navbar-links .dropdown-navbar-futurest button {
-	color: var(--futurest-black);
-	font-size: 18px;
+    color: var(--futurest-black);
+    font-size: 18px;
 }
 
 .navbar-links .dropdown-navbar-futurest .list-dropdown-navbar-futurest a {
-	font-size: 14px;
-	position: relative;
-	background: transparent;
+    font-size: 14px;
+    position: relative;
+    background: transparent;
 }
+
 
 /* .navbar-links
 	.dropdown-navbar-futurest
@@ -73,10 +77,12 @@
 } */
 
 .navbar-links .dropdown-navbar-futurest .list-dropdown-navbar-futurest a:hover {
-	background-color: var(--futurest-green);
+    background-color: var(--futurest-green);
 }
 
+
 /* End Dropdown Style */
+
 
 /* .navbar-links a:not(:last-child)::before {
 	content: "";
@@ -96,75 +102,75 @@
 } */
 
 .navbar-links a:not(:last-child):hover {
-	background-color: var(--futurest-green);
+    background-color: var(--futurest-green);
 }
 
 .navbar-links .btn-sm {
-	background-color: var(--futurest-green);
-	color: var(--futurest-white);
-	font-size: 18px;
+    background-color: var(--futurest-green);
+    color: var(--futurest-white);
+    font-size: 18px;
 }
 
 .navbar-links .btn-sm:hover {
-	background-color: #88a124;
+    background-color: #88a124;
 }
 
 .input-btn-mobile {
-	width: 40px;
-	height: 40px;
-	opacity: 0;
-	z-index: 2;
-	cursor: pointer;
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+    z-index: 2;
+    cursor: pointer;
 }
 
 .icon-btn-mobile {
-	font-size: 30px;
-	color: var(--futurest-green);
-	z-index: 1;
+    font-size: 30px;
+    color: var(--futurest-green);
+    z-index: 1;
 }
 
 .input-btn-mobile,
 .icon-btn-mobile {
-	position: absolute;
-	right: 80px;
+    position: absolute;
+    right: 80px;
 }
 
-.input-btn-mobile:checked ~ .navbar-links {
-	right: 0;
-	box-shadow: 0 -1px 15px #000;
+.input-btn-mobile:checked~.navbar-links {
+    right: 0;
+    box-shadow: 0 -1px 15px #000;
 }
 
 @media screen and (max-width: 650px) {
-	.input-btn-mobile,
-	.icon-btn-mobile {
-		right: 50px;
-	}
+    .input-btn-mobile,
+    .icon-btn-mobile {
+        right: 50px;
+    }
 }
 
 @media screen and (max-width: 576px) {
-	.input-btn-mobile,
-	.icon-btn-mobile {
-		right: 15px;
-	}
+    .input-btn-mobile,
+    .icon-btn-mobile {
+        right: 15px;
+    }
 }
+
 
 /* Btn Nav Mobile */
 
 @media screen and (max-width: 768px) {
-	.navbar-links {
-		position: absolute;
-		background-color: #f3f3f3;
-		top: 0;
-		right: -100vw;
-		width: 100vw;
-		height: 100vh;
-		justify-content: space-evenly;
-		transition: 0.2s ease-out;
-		padding-top: 30px;
-	}
-
-	.navbar-links > a,
-	.navbar-links > div {
-		margin-bottom: 20px;
-	}
+    .navbar-links {
+        position: absolute;
+        background-color: #f3f3f3;
+        top: 0;
+        right: -100vw;
+        width: 100vw;
+        height: 100vh;
+        justify-content: space-evenly;
+        transition: 0.2s ease-out;
+        padding-top: 30px;
+    }
+    .navbar-links>a,
+    .navbar-links>div {
+        margin-bottom: 20px;
+    }
 }

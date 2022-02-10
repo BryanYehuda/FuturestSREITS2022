@@ -1,44 +1,44 @@
 html {
-	width: 100vw !important;
-	margin: 0 !important;
-	padding: 0 !important;
+    width: 100vw !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 body {
-	overflow-x: hidden;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-	font-family: MulishRegular;
-	src: url("../fonts/Mulish-Regular.ttf");
-	background: radial-gradient(ellipse at bottom, #a1ffab 0%, #faffd1 100%);
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: MulishRegular;
+    src: url("../fonts/Mulish-Regular.ttf");
+    background: radial-gradient(ellipse at bottom, #a1ffab 0%, #faffd1 100%);
 }
 
 .register-right {
-	background: #ffffff;
+    background: #ffffff;
 }
 
 .register-form h1 {
-	font-size: 52px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	margin: 150px 0px;
-	line-height: 60px;
-	font-family: MulishRegular;
-	src: url("../fonts/Mulish-Regular.ttf");
+    font-size: 52px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 150px 0px;
+    line-height: 60px;
+    font-family: MulishRegular;
+    src: url("../fonts/Mulish-Regular.ttf");
 }
 
 .register-form .form-control {
-	border-radius: 0px !important;
-	color: rgb(255, 255, 255);
+    border-radius: 0px !important;
+    color: rgb(255, 255, 255);
 }
 
 .form-group {
-	font-family: MulishRegular;
-	src: url("../fonts/Mulish-Regular.ttf");
+    font-family: MulishRegular;
+    src: url("../fonts/Mulish-Regular.ttf");
 }
 
 .register {
-	font-family: MulishRegular;
-	src: url("../fonts/Mulish-Regular.ttf");
+    font-family: MulishRegular;
+    src: url("../fonts/Mulish-Regular.ttf");
 }
