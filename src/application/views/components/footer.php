@@ -6,7 +6,7 @@
     <div class="row pt-5 mb-sm-5">
 
       <!-- col 1 -->
-      <div class="col-md-2 d-flex flex-column mb-5 mb-md-1">
+      <div class="col-md-2 d-flex flex-column mb-5 mb-md-1 ">
         <h3 class="mb-4">Futurest</h3>
         <a href="https://www.instagram.com/futurest2022/" target="_blank" class="mb-3">Instagram</a>
         <a href="https://www.linkedin.com/company/futureenergysummit/" target="_blank" class="mb-3">LinkedIn</a>

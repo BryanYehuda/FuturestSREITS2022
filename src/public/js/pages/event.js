@@ -2,7 +2,7 @@ const vm = new Vue({
 	el: "#section",
 	data: {
 		jumbotron: {
-			title: "Explore our events!",
+			title: "EXPLORE OUR EVENTS!",
 			description:
 				"Futurest 2022 has several events, both competitive and in the form of talk shows. Get to know the 7 events held by Futurest by clicking the button below.",
 		},

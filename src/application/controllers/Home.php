@@ -82,10 +82,10 @@ class Home extends CI_Controller
     {
         date_default_timezone_set("Asia/Jakarta");
         $date_now = date("Y-m-d H:i:s");
-        
+
         if ($date_now < '2022-01-31 07:00:10') {
             $this->load->view('registerClimateChangeEvent');
-        }else{
+        } else {
             $this->load->view('finish_regist');
         }
     }
@@ -137,17 +137,26 @@ class Home extends CI_Controller
 
     public function grand_talkshow()
     {
-        $this->load->view('details_grand_talkshow');
+        //$this->load->view('details_grand_talkshow');
+        $this->load->view('close_grandtalk');
+    }
+
+    public function close_climate()
+    {
+
+        $this->load->view('close_climate');
     }
 
     public function awarding_night()
     {
-        $this->load->view('details_awarding_night');
+        //$this->load->view('details_awarding_night');
+        $this->load->view('coming_soon');
     }
 
     public function final_talkshow()
     {
-        $this->load->view('details_final_talkshow');
+        //$this->load->view('details_final_talkshow');
+        $this->load->view('coming_soon');
     }
 
     public function re_101()

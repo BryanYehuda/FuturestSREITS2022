@@ -44,7 +44,7 @@
         <h2 class="mb-5">RE Innovation Brainstorm Timeline</h2>
         <div class="row mb-3 px-4 py-3 w-75" v-for="item in timeline">
           <div class="col position-relative">
-            <div class="position-absolute rounded-timeline rounded-pill"></div>
+            <div class="position-absolute "></div>
             <h3>{{ item.date }}</h3>
             <p>{{ item.description }}</p>
           </div>
@@ -53,9 +53,7 @@
     </section>
 
     <section id="prize-pool" class="py-5 position-relative">
-      <img src="<?php echo base_url() ?>public/img/ornamen/ornam7.png" alt="Ornamen" id="ornamen_prize" class="d-none d-md-block position-absolute" width="300" height="300">
-      <img src="<?php echo base_url() ?>public/img/ornamen/leaves.png" alt="Ornamen" id="ornamen_prize_2" class="d-none d-md-block position-absolute" width="300" height="300">
-      <img src="<?php echo base_url() ?>public/img/ornamen/leaf.png" alt="Ornamen" id="ornamen_prize_3" class="d-none d-md-block position-absolute" width="300" height="300">
+
       <div class="container py-5">
         <h2 class="text-center mb-5">RE Innovation Prize Pool!</h2>
         <div class="d-flex flex-column flex-md-row align-items-center justify-content-center pt-5">
@@ -78,7 +76,7 @@
         <br><br><br><br><br><br><br>
         <h2 class="text-center mb-5">Don't forget to register!</h2>
         <div class="d-flex justify-content-center">
-          <a class="btn btn-primary mx-3" href="<?php echo base_url("register-re-innovation-comp") ?>">
+          <a class="btn-lg btn-primary mx-3" href="<?php echo base_url("register-re-innovation-comp") ?>">
             Register for Your Team!
           </a>
         </div>
