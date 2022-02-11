@@ -97,6 +97,15 @@
                     <div class="col-md-6 p-2">
                         <div class="card announcement-card shadow">
                             <div class="card-body">
+                                <h5 class="card-title primary-text">Guidebook</h5>
+                                
+                                <a href="https://bit.ly/GuidebookREIB2022" class="btn btn-outline-success" target="_blank">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 p-2">
+                        <div class="card announcement-card shadow">
+                            <div class="card-body">
                                 <h5 class="card-title primary-text">Abstract List</h5>
                                 
                                 <a href="<?php echo base_url('dashboard-re-innovation-abstract')?>" class="btn btn-outline-success">View</a>

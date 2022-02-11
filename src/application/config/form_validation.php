@@ -274,7 +274,7 @@ $config = array(
         array(
             'field' => 'teamname',
             'label' => 'Teamname',
-            'rules' => 'trim|required|min_length[1]|max_length[255]',
+            'rules' => 'trim|required|min_length[1]|max_length[255]is_unique[pendaftaran_reinnovation.pendaftaranreinnovation_teamname]',
             'errors' => array(
                 'required' 			=> 'Please fill this column',
                 'max_length[255]' 	=> 'You exceed the limit' 
