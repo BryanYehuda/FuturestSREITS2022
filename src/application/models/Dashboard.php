@@ -70,6 +70,7 @@ class Dashboard extends CI_Model
         
         $username = str_replace(' ', '', $res['pendaftaranreinnovation_teamname']);
         
+        $teamname = $res['pendaftaranreinnovation_teamname'];
         $email = $res['pendaftaranreinnovation_1_email'];
         $password = $id . $username . '!';
         $passwordHash = password_hash($password, PASSWORD_DEFAULT);
@@ -84,6 +85,7 @@ class Dashboard extends CI_Model
         $this->db->insert('account', $insert);
 
         $return = [
+            'teamname' => $teamname,
             'username' => $username,
             'password' => $password,
             'email' => $email
