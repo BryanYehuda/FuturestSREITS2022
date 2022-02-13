@@ -45,7 +45,10 @@
       <div class="container py-5 position-relative">
 
         <div class="row">
-          <h2 class="mb-lg-5 text-center">Introduction</h2>
+          <h2 class="mb-lg-5 text-center">
+            Introduction
+            <img src="<?= base_url() ?>/public/img/panah_intro.png" alt="Panah Bawah" class= "img-fluid" width="30">
+          </h2>
           <div class="row">
             <div class="d-none d-lg-block col-lg-5">
               <img src="<?= base_url() ?>/public/img/circle_star.png" alt="Photos of Introduction " class="img-fluid" width="300">

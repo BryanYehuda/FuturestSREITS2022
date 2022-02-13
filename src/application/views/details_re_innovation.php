@@ -68,7 +68,7 @@
             <h2>Third Place </h2>
             <p>Rp 2.500.000</p>
             <h2>Best Pitch Video Prototype </h2>
-            <p>RRp 500.000</p>
+            <p>Rp 500.000</p>
             <h2>Favourite Winner</h2>
             <p>Rp 500.000</p>
           </div>
@@ -84,6 +84,26 @@
           </a>
         </div>
         <br><br><br><br><br>
+      </div>
+    </section>
+
+    <section id="pertanyaan" class="py-5 position-relative">
+      <div class="container py-5">
+        <h2 class="mb-5 text-center">Frequently Asked Questions</h2>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item" v-for="item in pertanyaan">
+            <h3 class="accordion-header" :id="item.id">
+              <button class="accordion-button shadow-none" :class="item.collapsed" type="button" data-bs-toggle="collapse" :data-bs-target="item.dataBsTarget" :aria-expanded="item.ariaExpanded" :aria-controls="item.ariaControls">
+                {{ item.question }}
+              </button>
+            </h3>
+            <div :id="item.ariaControls" class="accordion-collapse collapse" :class="item.show" :aria-labelledby="item.id" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                {{ item.answer }}
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 

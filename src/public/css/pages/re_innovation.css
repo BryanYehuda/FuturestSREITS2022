@@ -6,9 +6,9 @@
 
 #jumbotron::before {
     content: "";
-    background-image: url("../../img/re_innovation.jpg");
+    background-image: url("../../img/1893127.jpg");
     position: absolute;
-    background-size: cover;
+    background-size: 100% 100%;
     top: 0;
     left: 0;
     bottom: 0;
@@ -49,7 +49,15 @@
 
 #timeline {
     min-height: 730px;
-    background-color: var(--futurest-green);
+    background-image: url("../../img/bg_timeline.png");
+    background-size: cover;
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
 }
 
 #timeline h2 {
@@ -88,8 +96,15 @@
 /* prize pool */
 
 #prize-pool {
-    background-color: #f3f3f3;
     min-height: 730px;
+    background-image: url("../../img/bg_putih.png");
+    position: absolute;
+    background-size: 100% 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
 }
 
 #prize-pool h2 {
@@ -115,6 +130,43 @@
 #prize-pool p {
     font-family: MulishLight;
     font-size: 18px;
+}
+
+/* Pertanyaan */
+#pertanyaan {
+    min-height: 730px;
+    background-color: #f3f3f3;
+    background-image: url("../../img/bg_timeline.png");
+    background-size: cover;
+    position: absolute;
+    background-size: cover;
+}
+
+#pertanyaan h2 {
+    font-family: MulishSemiBold;
+    font-size: 35px;
+}
+
+#pertanyaan .accordion {
+    z-index: 2;
+}
+
+#pertanyaan h3 button {
+    font-family: MulishSemiBold;
+    font-size: 20px;
+}
+
+#pertanyaan button {
+    background: #e3e3e3;
+    color: var(--futurest-black);
+    font-size: 25px;
+    font-family: MulishSemiBold;
+}
+
+#pertanyaan .accordion-body {
+    font-size: 18px;
+    font-family: MulishLight;
+    background-color: #fff;
 }
 
 #ornamen_prize {

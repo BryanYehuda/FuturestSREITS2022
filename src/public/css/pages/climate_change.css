@@ -49,7 +49,15 @@
 
 #timeline {
     min-height: 730px;
-    background-color: var(--futurest-green);
+    background-image: url("../../img/bg_timeline.png");
+    background-size: cover;
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
 }
 
 #timeline h2 {
@@ -89,7 +97,14 @@
 
 #description {
     min-height: 730px;
-    background-color: #f3f3f3;
+    background-image: url("../../img/bg_putih.png");
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
 }
 
 #description h2 {
