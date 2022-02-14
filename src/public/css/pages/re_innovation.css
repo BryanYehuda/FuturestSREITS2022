@@ -98,13 +98,8 @@
 #prize-pool {
     min-height: 730px;
     background-image: url("../../img/bg_putih.png");
-    position: absolute;
-    background-size: 100% 100%;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
+    background-size: cover;
+    background-position: center;
 }
 
 #prize-pool h2 {

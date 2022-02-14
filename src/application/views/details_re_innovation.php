@@ -53,7 +53,6 @@
     </section>
 
     <section id="prize-pool" class="py-5 position-relative">
-
       <div class="container py-5">
         <h2 class="text-center mb-5">RE Innovation Prize Pool!</h2>
         <div class="d-flex flex-column flex-md-row align-items-center justify-content-center pt-5">
@@ -76,10 +75,10 @@
         <br><br><br><br><br><br><br>
         <h2 class="text-center mb-5">Don't forget to register!</h2>
         <div class="d-flex justify-content-center">
-          <a class="btn-lg btn-primary mx-3" href="https://bit.ly/GuidebookREIB2022">
+          <a class="btn btn-lg btn-primary mx-3" href="https://bit.ly/GuidebookREIB2022">
             Guide Book
           </a>
-          <a class="btn-lg btn-primary mx-3" href="<?php echo base_url("register-re-innovation-comp") ?>">
+          <a class="btn btn-lg btn-primary mx-3" href="<?php echo base_url("register-re-innovation-comp") ?>">
             Register for Your Team!
           </a>
         </div>
