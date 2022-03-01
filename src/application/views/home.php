@@ -82,11 +82,12 @@
           <h2 class="text-center my-5">Futurest 2022 Sponsors</h2>
           <div class="d-flex flex-wrap justify-content-center">
             <img src="<?= base_url() ?>/public/img/pt_quarto.jpg" alt="Logo Sponsor" class="img-fluid m-4" width="200" height="150">
-            <img src="<?= base_url() ?>/public/img/pt_pp.jpg" alt="Logo Sponsor" class="img-fluid m-4" width="150" height="150">
+            <img src="<?= base_url() ?>/public/img/pt_pp.jpg" alt="Logo Sponsor" class="img-fluid m-4" width="200" height="150">
             <img src="<?= base_url() ?>/public/img/pdam_surabaya.png" alt="Logo Sponsor" class="img-fluid m-4" width="150" height="150">
             <img src="<?= base_url() ?>/public/img/hutama_karya.png" alt="Logo Sponsor" class="img-fluid m-4" width="150" height="150">
             <img src="<?= base_url() ?>/public/img/coca_cola.png" alt="Logo Sponsor" class="img-fluid m-4" width="150" height="150">
             <img src="<?= base_url() ?>/public/img/sun.jpg" alt="Logo Sponsor" class="img-fluid m-4" width="150" height="150">
+            <img src="<?= base_url() ?>/public/img/sun_energy.jpeg" alt="Logo Sponsor" class="img-fluid m-4" width="150" height="150">
           </div>
         </div>
       </div>
