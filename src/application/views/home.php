@@ -28,9 +28,7 @@
         <img src="<?= base_url() ?>/public/img/logo_keren.png" alt="Futurest Logo" class=" img-fluid d-block mx-auto mt-5" width="180">
         <h1 class="text-center">FUTUREST 2022</h1>
         <p class="text-center w-75 mx-auto mb-4">
-          <q>
-            <h3> Generating Young Indonesian Leaders with Concrete and Feasible Actions for Climate Catastrophe Prevention Through Energy Transformation</h3>
-          </q>
+            <h3 class="text-center">Generating Young Indonesian Leaders with Concrete and Feasible Actions for Climate Catastrophe Prevention Through Energy Transformation</h3>
         </p>
         <a href="#introduction" class="btn btn-primary d-block mx-auto d-flex justify-content-evenly align-items-center" style="width: 200px;">
           Learn more
@@ -87,7 +85,7 @@
             <img src="<?= base_url() ?>/public/img/hutama_karya.png" alt="Logo Sponsor" class="img-fluid m-4" width="150" height="150">
             <img src="<?= base_url() ?>/public/img/coca_cola.png" alt="Logo Sponsor" class="img-fluid m-4" width="150" height="150">
             <img src="<?= base_url() ?>/public/img/sun.jpg" alt="Logo Sponsor" class="img-fluid m-4" width="150" height="150">
-            <img src="<?= base_url() ?>/public/img/sun_energy.jpeg" alt="Logo Sponsor" class="img-fluid m-4" width="150" height="150">
+            <img src="<?= base_url() ?>/public/img/sun_energy.png" alt="Logo Sponsor" class="img-fluid m-4" width="150" height="150">
           </div>
         </div>
       </div>
