@@ -103,6 +103,14 @@
                             <?php }?>
                             <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 1px;">Event Entered</p>
                             <h5 class="primary-text mb-3">Essay Competition</h5>
+                            
+                            <p class="fs-6 text-black-50 regular-text" style="margin-bottom: -4px;">Essay</p>
+                            <?php if($data[0]['pendaftaranessaycompetition_esai'] ) { ?>
+                                <a href="<?= base_url('/upload/EssayCompetition/esai/' . $data[0]['pendaftaranessaycompetition_esai'])?>" target="_blank">Show</a></h5>
+                            
+                            <?php } else { ?>
+                                <a>-</a></h5>
+                            <?php } ?>
                         </div>
                     </div>
                 </div>
