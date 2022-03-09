@@ -3,10 +3,15 @@ const vm = new Vue({
 	data: {
 		timeline: [
       {
-				date: "14 March – 1 May 2022",
+				date: "14 March – 1 April 2022",
 				description:
-					"Open Essay Submission",
+					"Open Essay Submission Batch 1",
 			},
+      {
+        date: "11 April – 1 May 2022",
+				description:
+					"Open Essay Submission Batch 2",
+      },
       {
 				date: "27 March 2022",
 				description:
@@ -26,11 +31,6 @@ const vm = new Vue({
 				date: "22 May 2022",
 				description:
 					"Technical Meeting for Finalists",
-			},
-      {
-				date: "29 May 2022",
-				description:
-					"Final Presentation Day",
 			},
       {
 				date: "29 May 2022",

@@ -29,7 +29,7 @@
               National Essay Competition
             </h1>
             <p class="mb-5">
-              <b>The National Essay Competition</b> is intended for undergraduate and vocational students from universities all over Indonesia to apply their innovative ideas and solutions to the renewable energy sector that contribute to a more sustainable future. This competition is held with the hope that all the essays from participants could contribute to the energy transition efforts and achieve Indonesia's energy security. Participants are challenged to provide their ideas through logical and targeted solutions related to renewable energy in Indonesia. These solutions are expected to be elaborated in the form of an essay with clear, concise, objective, and easily understood by the readers.
+              <b>The National Essay Competition</b> is intended for undergraduate, vocational students from universities, and for highschool student all over Indonesia to apply their innovative ideas and solutions to the renewable energy sector that contribute to a more sustainable future. This competition is held with the hope that all the essays from participants could contribute to the energy transition efforts and achieve Indonesia's energy security. Participants are challenged to provide their ideas through logical and targeted solutions related to renewable energy in Indonesia. These solutions are expected to be elaborated in the form of an essay with clear, concise, objective, and easily understood by the readers. Please note that this competition is only for people aged 17-24 as of March 1, 2022.
             </p>
             <a href="#timeline" class="btn btn-primary">Show Timeline</a>
           </div>
@@ -83,7 +83,6 @@
         <br><br><br><br><br>
       </div>
     </section> -->
-
   </main>
 
   <footer>
