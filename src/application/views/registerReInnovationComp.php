@@ -99,6 +99,7 @@
                                                      <option value="2019">2019</option>
                                                      <option value="2020">2020</option>
                                                      <option value="2021">2021</option>
+                                                     <option value="2022">2022</option>
                                                  </select><br>
                                                  <div class="invalid-feedback" id="batch_1-false">
                                                      <?php echo form_error('batch_1'); ?>
@@ -202,6 +203,7 @@
                                                      <option value="2019">2019</option>
                                                      <option value="2020">2020</option>
                                                      <option value="2021">2021</option>
+                                                     <option value="2022">2022</option>
                                                  </select><br>
                                                  <div class="invalid-feedback" id="batch_2-false">
                                                      <?php echo form_error('batch_2'); ?>
@@ -308,6 +310,7 @@
                                                      <option value="2019">2019</option>
                                                      <option value="2020">2020</option>
                                                      <option value="2021">2021</option>
+                                                     <option value="2022">2022</option>
                                                  </select><br>
                                                  <div class="invalid-feedback" id="batch_3-false">
                                                      <?php echo form_error('batch_3'); ?>
