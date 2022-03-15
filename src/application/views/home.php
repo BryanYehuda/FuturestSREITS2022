@@ -28,7 +28,7 @@
         <img src="<?= base_url() ?>/public/img/logo_keren.png" alt="Futurest Logo" class=" img-fluid d-block mx-auto mt-5" width="180">
         <h1 class="text-center">FUTUREST 2022</h1>
         <p class="text-center w-75 mx-auto mb-4">
-            <h3 class="text-center">Generating Young Indonesian Leaders with Concrete and Feasible Actions for Climate Catastrophe Prevention Through Energy Transformation</h3>
+        <h3 class="text-center">Generating Young Indonesian Leaders with Concrete and Feasible Actions for Climate Catastrophe Prevention Through Energy Transformation</h3>
         </p>
         <a href="#introduction" class="btn btn-primary d-block mx-auto d-flex justify-content-evenly align-items-center" style="width: 200px;">
           Learn more
@@ -45,7 +45,7 @@
         <div class="row">
           <h2 class="mb-lg-5 text-center">
             Introduction
-            <img src="<?= base_url() ?>/public/img/panah_intro.png" alt="Panah Bawah" class= "img-fluid" width="30">
+            <img src="<?= base_url() ?>/public/img/panah_intro.png" alt="Panah Bawah" class="img-fluid" width="30">
           </h2>
           <div class="row">
             <div class="d-none d-lg-block col-lg-5">
@@ -67,9 +67,8 @@
     <!-- end of introduction -->
 
     <!-- partners -->
-    <section id="partners">
+    <section id="partners" class="mb-5">
       <div class="container position-relative">
-
         <div class="row">
           <h2 class="text-center mb-5">Futurest 2022 Supporters</h2>
           <div class="d-flex flex-wrap justify-content-center mb-5">
@@ -83,9 +82,12 @@
             <img src="<?= base_url() ?>/public/img/pt_pp.jpg" alt="Logo Sponsor" class="img-fluid m-4" width="200" height="150">
             <img src="<?= base_url() ?>/public/img/pdam_surabaya.png" alt="Logo Sponsor" class="img-fluid m-4" width="150" height="150">
             <img src="<?= base_url() ?>/public/img/hutama_karya.png" alt="Logo Sponsor" class="img-fluid m-4" width="150" height="150">
-            <img src="<?= base_url() ?>/public/img/coca_cola.png" alt="Logo Sponsor" class="img-fluid m-4" width="150" height="150">
+            <img src="<?= base_url() ?>/public/img/coca_cola.png" alt="Logo Sponsor" class="img-fluid m-4" width="180" height="150">
             <img src="<?= base_url() ?>/public/img/sun.jpg" alt="Logo Sponsor" class="img-fluid m-4" width="150" height="150">
             <img src="<?= base_url() ?>/public/img/sun_energy.png" alt="Logo Sponsor" class="img-fluid m-4" width="150" height="150">
+            <img src="<?= base_url() ?>/public/img/pgn_saka.png" alt="Logo Sponsor" class="img-fluid m-4" width="500" height="100">
+            <img src="<?= base_url() ?>/public/img/yokogawa.png" alt="Logo Sponsor" class="img-fluid m-4" width="150" height="150">
+            <img src="<?= base_url() ?>/public/img/smelting.jpg" alt="Logo Sponsor" class="img-fluid m-4" width="150" height="150">
           </div>
         </div>
       </div>

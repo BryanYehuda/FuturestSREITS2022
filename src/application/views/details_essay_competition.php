@@ -53,7 +53,7 @@
       </div>
     </section>
 
-    <!-- <section id="prize-pool" class="py-5 position-relative">
+    <section id="prize-pool" class="py-5 position-relative">
       <img src="<?php echo base_url() ?>public/img/ornamen/ornam5.png" alt="Ornamen" id="ornamen_prize" class="position-absolute" width="300" height="300">
       <div class="container py-5">
         <h2 class="text-center mb-5">National Essay Prize Pool!</h2>
@@ -61,13 +61,16 @@
           <i class="fas fa-trophy mx-5"></i>
           <div class="mx-5">
             <h2>#1st</h2>
-            <p>Rp. Coming Soon</p>
+            <p>Rp. 4.000.000 + E-Sertifikat + Plakat</p>
             <br>
             <h2>#2nd</h2>
-            <p>Rp. Coming Soon</p>
+            <p>Rp. 2.500.000 + E-Sertifikat + Plakat</p>
             <br>
             <h2>#3rd</h2>
-            <p>Rp. Coming Soon</p>
+            <p>Rp. 1.500.000 + E-Sertifikat + Plakat</p>
+            <br>
+            <h2>Juara Favorit</h2>
+            <p>Rp. 300.000 + E-Sertifikat + Plakat</p>
           </div>
         </div>
         <br><br><br><br><br><br><br>
@@ -82,7 +85,8 @@
         </div>
         <br><br><br><br><br>
       </div>
-    </section> -->
+    </section>
+
   </main>
 
   <footer>
