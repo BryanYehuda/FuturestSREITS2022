@@ -56,7 +56,7 @@
                                                     </div>
                                                 </div><br>
                                                 <div class="d-inline p-2 bg-dark text-white">Member 1 (Team Leader)</div>
-
+                                                <br><br>
                                                 <div class="form-group text-dark ">
                                                     <label for="name" class="text-dark"><i class="text-dark"> </i> Full Name </label>
                                                     <input type="text" class="form-control text-dark <?php $ok = " "; (form_error('name_1') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" name="name_1" id="name_1" placeholder="Your Name ll Ex: Devitweb development" required>
@@ -93,7 +93,7 @@
                                                     </div>
                                                 </div>
                                                 <br>
-                                                <div class="mb-3">
+                                               <!-- <div class="mb-3">
                                                     <label for="name"><i class="float"></i> Statement Letter of Active Student Scan<b>(pdf)</b></label>
                                                     <input class="form-control text-dark <?php $ok = " "; (!empty($error['activestudent_1'])) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" type="file" id="activestudent_1" name="activestudent_1" multiple required>
                                                     <div class="invalid-feedback" id="activestudent_1-false">
@@ -109,7 +109,7 @@
                                                         <?php echo $error['photo_1'];?>
                                                     </div>
                                                 </div>
-                                                <br>
+                                                <br> -->
                                                 <div class="form-group text-dark">
                                                     <label for="phone"><i class="text-dark float"></i> Phone Number </label>
                                                     <input type="phone" class="form-control text-dark <?php $ok = " "; (form_error('phone_1') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" name="phone_1" id="phone_1" placeholder="phone ll Ex: 08XX XXXX XXXX" required>
@@ -126,6 +126,14 @@
                                                     </div>
                                                 </div><br>
 
+                                                <div class="mb-3">
+                                                    <label for="name"><i class="float"></i> Proof of posting our twibbon </label>
+                                                    <a href="https://bit.ly/TwibbonNECFuturest2022" class="link-primary">https://bit.ly/TwibbonNECFuturest2022/</a>
+                                                    <input class="form-control text-dark <?php $ok = " "; (!empty($error['twibbon_1'])) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" type="file" id="twibbon_1" name="twibbon_1" multiple required>
+                                                    <div class="invalid-feedback" id="twibbon_1-false">
+                                                        <?php echo $error['twibbon_1'];?>
+                                                    </div>
+                                                </div><br>
 
                                                 <div class="mb-3">
                                                     <label for="name"><i class="float"></i> Proof of following our official Instagram account @futurest2022 or our linkedin at </label>
@@ -174,7 +182,7 @@
                                                     </div>
                                                 </div>
                                                 <br>
-                                                <div class="mb-3">
+                                               <!-- <div class="mb-3">
                                                     <label for="name"><i class="float"></i> Statement Letter of Active Student Scan<b>(pdf)</b></label>
                                                     <input class="form-control text-dark <?php $ok = " "; (!empty($error['activestudent_2'])) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" type="file" id="activestudent_2" name="activestudent_2" multiple required>
                                                     <div class="invalid-feedback" id="activestudent_2-false">
@@ -190,7 +198,7 @@
                                                         <?php echo $error['photo_2'];?>
                                                     </div>
                                                 </div>
-                                                <br>
+                                                <br> -->
                                                 <div class="form-group text-dark">
                                                     <label for="phone"><i class="text-dark float"></i> Phone Number </label>
                                                     <input type="phone" class="form-control text-dark <?php $ok = " "; (form_error('phone_2') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" name="phone_2" id="phone_2" placeholder="phone ll Ex: 08XX XXXX XXXX" required>
@@ -207,6 +215,14 @@
                                                     </div>
                                                 </div><br>
 
+                                                <div class="mb-3">
+                                                    <label for="name"><i class="float"></i> Proof of posting our twibbon </label>
+                                                    <a href="https://bit.ly/TwibbonNECFuturest2022" class="link-primary">https://bit.ly/TwibbonNECFuturest2022/</a>
+                                                    <input class="form-control text-dark <?php $ok = " "; (!empty($error['twibbon_2'])) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" type="file" id="twibbon_2" name="twibbon_2" multiple required>
+                                                    <div class="invalid-feedback" id="twibbon_2-false">
+                                                        <?php echo $error['twibbon_2'];?>
+                                                    </div>
+                                                </div><br>
 
                                                 <div class="mb-3">
                                                     <label for="name"><i class="float"></i> Proof of following our official Instagram account @futurest2022 or our linkedin at </label>

@@ -277,7 +277,8 @@ $config = array(
             'rules' => 'trim|required|min_length[1]|max_length[255]|is_unique[pendaftaran_reinnovation.pendaftaranreinnovation_teamname]',
             'errors' => array(
                 'required' 			=> 'Please fill this column',
-                'max_length[255]' 	=> 'You exceed the limit' 
+                'max_length[255]' 	=> 'You exceed the limit',
+                'is_unique'         => 'This Team name already exists. please choose another team name'
             )
         ),
         array(
@@ -422,10 +423,11 @@ $config = array(
         array(
             'field' => 'teamname',
             'label' => 'Teamname',
-            'rules' => 'trim|required|min_length[1]|max_length[255]',
+            'rules' => 'trim|required|min_length[1]|max_length[255]|is_unique[pendaftaran_essaycompetition.pendaftaranessaycompetition_teamname]',
             'errors' => array(
                 'required' 			=> 'Please fill this column',
-                'max_length[255]' 	=> 'You exceed the limit' 
+                'max_length[255]' 	=> 'You exceed the limit',
+                'is_unique'         => 'This Team name already exists. please choose another team name'
             )
         ),
         array(

@@ -105,15 +105,18 @@
                             <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 1px;">Phone</p>
                             <h5 class="primary-text mb-2"><?= $item['pendaftaranessaycompetition_1_phone']?></h5>
                             
-                            <p class="fs-6 text-black-50 regular-text" style="margin-bottom: -3px;">KTP / Student ID</p>
+                            <p class="fs-6 text-black-50 regular-text" style="margin-bottom: -3px;">Student ID Card / Statement Letter of Active Student</p>
                             <a href="<?= base_url('/upload/EssayCompetition/card/' . $item['pendaftaranessaycompetition_1_card'])?>" target="_blank">Show</a>
 
-                            <p class="fs-6 text-black-50 regular-text" style="margin-bottom: -3px;">Active Student</p>
+                        <!--<p class="fs-6 text-black-50 regular-text" style="margin-bottom: -3px;">Active Student</p>
                             <a href="<?= base_url('/upload/EssayCompetition/activestudent/' . $item['pendaftaranessaycompetition_1_activestudent'])?>" target="_blank">Show</a>
 
                             <p class="fs-6 text-black-50 regular-text" style="margin-bottom: -3px;">Photo 4x6</p>
-                            <a href="<?= base_url('/upload/EssayCompetition/photo/' . $item['pendaftaranessaycompetition_1_photo'])?>" target="_blank">Show</a>
+                            <a href="<?= base_url('/upload/EssayCompetition/photo/' . $item['pendaftaranessaycompetition_1_photo'])?>" target="_blank">Show</a> -->
 
+                            <p class="fs-6 text-black-50 regular-text" style="margin-bottom: -3px;">Twibbon</p>
+                            <a href="<?= base_url('/upload/EssayCompetition/twibbon/' . $item['pendaftaranessaycompetition_1_twibbon'])?>" target="_blank">Show</a>
+                            
                             <p class="fs-6 text-black-50 regular-text" style="margin-bottom: -3px;">Proof of Following</p>
                             <a href="<?= base_url('/upload/EssayCompetition/follow/' . $item['pendaftaranessaycompetition_1_follow'])?>" target="_blank">Show</a>
 
@@ -132,9 +135,10 @@
                                     <li>Major: <?=$item['pendaftaranessaycompetition_1_major']?></li>
                                     <li>Email: <?=$item['pendaftaranessaycompetition_1_email']?></li>
                                     <li>Phone: <?=$item['pendaftaranessaycompetition_1_phone']?></li>
-                                    <li>KTP / Student ID: <a href="<?= base_url('/upload/EssayCompetition/card/' . $item['pendaftaranessaycompetition_1_card'])?>" target="_blank">Show</a></li>
-                                    <li>Active Student: <a href="<?= base_url('/upload/EssayCompetition/activestudent/' . $item['pendaftaranessaycompetition_1_activestudent'])?>" target="_blank">Show</a></li>
-                                    <li>Photo 4x6: <a href="<?= base_url('/upload/EssayCompetition/photo/' . $item['pendaftaranessaycompetition_1_photo'])?>" target="_blank">Show</a></li>
+                                    <li>Student ID Card / Statement Letter of Active Student :  <a href="<?= base_url('/upload/EssayCompetition/card/' . $item['pendaftaranessaycompetition_1_card'])?>" target="_blank">Show</a></li>
+                                   <!-- <li>Active Student: <a href="<?= base_url('/upload/EssayCompetition/activestudent/' . $item['pendaftaranessaycompetition_1_activestudent'])?>" target="_blank">Show</a></li>
+                                    <li>Photo 4x6: <a href="<?= base_url('/upload/EssayCompetition/photo/' . $item['pendaftaranessaycompetition_1_photo'])?>" target="_blank">Show</a></li> -->
+                                    <li>Twibbon: <a href="<?= base_url('/upload/EssayCompetition/twibbon/' . $item['pendaftaranessaycompetition_1_twibbon'])?>" target="_blank">Show</a></li>
                                     <li>Proof of Following: <a href="<?= base_url('/upload/EssayCompetition/follow/' . $item['pendaftaranessaycompetition_1_follow'])?>" target="_blank">Show</a></li>
                                 </ul>
                             </h5>
@@ -147,9 +151,10 @@
                                     <li>Major: <?=$item['pendaftaranessaycompetition_2_major']?></li>
                                     <li>Email: <?=$item['pendaftaranessaycompetition_2_email']?></li>
                                     <li>Phone: <?=$item['pendaftaranessaycompetition_2_phone']?></li>
-                                    <li>KTP / Student ID: <a href="<?= base_url('/upload/EssayCompetition/card/' . $item['pendaftaranessaycompetition_2_card'])?>" target="_blank">Show</a></li>
-                                    <li>Active Student: <a href="<?= base_url('/upload/EssayCompetition/activestudent/' . $item['pendaftaranessaycompetition_2_activestudent'])?>" target="_blank">Show</a></li>
-                                    <li>Photo 4x6: <a href="<?= base_url('/upload/EssayCompetition/photo/' . $item['pendaftaranessaycompetition_2_photo'])?>" target="_blank">Show</a></li>
+                                    <li>Student ID Card / Statement Letter of Active Student : <a href="<?= base_url('/upload/EssayCompetition/card/' . $item['pendaftaranessaycompetition_2_card'])?>" target="_blank">Show</a></li>
+                                   <!-- <li>Active Student: <a href="<?= base_url('/upload/EssayCompetition/activestudent/' . $item['pendaftaranessaycompetition_2_activestudent'])?>" target="_blank">Show</a></li>
+                                    <li>Photo 4x6: <a href="<?= base_url('/upload/EssayCompetition/photo/' . $item['pendaftaranessaycompetition_2_photo'])?>" target="_blank">Show</a></li>-->
+                                    <li>Twibbon: <a href="<?= base_url('/upload/EssayCompetition/twibbon/' . $item['pendaftaranessaycompetition_2_twibbon'])?>" target="_blank">Show</a></li>
                                     <li>Proof of Following: <a href="<?= base_url('/upload/EssayCompetition/follow/' . $item['pendaftaranessaycompetition_2_follow'])?>" target="_blank">Show</a></li>
                                 </ul>
                             </h5>

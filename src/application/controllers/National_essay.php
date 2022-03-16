@@ -35,7 +35,7 @@ class National_essay extends CI_Controller {
 		$tableName = $this->session->userdata('account_table');
 		$this->load->model("Dashboard");
 		$data =[
-			'data' => $this->Dashboard->getDataEssayWhere(1)
+			'data' => array_merge($this->Dashboard->getDataEssayWhere(2), $this->Dashboard->getDataEssayWhere(1))
 		];
 		$this->load->view('admin/dashboard_national_essay/list', $data);
 	}
