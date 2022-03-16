@@ -3,7 +3,7 @@ const vm = new Vue({
 	data: {
 		timeline: [
       {
-				date: "14 March – 1 April 2022",
+				date: "17 March – 10 April 2022",
 				description:
 					"Open Essay Submission Batch 1",
 			},
