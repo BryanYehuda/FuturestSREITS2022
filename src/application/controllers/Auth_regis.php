@@ -666,8 +666,8 @@ class Auth_regis extends CI_Controller{
 		$config = array(
 			'allowed_types'	=> 'jpg|png|jpeg',
 			'max_size'	 	=> 1025,
-			'max_width' 	=> 410,
-			'max_height' 	=> 610
+			'max_width' 	=> 810,
+			'max_height' 	=> 1010
 		);
 		
 		$config['upload_path']	= './upload/REinnovation/photo';
@@ -801,13 +801,22 @@ class Auth_regis extends CI_Controller{
         $this->follow->do_upload('follow_1');
         
         $config = array(
+			'allowed_types' => 'jpg|png|jpeg|pdf',
+			'upload_path'	=> './upload/EssayCompetition/twibbon'
+		);
+
+		$this->load->library('upload', $config, 'twibbon');
+		$this->twibbon->initialize($config);
+        $this->twibbon->do_upload('twibbon_1');
+        
+       /* $config = array(
 			'allowed_types' => 'pdf',
 			'upload_path'	=> './upload/EssayCompetition/activestudent'
 		);
 
 		$this->load->library('upload', $config, 'activestudent');
 		$this->activestudent->initialize($config);
-        $this->activestudent->do_upload('activestudent_1');
+        $this->activestudent->do_upload('activestudent_1');*/
 
 		/*$config = array(
 			'allowed_types' => 'jpg|png|jpeg',
@@ -818,30 +827,32 @@ class Auth_regis extends CI_Controller{
 		$this->payment->initialize($config);
         $this->payment->do_upload('payment');*/
 
-		$config = array(
+		/*$config = array(
 			'allowed_types' => 'jpg|png|jpeg',
 			'max_size'	 	=> 1025,
-			'max_width' 	=> 410,
-			'max_height' 	=> 610,
+			'max_width' 	=> 810,
+			'max_height' 	=> 1010,
 			'upload_path'	=> './upload/EssayCompetition/photo'
 		);
 		
 		$this->load->library('upload', $config, 'photo');
 		$this->photo->initialize($config);
-        $this->photo->do_upload('photo_1');
+        $this->photo->do_upload('photo_1');*/
 
 		$data = array(
 			'card_1' 		    => $this->card->data('file_name'),
 			'follow_1' 	        => $this->follow->data('file_name'),
-			'photo_1' 	        => $this->photo->data('file_name'),
-			'activestudent_1'   => $this->activestudent->data('file_name')
+			//'photo_1' 	        => $this->photo->data('file_name'),
+			'twibbon_1' 	    => $this->twibbon->data('file_name')
+			//'activestudent_1'   => $this->activestudent->data('file_name')
 		);
 
 		$error = array(
 			'card_1' 		    => $this->card->display_errors(),
 			'follow_1'          => $this->follow->display_errors(),
-			'photo_1'           => $this->photo->display_errors(),
-			'activestudent_1'   => $this->activestudent->display_errors()
+			//'photo_1'           => $this->photo->display_errors(),
+			'twibbon_1' 	    => $this->twibbon->display_errors()
+			//'activestudent_1'   => $this->activestudent->display_errors()
 		);
 
 		if(!$this->form_validation->run() || !$this->Registrasi->is_it_empty($error))
@@ -857,15 +868,20 @@ class Auth_regis extends CI_Controller{
 				$path = './upload/EssayCompetition/follow/';
 				unlink($path.$data['follow_1']);
 			}
-			if(empty($error['photo_1']))
+			/*if(empty($error['photo_1']))
 			{
 				$path = './upload/EssayCompetition/photo/';
 				unlink($path.$data['photo_1']);
-			}
-			if(empty($error['activestudent_1']))
+			}*/
+			/*if(empty($error['activestudent_1']))
 			{
 				$path = './upload/EssayCompetition/activestudent/';
 				unlink($path.$data['activestudent_1']);
+			}*/
+			if(empty($error['twibbon_1']))
+			{
+				$path = './upload/EssayCompetition/twibbon/';
+				unlink($path.$data['twibbon_1']);
 			}
 			/*if(empty($error['payment']))
 			{
@@ -913,17 +929,31 @@ class Auth_regis extends CI_Controller{
         $this->follow2->do_upload('follow_2');
         
         $config = array(
+			'allowed_types' => 'jpg|png|jpeg|pdf',
+			'upload_path'	=> './upload/EssayCompetition/twibbon'
+		);
+
+		$this->load->library('upload', $config, 'twibbon');
+		$this->twibbon->initialize($config);
+        $this->twibbon->do_upload('twibbon_1');
+        
+
+		$this->load->library('upload', $config, 'twibbon2');
+		$this->twibbon2->initialize($config);
+        $this->twibbon2->do_upload('twibbon_2');
+        
+        /*$config = array(
 			'allowed_types' => 'pdf',
 			'upload_path'	=> './upload/EssayCompetition/activestudent'
 		);
-
+		
 		$this->load->library('upload', $config, 'activestudent');
 		$this->activestudent->initialize($config);
         $this->activestudent->do_upload('activestudent_1');
 
 		$this->load->library('upload', $config, 'activestudent2');
 		$this->activestudent2->initialize($config);
-        $this->activestudent2->do_upload('activestudent_2');
+        $this->activestudent2->do_upload('activestudent_2');*/
 
 		/*$config = array(
 			'allowed_types' => 'jpg|png|jpeg',
@@ -934,7 +964,7 @@ class Auth_regis extends CI_Controller{
 		$this->payment->initialize($config);
         $this->payment->do_upload('payment');*/
 
-		$config = array(
+		/*$config = array(
 			'allowed_types' => 'jpg|png|jpeg',
 			'max_size'	 	=> 1025,
 			'max_width' 	=> 410,
@@ -948,28 +978,32 @@ class Auth_regis extends CI_Controller{
 
 		$this->load->library('upload', $config, 'photo2');
 		$this->photo2->initialize($config);
-        $this->photo2->do_upload('photo_2');
+        $this->photo2->do_upload('photo_2');*/
 
 		$data = array(
 			'card_1' 		    => $this->card->data('file_name'),
 			'follow_1' 	        => $this->follow->data('file_name'),
-			'photo_1' 	        => $this->photo->data('file_name'),
-			'activestudent_1'   => $this->activestudent->data('file_name'),
+			//'photo_1' 	        => $this->photo->data('file_name'),
+			//'activestudent_1'   => $this->activestudent->data('file_name'),
+			'twibbon_1' 	    => $this->twibbon->data('file_name'),
 			'card_2' 		    => $this->card2->data('file_name'),
 			'follow_2' 	        => $this->follow2->data('file_name'),
-			'photo_2' 	        => $this->photo2->data('file_name'),
-			'activestudent_2'   => $this->activestudent2->data('file_name')
+			//'photo_2' 	        => $this->photo2->data('file_name'),
+			'twibbon_2' 	    => $this->twibbon2->data('file_name')
+			//'activestudent_2'   => $this->activestudent2->data('file_name')
 		);
 
 		$error = array(
 			'card_1' 		    => $this->card->display_errors(),
 			'follow_1'          => $this->follow->display_errors(),
-			'photo_1'           => $this->photo->display_errors(),
-			'activestudent_1'   => $this->activestudent->display_errors(),
+			//'photo_1'           => $this->photo->display_errors(),
+			//'activestudent_1'   => $this->activestudent->display_errors(),
+			'twibbon_1'         => $this->twibbon->display_errors(),
 			'card_2' 		    => $this->card2->display_errors(),
 			'follow_2'          => $this->follow2->display_errors(),
-			'photo_2'           => $this->photo2->display_errors(),
-			'activestudent_2'   => $this->activestudent2->display_errors()
+			//'photo_2'           => $this->photo2->display_errors(),
+			'twibbon_2'         => $this->twibbon2->display_errors()
+			//'activestudent_2'   => $this->activestudent2->display_errors()
 		);
 
 		if(!$this->form_validation->run() || !$this->Registrasi->is_it_empty($error))
@@ -985,7 +1019,7 @@ class Auth_regis extends CI_Controller{
 				$path = './upload/EssayCompetition/follow/';
 				unlink($path.$data['follow_1']);
 			}
-			if(empty($error['photo_1']))
+			/*if(empty($error['photo_1']))
 			{
 				$path = './upload/EssayCompetition/photo/';
 				unlink($path.$data['photo_1']);
@@ -994,6 +1028,11 @@ class Auth_regis extends CI_Controller{
 			{
 				$path = './upload/EssayCompetition/activestudent/';
 				unlink($path.$data['activestudent_1']);
+			}*/
+			if(empty($error['twibbon_1']))
+			{
+				$path = './upload/EssayCompetition/twibbon/';
+				unlink($path.$data['twibbon_1']);
 			}
 			if(empty($error['card_2']))
 			{
@@ -1005,7 +1044,7 @@ class Auth_regis extends CI_Controller{
 				$path = './upload/EssayCompetition/follow/';
 				unlink($path.$data['follow_2']);
 			}
-			if(empty($error['photo_2']))
+			/*if(empty($error['photo_2']))
 			{
 				$path = './upload/EssayCompetition/photo/';
 				unlink($path.$data['photo_2']);
@@ -1014,6 +1053,11 @@ class Auth_regis extends CI_Controller{
 			{
 				$path = './upload/EssayCompetition/activestudent/';
 				unlink($path.$data['activestudent_2']);
+			}*/
+			if(empty($error['twibbon_2']))
+			{
+				$path = './upload/EssayCompetition/twibbon/';
+				unlink($path.$data['twibbon_2']);
 			}
 			/*if(empty($error['payment']))
 			{
