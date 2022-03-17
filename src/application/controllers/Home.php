@@ -92,8 +92,8 @@ class Home extends CI_Controller
 
     public function registerEssayCompTeam()
     {
-        //$this->load->view('registerEssayCompTeam');
-        $this->load->view('coming_soon');
+        $this->load->view('registerEssayCompTeam');
+        // $this->load->view('coming_soon');
     }
 
     public function chooseteamindividual()

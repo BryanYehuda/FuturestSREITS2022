@@ -55,7 +55,7 @@
                                                         <?php echo form_error('teamname');?>
                                                     </div>
                                                 </div><br>
-                                                <div class="d-inline p-2 bg-dark text-white">Member 1 (Team Leader)</div>
+                                                <div class="d-inline p-2 bg-dark text-white">Member 1 (Team Leader)</div><br /><br />
 
                                                 <div class="form-group text-dark ">
                                                     <label for="name" class="text-dark"><i class="text-dark"> </i> Full Name </label>
@@ -136,7 +136,7 @@
                                                     </div>
                                                 </div><br>
 
-                                                <div class="d-inline p-2 bg-dark text-white">Member 2 </div>
+                                                <div class="d-inline p-2 bg-dark text-white">Member 2 </div><br /><br />
 
                                                 <div class="form-group text-dark ">
                                                     <label for="name" class="text-dark"><i class="text-dark"> </i> Full Name </label>

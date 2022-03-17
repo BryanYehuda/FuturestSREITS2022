@@ -70,7 +70,7 @@
             <p>Rp. 1.500.000 + E-Sertifikat + Plakat</p>
             <br>
             <h2>Juara Favorit</h2>
-            <p>Rp. 300.000 + E-Sertifikat + Plakat</p>
+            <p>Rp. 250.000 + E-Sertifikat + Plakat</p>
           </div>
         </div>
         <br><br><br><br><br><br><br>
