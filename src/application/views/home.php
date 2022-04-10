@@ -88,6 +88,7 @@
             <img src="<?= base_url() ?>/public/img/pgn_saka.png" alt="Logo Sponsor" class="img-fluid m-4" width="500" height="100">
             <img src="<?= base_url() ?>/public/img/yokogawa.png" alt="Logo Sponsor" class="img-fluid m-4" width="150" height="150">
             <img src="<?= base_url() ?>/public/img/smelting.jpg" alt="Logo Sponsor" class="img-fluid m-4" width="150" height="150">
+            <img src="<?= base_url() ?>/public/img/supreme_energy_logo.jpg" alt="Logo Sponsor" class="img-fluid m-4" width="250" height="250">
           </div>
         </div>
       </div>
