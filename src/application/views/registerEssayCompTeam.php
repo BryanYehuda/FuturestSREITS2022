@@ -72,7 +72,7 @@
                                                     </div>
                                                 </div><br>
                                                 <div class="form-group text-dark">
-                                                    <label for="name"><i class="float"></i> Institution (School or University) </label>
+                                                    <label for="name"><i class="float"></i> Institution (School or University Name) </label>
                                                     <input type="text" class="form-control text-dark <?php $ok = " "; (form_error('university_1') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" id="university_1" name="university_1" placeholder="University ll Ex: Institut Teknologi Sepuluh Nopember" required>
                                                     <div class="invalid-feedback" id="university_1-false">
                                                         <?php echo form_error('university_1');?>
@@ -136,15 +136,15 @@
                                                 </div><br>
 
                                                 <div class="mb-3">
-                                                    <label for="name"><i class="float"></i> Proof of following our official Instagram account @futurest2022 or our linkedin at </label>
-                                                    <a href="https://www.linkedin.com/company/futureenergysummit/" class="link-primary">https://www.linkedin.com/company/futureenergysummit/</a>
+                                                    <label for="name"><i class="float"></i> Proof of tag 3 friends at </label>
+                                                    <a href="https://www.instagram.com/p/CbM-_tWJnPp/?igshid=YmMyMTA2M2Y=" class="link-primary">https://www.instagram.com/p/CbM-_tWJnPp/?igshid=YmMyMTA2M2Y=/</a>
                                                     <input class="form-control text-dark <?php $ok = " "; (!empty($error['follow_1'])) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" type="file" id="follow_1" name="follow_1" multiple required>
                                                     <div class="invalid-feedback" id="follow_1-false">
                                                         <?php echo $error['follow_1'];?>
                                                     </div>
                                                 </div><br>
 
-                                                <div class="d-inline p-2 bg-dark text-white">Member 2 </div><br /><br />
+                                                <div class="d-inline p-2 bg-dark text-white">Member 2 </div>
 
                                                 <div class="form-group text-dark ">
                                                     <label for="name" class="text-dark"><i class="text-dark"> </i> Full Name </label>
@@ -161,7 +161,7 @@
                                                     </div>
                                                 </div><br>
                                                 <div class="form-group text-dark">
-                                                    <label for="name"><i class="float"></i> Institution (School or University) </label>
+                                                    <label for="name"><i class="float"></i> Institution (School or University Name) </label>
                                                     <input type="text" class="form-control text-dark <?php $ok = " "; (form_error('university_2') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" id="university_2" name="university_2" placeholder="University ll Ex: Institut Teknologi Sepuluh Nopember" required>
                                                     <div class="invalid-feedback" id="university_2-false">
                                                         <?php echo form_error('university_2');?>
@@ -225,8 +225,8 @@
                                                 </div><br>
 
                                                 <div class="mb-3">
-                                                    <label for="name"><i class="float"></i> Proof of following our official Instagram account @futurest2022 or our linkedin at </label>
-                                                    <a href="https://www.linkedin.com/company/futureenergysummit/" class="link-primary">https://www.linkedin.com/company/futureenergysummit/</a>
+                                                    <label for="name"><i class="float"></i> Proof of tag 3 friends at </label>
+                                                    <a href="https://www.instagram.com/p/CbM-_tWJnPp/?igshid=YmMyMTA2M2Y=" class="link-primary">https://www.instagram.com/p/CbM-_tWJnPp/?igshid=YmMyMTA2M2Y=/</a>
                                                     <input class="form-control text-dark <?php $ok = " "; (!empty($error['follow_2'])) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" type="file" id="follow_2" name="follow_2" multiple required>
                                                     <div class="invalid-feedback" id="follow_2-false">
                                                         <?php echo $error['follow_2'];?>

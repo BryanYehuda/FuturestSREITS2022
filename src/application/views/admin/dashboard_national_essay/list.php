@@ -117,8 +117,13 @@
                             <p class="fs-6 text-black-50 regular-text" style="margin-bottom: -3px;">Twibbon</p>
                             <a href="<?= base_url('/upload/EssayCompetition/twibbon/' . $item['pendaftaranessaycompetition_1_twibbon'])?>" target="_blank">Show</a>
                             
-                            <p class="fs-6 text-black-50 regular-text" style="margin-bottom: -3px;">Proof of Following</p>
-                            <a href="<?= base_url('/upload/EssayCompetition/follow/' . $item['pendaftaranessaycompetition_1_follow'])?>" target="_blank">Show</a>
+                            <?php if($item['pendaftaranessaycompetition_dataCreated'] < '2022-04-12 00:00:00'){ ?>
+                                <p class="fs-6 text-black-50 regular-text" style="margin-bottom: -3px;">Proof of Following</p>
+                                <a href="<?= base_url('/upload/EssayCompetition/follow/' . $item['pendaftaranessaycompetition_1_follow'])?>" target="_blank">Show</a>
+                            <?php }else{ ?>
+                                <p class="fs-6 text-black-50 regular-text" style="margin-bottom: -3px;">Proof of tag 3 friends</p>
+                                <a href="<?= base_url('/upload/EssayCompetition/follow/' . $item['pendaftaranessaycompetition_1_follow'])?>" target="_blank">Show</a>
+                            <?php } ?>
 
                             <?php else: ?>
                                 
