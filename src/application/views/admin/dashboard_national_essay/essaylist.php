@@ -85,29 +85,30 @@
                             <div class="p-3 bg-white shadow info-card">
                             <i class="fas fa-users fs-1 info-color"></i>
                             <hr>                                
-                                <?php if($data[0]['pendaftaranessaycompetition_teamname'] !== '--INDIVIDU--'){?>
+                                <?php if($item['pendaftaranessaycompetition_teamname'] !== '--INDIVIDU--'){?>
                                 <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 1px;">Team Name</p>
-                                <h5 class="primary-text mb-3"><?= $data[0]['pendaftaranessaycompetition_teamname']?></h5>
+                                <h5 class="primary-text mb-3"><?= $item['pendaftaranessaycompetition_teamname']?></h5>
                                 <?php }?>
                                 <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 1px;">Institution</p>
-                                <h5 class="primary-text mb-3"><?= $data[0]['pendaftaranessaycompetition_1_college']?></h5>
+                                <h5 class="primary-text mb-3"><?= $item['pendaftaranessaycompetition_1_college']?></h5>
                                 
-                                <?php if($data[0]['pendaftaranessaycompetition_teamname'] === '--INDIVIDU--'){?>
+                                <?php if($item['pendaftaranessaycompetition_teamname'] === '--INDIVIDU--'){?>
                                 <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 1px;">Name</p>
-                                <h5 class="primary-text mb-3"><?= $data[0]['pendaftaranessaycompetition_1_name']?></h5>
+                                <h5 class="primary-text mb-3"><?= $item['pendaftaranessaycompetition_1_name']?></h5>
                                 <?php }else{?>
                                 <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 1px;">Member Team</p>
                                 <h5 class="primary-text mb-3 fs-6">
                                     <ul>
-                                        <li><?= $data[0]['pendaftaranessaycompetition_1_name']?></li>
-                                        <li><?= $data[0]['pendaftaranessaycompetition_2_name']?></li>
+                                        <li><?= $item['pendaftaranessaycompetition_1_name']?></li>
+                                        <li><?= $item['pendaftaranessaycompetition_2_name']?></li>
                                     </ul>
                                 </h5>
                                 <?php }?>
 
                                 <p class="fs-6 text-black-50 regular-text" style="margin-bottom: -4px;">Essay</p>
                                 <a href="<?= base_url('/upload/EssayCompetition/esai/' . $item['pendaftaranessaycompetition_esai'])?>" target="_blank">Show</a></h5>
-                                
+                                <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 1px;">Date : </p>
+                                <h5 class="primary-text mb-2"><?= $item['pendaftaranessaycompetition_dataUpdated']?></h5>
                             </div>
                         </div>
                         <?php } ?>

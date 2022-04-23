@@ -164,6 +164,8 @@
                                 </ul>
                             </h5>
                             <?php endif;?>
+                            <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 1px;">Date : </p>
+                            <h5 class="primary-text mb-2"><?= $item['pendaftaranessaycompetition_dataCreated']?></h5>
                             <!--
                             <p class="fs-6 text-black-50 regular-text" style="margin-bottom: -4px;">Proof of Payment</p>
                             <a href="<?= base_url('/upload/EssayCompetition/payment/' . $item['pendaftaranessaycompetition_payment'])?>" target="_blank">Show</a></h5>
