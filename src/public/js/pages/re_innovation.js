@@ -15,7 +15,7 @@ const vm = new Vue({
       {
 				date: "20 February – 13 March 2022",
 				description:
-					"Open Abstract Submission",
+					"Open Registration & Abstract Submission",
 			},
 			{
 				date: "13 March 2022",
@@ -40,38 +40,93 @@ const vm = new Vue({
       {
 				date: "28 April 2022",
 				description:
-					"Selected Paper Announcement (Top 10)",
+					"Finalists Announcement (Top 10)",
+			},
+		{
+				date: "30 April 2022",
+				description:
+					"Technical Meeting for Climate Innovators Camp",
 			},
       {
-				date: "1 May 2022 & 8 May 2022",
+				date: "1 May 2022 - 22 May 2022",
 				description:
-					"Climate Innovators Camp for Top 10",
+					"Climate Innovators Camp (mentoring program)",
 			},
       {
-				date: "13 May 2022",
+				date: "22 May 2022",
 				description:
-					"Prototype Video Pitch Submission",
+					"Prototype Video Pitch Submission Due Date (Pre-Recorded)",
 			},
       {
-				date: "23 May 2022",
+				date: "2 June 2022",
 				description:
-					"Finalist Announcement (Top 5)",
-			},
-      {
-				date: "28 May 2022",
-				description:
-					"Technical Meeting for Finalists",
+					"PowerPoint Submission Due Date",
 			},
       {
 				date: "5 June 2022",
 				description:
-					"Final Presentation Day",
+					"Final Presentation Day	",
 			},
       {
 				date: "12 June 2022",
 				description:
 					"Awarding Day",
 			},      
+		],
+		pertanyaan: [
+			{
+				id: "headingOne",
+				question: "Where will the workshop, mentoring program, and final presentation be held?",
+				dataBsTarget: "#collapseOne",
+				ariaControls: "collapseOne",
+				ariaExpanded: "true",
+				collapsed: "",
+				show: "show",
+				answer:
+					"All the activities will be held online through Zoom Meeting Platform",
+			},
+			{
+				id: "headingTwo",
+				question: "I’ve already registered, but it turns out I had input the wrong data on the form. What should we do?",
+				dataBsTarget: "#collapseTwo",
+				ariaControls: "collapseTwo",
+				ariaExpanded: "false",
+				collapsed: "collapsed",
+				show: "",
+				answer:
+					"Please kindly participants can inform the contact person",
+			},
+			{
+				id: "headingThree",
+				question: "When will we get the confirmation email?",
+				dataBsTarget: "#collapseThree",
+				ariaControls: "collapseThree",
+				ariaExpanded: "false",
+				collapsed: "collapsed",
+				show: "",
+				answer:
+					"The confirmation email will be sent to the registered email maximum 2x24 hours since registration done",
+			},
+			{
+				id: "headingFour",
+				question: "Where will we can see the RE Innovation Brainstorm Competition terms & conditions?",
+				dataBsTarget: "#collapseFour",
+				ariaControls: "collapseFour",
+				ariaExpanded: "false",
+				collapsed: "collapsed",
+				show: "",
+				answer: "All terms & conditions are in the Guidebook https://bit.ly/GuidebookREIB2022",
+			},
+			{
+				id: "headingFive",
+				question: "Do we have to follow Official Account @futurest2022 and post twibbon on our Instagram?",
+				dataBsTarget: "#collapseFive",
+				ariaControls: "collapseFive",
+				ariaExpanded: "false",
+				collapsed: "collapsed",
+				show: "",
+				answer: "YES YOU MUST! All terms & conditions must be followed by all participants",
+			},
 		],
 	},
 });

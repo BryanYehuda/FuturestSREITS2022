@@ -70,6 +70,7 @@ class Dashboard extends CI_Model
         
         $username = str_replace(' ', '', $res['pendaftaranreinnovation_teamname']);
         
+        $teamname = $res['pendaftaranreinnovation_teamname'];
         $email = $res['pendaftaranreinnovation_1_email'];
         $password = $id . $username . '!';
         $passwordHash = password_hash($password, PASSWORD_DEFAULT);
@@ -84,6 +85,7 @@ class Dashboard extends CI_Model
         $this->db->insert('account', $insert);
 
         $return = [
+            'teamname' => $teamname,
             'username' => $username,
             'password' => $password,
             'email' => $email
@@ -116,6 +118,34 @@ class Dashboard extends CI_Model
     {
         $this->db->where('pendaftaranreinnovation_id', $id);
         $this->db->delete('pendaftaran_reinnovation');
+    }
+
+    function confirmREIpay($id)
+    {
+        $this->db->set('pendaftaranreinnovation_status', 2);
+        $this->db->where('pendaftaranreinnovation_id', $id);
+        $this->db->update("pendaftaran_reinnovation");
+    }
+
+    function cancelREIpay($id)
+    {
+        $this->db->set('pendaftaranreinnovation_status', 1);
+        $this->db->where('pendaftaranreinnovation_id', $id);
+        $this->db->update("pendaftaran_reinnovation");
+    }
+    
+    function confirmEssaypay($id)
+    {
+        $this->db->set('pendaftaranessaycompetition_status', 2);
+        $this->db->where('pendaftaranessaycompetition_id', $id);
+        $this->db->update("pendaftaran_essaycompetition");
+    }
+
+    function cancelEssaypay($id)
+    {
+        $this->db->set('pendaftaranessaycompetition_status', 1);
+        $this->db->where('pendaftaranessaycompetition_id', $id);
+        $this->db->update("pendaftaran_essaycompetition");
     }
 }
 ?>

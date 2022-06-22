@@ -1,148 +1,159 @@
 /* Jumbotron */
 
 #jumbotron {
-	min-height: 730px;
+    min-height: 730px;
 }
 
 #jumbotron::before {
-	content: "";
-	background-image: url("../../img/grandtalkshow.jpg");
-	position: absolute;
-	background-size: cover;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	z-index: -1;
+    content: "";
+    background-image: url("../../img/grandtalkshow.jpg");
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
 }
 
 #jumbotron h1 {
-	font-size: 50px;
-	font-family: MulishBold;
-	display: inline;
+    font-size: 50px;
+    font-family: MulishBold;
+    display: inline;
 }
 
 #jumbotron p {
-	font-size: 16px;
-	font-family: MulishRegular;
+    font-size: 16px;
+    font-family: MulishRegular;
 }
 
 #jumbotron i {
-	font-size: 120px;
+    font-size: 120px;
 }
 
 #jumbotron h1,
 #jumbotron p {
-	background-color: var(--futurest-green);
-	padding: 0.5rem;
-	border-radius: 0.5rem;
+    background-color: var(--futurest-green);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
 }
+
 
 /* Timeline */
 
 #timeline {
-	min-height: 730px;
-	background-color: var(--futurest-green);
+    min-height: 730px;
+    background-image: url("../../img/bg_timeline.png");
+    background-size: cover;
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
 }
 
 #timeline h2 {
-	font-family: MulishSemiBold;
-	font-size: 35px;
+    font-family: MulishSemiBold;
+    font-size: 35px;
 }
 
 @media screen and (max-width: 576px) {
-	#timeline h2 {
-		font-size: 30px;
-	}
+    #timeline h2 {
+        font-size: 30px;
+    }
 }
 
 #timeline .row {
-	border-radius: 30px;
-	background: #f3f3f3;
-	box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    background: #f3f3f3;
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
 }
 
 #timeline .row .col .rounded-timeline {
-	width: 20px;
-	height: 20px;
-	background: #30958d;
-	left: -35px;
-	top: 50%;
-	transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background: #30958d;
+    left: -35px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 #timeline .row h3 {
-	font-family: MulishSemiBold;
-	font-size: 25px;
+    font-family: MulishSemiBold;
+    font-size: 25px;
 }
 
 @media screen and (max-width: 576px) {
-	#timeline .row h3 {
-		font-family: MulishSemiBold;
-		font-size: 20px;
-	}
+    #timeline .row h3 {
+        font-family: MulishSemiBold;
+        font-size: 20px;
+    }
 }
 
 #timeline .row p {
-	font-family: MulishLight;
-	font-size: 18px;
+    font-family: MulishLight;
+    font-size: 18px;
 }
+
 
 /* Speakers */
 
 #speakers {
-	min-height: 730px;
-	background-color: #f3f3f3;
+    min-height: 730px;
+    background-color: #f3f3f3;
 }
 
 #speakers h2 {
-	font-family: MulishSemiBold;
-	font-size: 35px;
+    font-family: MulishSemiBold;
+    font-size: 35px;
 }
 
 #speakers h3 {
-	font-family: MulishSemiBold;
-	font-size: 25px;
+    font-family: MulishSemiBold;
+    font-size: 25px;
 }
 
 #speakers i {
-	font-size: 100px;
+    font-size: 100px;
 }
 
 #speakers .speakers-name {
-	font-size: 20px;
+    font-size: 20px;
 }
 
 #speakers p {
-	font-family: MulishLight;
-	font-size: 16px;
+    font-family: MulishLight;
+    font-size: 16px;
 }
+
 
 /* Pertanyaan */
 
 #pertanyaan {
-	min-height: 730px;
-	background-color: var(--futurest-green);
+    min-height: 730px;
+    background-color: var(--futurest-green);
 }
 
 #pertanyaan h2 {
-	font-family: MulishSemiBold;
-	font-size: 35px;
+    font-family: MulishSemiBold;
+    font-size: 35px;
 }
 
 #pertanyaan h3 button {
-	font-family: MulishSemiBold;
-	font-size: 20px;
+    font-family: MulishSemiBold;
+    font-size: 20px;
 }
 
 #pertanyaan button {
-	background: #e3e3e3;
-	color: var(--futurest-black);
-	font-size: 25px;
-	font-family: MulishSemiBold;
+    background: #e3e3e3;
+    color: var(--futurest-black);
+    font-size: 25px;
+    font-family: MulishSemiBold;
 }
 
 #pertanyaan .accordion-body {
-	font-size: 18px;
-	font-family: MulishLight;
+    font-size: 18px;
+    font-family: MulishLight;
 }

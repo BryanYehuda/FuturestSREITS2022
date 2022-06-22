@@ -37,7 +37,6 @@
 
                 <a href="<?php echo base_url('user')?>" class="list-group-item list-group-item-action bg-transparent primary-text second-text"><i class="fas fa-home-alt me-2"></i>Home</a>
                 <a href="<?php echo base_url('user/team')?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text active"><i class="fas fa-users-cog me-2"></i>Team Identity</a>
-                <a href="<?php echo base_url('user/payment')?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text"><i class="fas fa-money-check-alt me-2"></i>Payment</a>
                 <hr class="info-color">
                 <a href="<?php echo base_url('logout')?>" class="list-group-item list-group-item-action bg-transparent text-danger primary-text"><i class="fas fa-power-off me-2"></i>Logout</a>
             </div>
@@ -65,7 +64,6 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="<?php echo base_url('user')?>">Home</a></li>
                                 <li><a class="dropdown-item" href="<?php echo base_url('user/team')?>">Team Identity</a></li>
-                                <li><a class="dropdown-item" href="<?php echo base_url('user/payment')?>">Payment</a></li>
                                 <li><a class="dropdown-item" href="<?php echo base_url('logout')?>">Logout</a></li>
                             </ul>
                         </li>
@@ -101,6 +99,30 @@
 
                             <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 1px;">Event Entered</p>
                             <h5 class="primary-text mb-3">RE Innovation Competition</h5>
+
+                            <p class="fs-6 text-black-50 regular-text" style="margin-bottom: -4px;">Abstract</p>
+                                <?php if($data[0]['pendaftaranreinnovation_abstract'] ) { ?>
+                            <a href="<?= base_url('/upload/REinnovation/abstract/' . $data[0]['pendaftaranreinnovation_abstract'])?>" target="_blank">Show</a></h5>
+                            
+                            <?php } else { ?>
+                                <a>-</a></h5>
+                            <?php } ?>
+                            </br>
+                            <p class="fs-6 text-black-50 regular-text" style="margin-bottom: -4px;">Full Paper</p>
+                            <?php if($data[0]['pendaftaranreinnovation_fullpaper'] ) { ?>
+                                <a href="<?= base_url('/upload/REinnovation/fullpaper/' . $data[0]['pendaftaranreinnovation_fullpaper'])?>" target="_blank">Show</a></h5>
+                            
+                            <?php } else { ?>
+                                <a>-</a></h5>
+                            <?php } ?>
+                            </br>
+                            <p class="fs-6 text-black-50 regular-text" style="margin-bottom: -4px;">Power Point Presentation</p>
+                                <?php if($data[0]['pendaftaranreinnovation_ppt'] ) { ?>
+                            <a href="<?= base_url('/upload/REinnovation/ppt/' . $data[0]['pendaftaranreinnovation_ppt'])?>" target="_blank">Show</a></h5>
+                            
+                            <?php } else { ?>
+                                <a>-</a></h5>
+                            <?php } ?>
                         </div>
                     </div>
                 </div>

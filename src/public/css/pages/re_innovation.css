@@ -1,150 +1,183 @@
 /* Jumbotron */
 
 #jumbotron {
-	min-height: 730px;
+    min-height: 730px;
 }
 
 #jumbotron::before {
-	content: "";
-	background-image: url("../../img/re_innovation.jpg");
-	position: absolute;
-	background-size: cover;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	z-index: -1;
+    content: "";
+    background-image: url("../../img/1893127.jpg");
+    position: absolute;
+    background-size: 100% 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
 }
 
 #jumbotron h1 {
-	font-size: 50px;
-	font-family: MulishBold;
-	display: inline;
+    font-size: 50px;
+    font-family: MulishBold;
+    display: inline;
 }
 
 @media screen and (max-width: 576px) {
-	#jumbotron h1 {
-		font-size: 30px;
-	}
+    #jumbotron h1 {
+        font-size: 30px;
+    }
 }
 
 #jumbotron p {
-	font-size: 16px;
-	font-family: MulishRegular;
+    font-size: 16px;
+    font-family: MulishRegular;
 }
 
 #jumbotron i {
-	font-size: 120px;
+    font-size: 120px;
 }
 
 #jumbotron h1,
 #jumbotron p {
-	background-color: var(--futurest-green);
-	padding: 0.5rem;
-	border-radius: 0.5rem;
+    background-color: var(--futurest-green);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
 }
+
 
 /* Timeline */
 
 #timeline {
-	min-height: 730px;
-	background-color: var(--futurest-green);
+    min-height: 730px;
+    background-image: url("../../img/bg_timeline.png");
+    background-size: cover;
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
 }
 
 #timeline h2 {
-	font-family: MulishSemiBold;
-	font-size: 35px;
-	z-index: 2;
+    font-family: MulishSemiBold;
+    font-size: 35px;
+    z-index: 2;
 }
 
 #timeline .row {
-	border-radius: 30px;
-	background: #f3f3f3;
-	box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
-	z-index: 2;
+    border-radius: 30px;
+    background: #f3f3f3;
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 2;
 }
 
 #timeline .row .col .rounded-timeline {
-	width: 20px;
-	height: 20px;
-	background: #30958d;
-	left: -35px;
-	top: 50%;
-	transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background: #30958d;
+    left: -35px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 #timeline .row h3 {
-	font-family: MulishSemiBold;
-	font-size: 25px;
+    font-family: MulishSemiBold;
+    font-size: 25px;
 }
 
 #timeline .row p {
-	font-family: MulishLight;
-	font-size: 18px;
+    font-family: MulishLight;
+    font-size: 18px;
 }
 
-#ornamen_1 {
-	left: 0;
-	top: 0;
-}
-
-#ornamen_2 {
-	left: 10%;
-	bottom: 0;
-}
-
-#ornamen_3 {
-	right: 5%;
-	top: 50%;
-}
 
 /* prize pool */
 
 #prize-pool {
-	background-color: #f3f3f3;
-	min-height: 730px;
+    min-height: 730px;
+    background-image: url("../../img/bg_putih.png");
+    background-size: cover;
+    background-position: center;
 }
 
 #prize-pool h2 {
-	font-family: MulishSemiBold;
-	font-size: 35px;
+    font-family: MulishSemiBold;
+    font-size: 35px;
 }
 
 #prize-pool i {
-	font-size: 300px;
+    font-size: 300px;
 }
 
 @media screen and (max-width: 768px) {
-	#prize-pool i {
-		font-size: 200px;
-		margin-bottom: 40px;
-	}
-
-	#prize-pool h2,
-	#prize-pool p {
-		text-align: center !important;
-	}
+    #prize-pool i {
+        font-size: 200px;
+        margin-bottom: 40px;
+    }
+    #prize-pool h2,
+    #prize-pool p {
+        text-align: center !important;
+    }
 }
 
 #prize-pool p {
-	font-family: MulishLight;
-	font-size: 18px;
+    font-family: MulishLight;
+    font-size: 18px;
+}
+
+/* Pertanyaan */
+#pertanyaan {
+    min-height: 730px;
+    background-color: #f3f3f3;
+    background-image: url("../../img/bg_timeline.png");
+    background-size: cover;
+    position: absolute;
+    background-size: cover;
+}
+
+#pertanyaan h2 {
+    font-family: MulishSemiBold;
+    font-size: 35px;
+}
+
+#pertanyaan .accordion {
+    z-index: 2;
+}
+
+#pertanyaan h3 button {
+    font-family: MulishSemiBold;
+    font-size: 20px;
+}
+
+#pertanyaan button {
+    background: #e3e3e3;
+    color: var(--futurest-black);
+    font-size: 25px;
+    font-family: MulishSemiBold;
+}
+
+#pertanyaan .accordion-body {
+    font-size: 18px;
+    font-family: MulishLight;
+    background-color: #fff;
 }
 
 #ornamen_prize {
-	left: 10%;
-	top: 5%;
-	opacity: 0.5;
+    left: 10%;
+    top: 5%;
+    opacity: 0.5;
 }
 
 #ornamen_prize_2 {
-	bottom: 10%;
-	right: 10%;
-	opacity: 0.75;
+    bottom: 10%;
+    right: 10%;
+    opacity: 0.75;
 }
 
 #ornamen_prize_3 {
-	bottom: 7%;
-	right: 3%;
-	opacity: 0.75;
+    bottom: 7%;
+    right: 3%;
+    opacity: 0.75;
 }

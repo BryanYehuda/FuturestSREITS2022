@@ -37,7 +37,8 @@
 
                 <a href="<?php echo base_url('dashboard-national-essay')?>" class="list-group-item list-group-item-action bg-transparent primary-text active"><i class="fas fa-home-alt me-2"></i>Home</a>
                 <a href="<?php echo base_url('dashboard-national-essay-list')?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text"><i class="fas fa-users-cog me-2"></i>Team List</a>
-                <a href="<?php echo base_url('dashboard-national-essay-confirmation')?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text"><i class="fas fa-money-check-alt me-2"></i>Confirmation</a>
+                <a href="<?php echo base_url('dashboard-national-essay-confirmation')?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text"><i class="fas fa-calendar-check me-2"></i>Confirmation</a>
+                <a href="<?php echo base_url('dashboard-national-essay-payment') ?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text"><i class="fas fa-money-check-alt me-2"></i>Payment</a>
                 <hr class="info-color">
                 <a href="<?php echo base_url('logout')?>" class="list-group-item list-group-item-action bg-transparent text-danger primary-text"><i class="fas fa-power-off me-2"></i>Logout</a>
             </div>
@@ -66,6 +67,7 @@
                                 <li><a class="dropdown-item" href="<?php echo base_url('dashboard-national-essay')?>">Home</a></li>
                                 <li><a class="dropdown-item" href="<?php echo base_url('dashboard-national-essay-list')?>">Team List</a></li>
                                 <li><a class="dropdown-item" href="<?php echo base_url('dashboard-national-essay-confirmation')?>">Confirmation</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url('dashboard-national-essay-payment') ?>">Payment</a></li>
                                 <li><a class="dropdown-item" href="<?php echo base_url('logout')?>">Logout</a></li>
                             </ul>
                         </li>
@@ -96,52 +98,17 @@
                     <div class="col-md-6 p-2">
                         <div class="card announcement-card shadow">
                             <div class="card-body">
-                                <h5 class="card-title primary-text">Abstract List</h5>
-                                <p class="card-text regular-text">
-                                    Nulla auctor sollicitudin sem, sed sagittis ex porta ac. Cras accumsan elit quis
-                                    metus fringilla, vitae pretium felis aliquam. Mauris ultrices sapien quis felis
-                                    tincidunt vehicula. Nullam ac elementum ex. Praesent fermentum tincidunt quam nec
-                                    iaculis.</p>
-                                <a href="" class="btn btn-outline-success">View</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 p-2">
-                        <div class="card announcement-card shadow">
-                            <div class="card-body">
                                 <h5 class="card-title primary-text">Workshop</h5>
-                                <p class="card-text regular-text">
-                                    Nulla auctor sollicitudin sem, sed sagittis ex porta ac. Cras accumsan elit quis
-                                    metus fringilla, vitae pretium felis aliquam. Mauris ultrices sapien quis felis
-                                    tincidunt vehicula. Nullam ac elementum ex. Praesent fermentum tincidunt quam nec
-                                    iaculis.</p>
                                 <a href="" class="btn btn-outline-success">Link</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 p-2">
-                        <div class="card announcement-card shadow">
-                            <div class="card-body">
-                                <h5 class="card-title primary-text">Full Paper List</h5>
-                                <p class="card-text regular-text">
-                                    Nulla auctor sollicitudin sem, sed sagittis ex porta ac. Cras accumsan elit quis
-                                    metus fringilla, vitae pretium felis aliquam. Mauris ultrices sapien quis felis
-                                    tincidunt vehicula. Nullam ac elementum ex. Praesent fermentum tincidunt quam nec
-                                    iaculis.</p>
-                                <a href="" class="btn btn-outline-success">View</a>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <div class="col-md-6 p-2">
                         <div class="card announcement-card shadow">
                             <div class="card-body">
                                 <h5 class="card-title primary-text">Essay List</h5>
-                                <p class="card-text regular-text">
-                                    Nulla auctor sollicitudin sem, sed sagittis ex porta ac. Cras accumsan elit quis
-                                    metus fringilla, vitae pretium felis aliquam. Mauris ultrices sapien quis felis
-                                    tincidunt vehicula. Nullam ac elementum ex. Praesent fermentum tincidunt quam nec
-                                    iaculis.</p>
-                                <a href="" class="btn btn-outline-success">View</a>
+                                <a href="<?php echo base_url('dashboard-national-essay-submission') ?>" class="btn btn-outline-success">View</a>
                             </div>
                         </div>
                     </div>

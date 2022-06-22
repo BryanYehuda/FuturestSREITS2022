@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en" dir="ltr">
 
@@ -63,7 +63,7 @@
                           </div>
                       </div><br>
                       <div class="form-group text-dark">
-                          <label for="name"><i class="float"></i> Institution </label>
+                          <label for="name"><i class="float"></i> Institution (School or University Name) </label>
                           <input type="text" class="form-control text-dark <?php $ok = " "; (form_error('university_1') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" id="university_1" name="university_1" placeholder="University ll Ex: Institut Teknologi Sepuluh Nopember" required>
                           <div class="invalid-feedback" id="university_1-false">
                               <?php echo form_error('university_1');?>
@@ -77,13 +77,13 @@
                           </div>
                       </div><br>
                       <div class="mb-3">
-                          <label for="name"><i class="float"></i> KTP or Student ID Card Scan<b>(pdf)</b></label>
+                          <label for="name"><i class="float"></i> Student ID Card or Statement Letter of Active Student Scan <b>(pdf)</b></label>
                           <input class="form-control text-dark <?php $ok = " "; (!empty($error['card_1'])) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" type="file" id="card_1" name="card_1" multiple required>
                           <div class="invalid-feedback" id="card_1-false">
                               <?php echo $error['card_1'];?>
                           </div>
                       </div><br>
-                      <div class="mb-3">
+                      <!--<div class="mb-3">
                           <label for="name"><i class="float"></i> Statement Letter of Active Student Scan<b>(pdf)</b></label>
                           <input class="form-control text-dark <?php $ok = " "; (!empty($error['activestudent_1'])) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" type="file" id="activestudent_1" name="activestudent_1" multiple required>
                           <div class="invalid-feedback" id="activestudent_1-false">
@@ -91,7 +91,6 @@
                           </div>
                       </div>
                       <br>
-                      
                       <div class="mb-3">
                           <label for="name"><i class="float"></i> Half-body picture 4 x 6</label>
                           <label for="name"><i class="float"></i> <b>formal, plain background </b>(JPG, JPEG, PNG)</label>
@@ -100,7 +99,7 @@
                               <?php echo $error['photo_1'];?>
                           </div>
                       </div>
-                      <br>
+                      <br>-->
                       <div class="form-group text-dark">
                           <label for="phone"><i class="text-dark float"></i> Phone Number </label>
                           <input type="phone" class="form-control text-dark <?php $ok = " "; (form_error('phone_1') > 0) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" name="phone_1" id="phone_1" placeholder="phone ll Ex: 08XX XXXX XXXX" required>
@@ -117,16 +116,24 @@
                           </div>
                       </div><br>
 
-
                       <div class="mb-3">
-                          <label for="name"><i class="float"></i> Proof of following our official Instagram account @futurest2022 or our linkedin at </label>
-                          <a href="https://www.linkedin.com/company/futureenergysummit/" class="link-primary">https://www.linkedin.com/company/futureenergysummit/</a>
+                          <label for="name"><i class="float"></i> Proof of posting our twibbon </label>
+                          <a href="https://bit.ly/TwibbonNECFuturest2022" class="link-primary">https://bit.ly/TwibbonNECFuturest2022/</a>
+                          <input class="form-control text-dark <?php $ok = " "; (!empty($error['twibbon_1'])) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" type="file" id="twibbon_1" name="twibbon_1" multiple required>
+                          <div class="invalid-feedback" id="twibbon_1-false">
+                              <?php echo $error['twibbon_1'];?>
+                          </div>
+                      </div><br>
+                      
+                      <div class="mb-3">
+                          <label for="name"><i class="float"></i> Proof of tag 3 friends at </label>
+                          <a href="https://www.instagram.com/p/CbM-_tWJnPp/?igshid=YmMyMTA2M2Y=" class="link-primary">https://www.instagram.com/p/CbM-_tWJnPp/?igshid=YmMyMTA2M2Y=/</a>
                           <input class="form-control text-dark <?php $ok = " "; (!empty($error['follow_1'])) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" type="file" id="follow_1" name="follow_1" multiple required>
                           <div class="invalid-feedback" id="follow_1-false">
                               <?php echo $error['follow_1'];?>
                           </div>
                       </div><br>
-                      
+                      <!--
                       <div class="mb-3">
                           <label for="name"><i class="float"></i> Payment</label>
                           <input class="form-control text-dark <?php $ok = " "; (!empty($error['payment'])) ? $ok='is-invalid' :  $ok='' ;echo $ok;?>" type="file" id="payment" name="payment" multiple required>
@@ -135,7 +142,7 @@
                           </div>
                           </div>
                       <br>
-                      
+                      -->
                       <button type="submit" class="btn btn-danger" id="submit">
                           <i class="hide loading-icon fa fa-spinner fa-spin d-none" id="loading"></i>Submit
                       </button>
@@ -180,4 +187,4 @@
   <script type="text/javascript" src="<?php echo base_url() ?>public/js/backend/registeressaycompindividu.js"></script>
 </body>
 
-</html> 
+</html>

@@ -40,14 +40,11 @@
     </section>
 
     <section id="timeline" class="py-5 position-relative">
-      <img src="<?php echo base_url() ?>public/img/ornamen/ornam6.png" alt="Ornamen" id="ornamen_1" class="position-absolute" width="300" height="300">
-      <img src="<?php echo base_url() ?>public/img/ornamen/ornam3.png" alt="Ornamen" id="ornamen_2" class="position-absolute" width="300" height="300">
-      <img src="<?php echo base_url() ?>public/img/ornamen/ornam2.png" alt="Ornamen" id="ornamen_3" class="position-absolute" width="300" height="300">
       <div class="container d-flex flex-column align-items-center py-5">
         <h2 class="mb-5">RE Innovation Brainstorm Timeline</h2>
         <div class="row mb-3 px-4 py-3 w-75" v-for="item in timeline">
           <div class="col position-relative">
-            <div class="position-absolute rounded-timeline rounded-pill"></div>
+            <div class="position-absolute "></div>
             <h3>{{ item.date }}</h3>
             <p>{{ item.description }}</p>
           </div>
@@ -56,34 +53,56 @@
     </section>
 
     <section id="prize-pool" class="py-5 position-relative">
-      <img src="<?php echo base_url() ?>public/img/ornamen/ornam7.png" alt="Ornamen" id="ornamen_prize" class="d-none d-md-block position-absolute" width="300" height="300">
-      <img src="<?php echo base_url() ?>public/img/ornamen/leaves.png" alt="Ornamen" id="ornamen_prize_2" class="d-none d-md-block position-absolute" width="300" height="300">
-      <img src="<?php echo base_url() ?>public/img/ornamen/leaf.png" alt="Ornamen" id="ornamen_prize_3" class="d-none d-md-block position-absolute" width="300" height="300">
       <div class="container py-5">
         <h2 class="text-center mb-5">RE Innovation Prize Pool!</h2>
         <div class="d-flex flex-column flex-md-row align-items-center justify-content-center pt-5">
           <i class="fas fa-trophy mx-5"></i>
           <div class="mx-5">
-            <h2>#1st</h2>
-            <p>Rp. Coming Soon</p>
+            <h2>First Place </h2>
+            <p>Rp 5.000.000</p>
             <br>
-            <h2>#2nd</h2>
-            <p>Rp. Coming Soon</p>
+            <h2>Second Place </h2>
+            <p>Rp 3.000.000</p>
             <br>
-            <h2>#3rd</h2>
-            <p>Rp. Coming Soon</p>
-            <h2>Best Pitch</h2>
-            <p>Rp. Coming Soon</p>
+            <h2>Third Place </h2>
+            <p>Rp 2.500.000</p>
+            <h2>Best Pitch Video Prototype </h2>
+            <p>Rp 500.000</p>
+            <h2>Favourite Winner</h2>
+            <p>Rp 500.000</p>
           </div>
         </div>
         <br><br><br><br><br><br><br>
         <h2 class="text-center mb-5">Don't forget to register!</h2>
         <div class="d-flex justify-content-center">
-          <a class="btn btn-primary mx-3" href="<?php echo base_url("register-re-innovation-comp") ?>">
+          <a class="btn btn-lg btn-primary mx-3" href="https://bit.ly/GuidebookREIB2022">
+            Guide Book
+          </a>
+          <a class="btn btn-lg btn-primary mx-3" href="<?php echo base_url("register-re-innovation-comp") ?>">
             Register for Your Team!
           </a>
         </div>
         <br><br><br><br><br>
+      </div>
+    </section>
+
+    <section id="pertanyaan" class="py-5 position-relative">
+      <div class="container py-5">
+        <h2 class="mb-5 text-center">Frequently Asked Questions</h2>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item" v-for="item in pertanyaan">
+            <h3 class="accordion-header" :id="item.id">
+              <button class="accordion-button shadow-none" :class="item.collapsed" type="button" data-bs-toggle="collapse" :data-bs-target="item.dataBsTarget" :aria-expanded="item.ariaExpanded" :aria-controls="item.ariaControls">
+                {{ item.question }}
+              </button>
+            </h3>
+            <div :id="item.ariaControls" class="accordion-collapse collapse" :class="item.show" :aria-labelledby="item.id" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                {{ item.answer }}
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 

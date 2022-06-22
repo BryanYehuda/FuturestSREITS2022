@@ -37,7 +37,8 @@
 
                 <a href="<?php echo base_url('dashboard-national-essay')?>" class="list-group-item list-group-item-action bg-transparent primary-text second-text"><i class="fas fa-home-alt me-2"></i>Home</a>
                 <a href="<?php echo base_url('dashboard-national-essay-list')?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text"><i class="fas fa-users-cog me-2"></i>Team List</a>
-                <a href="<?php echo base_url('dashboard-national-essay-confirmation')?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text active"><i class="fas fa-money-check-alt me-2"></i>Confirmation</a>
+                <a href="<?php echo base_url('dashboard-national-essay-confirmation')?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text active"><i class="fas fa-calendar-check me-2"></i>Confirmation</a>
+                <a href="<?php echo base_url('dashboard-national-essay-payment') ?>" class="list-group-item list-group-item-action bg-transparent second-text primary-text"><i class="fas fa-money-check-alt me-2"></i>Payment</a>
                 <hr class="info-color">
                 <a href="<?php echo base_url('logout')?>" class="list-group-item list-group-item-action bg-transparent text-danger primary-text"><i class="fas fa-power-off me-2"></i>Logout</a>
             </div>
@@ -66,6 +67,7 @@
                                 <li><a class="dropdown-item" href="<?php echo base_url('dashboard-national-essay')?>">Home</a></li>
                                 <li><a class="dropdown-item" href="<?php echo base_url('dashboard-national-essay-list')?>">Team List</a></li>
                                 <li><a class="dropdown-item" href="<?php echo base_url('dashboard-national-essay-confirmation')?>">Confirmation</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url('dashboard-national-essay-payment') ?>">Payment</a></li>
                                 <li><a class="dropdown-item" href="<?php echo base_url('logout')?>">Logout</a></li>
                             </ul>
                         </li>
@@ -105,18 +107,25 @@
                             <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 1px;">Phone</p>
                             <h5 class="primary-text mb-2"><?= $item['pendaftaranessaycompetition_1_phone']?></h5>
                             
-                            <p class="fs-6 text-black-50 regular-text" style="margin-bottom: -3px;">KTP / Student ID</p>
+                            <p class="fs-6 text-black-50 regular-text" style="margin-bottom: -3px;">Student ID Card / Statement Letter of Active Student</p>
                             <a href="<?= base_url('/upload/EssayCompetition/card/' . $item['pendaftaranessaycompetition_1_card'])?>" target="_blank">Show</a>
 
-                            <p class="fs-6 text-black-50 regular-text" style="margin-bottom: -3px;">Active Student</p>
+                          <!--   <p class="fs-6 text-black-50 regular-text" style="margin-bottom: -3px;">Active Student</p>
                             <a href="<?= base_url('/upload/EssayCompetition/activestudent/' . $item['pendaftaranessaycompetition_1_activestudent'])?>" target="_blank">Show</a>
 
                             <p class="fs-6 text-black-50 regular-text" style="margin-bottom: -3px;">Photo 4x6</p>
-                            <a href="<?= base_url('/upload/EssayCompetition/photo/' . $item['pendaftaranessaycompetition_1_photo'])?>" target="_blank">Show</a>
+                            <a href="<?= base_url('/upload/EssayCompetition/photo/' . $item['pendaftaranessaycompetition_1_photo'])?>" target="_blank">Show</a> -->
 
-                            <p class="fs-6 text-black-50 regular-text" style="margin-bottom: -3px;">Proof of Following</p>
-                            <a href="<?= base_url('/upload/EssayCompetition/follow/' . $item['pendaftaranessaycompetition_1_follow'])?>" target="_blank">Show</a>
-
+                            <p class="fs-6 text-black-50 regular-text" style="margin-bottom: -3px;">Twibbon</p>
+                            <a href="<?= base_url('/upload/EssayCompetition/twibbon/' . $item['pendaftaranessaycompetition_1_twibbon'])?>" target="_blank">Show</a>
+                            
+                            <?php if($item['pendaftaranessaycompetition_dataCreated'] < '2022-04-12 00:00:00'){ ?>
+                                <p class="fs-6 text-black-50 regular-text" style="margin-bottom: -3px;">Proof of Following</p>
+                                <a href="<?= base_url('/upload/EssayCompetition/follow/' . $item['pendaftaranessaycompetition_1_follow'])?>" target="_blank">Show</a>
+                            <?php }else{ ?>
+                                <p class="fs-6 text-black-50 regular-text" style="margin-bottom: -3px;">Proof of tag 3 friends</p>
+                                <a href="<?= base_url('/upload/EssayCompetition/follow/' . $item['pendaftaranessaycompetition_1_follow'])?>" target="_blank">Show</a>
+                            <?php } ?>
                             <?php else: ?>
                                 
                             <h6 class="primary-text mb-2">Group</h6>
@@ -132,9 +141,10 @@
                                     <li>Major: <?=$item['pendaftaranessaycompetition_1_major']?></li>
                                     <li>Email: <?=$item['pendaftaranessaycompetition_1_email']?></li>
                                     <li>Phone: <?=$item['pendaftaranessaycompetition_1_phone']?></li>
-                                    <li>KTP / Student ID: <a href="<?= base_url('/upload/EssayCompetition/card/' . $item['pendaftaranessaycompetition_1_card'])?>" target="_blank">Show</a></li>
-                                    <li>Active Student: <a href="<?= base_url('/upload/EssayCompetition/activestudent/' . $item['pendaftaranessaycompetition_1_activestudent'])?>" target="_blank">Show</a></li>
-                                    <li>Photo 4x6: <a href="<?= base_url('/upload/EssayCompetition/photo/' . $item['pendaftaranessaycompetition_1_photo'])?>" target="_blank">Show</a></li>
+                                    <li>Student ID Card / Statement Letter of Active Student : <a href="<?= base_url('/upload/EssayCompetition/card/' . $item['pendaftaranessaycompetition_1_card'])?>" target="_blank">Show</a></li>
+                                    <!--<li>Active Student: <a href="<?= base_url('/upload/EssayCompetition/activestudent/' . $item['pendaftaranessaycompetition_1_activestudent'])?>" target="_blank">Show</a></li>
+                                    <li>Photo 4x6: <a href="<?= base_url('/upload/EssayCompetition/photo/' . $item['pendaftaranessaycompetition_1_photo'])?>" target="_blank">Show</a></li>-->
+                                    <li>Twibbon: <a href="<?= base_url('/upload/EssayCompetition/twibbon/' . $item['pendaftaranessaycompetition_1_twibbon'])?>" target="_blank">Show</a></li>
                                     <li>Proof of Following: <a href="<?= base_url('/upload/EssayCompetition/follow/' . $item['pendaftaranessaycompetition_1_follow'])?>" target="_blank">Show</a></li>
                                 </ul>
                             </h5>
@@ -147,18 +157,22 @@
                                     <li>Major: <?=$item['pendaftaranessaycompetition_2_major']?></li>
                                     <li>Email: <?=$item['pendaftaranessaycompetition_2_email']?></li>
                                     <li>Phone: <?=$item['pendaftaranessaycompetition_2_phone']?></li>
-                                    <li>KTP / Student ID: <a href="<?= base_url('/upload/EssayCompetition/card/' . $item['pendaftaranessaycompetition_2_card'])?>" target="_blank">Show</a></li>
-                                    <li>Active Student: <a href="<?= base_url('/upload/EssayCompetition/activestudent/' . $item['pendaftaranessaycompetition_2_activestudent'])?>" target="_blank">Show</a></li>
-                                    <li>Photo 4x6: <a href="<?= base_url('/upload/EssayCompetition/photo/' . $item['pendaftaranessaycompetition_2_photo'])?>" target="_blank">Show</a></li>
+                                    <li>Student ID Card / Statement Letter of Active Student : <a href="<?= base_url('/upload/EssayCompetition/card/' . $item['pendaftaranessaycompetition_2_card'])?>" target="_blank">Show</a></li>
+                                    <!--<li>Active Student: <a href="<?= base_url('/upload/EssayCompetition/activestudent/' . $item['pendaftaranessaycompetition_2_activestudent'])?>" target="_blank">Show</a></li>
+                                    <li>Photo 4x6: <a href="<?= base_url('/upload/EssayCompetition/photo/' . $item['pendaftaranessaycompetition_2_photo'])?>" target="_blank">Show</a></li>-->
+                                    <li>Twibbon: <a href="<?= base_url('/upload/EssayCompetition/twibbon/' . $item['pendaftaranessaycompetition_2_twibbon'])?>" target="_blank">Show</a></li>
                                     <li>Proof of Following: <a href="<?= base_url('/upload/EssayCompetition/follow/' . $item['pendaftaranessaycompetition_2_follow'])?>" target="_blank">Show</a></li>
                                 </ul>
                             </h5>
                             <?php endif;?>
                             
-
+                            <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 1px;">Date : </p>
+                            <h5 class="primary-text mb-2"><?= $item['pendaftaranessaycompetition_dataCreated']?></h5>
+                            
+                            <!--
                             <p class="fs-6 text-black-50 regular-text" style="margin-bottom: -4px;">Proof of Payment</p>
                             <a href="<?= base_url('/upload/EssayCompetition/payment/' . $item['pendaftaranessaycompetition_payment'])?>" target="_blank">Show</a></h5>
-
+                            -->
                             <p class="fs-6 text-black-50 regular-text" style="margin-bottom: 2px;">Confirmation?</p>
                             <a href= "national_essay/confirm/<?= $item['pendaftaranessaycompetition_id']?>" class="btn btn-success" id="accept-<?= $item['pendaftaranessaycompetition_id']?>" onclick="accept(this.id)">
                                 <i class="hide loading-icon fa fa-spinner fa-spin d-none" id="loading-accept-<?= $item['pendaftaranessaycompetition_id']?>"></i>Accept

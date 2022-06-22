@@ -18,7 +18,7 @@
     font-family: MulishBold;
 }
 
-.regular-text{
+.regular-text {
     font-family: MulishRegular;
 }
 
@@ -85,12 +85,10 @@
     #sidebar-wrapper {
         margin-left: 0;
     }
-
     #page-content-wrapper {
         min-width: 0;
         width: 100%;
     }
-
     #wrapper.toggled #sidebar-wrapper {
         margin-left: -15rem;
     }

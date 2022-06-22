@@ -40,7 +40,7 @@
       </div>
     </section>
 
-    <section id="timeline" class="py-5">
+    <section id="timeline" class="py-5 position-relative">
       <div class="container d-flex flex-column align-items-center py-5">
         <h2 class="mb-5">Grand Talk Show Timeline</h2>
         <div class="row mb-3 px-4 py-3 w-75" v-for="item in timeline">

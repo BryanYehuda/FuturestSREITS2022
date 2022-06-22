@@ -59,7 +59,7 @@
     </section>
 
     <section id="our-competitions" class="py-5 position-relative">
-      <img src="<?php echo base_url() ?>public/img/ornamen/ornam4.png" alt="Ornamen" id="ornamen_compe" class="position-absolute" width="300" height="300">
+
       <div class="container py-5">
         <h2 class="text-center mb-5">Our Competitions</h2>
         <div class="row text-center d-flex justify-content-center">
@@ -76,7 +76,7 @@
     </section>
 
     <section id="fakta-unik" class="pt-5 position-relative">
-      <img src="<?php echo base_url() ?>public/img/ornamen/green-energy.png" alt="Ornamen" id="ornamen_fact" class="position-absolute" width="150" height="150">
+
       <div class="container pt-5">
         <h2 class="text-center">Unique Fact</h2>
         <div class="row">
@@ -91,12 +91,11 @@
     </section>
 
     <section id="timeline" class="py-5 position-relative">
-      <img src="<?php echo base_url() ?>public/img/ornamen/ornam1.png" alt="Ornamen" id="ornamen_timeline" class="position-absolute" width="300" height="300">
       <div class="container d-flex flex-column align-items-center py-5">
         <h2 class="mb-5">General Timeline</h2>
         <div class="row mb-3 px-4 py-3 w-75" v-for="item in timeline">
           <div class="col position-relative">
-            <div class="position-absolute rounded-timeline rounded-pill"></div>
+            <div class="position-absolute "></div>
             <h3>{{ item.date }}</h3>
             <p>{{ item.description }}</p>
           </div>
